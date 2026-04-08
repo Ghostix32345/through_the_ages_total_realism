@@ -1,0 +1,5 @@
+﻿l_german:
+  nwip_exploration.1.title: "Ein lokaler Entdecker kartiert das Hinterland"
+  nwip_exploration.1.desc: "Ein Bewohner aus [launch_location.GetName] behauptet, kürzlich Informationen über die nahegelegene Region [target.GetName] gesammelt zu haben, und ist bereit, seine Karte gegen Bezahlung mit uns zu teilen. [character.GetName] bietet uns außerdem seine Dienste als Entdecker an, falls wir weiter und weiter in das Landesinnere des Kontinents vordringen möchten."
+  nwip_exploration.1.a: "Karten von [target.GetName], sagst du? Klingt interessant!"
+  nwip_exploration.1.b: "Wir entscheiden, wann, wie und ob Erkundung stattfindet"

@@ -1,0 +1,149 @@
+## Population-Based Tax Efficiency Limits
+## Larger populations are harder to tax heavily - they have more power to resist
+## Staffelung ab 1M Einwohner: Feine Abstufung für realistisches Balancing
+## Tradeoff: Große Population = viele Arbeiter/Production, aber schwieriger Steuern
+## Historisch: Frankreich 12M = massives Schnowballing Problem
+
+# Early Population Pressure (1M+ inhabitants)
+# Populations start resisting excessive taxation even at moderate sizes
+early_population_tax_resistance = {
+	potential_trigger = { 
+		total_population > 1000	# > 1 million
+	}
+	
+	scales_with = {
+		value = total_population
+		subtract = 1000
+		divide = 1000  # Per 1 million above 1M - very fine grained
+		min = 0
+		max = 0.1      # Cap at -10% tax limit (doesn't snowball in early game)
+	}
+	
+	# TEST: Set taxes to 0% above 1M population
+	global_estate_max_tax = -0.35		# Set to 0% (negates the 35% base)
+	
+	# Slight unrest begins
+	local_unrest = 0.05					# +0.05 unrest per 1M
+}
+
+# Moderate Population Pressure (3M+ inhabitants)
+# At this point populations have real political power
+moderate_population_tax_resistance = {
+	potential_trigger = { 
+		total_population > 3000	# > 3 million
+	}
+	
+	scales_with = {
+		value = total_population
+		subtract = 3000
+		divide = 2000  # Per 2 million above 3M
+		min = 0
+		max = 0.25     # Cap at -25% tax limit
+	}
+	
+	# Estate tax limits reduced significantly - organized resistance
+	global_estate_max_tax = -0.05		# -5% per bracket
+	
+	# Estate satisfaction starts declining faster
+	global_estate_satisfaction_decay = 0.01  # +0.01 faster decay
+	
+	# Unrest increases noticeably
+	local_unrest = 0.1					# +0.1 unrest per bracket
+}
+
+# High Population Strain (8M+ inhabitants)
+# Very large populations become significant political liability
+# This is where France (12M) hits hard penalties
+high_population_tax_resistance = {
+	potential_trigger = { 
+		total_population > 8000	# > 8 million
+	}
+	
+	scales_with = {
+		value = total_population
+		subtract = 8000
+		divide = 4000  # Per 4 million above 8M
+		min = 0
+		max = 0.4      # Cap at -40% tax limit
+	}
+	
+	# Significant tax limits reduced - major political resistance
+	global_estate_max_tax = -0.08		# -8% per bracket (FRANCE hits this hard)
+	
+	# Estate satisfaction becomes much harder to maintain
+	global_estate_satisfaction_decay = 0.015  # +0.015 faster decay per bracket
+	
+	# Unrest increases significantly
+	local_unrest = 0.2					# +0.2 unrest from population pressure
+	monthly_rebel_growth = 0.001		# Rebellions start forming
+}
+
+# Massive Population Crisis (20M+ inhabitants)
+# Enormous empires with huge populations face severe governability issues  
+population_crisis_major = {
+	potential_trigger = { 
+		total_population > 20000	# > 20 million people
+	}
+	
+	scales_with = {
+		value = total_population
+		subtract = 20000
+		divide = 5000  # Per 5 million above 20M
+		min = 0
+		max = 0.5      # Can reach -50% in extreme cases
+	}
+	
+	# Tax collection becomes very difficult
+	global_estate_max_tax = -0.12		# -12% per bracket (severe)
+	
+	# Major governability crisis
+	monthly_rebel_growth = 0.002		# Rebellions spike
+	stability_decay = 0.001				# Stability decays faster
+	global_unrest = 0.3					# +0.3 global unrest per bracket
+}
+
+# Extreme Population Crisis (35M+ inhabitants)
+# These are truly monstrous populations - governance approaches breakdown
+population_crisis_extreme = {
+	potential_trigger = { 
+		total_population > 35000	# > 35 million people
+	}
+	
+	scales_with = {
+		value = total_population
+		subtract = 35000
+		divide = 7000  # Per 7 million above 35M
+		min = 0
+		max = 0.7      # Can reach -70% in extreme cases
+	}
+	
+	# Tax collection becomes nearly impossible
+	global_estate_max_tax = -0.15		# -15% per bracket (severe penalty)
+	
+	# Massive governability crisis
+	monthly_rebel_growth = 0.004		# Rebellions spike dramatically
+	stability_decay = 0.002				# Stability rapidly decays
+	global_unrest = 0.5					# +0.5 global unrest per bracket
+	
+	# Society becomes potentially destabilized
+	monthly_towards_egalitarian = societal_value_monthly_move  # Push toward revolution
+}
+
+# Population Bonus (for comparison) - large populations still have benefits
+# Large populations DO provide benefits in production/manpower - but taxes suffer
+population_scale_benefits = {
+	potential_trigger = { 
+		total_population > 0
+	}
+	
+	scales_with = {
+		value = total_population
+		divide = 25000  # Per 25 million (smoother curve)
+		max = 0.3
+	}
+	
+	# Large populations provide economic/military benefit
+	production_efficiency = 0.015		# +1.5% per 25M (benefit, but less than tax penalty)
+	expected_army_size = 0.00015		# More troops available
+	trade_goods_produced = 0.01			# Production benefits
+}

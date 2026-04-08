@@ -1,0 +1,231 @@
+﻿GKR = { # Deutsches Kaiserreich  
+	flag_definition = {
+		coa = te_gkr
+		priority = 100
+	}	
+}
+
+GSF = { # Süddeutscher Bund
+	flag_definition = {
+		coa = te_gsf
+		priority = 100
+	}	
+}
+
+GNF = { # Norddeutscher Bund  
+	flag_definition = {
+		coa = te_gnf
+		priority = 100
+	}	
+}
+
+FIN = { # Finnland
+	flag_definition = {
+		coa = FIN_republic
+		priority = 100
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = FIN_monarchy
+		priority = 100
+		trigger = {
+			coa_def_monarchy_trigger = yes
+		}
+	}			
+}
+
+REPLACE:PAL = { # Palatinate of the Rhine
+	flag_definition = {
+		coa = REPLACE:PAL
+		priority = 100
+	}		
+}
+
+REPLACE:UBV = { # Upper Bavaria
+	flag_definition = {
+		coa = BAV
+		priority = 100
+	}
+	flag_definition = {
+		coa = BAV_emperor
+		priority = 0 # Commented out for now
+		trigger = {
+			coa_def_hre_emperor_trigger = yes
+		}
+	}
+}
+
+REPLACE:LBV = { # Lower Bavaria
+	flag_definition = {
+		coa = BAV
+		priority = 100
+	}
+	flag_definition = {
+		coa = BAV_emperor
+		priority = 0 # Commented out for now
+		trigger = {
+			coa_def_hre_emperor_trigger = yes
+		}
+	}
+}
+
+REPLACE:GER = { # Germany  
+	flag_definition = {
+		coa = GER
+		priority = 100
+	}	
+}
+
+RHI = { # Rheinland
+	flag_definition = {
+		coa = RHI
+		priority = 100
+	}	
+}
+
+WPL = { # Westphalen
+	flag_definition = {
+		coa = te_wpl
+		priority = 100
+	}	
+}
+
+REPLACE:KOL = { # Cologne
+	flag_definition = {
+		coa = KOL
+		priority = 20 # Starting
+		trigger = {
+			coa_def_theocracy_trigger = yes
+			coa_def_hre_archbishop_elector_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = KOL_cross
+		priority = 100
+		trigger = {
+			coa_def_theocracy_trigger = no
+		}
+	}
+}
+
+REPLACE:PRU = { # Preußen  
+	flag_definition = {
+		coa = te_pru
+		priority = 10
+		trigger = {
+			country_rank_level < 4
+			coa_def_monarchy_trigger = yes
+		}
+	}	
+
+	flag_definition = {
+		coa = te_pru_kingdom
+		priority = 20
+		trigger = {
+			coa_def_kingdom_or_higher_trigger = yes
+			coa_def_monarchy_trigger = yes
+		}
+	}	
+
+	flag_definition = {
+		coa = te_pru_republic
+		priority = 30
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
+	}	
+}
+
+BRZ_f = { # Brazil
+	flag_definition = {
+		coa = BRZ
+		priority = 10001 # Needed to override default random definition
+	}
+	flag_definition = {
+		coa = BRZ_empire
+		priority = 10002 # Needed to override default random definition
+		trigger = {
+			coa_def_monarchy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRZ_minas
+		priority = 10003 # Needed to override default random definition
+		trigger = {
+			coa_def_republic_trigger = yes
+			#scope:actor ?= {
+			#	capital = {
+			#		area = area:minas_gerais_area
+			#	}
+			#}
+		}
+	}
+	#flag_definition = {
+	#	coa = BRZ_conjuracao_bahiana
+	#	priority = 10004 # Needed to override default random definition
+	#	trigger = {
+	#		coa_def_republic_trigger = yes
+	#		scope:actor ?= {
+	#			capital = {
+	#				area = area:bahia_area
+	#			}
+	#		}
+	#	}
+	#}
+	#flag_definition = {
+	#	coa = BRZ_confederacao_do_equador
+	#	priority = 10005 # Needed to override default random definition
+	#	trigger = {
+	#		coa_def_republic_trigger = yes
+	#		scope:actor ?= {
+	#			capital = {
+	#				area = area:pernambuco_area
+	#			}
+	#		}
+	#	}
+	#}
+	flag_definition = {
+		coa = BRZ_vera_cruz
+		allow_overlord_canton = no
+		priority = 10010
+		trigger = {
+			coa_def_colonial_nation_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRZ_armillary
+		allow_overlord_canton = no
+		priority = 10011
+		trigger = {
+			coa_def_colonial_nation_trigger = yes
+			coa_def_absolutism_age_5_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BRZ_united_kingdom
+		allow_overlord_canton = no
+		priority = 10012
+		trigger = {
+			#TODO once we implement a proper united kingdom, update trigger
+			coa_def_colonial_nation_trigger = yes
+			coa_def_revolutions_age_6_trigger = yes
+		}
+	}
+}
+
+MEX = {
+	flag_definition = {
+		coa = MEX
+		priority = 10001 # Needed to override default random definition
+	}
+	flag_definition = {
+		coa = MEX_colonial
+		priority = 10010 
+		trigger = {
+			coa_def_colonial_nation_trigger = yes
+		}
+	}
+}

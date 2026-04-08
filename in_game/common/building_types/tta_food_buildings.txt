@@ -1,0 +1,313 @@
+﻿beekeepers_hut = {
+	is_foreign = no
+	max_levels = rural_building_cap
+	pop_type = laborers
+	employment_size = 0.25
+	rural_settlement = yes
+	town = yes
+	city = no
+
+	location_potential = {
+		OR = {
+			vegetation = farmland
+			vegetation = grasslands
+			vegetation = woods
+			vegetation = forest
+		}
+	}
+	category = rgo_building_category
+
+	possible_production_methods = {
+		beekeepers_hut_maintenance
+	}
+
+	modifier = {
+		local_monthly_food_modifier = 0.01
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+
+hunting_camp = {
+	is_foreign = no
+	max_levels = rural_building_cap
+	pop_type = laborers
+	employment_size = 0.25
+	rural_settlement = yes
+	town = no
+	city = no
+
+	location_potential = {
+		OR = {
+			vegetation = forest
+			vegetation = woods
+			vegetation = jungle
+		}
+	}
+
+	category = rgo_building_category
+
+	possible_production_methods = {
+		hunting_camp_maintenance
+	}
+
+	build_time = rural_build_time
+	construction_demand = basic_construction_needs
+}
+
+wheat_patch = {
+	is_foreign = no
+	max_levels = rural_building_cap
+	pop_type = laborers
+	employment_size = rural_peasant_produce_employment
+	rural_settlement = yes
+	town = yes
+	city = no
+
+	country_potential = {
+		old_world_crops_trigger = yes
+	}
+
+	location_potential = {
+		AND = {
+			OR = {
+				climate = continental
+				climate = oceanic
+				climate = mediterranean
+			}
+			OR = {
+				vegetation = farmland
+				vegetation = grasslands
+			}
+		}
+	}
+
+	category = rgo_building_category
+
+	possible_production_methods = {
+		wheat_patch_maintenance
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+
+millet_patch = {
+	is_foreign = no
+	max_levels = rural_building_cap
+	pop_type = laborers
+	employment_size = rural_peasant_produce_employment
+	rural_settlement = yes
+	town = yes
+	city = no
+
+	location_potential = {
+		AND = {
+			OR = {
+				climate = continental
+				climate = oceanic
+				climate = mediterranean
+			}
+			OR = {
+				vegetation = farmland
+				vegetation = grasslands
+			}
+		}
+	}
+
+	category = rgo_building_category
+	possible_production_methods = {
+		millet_patch_maintenance
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+
+
+potato_patch = {
+	is_foreign = no
+	max_levels = rural_building_cap
+	pop_type = laborers
+	employment_size = rural_peasant_produce_employment
+	rural_settlement = yes
+	town = yes
+	city = no
+
+	country_potential = {
+		new_world_crops_trigger = yes
+	}
+
+	location_potential = {
+		AND = {
+			current_year >= 1606.1.01
+			OR = {
+				climate = continental
+				climate = oceanic
+				climate = mediterranean
+			}
+			OR = {
+				vegetation = farmland
+				vegetation = grasslands
+			}
+		}
+	}
+	category = rgo_building_category
+
+	possible_production_methods = {
+		potato_patch_maintenance
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+
+livestock_farm = {
+	is_foreign = no
+	max_levels = rural_building_cap
+	pop_type = laborers
+	employment_size = rural_peasant_produce_employment
+	rural_settlement = yes
+	town = yes
+	city = no
+
+	location_potential = {
+		OR = {
+			vegetation = sparse
+			vegetation = farmland
+			vegetation = grasslands
+		}
+	}
+
+	category = rgo_building_category
+	possible_production_methods = {
+		livestock_farm_maintenance
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+
+REPLACE:sheep_farms = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = rural_building_cap
+	employment_size = rural_peasant_produce_employment
+	category = rgo_building_category
+	rural_settlement = yes
+
+	location_potential = {
+		OR = {
+			vegetation = sparse
+			vegetation = farmland
+			vegetation = grasslands
+		}
+	}
+
+	possible_production_methods = {
+		sheep_farm_maintenance
+	}
+
+	modifier = {
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+
+REPLACE:fruit_orchard = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = rural_building_cap
+	employment_size = rural_peasant_produce_employment
+	category = rgo_building_category
+	rural_settlement = yes
+	town = yes
+	city = yes
+
+	location_potential = {
+		OR = {
+			vegetation = grasslands
+			vegetation = farmland
+			vegetation = woods
+			vegetation = jungle
+		}
+	}
+
+	possible_production_methods = {
+		fruit_orchard_maintenance
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+
+rice_paddy = {
+	is_foreign = no
+	max_levels = rural_building_cap
+	pop_type = laborers
+	employment_size = rice_paddy_employment_size
+	rural_settlement = yes
+	town = yes
+	city = np
+
+	country_potential = {
+		old_world_crops_trigger = yes
+	}
+
+	location_potential = {
+		OR = {
+			climate = subtropical
+			climate = tropical
+			AND = {
+				climate = arid
+				OR = {
+					has_river = yes
+					is_adjacent_to_lake = yes
+				}
+			}
+		}
+	}
+
+	category = rgo_building_category
+
+	possible_production_methods = {
+		rice_paddy_maintenance
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+
+corn_patch = {
+	is_foreign = no
+	max_levels = rural_building_cap
+	pop_type = laborers
+	employment_size = rural_peasant_produce_employment
+	rural_settlement = yes
+	town = yes
+	city = no
+
+	country_potential = {
+		new_world_crops_trigger = yes
+	}
+
+	location_potential = {
+		OR = {
+			climate = subtropical
+			climate = tropical
+			climate = mediterranean
+		}
+	}
+
+	category = rgo_building_category
+
+	possible_production_methods = {
+		corn_patch_maintenance
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+

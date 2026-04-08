@@ -1,0 +1,32 @@
+﻿
+GKR = {
+	color = rgb { 60 60 60 }
+	color2 = rgb { 40 40 40 } #new color
+	
+	culture_definition = prussian
+	religion_definition = protestant
+}
+
+GSF = {
+	color = rgb { 0 51 153 }
+	color2 = rgb { 102 153 255 } #new color
+	
+	culture_definition = southern_bavarian
+	religion_definition = catholic
+}
+
+GNF = {
+	color = rgb { 60 60 60 }
+	color2 = rgb { 40 40 40 } #new color
+	
+	culture_definition = prussian
+	religion_definition = protestant
+}
+
+RHI = {
+	color = rgb { 50 120 50 }
+	color2 = rgb { 41 188 84 } #new color
+	
+	culture_definition = ripuarian_franconian
+	religion_definition = catholic
+}

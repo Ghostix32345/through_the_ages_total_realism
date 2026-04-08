@@ -1,0 +1,144 @@
+@ratio = 1.5 # how wide the flags are compared to their height
+@height = 512 
+@width =  @[height*ratio]
+
+@five_sixths = @[5/6]
+@three_quarters = @[3/4]
+@two_thirds = @[2/3]
+@half = @[1/2]
+@third = @[1/3]
+@quarter = @[1/4]
+@sixth = @[1/6]
+
+@semy = 0.27
+
+@canton_scale_cross_x = @[ ( 333 / 768 ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / 512 ) + 0.001 ]
+
+te_gkr = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_gkr.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}
+}
+
+te_gsf = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	
+	textured_emblem = {
+		texture = "te_gsf.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+
+te_gnf = {
+	pattern = "pattern_special_eagle_prussia.dds"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_gnf.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+
+RHI = { # Rheinland, geviertelt KOL / BRG / SPO / TRI
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+	color3 = "black"
+	color4 = "blue_light"
+	color5 = "yellow"
+
+	### Oben links: Köln
+	colored_emblem = {
+		texture = "ce_cross.dds"
+		color1 = color3        # schwarz
+		color2 = color3
+		color3 = color1        # weiß
+		instance = { 
+			position = { 0.25 0.25 } 
+			scale = { 0.5 0.5 } 
+		}
+	}
+
+	### Oben rechts: Berg (Löwe)
+	colored_emblem = {
+		texture = "ce_lion_queue_forchee_crowned_wide.dds"
+		color1 = color2        # rot
+		color2 = color4        # blau_hell
+		color3 = color5        # gelb
+		instance = { 
+			position = { 0.75 0.25 } 
+			scale = { 0.5 0.5 } 
+		}
+	}
+
+	### Unten links: Sponheim (Schachbrett)
+	colored_emblem = {
+		texture = "ce_checky_06.dds"
+		color1 = color2        # rot
+		color2 = color1        # weiß
+		instance = {
+			position = { 0.25 0.75 }
+			scale = { 0.5 0.5 }
+		}
+	}
+
+	### Unten rechts: Trier
+	colored_emblem = {
+		texture = "ce_cross.dds"
+		color1 = color2        # rot
+		color2 = color2
+		color3 = color1        # weiß
+		instance = { 
+			position = { 0.75 0.75 } 
+			scale = { 0.5 0.5 } 
+		}
+	}
+}
+
+te_pru = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_pru.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+
+te_pru_kingdom = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_pru_kingdom.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+
+te_pru_republic = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_pru_republic.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+
+te_wpl = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_wpl.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+
+

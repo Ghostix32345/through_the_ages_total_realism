@@ -1,0 +1,83 @@
+﻿local_cheese_dairy = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+	
+	employment_size = rural_peasant_enhance_employment
+	category = rgo_building_category
+	rural_settlement = yes
+
+	location_potential = {
+		OR = {
+			raw_material = goods:livestock
+			raw_material = goods:wool
+		}
+	}
+
+	possible_production_methods = {
+		local_cheese_dairy_maintenance
+	}
+
+	modifier = {
+		local_monthly_food_modifier = 0.10
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+
+local_smokehouse = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+	
+	employment_size = rural_peasant_enhance_employment
+	category = rgo_building_category
+	rural_settlement = yes
+
+	location_potential = {
+		OR = {
+			raw_material = goods:fish
+			raw_material = goods:wild_game
+		}
+	}
+
+	possible_production_methods = {
+		local_smokehouse_maintenance
+	}
+
+	modifier = {
+		local_monthly_food_modifier = 0.10
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}
+
+local_fruitwine_mill = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+	
+	employment_size = rural_peasant_enhance_employment
+	category = rgo_building_category
+	rural_settlement = yes
+
+	location_potential = {
+		OR = {
+			raw_material = goods:wine
+			raw_material = goods:fruit
+		}
+	}
+
+	possible_production_methods = {
+		local_fruitwine_mill_maintenance
+	}
+
+	modifier = {
+		local_monthly_food_modifier = 0.10
+	}
+
+	build_time = rural_build_time
+	construction_demand = farm_constructions
+}

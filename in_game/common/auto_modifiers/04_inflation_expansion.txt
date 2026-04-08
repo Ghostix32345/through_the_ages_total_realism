@@ -1,0 +1,60 @@
+## Inflation from Rapid Expansion
+## Quickly growing empires face inflation from rapid minting and resource extraction
+## This penalizes fast expansion economically
+
+# Expansion-Driven Inflation
+# Nations that expand too quickly cause inflation through overheated economies
+rapid_expansion_inflation = {
+	potential_trigger = {
+		any_active_war = yes
+		current_war_exhaustion > 5
+	}
+	
+	scales_with = {
+		value = current_war_exhaustion
+		subtract = 5
+		divide = 5  # Per 5 WE above base
+		min = 0
+	}
+	
+	# Wartime economy causes inflation
+	monthly_inflation = -0.002			# +0.002 monthly inflation per bracket (faster inflation)
+	minting_inflation_impact = 0.15		# +15% inflation impact when minting per bracket
+}
+
+# Gold Shortage from Rapid Expansion
+# Wars and expansion consume gold quickly
+expansion_treasury_pressure = {
+	potential_trigger = {
+		any_active_war = yes
+		number_of_armies > 3
+	}
+	
+	scales_with = {
+		value = number_of_armies
+		subtract = 3
+		divide = 2
+		min = 0
+	}
+	
+	# Large armies consume resources
+	monthly_gold = -10					# -10 gold per extra army above 3
+	supplies_consumption = 0.05			# +5% supply consumption per army
+}
+
+# Post-Conquest Inflation (Gold Rush Effect)
+# Looting and rapid resource extraction increase prices
+conquest_looting_inflation = {
+	potential_trigger = {
+		had_recent_country_play_action = { action = take_war_reparations years = 2 }
+	}
+	
+	scales_with = {
+		value = gold_gained_from_recent_wars  # Looted/reparations gold
+		divide = 5000
+		min = 0
+	}
+	
+	# Rapid influx of gold drives prices up
+	monthly_inflation = -0.001			# +0.001 per 5k gold looted
+}

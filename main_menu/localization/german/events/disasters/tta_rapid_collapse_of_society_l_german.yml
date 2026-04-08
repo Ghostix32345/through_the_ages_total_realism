@@ -1,0 +1,44 @@
+﻿l_german:
+  # Disaster
+  rapid_collapse_of_society: "Rasanter Zusammenbruch der Gesellschaft"
+  rapid_collapse_of_society_desc: "Seuchen, Hunger und das Zerreißen familiärer Bande höhlen unsere Siedlungen aus. Häuptlinge streiten, Felder liegen brach, und ganze Familien verschwinden in den Wäldern. Wenn wir nicht Boden preisgeben und uns neu sammeln, wird das Gefüge unseres Reiches zerreißen."
+
+  rcs_has_not_happened_tt: "Diese Katastrophe ist hier zuvor noch nicht abgeschlossen worden."
+
+  an_event_occurs_tt: "Ein Vorfall ereignet sich …"
+  no_event_occurs_tt: "In diesem Monat ereignet sich kein nennenswerter Vorfall."
+
+  # Start
+  rapid_collapse_of_society.1.title: "Das Gefüge zerfällt"
+  rapid_collapse_of_society.1.desc: "Flüstern von Krankheit und Mangel wandert von Feuer zu Feuer. Dörfer verdunkeln sich in der Dämmerung und erwachen nicht mehr. Boten berichten von verstorbenen Ältesten, leeren Vorratshäusern und ungesprochenen Riten. Die Ältesten flehen um Rückzug und Zeit; hitzköpfige Jugendliche verlangen Widerstand."
+  rapid_collapse_of_society.1.a: "Wir müssen den Sturm überstehen."
+  rapid_collapse_of_society.1.tt: "Die Katastrophe beginnt. Die Stabilität wankt und unser Volk wird unruhig."
+
+  # 2 — Ghost Villages
+  rapid_collapse_of_society.2.title: "Geisterdörfer"
+  rapid_collapse_of_society.2.desc: "Eine Ansammlung von Hütten steht leer – erkaltete Feuerstellen, zurückgelassene geflochtene Matten. Nur wenige bleiben, um den Rauch zu beobachten. Lassen wir diesen Ort aufgeben und verschonen jene, die noch verweilen?"
+  rapid_collapse_of_society.2.a: "Lass es gehen."
+  rapid_collapse_of_society.2.b: "Halte alles zusammen, koste es, was es wolle."
+
+  # 3 — Flight into the Hinterlands
+  rapid_collapse_of_society.3.title: "Flucht ins Hinterland"
+  rapid_collapse_of_society.3.desc: "Familien schleichen bei Sternenlicht über Wildpfade, beladen mit Töpfen und Geschichten. Sie suchen Wild, saubere Quellen und Abstand vom Leid."
+  rapid_collapse_of_society.3.a: "Man kann den Wind nicht anketten."
+
+  # 4 — Seat of Power Falters
+  rapid_collapse_of_society.4.title: "Der Sitz der Macht wankt"
+  rapid_collapse_of_society.4.desc: "Selbst unser Ratsfeuer schwindet. Trommeln klingen dünn im Versammlungshaus, und die Stimme des Häuptlings hallt in einer Halle wider, die leer geworden ist."
+  rapid_collapse_of_society.4.a: "Löscht die Glut und zieht weiter."
+  rapid_collapse_of_society.4.b: "Steht im Rauch und haltet stand."
+
+  # 101 — Rolling Exodus
+  rapid_collapse_of_society.101.title: "Ein weiterer Exodus"
+  rapid_collapse_of_society.101.desc: "Tag für Tag werden die Pfade von Fußspuren ausgedünnt. Am Abend zählen wir die Vermissten an der Stille."
+  rapid_collapse_of_society.101.a: "Die Menschen gleiten uns davon."
+  rapid_collapse_of_society.101.b: "Dieser Ort kann sie nicht halten."
+
+  # 10 — End
+  rapid_collapse_of_society.10.title: "Nach der Stille"
+  rapid_collapse_of_society.10.desc: "Das Schlimmste ist vorüber. In der darauffolgenden Ruhe ziehen wir Bilanz: weniger Stimmen, doch neue Wege und harte Lehren. Der Kreis wird sich erneut schließen."
+  rapid_collapse_of_society.10.a: "Sammelt die Überlebenden."
+  rapid_collapse_of_society.10.tt: "Die Katastrophe endet. Mit Zeit und Geduld kann Ordnung zurückkehren."

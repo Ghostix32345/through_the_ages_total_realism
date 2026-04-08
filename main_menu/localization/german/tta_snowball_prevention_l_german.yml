@@ -1,0 +1,56 @@
+l_german:
+  # Province Sprawl Penalties
+  province_count_inefficiency: "Verwaltungsche Belastung durch viele Provinzen"
+  province_count_inefficiency_desc: "Große Reiche werden weniger effizient bei der Besteuerung und Produktion"
+  
+  large_empire_administrative_strain: "Großreich-Verwaltungskrise"
+  large_empire_administrative_strain_desc: "Die Verwaltung eines Reiches mit über 150 Provinzen wird zunehmend schwieriger"
+  
+  extreme_sprawl_collapse: "Imperiales Chaos"
+  extreme_sprawl_collapse_desc: "Ein Reich über 300 Provinzen kann sich nicht mehr selbst versorgen"
+
+  # Population Tax Limits
+  early_population_tax_resistance: "Frühe Steuerwiderstand der Bevölkerung"
+  early_population_tax_resistance_desc: "Bevölkerung über 1 Million Einwohner beginnt, gegen übermäßige Besteuerung Widerstand zu leisten"
+  
+  moderate_population_tax_resistance: "Moderate Steuerwiderstand der Bevölkerung"
+  moderate_population_tax_resistance_desc: "Bevölkerung über 3 Million Einwohner organisiert politischen Widerstand gegen Steuern"
+  
+  high_population_tax_resistance: "Hoher Steuerwiderstand der Bevölkerung"
+  high_population_tax_resistance_desc: "Bevölkerung über 8 Million Einwohner wird zur politischen Belastung"
+  
+  population_crisis_major: "Bevölkerungskrise - Major"
+  population_crisis_major_desc: "Bevölkerung über 20 Million - Massive Gouvernierungsprobleme entstehen"
+  
+  population_crisis_extreme: "Bevölkerungskrise - Extrem"
+  population_crisis_extreme_desc: "Bevölkerung über 35 Million - Die Verwaltung bricht zusammen, Revolutionen sind unvermeidlich"
+  
+  population_scale_benefits: "Bevölkerungsbonus für Produktion"
+  population_scale_benefits_desc: "Große Bevölkerung bringt Produktion und Militärstärke, aber erschweert die Besteuerung"
+
+  # Aggressive Expansion
+  aggressive_expansion_diplomatic_penalty: "Expansion - Diplomatische Isolation"
+  aggressive_expansion_diplomatic_penalty_desc: "Diplomatische Reputation sinkt durch aggressive Expansion. Nachbarn misstrauen dir"
+  
+  war_exhaustion_expansion_penalty: "Kriegsmüdigkeit - Produktionsverlust"
+  war_exhaustion_expansion_penalty_desc: "Längere Kriege sind wirtschaftlich ruinös für die Kriegsführer"
+  
+  recently_conquered_instability: "Unruhe in neu eroberten Gebieten"
+  recently_conquered_instability_desc: "Neu eroberte Provinzen sind anfangs eine Belastung statt einer Bereicherung"
+  
+  coalition_building_threshold: "Koalitionen gegen Expansion"
+  coalition_building_threshold_desc: "Nachbarn bilden Koalitionen gegen die zunehmende Macht deines Reiches"
+
+  # Inflation from Expansion
+  rapid_expansion_inflation: "Inflation durch Expansion"
+  rapid_expansion_inflation_desc: "Schnelle Expansion führt zu Inflation durch die angeheizte Kriegswirtschaft"
+  
+  expansion_treasury_pressure: "Kriegskasse unter Druck"
+  expansion_treasury_pressure_desc: "Große Armeen verbrauchen schnell die Staatskasse und Ressourcen"
+  
+  conquest_looting_inflation: "Gold-Rush-Inflation"
+  conquest_looting_inflation_desc: "Rasche Ausbeutung und Gold aus Kriegsreparationen treibt die Preise in die Höhe"
+
+  # Base Flag
+  snowball_prevention_disabled: "Schneeballeffekt-Prävention ausgesetzt"
+  snowball_prevention_disabled_desc: "Dieses Reich ist von den Schneeballeffekt-Präventionsstrafen befreit"

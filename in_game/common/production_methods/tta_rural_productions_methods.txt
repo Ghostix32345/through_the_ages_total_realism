@@ -1,0 +1,72 @@
+﻿		rural_blacksmith_tools_maintenance = {
+			produced = tools
+			output = 0.5
+			iron = 0.4
+			coal = 0.1
+			category = guild_input
+		}
+
+		rural_tanner_livestock_maintenance = {
+			livestock = 0.5
+			sand = 0.35
+			tools = 0.075
+			produced = leather
+			output = 0.5
+			category = guild_input
+		}
+	
+		rural_tanner_wild_game_maintenance = {
+			wild_game = 0.75
+			sand = 0.35
+			tools = 0.075
+			produced = leather
+			output = 0.5
+			category = guild_input
+		}
+	
+		rural_glass_manufacturing_maintenance = {
+			produced = glass
+			output = 0.3
+			debug_max_profit = 0.15
+
+			sand = 1.0
+			category = guild_input
+		}
+
+		rural_millet_brewery_maintenance = {
+			produced = beer
+			output = 0.5
+			debug_max_profit = 0.15
+	
+			millet = 0.5
+			lumber = 0.1
+			tools = 0.07
+			category = guild_input
+		}
+
+		rural_weaponmaker_manufacturing_maintenance = {
+			produced = weaponry
+			output = 0.2
+			debug_max_profit = 0.15
+
+			lumber = 0.32
+			category = guild_input
+		}
+
+		rural_jewelry_carver_maintenance = {
+			produced = jewelry
+			output = 0.1
+			debug_max_profit = 0.15
+
+			stone = 0.4
+			category = guild_input
+		}
+
+		rural_pottery_manufacturing_maintenance = {
+			produced = pottery
+			output = 0.2
+			debug_max_profit = 0.15
+
+			clay = 0.33
+			category = guild_input
+		}

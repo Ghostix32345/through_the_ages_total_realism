@@ -1,0 +1,84 @@
+## Province Sprawl Penalties
+## Large empires become less efficient at production and taxation
+## This creates a tradeoff: Stay small and productive, or grow and become inefficient
+
+# Early Game Penalty - applies to moderate-sized nations (50+ provinces)
+province_count_inefficiency = {
+	potential_trigger = { 
+		num_own_provinces > 50 
+		NOT = { has_country_modifier = snowball_prevention_disabled }
+	}
+	
+	scales_with = {
+		value = num_own_provinces
+		subtract = 50
+		divide = 50  # Per 50 additional provinces above 50
+		min = 0
+		max = 0.5   # Cap at -50% efficiency
+	}
+	
+	# Production penalties scale with sprawl
+	production_efficiency = -0.05		# -5% per 50 provinces
+	trade_goods_produced = -0.03		# -3% goods per 50 provinces
+	
+	# Trade becomes harder to manage
+	trade_efficiency = -0.02			# -2% trade per 50 provinces
+	
+	# Taxation becomes less efficient (more resistance)
+	tax_efficiency = -0.04				# -4% tax per 50 provinces
+	
+	# Local unrest increases as central control weakens
+	local_unrest = 0.1					# +0.1 unrest per bracket
+}
+
+# Late Game Penalty - severe for large empires (150+ provinces)  
+large_empire_administrative_strain = {
+	potential_trigger = { 
+		num_own_provinces > 150
+		NOT = { has_country_modifier = snowball_prevention_disabled }
+	}
+	
+	scales_with = {
+		value = num_own_provinces
+		subtract = 150
+		divide = 100  # Per 100 additional provinces above 150
+		min = 0
+		max = 0.8    # Cap at -80% for extreme empires
+	}
+	
+	# Severe penalties kick in for mega-empires
+	production_efficiency = -0.08		# Additional -8% per 100 provinces
+	administrative_efficiency = -0.06	# -6% admin per 100
+	
+	# Technology becomes harder to maintain
+	tech_cost = 0.02					# +2% tech cost per bracket
+	
+	# Population growth slows down in mega-empire (hard to sustain)
+	monthly_population_growth = -0.0005	# -0.05% growth per bracket
+	
+	# Massive local unrest
+	local_unrest = 0.25					# +0.25 unrest per bracket (severe instability)
+}
+
+# Extreme Empire Penalty (300+ provinces) - historical empires collapse without careful management
+extreme_sprawl_collapse = {
+	potential_trigger = { 
+		num_own_provinces > 300
+	}
+	
+	scales_with = {
+		value = num_own_provinces
+		subtract = 300
+		divide = 75  # Per 75 additional provinces
+		min = 0
+		max = 1.0   # Can reach -100% for truly massive empires
+	}
+	
+	# Everything becomes harder
+	production_efficiency = -0.15		# Severe -15% per bracket
+	monthly_rebel_growth = 0.005		# Major rebellions
+	stability_decay = 0.003				# Rapid stability decay
+	
+	# The empire literally cannot sustain itself
+	global_unrest = 1.0					# +1.0 global unrest per bracket
+}

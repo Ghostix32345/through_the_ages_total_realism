@@ -1,0 +1,15 @@
+﻿INJECT:nobles = {
+	grow = yes
+}
+
+INJECT:burghers = {
+	grow = yes
+}
+
+INJECT:laborers = {
+	grow = yes
+}
+
+INJECT:slaves = {
+	grow = yes
+}

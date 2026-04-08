@@ -1,0 +1,53 @@
+﻿namespace = ger_formable
+
+ ger_formable.101 = {
+ 	type = country_event
+ 	category = io_event
+	title =  ger_formable.101.title
+	illustration_tags = {
+ 		10 = angry
+ 		10 = interior
+ 	}	
+	
+	desc =  ger_formable.101.desc
+	fire_only_once = no
+	trigger = {
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = ger_formable.101.a
+		custom_tooltip = {
+			text = ger_formable.101.a.tt
+		}
+	}
+}
+
+ ger_formable.102 = {
+ 	type = country_event
+ 	category = io_event
+	title =  ger_formable.102.title
+	illustration_tags = {
+ 		10 = angry
+ 		10 = interior
+ 	}	
+	
+	desc =  ger_formable.102.desc
+	fire_only_once = no
+	trigger = {
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = ger_formable.102.a
+		custom_tooltip = {
+			text = ger_formable.102.a.tt
+		}
+	}
+}

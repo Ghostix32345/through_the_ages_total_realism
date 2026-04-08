@@ -1,0 +1,11 @@
+﻿
+REPLACE:BRA = {
+	color = map_BRA
+	color2 = rgb { 123 90 90 }
+
+	culture_definition = brandenburgish
+	religion_definition = catholic
+
+	description_category = military
+	difficulty = 5
+}

@@ -1,0 +1,24 @@
+local_cheese_dairy_maintenance = {
+    tools  = 0.075
+    lumber = 0.075
+    livestock = 1.0
+    wool = 1.0
+    category = building_maintenance
+}
+
+local_smokehouse_maintenance = {
+    lumber = 0.75
+    coal = 0.75
+    salt = 0.05
+    fish = 1.0
+    wild_game = 1.0
+    category = building_maintenance
+}
+
+local_fruitwine_mill_maintenance = {
+    lumber = 0.075
+    tools  = 0.075
+    wine = 1.0
+    fruit = 1.0
+    category = building_maintenance
+}
