@@ -10,10 +10,10 @@ l_german:
   extreme_sprawl_collapse_desc: "Ein Reich über 300 Provinzen kann sich nicht mehr selbst versorgen"
 
   # Population Tax Limits
-  early_population_tax_resistance: "Frühe Steuerwiderstand der Bevölkerung"
+  early_population_tax_resistance: "Früher Steuerwiderstand der Bevölkerung"
   early_population_tax_resistance_desc: "Bevölkerung über 1 Million Einwohner beginnt, gegen übermäßige Besteuerung Widerstand zu leisten"
   
-  moderate_population_tax_resistance: "Moderate Steuerwiderstand der Bevölkerung"
+  moderate_population_tax_resistance: "Moderater Steuerwiderstand der Bevölkerung"
   moderate_population_tax_resistance_desc: "Bevölkerung über 3 Million Einwohner organisiert politischen Widerstand gegen Steuern"
   
   high_population_tax_resistance: "Hoher Steuerwiderstand der Bevölkerung"
@@ -54,3 +54,9 @@ l_german:
   # Base Flag
   snowball_prevention_disabled: "Schneeballeffekt-Prävention ausgesetzt"
   snowball_prevention_disabled_desc: "Dieses Reich ist von den Schneeballeffekt-Präventionsstrafen befreit"
+
+  # Urban Settlement Caps - Gate 1
+  urban_tt_town_gate1_cap: "Maximum 2 Städte pro Provinz erreicht"
+  urban_tt_city_gate1_cap: "Maximum 1 Großstadt pro Provinz erreicht oder zu viele Städte"
+  urban_tt_town_geo_blocked: "Geografische Bedingungen unterstützen keine Stadtgründung"
+  urban_tt_city_geo_blocked: "Geografische Bedingungen unterstützen keine Großstadt"

@@ -1,15 +1,15 @@
 ﻿		rural_blacksmith_tools_maintenance = {
 			produced = tools
 			output = 0.5
-			iron = 0.4
+			iron = 0.25
 			coal = 0.1
 			category = guild_input
 		}
 
 		rural_tanner_livestock_maintenance = {
 			livestock = 0.5
-			sand = 0.35
-			tools = 0.075
+			sand = 0.25
+			tools = 0.035
 			produced = leather
 			output = 0.5
 			category = guild_input
@@ -17,8 +17,8 @@
 	
 		rural_tanner_wild_game_maintenance = {
 			wild_game = 0.75
-			sand = 0.35
-			tools = 0.075
+			sand = 0.25
+			tools = 0.035
 			produced = leather
 			output = 0.5
 			category = guild_input
@@ -28,7 +28,6 @@
 			produced = glass
 			output = 0.3
 			debug_max_profit = 0.15
-
 			sand = 1.0
 			category = guild_input
 		}
@@ -39,8 +38,8 @@
 			debug_max_profit = 0.15
 	
 			millet = 0.5
-			lumber = 0.1
-			tools = 0.07
+			lumber = 0.050
+			tools = 0.035
 			category = guild_input
 		}
 
@@ -49,7 +48,7 @@
 			output = 0.2
 			debug_max_profit = 0.15
 
-			lumber = 0.32
+			lumber = 0.15
 			category = guild_input
 		}
 
@@ -58,7 +57,7 @@
 			output = 0.1
 			debug_max_profit = 0.15
 
-			stone = 0.4
+			stone = 0.25
 			category = guild_input
 		}
 
@@ -67,6 +66,6 @@
 			output = 0.2
 			debug_max_profit = 0.15
 
-			clay = 0.33
+			clay = 0.15
 			category = guild_input
 		}
