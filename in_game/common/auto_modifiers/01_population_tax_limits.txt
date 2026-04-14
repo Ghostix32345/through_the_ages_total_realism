@@ -18,12 +18,11 @@ early_population_tax_resistance = {
 		min = 0
 		max = 0.1      # Cap at -10% tax limit (doesn't snowball in early game)
 	}
-	
-	# TEST: Set taxes to 0% above 1M population
-	global_estate_max_tax = -0.35		# Set to 0% (negates the 35% base)
+
+	global_estate_max_tax = -0.40		# Increased penalty
 	
 	# Slight unrest begins
-	local_unrest = 0.05					# +0.05 unrest per 1M
+	local_unrest = 0.08					# Increased unrest per 1M
 }
 
 # Moderate Population Pressure (3M+ inhabitants)
@@ -42,13 +41,14 @@ moderate_population_tax_resistance = {
 	}
 	
 	# Estate tax limits reduced significantly - organized resistance
-	global_estate_max_tax = -0.05		# -5% per bracket
+	global_estate_max_tax = -0.10		# Increased to -10% per bracket
 	
 	# Estate satisfaction starts declining faster
-	global_estate_satisfaction_decay = 0.01  # +0.01 faster decay
+	global_estate_satisfaction_decay = 0.02  # Increased decay
 	
 	# Unrest increases noticeably
-	local_unrest = 0.1					# +0.1 unrest per bracket
+	local_unrest = 0.15					# Increased unrest per bracket
+	monthly_rebel_growth = 0.0005		# Early rebellion formation
 }
 
 # High Population Strain (8M+ inhabitants)
@@ -68,14 +68,14 @@ high_population_tax_resistance = {
 	}
 	
 	# Significant tax limits reduced - major political resistance
-	global_estate_max_tax = -0.08		# -8% per bracket (FRANCE hits this hard)
+	global_estate_max_tax = -0.15		# Increased to -15% per bracket (FRANCE hits this hard)
 	
 	# Estate satisfaction becomes much harder to maintain
-	global_estate_satisfaction_decay = 0.015  # +0.015 faster decay per bracket
+	global_estate_satisfaction_decay = 0.03  # Increased decay per bracket
 	
 	# Unrest increases significantly
-	local_unrest = 0.2					# +0.2 unrest from population pressure
-	monthly_rebel_growth = 0.001		# Rebellions start forming
+	local_unrest = 0.3					# Increased unrest from population pressure
+	monthly_rebel_growth = 0.002		# Stronger rebellion growth
 }
 
 # Massive Population Crisis (20M+ inhabitants)
@@ -94,12 +94,12 @@ population_crisis_major = {
 	}
 	
 	# Tax collection becomes very difficult
-	global_estate_max_tax = -0.12		# -12% per bracket (severe)
+	global_estate_max_tax = -0.20		# Increased to -20% per bracket (severe)
 	
 	# Major governability crisis
-	monthly_rebel_growth = 0.002		# Rebellions spike
-	stability_decay = 0.001				# Stability decays faster
-	global_unrest = 0.3					# +0.3 global unrest per bracket
+	monthly_rebel_growth = 0.004		# Rebellions spike harder
+	stability_decay = 0.002				# Stability decays faster
+	global_unrest = 0.5					# Increased global unrest per bracket
 }
 
 # Extreme Population Crisis (35M+ inhabitants)
@@ -118,12 +118,12 @@ population_crisis_extreme = {
 	}
 	
 	# Tax collection becomes nearly impossible
-	global_estate_max_tax = -0.15		# -15% per bracket (severe penalty)
+	global_estate_max_tax = -0.25		# Increased to -25% per bracket (severe penalty)
 	
 	# Massive governability crisis
-	monthly_rebel_growth = 0.004		# Rebellions spike dramatically
-	stability_decay = 0.002				# Stability rapidly decays
-	global_unrest = 0.5					# +0.5 global unrest per bracket
+	monthly_rebel_growth = 0.008		# Rebellions spike dramatically
+	stability_decay = 0.004				# Stability rapidly decays
+	global_unrest = 0.8					# Massively increased global unrest per bracket
 	
 	# Society becomes potentially destabilized
 	monthly_towards_egalitarian = societal_value_monthly_move  # Push toward revolution
