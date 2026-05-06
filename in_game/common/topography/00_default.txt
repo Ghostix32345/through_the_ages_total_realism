@@ -10,7 +10,8 @@ flatland = {
 	weather_cyclone_strength_change_percent = 0
 	weather_tornado_strength_change_percent = 0
 
-	# MOD: Production bonuses
+	# MOD: TTA Production bonuses
+	# MOD: Production penalties (0.60 = 60% output)
 	location_modifier = {
 		local_fish_output_modifier = 0.15
 		local_clay_output_modifier = 0.20
@@ -46,13 +47,13 @@ mountains = {
 		blocks_vision_from_land = yes
 		blocks_vision_from_sea = yes
 
-		# MOD: Production bonuses
+		# MOD: Production penalties
 		local_silver_output_modifier = 0.60
 		local_stone_output_modifier = 0.55
 		local_mercury_output_modifier = 0.55
 		local_gems_output_modifier = 0.60
 		
-		# MOD: RGO size modifier
+		# MOD: RGO size modifier (reduces production further)
 		local_max_rgo_size_modifier = -0.50
 	}
 	
@@ -83,13 +84,13 @@ hills = {
 		blocks_vision_from_land = yes
 		blocks_vision_from_sea = yes
 
-		# MOD: Production bonuses
+		# MOD: Production penalties
 		local_alum_output_modifier = 0.30
 		local_coffee_output_modifier = 0.35
 		local_copper_output_modifier = 0.25
 		local_goods_gold_output_modifier = 0.30
 		
-		# MOD: RGO size modifier
+		# MOD: RGO size modifier (reduces production further)
 		local_max_rgo_size_modifier = -0.15
 	}
 	
@@ -118,13 +119,13 @@ plateau = {
 		local_monthly_development_modifier = -0.10
 		blocks_vision_from_sea = yes
 
-		# MOD: Production bonuses
+		# MOD: Production penalties
 		local_salt_output_modifier = 0.15
 		local_sand_output_modifier = 0.15
 		local_saffron_output_modifier = 0.25
 		local_maize_output_modifier = 0.30
 		
-		# MOD: RGO size modifier
+		# MOD: RGO size modifier (reduces production further)
 		local_max_rgo_size_modifier = -0.20
 	}
 	
@@ -151,13 +152,13 @@ wetlands = {
 		local_monthly_development_modifier = -0.30
 		local_monthly_food_modifier = -0.1
 
-		# MOD: Production bonuses
+		# MOD: Production penalties
 		local_cotton_output_modifier = 0.30
 		local_rice_output_modifier = 0.50
 		local_fish_output_modifier = 0.20
 		local_wild_game_output_modifier = 0.35
 		
-		# MOD: RGO size modifier
+		# MOD: RGO size modifier (reduces production further)
 		local_max_rgo_size_modifier = -0.30
 	}
 	
@@ -338,11 +339,11 @@ atoll = {
 	weather_cyclone_strength_change_percent = 0
 	weather_tornado_strength_change_percent = 0
 
-	# MOD: Production bonuses
+	# MOD: Production penalties
 	location_modifier = {
-		local_fish_output_modifier = 4.50    # +450%
-		local_fruit_output_modifier = 2.50   # +250%
-		local_salt_output_modifier = 2.50    # +250%
+		local_fish_output_modifier = 4.50    # reduced slightly
+		local_fruit_output_modifier = 2.50   # reduced
+		local_salt_output_modifier = 2.50    # reduced
 		local_lumber_output_modifier = -1.00 # -100% (penalty)
 		local_max_rgo_size_modifier = -0.85
 	}

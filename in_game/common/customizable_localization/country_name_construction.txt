@@ -1,33 +1,36 @@
 ﻿country_name_construction = {
 	type = country
 	text = {
-		localization_key = GKR
+		localization_key = country_name_construction_ROM_republic # Senatus Populusque Romanus
 		trigger = {
-			tag = GKR 
+			tag = ROM
+			government_type = government_type:republic
+
+			OR = {
+				court_language ?= language:latin_language
+				culture.language = language:latin_language
+			}
 		}
 	}
-
 	text = {
-		localization_key = GSF
+		localization_key = country_name_construction_BYZ_greek # Basileía Rhōmaíōn
 		trigger = {
-			tag = GSF 
+			has_game_rule = byz_name_greek
+
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+
+			country_rank = country_rank:rank_empire
+			government_type = government_type:monarchy
+
+			OR = {
+				court_language ?= language:greek_language
+				culture.language = language:greek_language
+			}
 		}
 	}
-
-	text = {
-		localization_key = GNF
-		trigger = {
-			tag = GNF 
-		}
-	}
-
-	text = {
-		localization_key = WPL
-		trigger = {
-			tag = WPL 
-		}
-	}
-
 	text = {
 		localization_key = country_name_construction_name
 		trigger = {
@@ -72,6 +75,7 @@
 			}
 		}
 	}
+
 	text = {
 		localization_key = country_name_construction_prefix_name_rank
 		trigger = {
@@ -83,6 +87,7 @@
 			tag = MAL
 		}
 	}
+
 	text = {
 		localization_key = country_name_construction_prefix_name
 		trigger = {
@@ -90,6 +95,14 @@
 			court_language ?= { language_family ?= language_family:chinese_language_family }
 		}
 	}
+
+	text = {
+		localization_key = country_name_construction_prefix_name_horde
+		trigger = {
+			government_type = government_type:steppe_horde
+		}
+	}
+
 	text = {
 		localization_key = country_name_construction_prefix_adjective_rank
 		trigger = {
@@ -125,15 +138,38 @@
 						country_rank = country_rank:rank_kingdom
 						country_rank = country_rank:rank_duchy
 					}
+					NOT = { tag = KNI }
 				}
-				AND = {
-					has_reform = government_reform:japanese_clan
-					country_rank = country_rank:rank_county
-				}
+				has_reform = government_reform:japanese_clan
 				country_type = pop
 			}
 		}
 	}
+
+	text = {
+		localization_key = country_name_construction_sultanate
+		trigger = {
+			religion.group = religion_group:muslim
+		}
+	}
+
+	text = {
+		localization_key = country_name_construction_crown
+		trigger = {
+
+			country_rank_is_kingdom = yes
+			OR = {
+				tag = ARA
+				tag = CAS
+				tag = POL
+				AND = {
+					tag = BOH
+					has_variable = crown_of_bohemia_variable
+				}
+			}
+		}
+	}
+
 	text = {
 		localization_key = country_name_construction_prefix_rank_of_name
 		fallback = yes
