@@ -1,0 +1,88 @@
+﻿# General actions of the Emperor
+REPLACE:enforce_landfriede = {
+	type = diplomacy
+	category = CATEGORY_HRE_ACTIONS
+	potential = {
+		scope:actor = {
+			modifier:allow_landfriede = yes
+			is_emperor = yes
+		}
+	}
+	allow = {
+		has_gold_org_country_trigger = {
+			international_organization = international_organization:hre
+			country = scope:actor
+			value = enforce_landfriede_cost
+		}
+	}
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:hre
+		}
+        enabled = {
+			any_current_war = {
+				NOT = { is_civil_war_for = prev }
+				attacker_leader = prev
+				defender_leader = { is_member_of_international_organization = international_organization:hre }
+			}
+			NOT = { is_at_war_with = scope:actor }
+		}
+	}
+	select_trigger = {
+		looking_for_a = war
+		source = recipient
+		target_flag = target
+		name = "enforce_landfriede_select_title"
+		none_available_msg_key = "enforce_landfriede_no_wars"
+		column = {
+			data = name
+		}
+		visible = {
+			attacker_leader = scope:recipient
+			defender_leader = { is_member_of_international_organization = international_organization:hre }
+		}
+		enabled = {
+			OR = {
+				is_no_cb_war = yes
+				casus_belli ?= {
+					NOT = { has_tag = cannot_be_enforced_peace_on }
+				}
+			}
+		}
+	}
+	effect = {
+		pay_gold_org_country_effect = {
+			international_organization = international_organization:hre
+			country = scope:actor
+			value = enforce_landfriede_cost
+		}
+		if = {
+			limit = { exists = scope:target }
+			scope:recipient = { white_peace = scope:target }
+		}
+		else = { custom_tooltip = select_a_war_to_leave }
+		scope:recipient = { add_opinion = { target = scope:actor modifier = opinion_forced_landfriede_upon } }
+	}
+	cooldown = {
+		type = enforce_landfriede
+		years = {
+			value = 15
+			if = {
+				limit = { scope:actor.modifier:landfriede_flat_cost >= -5 }
+				add = scope:actor.modifier:landfriede_cooldown
+			}
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "POLICY_BIAS_GOOD_IDEA"
+			value = 20
+		}
+	}
+}
