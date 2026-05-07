@@ -4,28 +4,21 @@
 # ============================================
 # CAN UPGRADE TO TOWN - Gate 1 Rules
 # ============================================
-# Max 2 towns OR 1 town + 1 city allowed
-# Allowed combinations: 0T/0C, 1T/0C, 2T/0C, 0T/1C, 1T/1C
+# Allowed: 2 Towns, 1T+1C, 1T+1M
+# So can upgrade if: 0T or (1T and 0C and 0M)
 
 can_upgrade_to_town_under_province_cap = {
     exists = province
     province = {
         OR = {
-            # 0 towns, 0 cities - allow first town
-            AND = {
-                NOT = {
-                    any_location_in_province = {
-                        location_rank = location_rank:town
-                    }
-                }
-                NOT = {
-                    any_location_in_province = {
-                        location_rank = location_rank:city
-                    }
+            # 0 towns - allow first town
+            NOT = {
+                any_location_in_province = {
+                    location_rank = location_rank:town
                 }
             }
             
-            # 1 town, 0 cities - allow second town
+            # 1 town, 0 cities, 0 megapolis - allow second town (becomes 2T)
             AND = {
                 any_location_in_province = {
                     location_rank = location_rank:town
@@ -36,18 +29,10 @@ can_upgrade_to_town_under_province_cap = {
                         location_rank = location_rank:city
                     }
                 }
-            }
-            
-            # 0 towns, 1 city - allow town (will result in 1T + 1C)
-            AND = {
                 NOT = {
                     any_location_in_province = {
-                        location_rank = location_rank:town
+                        location_rank = location_rank:megalopolis
                     }
-                }
-                any_location_in_province = {
-                    location_rank = location_rank:city
-                    count = 1
                 }
             }
         }
@@ -57,16 +42,96 @@ can_upgrade_to_town_under_province_cap = {
 # ============================================
 # CAN UPGRADE TO CITY - Gate 1 Rules
 # ============================================
-# Only blocked if a city already exists
-# Allows: 0T+0C→City, 1T+0C→City, 2T+0C→City (becomes 1T+1C after one town downgrades)
+# Can upgrade if: empty OR (1 Town, 0 City, 0 Megapolis)
 
 can_upgrade_to_city_under_province_cap = {
     exists = province
     province = {
-        # Only check: must not already have a city
-        NOT = {
-            any_location_in_province = {
-                location_rank = location_rank:city
+        OR = {
+            # Empty province - can create 1 City
+            AND = {
+                NOT = {
+                    any_location_in_province = {
+                        location_rank = location_rank:town
+                    }
+                }
+                NOT = {
+                    any_location_in_province = {
+                        location_rank = location_rank:city
+                    }
+                }
+                NOT = {
+                    any_location_in_province = {
+                        location_rank = location_rank:megalopolis
+                    }
+                }
+            }
+            
+            # 1 Town - can upgrade to 1T+1C
+            AND = {
+                any_location_in_province = {
+                    location_rank = location_rank:town
+                    count = 1
+                }
+                NOT = {
+                    any_location_in_province = {
+                        location_rank = location_rank:city
+                    }
+                }
+                NOT = {
+                    any_location_in_province = {
+                        location_rank = location_rank:megalopolis
+                    }
+                }
+            }
+        }
+    }
+}
+
+# ============================================
+# CAN UPGRADE TO MEGALOPOLIS - Gate 1 Rules
+# ============================================
+# Can upgrade if: empty OR (1 Town, 0 City, 0 Megapolis)
+
+can_upgrade_to_megalopolis_under_province_cap = {
+    exists = province
+    province = {
+        OR = {
+            # Empty province - can create 1 Megapolis
+            AND = {
+                NOT = {
+                    any_location_in_province = {
+                        location_rank = location_rank:town
+                    }
+                }
+                NOT = {
+                    any_location_in_province = {
+                        location_rank = location_rank:city
+                    }
+                }
+                NOT = {
+                    any_location_in_province = {
+                        location_rank = location_rank:megalopolis
+                    }
+                }
+            }
+            
+            # 1 Town - can upgrade to 1T+1M
+            AND = {
+                any_location_in_province = {
+                    location_rank = location_rank:town
+                    count = 1
+                }
+                NOT = {
+                    any_location_in_province = {
+                        location_rank = location_rank:city
+                    }
+                }
+                NOT = {
+                    any_location_in_province = {
+                        location_rank = location_rank:megalopolis
+                    }
+                }
             }
         }
     }

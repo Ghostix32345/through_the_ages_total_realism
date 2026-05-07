@@ -114,12 +114,12 @@ city = {
 		modifier:cannot_upgrade_location = no
 
 		custom_tooltip = {
-			text = urban_tt_city_gate1_cap
+			text = Großstadtgründungslimit
 			can_upgrade_to_city_under_province_cap = yes
 		}
 
 		custom_tooltip = {
-			text = urban_tt_city_geo_blocked
+			text = Großstadtgründungsbeschränkungen
 			location_allows_city_final = yes
 		}
 	}
@@ -172,12 +172,12 @@ town = {
 		modifier:cannot_upgrade_location = no
 
 		custom_tooltip = {
-			text = urban_tt_town_gate1_cap
+			text = Stadtgründungslimit
 			can_upgrade_to_town_under_province_cap = yes
 		}
 
 		custom_tooltip = {
-			text = urban_tt_town_geo_blocked
+			text = Stadtgründungsbeschränkungen
 			location_allows_town_final = yes
 		}
 	}
