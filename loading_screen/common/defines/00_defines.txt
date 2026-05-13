@@ -553,6 +553,7 @@ NAI = {
 	AI_UPGRADE_CITY_LOW_CURRENT_SAILORS_THRESHOLD = 0.2 # have less than 20% of maximum sailors
 	AI_UPGRADE_CITY_LOW_SAILORS_UTILITY = 0.025 # how strong the incentive is to build more costal cities when both above requirements are met
 	AI_ONGOING_CITY_UPGRADE_MULT = 0.5 # multiplicative score factor for each ongoing city upgrade
+	AI_UPGRADE_CITY_LOW_MANPOWER_UTILITY = 0.035 # AI desire to build more towns when limited on manpower
 	AI_CITY_UPGRADE_GOVERNOR_POTENTIAL_FACTOR = 0.4 # partial credit for city upgrade unlocking a potential local_governor hub site
 
 	AI_MIN_ALLOWED_URBANIZE_FOOD_LOCATION_RATIO = 0.2 # minimum ratio of food locations that is allowed to be cities based on market average market food yield
@@ -926,8 +927,8 @@ NAI = {
 	AI_NAVAL_RETREAT_MORALE_THRESHOLD = 1.5   # ...and our fleet morale has dropped below this value (50% of base naval morale 3.0)
 	AI_FLANK_ADVANTAGE_FRONTAGE_RATIO = 1.25  # Terrain retreat is suppressed if our possible frontage exceeds enemy's by this ratio
 	AI_TERRAIN_EFFECTIVENESS_FLOOR = 0.50     # Minimum terrain effectiveness multiplier applied to WinChance/Score during battle selection
-	AI_AWAIT_REINFORCING_ARMY_DISTANCE_MAX = 50 # above this map AI will wait for other collaborating armies before engaging their target
-	AI_AWAIT_REINFORCING_ARMY_DISTANCE_MIN = 35 # below this map distance collaborating armies are considered closed enough to start moving again
+	AI_AWAIT_REINFORCING_ARMY_DISTANCE_MAX = 35 # above this map AI will wait for other collaborating armies before engaging their target
+	AI_AWAIT_REINFORCING_ARMY_DISTANCE_MIN = 20 # below this map distance collaborating armies are considered closed enough to start moving again
 	AI_REINFORCE_ONGOING_BATTLE_DISTANCE = 2 # How many locations away AI will try and look to move their arimes to reinforce ongoing combat
 	AI_STICK_TO_SIEGE_TIME_FACTOR = 0.003 # extra score factor to prevent reassigning away from a sieging per day, 0.003 = 1/365 every year double score
 	AI_WAIT_FOR_JOINING_UNIT_STRENGTH_THRESHOLD = 0.33 # AI will wait for joining units if they are at least this strong of the target
@@ -1145,7 +1146,7 @@ NAI = {
 
 
 	AI_ENEMY_LAND_SUPREMACY_THRESHOLD = 3 # If enemies have this much more land armies than us and we are in a defensive war then we will hang back and defend
-	AI_REASSIGN_UNIT_THRESHOLD = 1.5 # how much more score is needed for a new objective in order for a unit to be reassigned to it
+	AI_REASSIGN_UNIT_THRESHOLD = 1.33 # how much more score is needed for a new objective in order for a unit to be reassigned to it
 	AI_MAX_RECRUIT_DISTANCE_FROM_UNIT = 500 # maximum distance allowed from where a unit recruit is started to which unit it is supposed to join into
 	MILITARY_ACCESS_MAX_OBJECTIVES = 3
 
@@ -1202,6 +1203,9 @@ NAI = {
 	AI_SUBJECTS_LOYALTY_UTILITY = 0.1
 	AI_ESTATE_ROADS_UTILITY = 10
 	AI_MERCENARY_COST_UTILITY = -0.15
+	AI_LOGISTIC_DISTANCE_UTILITY = 0.005
+	AI_LAND_MORALE_MODIFIER_UTILITY = 0.25
+
 	AI_GOVERNMENT_SIZE_UTILITY = 0.5
 	AI_SATISFACTION_RECOVERY_UTILITY = 5
 	AI_SATISFACTION_DECAY_UTILITY = -0.1
@@ -1380,6 +1384,7 @@ NCharacter = {
 	AI_MAX_FEMALE_MARRIAGE_AGE = 30
 	
 	OLD_AGE_MONTH_CHANCE = 3.0		#100 is dice roll
+	MAX_CHARACTER_AGE = 100			# hard cap; characters die when they reach this age
 	
 	MAX_PREGNANCY_AGE = 40		#blocked above this
 	PREGNANCY_AGE_THRESHOLD = 35
