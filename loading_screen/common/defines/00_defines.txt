@@ -99,7 +99,7 @@ NCountry = {
 
 
 	MONTHS_FOR_REBEL_UPRISING_EFFECT = 60
-	
+	SCRIPTED_CORE_DURATION_YEARS = 100	
 	REBEL_JOIN_OTHER_THRESHOLD = 0.75
 	 
 
@@ -640,7 +640,7 @@ NAI = {
 	AI_PERFORMANCE_ESTATE_PRIVILEGES_MONTHS_BETWEEN_UPDATES = 12 # Number of months between each AI update to change estate privileges
 	AI_PERFORMANCE_ESTATE_PRIVILEGES_UNUSED_TAX_MONTHS_BETWEEN_UPDATES = 2 # Number of months between each AI update to change estate privileges
 	AI_PERFORMANCE_SCHOLARS_MONTHS_BETWEEN_UPDATES = 6 #Number of months between each AI update to change religion scholars
-	AI_PERFORMANCE_TRADE_PROFIT_PER_WEIGHT_CUTOFF = 0.5 # If expected profit from a trade route is less than this amount per merchant capacity used we skip it
+	AI_PERFORMANCE_TRADE_PROFIT_PER_WEIGHT_CUTOFF = 0.25 # If expected profit from a trade route is less than this amount per merchant capacity used we skip it
 	AI_PERFORMANCE_TRADE_RANGE_SCALE_CUTOFF = 1.5 # If distance to market is more than country trade range times this we skip it
 
 	AI_PERFORMANCE_PATHFIND_DISTANCE_THRESHOLD = 100 # distance threshold for less accurate pathfind to save performance for ai, smaller threshold saves more performance
@@ -693,7 +693,7 @@ NAI = {
 	REGIMENT_RECRUITMENT_COST_FACTOR = 0.5 # multiplier for how much we care about the cost of regiments vs budget
 	
 	MONTHLY_MANPOWER_PER_BASE_TAX_REFERENCE = 0.04 # This is how big manpower pool AI wants based on each 100 taxbase
-	MAXIMUM_MANPOWER_MAXIMUM_VALUE = 0.5 # This is how hard they will try to reach their manpower pool target
+	MAXIMUM_MANPOWER_MAXIMUM_VALUE = 0.85 # This is how hard they will try to reach their manpower pool target
 	AI_ESSENTIAL_MANPOWER_UTILITY_VALUE = 0.25 # This is how hard they will try to reach their essential manpower pool target, which is enough to maintain their armies and have enough replenishment to rebuild them fast
 	
 	MONTHLY_SAILORS_PER_BASE_TAX_REFERENCE = 0.00016 # This much monthly_sailors per tax base will be used as "default" reference
@@ -788,8 +788,8 @@ NAI = {
 	MINIMUM_GALLEY_THRESHOLD = 0.33 # AI needs to have at least this many % of their coast be appropriate for galleys in order for galley to be allowed
 	AI_HEAVY_SHIP_RATIO_FOR_TRANSPORTS = 0.25 # AI wants this % of heavy ships to be part of their transport fleets for safety
 
-	AI_REQUIRED_SAILORS_SURPLUS_MARGIN = 0.33 # AI needs this much % of monthly sailors reserved for reinforcements
-	AI_REQUIRED_MANPOWER_SURPLUS_MARGIN = 0.33 # AI needs this much % of monthly manpower reserved for reinforcements
+	AI_REQUIRED_SAILORS_SURPLUS_MARGIN = 0.33333 # AI needs this much % of monthly sailors reserved for reinforcements
+	AI_REQUIRED_MANPOWER_SURPLUS_MARGIN = 0.33333 # AI needs this much % of monthly manpower reserved for reinforcements
 
 	HUNT_ARMIES_MAX_RADIUS = 20
 	HUNT_ARMIES_STAY_PRIO = 0.05 # This number works like a threshold for how important tasks should be for the AI to leave base
@@ -848,7 +848,7 @@ NAI = {
 	GO_LOOKING_FOR_FOOD_RANGE = 6 #how far supply wagons will wander looking for food
 	GO_LOOKING_FOR_FOOD_DISTANCE_IMPORTANCE = -1 #further away is worse
 	GO_LOOKING_FOR_FOOD_AMOUNT_IMPORTANCE = 3 #more is better
-	AI_AVOID_ATTRITION_MAX_PATH_FIND_DISTANCE = 100 # further distance can cost more performance
+	AI_AVOID_ATTRITION_MAX_PATH_FIND_DISTANCE = 7 # dinstance in locations AI will look for a safe spot to avoid attrition, further distance costs more performance
 
 	BATTLE_WIN_CHANCE_SENSITIVITY = 16
 	BATTLE_WIN_CHANCE_ENEMY_BIAS = 1.1
@@ -1974,7 +1974,7 @@ NDiplomacy = {
 	BATTLE_RESULT_CAP = 25
 
 	TRUCE_YEARS = 5
-	SCALED_TRUCE_YEARS = 15
+	SCALED_TRUCE_YEARS = 10
 	REVANCHISM_MONTHLY_DECAY = 0.833
 	
 	CASUS_BELLI_MONTHS = 60
