@@ -139,93 +139,39 @@ REPLACE:PRU = { # Preußen
 	}	
 }
 
-BRZ_f = { # Brazil
+REPLACE:TEU = { # Teutonic Order
 	flag_definition = {
-		coa = BRZ
-		priority = 10001 # Needed to override default random definition
+		coa = TEU_simple
+		priority = 1
 	}
 	flag_definition = {
-		coa = BRZ_empire
-		priority = 10002 # Needed to override default random definition
+		coa = TEU
+		priority = 10 # Starting
 		trigger = {
-			coa_def_monarchy_trigger = yes
+			coa_def_theocracy_trigger = yes
+			coa_def_duchy_or_higher_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = BRZ_minas
-		priority = 10003 # Needed to override default random definition
+		coa = TEU_merchant
+		priority = 100
 		trigger = {
 			coa_def_republic_trigger = yes
-			#scope:actor ?= {
-			#	capital = {
-			#		area = area:minas_gerais_area
-			#	}
-			#}
 		}
-	}
-	#flag_definition = {
-	#	coa = BRZ_conjuracao_bahiana
-	#	priority = 10004 # Needed to override default random definition
-	#	trigger = {
-	#		coa_def_republic_trigger = yes
-	#		scope:actor ?= {
-	#			capital = {
-	#				area = area:bahia_area
-	#			}
-	#		}
-	#	}
-	#}
-	#flag_definition = {
-	#	coa = BRZ_confederacao_do_equador
-	#	priority = 10005 # Needed to override default random definition
-	#	trigger = {
-	#		coa_def_republic_trigger = yes
-	#		scope:actor ?= {
-	#			capital = {
-	#				area = area:pernambuco_area
-	#			}
-	#		}
-	#	}
-	#}
+	}	
 	flag_definition = {
-		coa = BRZ_vera_cruz
-		allow_overlord_canton = no
-		priority = 10010
+		coa = TEU_merchant_late
+		priority = 101
 		trigger = {
-			coa_def_colonial_nation_trigger = yes
+			coa_def_republic_trigger = yes
+			coa_def_reformation_age_4_trigger = yes # or protestant
 		}
-	}
+	}	
 	flag_definition = {
-		coa = BRZ_armillary
-		allow_overlord_canton = no
-		priority = 10011
+		coa = TEU_tricolor
+		priority = 200
 		trigger = {
-			coa_def_colonial_nation_trigger = yes
-			coa_def_absolutism_age_5_trigger = yes
+			coa_def_revolutionary_republic_trigger = yes
 		}
-	}
-	flag_definition = {
-		coa = BRZ_united_kingdom
-		allow_overlord_canton = no
-		priority = 10012
-		trigger = {
-			#TODO once we implement a proper united kingdom, update trigger
-			coa_def_colonial_nation_trigger = yes
-			coa_def_revolutions_age_6_trigger = yes
-		}
-	}
-}
-
-MEX = {
-	flag_definition = {
-		coa = MEX
-		priority = 10001 # Needed to override default random definition
-	}
-	flag_definition = {
-		coa = MEX_colonial
-		priority = 10010 
-		trigger = {
-			coa_def_colonial_nation_trigger = yes
-		}
-	}
+	}	
 }
