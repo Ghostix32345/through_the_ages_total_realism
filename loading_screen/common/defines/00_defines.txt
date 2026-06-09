@@ -1699,8 +1699,8 @@ NMarket = {
 	MIN_PRICE_IMPACT = -0.33
 	MAX_PRICE_IMPACT = 3.0
 
-	DEMAND_ELASTICITY_COEFFICIENT = 0.40	# demand drops 40% per 100% above default price; replaced per-tier when pop needs tiers (1.5) lands
-	DEMAND_ELASTICITY_FLOOR = 0.35			# minimum demand as fraction of base, regardless of price
+	DEMAND_ELASTICITY_COEFFICIENT = 0	# demand drops 40% per 100% above default price; replaced per-tier when pop needs tiers (1.5) lands
+	DEMAND_ELASTICITY_FLOOR = 0		# minimum demand as fraction of base, regardless of price
 	
 	FOOD_CAPACITY_FACTOR = 1.0
 	
@@ -1720,14 +1720,6 @@ NMarket = {
 	MARKET_DOWNSTREAM_FACTOR = 0.5 # downstream is great!
 	MARKET_UPSTREAM_FACTOR = 0.9	#better upstream than not..
 
-	# Withering markets: a market with <= MARKET_WITHERING_LOCATION_THRESHOLD locations that has been
-	# at or below the threshold for MARKET_WITHERING_GRACE_MONTHS months AND is outclassed for at least
-	# MARKET_WITHERING_OUTCLASSED_FRACTION of its locations gets flagged as withering. AI gets a destroy
-	# bias and a player-facing event fires on the on_market_withering_started on_action.
-	MARKET_WITHERING_LOCATION_THRESHOLD = 5
-	MARKET_WITHERING_GRACE_MONTHS = 24
-	MARKET_WITHERING_OUTCLASSED_FRACTION = 0.5
-	
 	# additive
 	MARKET_NO_PORT_EXTRA_DISTANCE = 0.1 # Absolute access penalty for going between land and sea without port
 	MARKET_PORT_EXTRA_DISTANCE = 0.02 # Access penalty for going between land and sea with port, scaled with 1-harbor suitability
