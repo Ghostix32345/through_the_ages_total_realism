@@ -369,7 +369,7 @@ NUnit = {
 	FALLING_THROUGH_ICE_MIN_PROPORTION_TO_ESCAPE = 0.5
 
 	DEPOSIT_FOOD_FRACTION = 0.25
-	SUPPLY_DEPOT_FOOD_FRACTION = 0.1
+	SUPPLY_DEPOT_FOOD_FRACTION = 0.5
 	
 	PATHFIND_NON_COASTAL_PENALTY_FACTOR = 10 # How less likely is the pathfinding to select locations that aren't coastal when finding a path for navies, 0 = same as coastal
 
@@ -608,7 +608,8 @@ NAI = {
 	FOOD_NEGATIVE_IN_PROV_UTILITY = 0.1
 	AI_ALLOWED_FORT_BUDGET = 0.1 # % of income allowed fort maintenance, normalized to full slider value
 	AI_ALLOWED_BUILDING_MAINTENANCE = 0.25 # % of income allowed for building maintenance excluding forts, only used to close or reopen buildings during crisis
-	
+	AI_BUILDING_MAINTENANCE_LEEWAY = 1.20 # How much above the maintenance budget AI can be before they start closing buildings
+
 	AI_STEAL_MERCHANT_CAPACITY_PROFIT_MARGIN = 1.25 # AI will remove merchant capacity from low profit and move it to high profit if its this much more profitable
 	AI_STEAL_MERCHANT_CAPACITY_RATIO = 0.1 # How much in % that AI can move their trade capacity from low to high profit per month
 	AI_MINIMUM_TRADE_SIZE = 0.5 # AI will avoid to make trades smaller than this whenever possible
@@ -771,8 +772,8 @@ NAI = {
 	ROAD_MARKET_VALUE_FLOW_FACTOR_FOR_ESTATES = 0.5 # how much AI cares about building roads that increase the flow towards market capital, when estates build roads
 
 	AI_ROAD_TAX_ESTIMATE_MULTIPLIER = 1.5 # AI score multiplier for building roads towards taxbase
-	AI_POPULATION_PROPAGATION_UTIL = 300 # AI willingness to build roads towards population (% share of country) 
-	AI_TAXBASE_PROPAGATION_UTIL = 1 # AI willingness to build roads towards taxbase
+	AI_POPULATION_PROPAGATION_UTIL = 25 # AI willingness to build roads towards population (% share of country) 
+	AI_TAXBASE_PROPAGATION_UTIL = 0.5 # AI willingness to build roads towards taxbase
 
 	MONTHLY_INFLATION_COST_PER_TAX_BASE = 0.33
 
@@ -874,7 +875,7 @@ NAI = {
 	RELEVANT_NAVY_MIN_RAW_STRENGTH = 0.025 # How many levies to even worth considering raising
 
 	AI_MAXIMUM_ARMY_VS_NAVY_BUDGET_ALLOCATION = 0.75 # maximum allocation budget for land vs navy based on society value
-	AI_MAINTENANCE_BUDGET_RATIO = 0.3 # How much of monthly income on maximum sliders is allocated for maintenance budget of armies and navies
+	AI_MAINTENANCE_BUDGET_RATIO = 0.2 # How much of monthly income on maximum sliders is allocated for maintenance budget of armies and navies
 	AI_MAINTENANCE_BUDGET_RATIO_AGE_INCREASE = 0.025	#how much every age adds.
 
 	SUPPLY_DEPOT_RANGE = 2 #how far away a supply depot can be to be used by a unit
@@ -1252,7 +1253,7 @@ NAI = {
 	AI_POP_FOOD_CONSUMPTION_MODIFIER_UTILITY = -0.05
 	AI_GARRISON_SIZE_UTILITY = 0.05
 	AI_DIPLOMATIC_CAPACITY_UTILITY = 0.05
-	AI_DIPLOMAT_UTILITY = 0.1 # utility for having diplomats, increased x10 when needed for import diplo actions like peacing out
+	AI_DIPLOMAT_UTILITY = 0.0075 # utility for having diplomats, increased x10 when needed for import diplo actions like peacing out
 	AI_ANNEX_UTILITY = 0.25 # utility for base annexation speed per ongoing annexation, diminishing quadratic 
 	AI_ANNEX_UTILITY_OTHER_SUBJECTS = 0.05 #utility for base annexation speed for every other vassal not being annexed, important due to modifiers related to relatvie subject tax base on crown power
 	AI_LOCAL_TRADES_PER_BURGHER_UTILITY = 0.001
@@ -1261,6 +1262,9 @@ NAI = {
 	AI_MERCENARY_COST_UTILITY = -0.15
 	AI_LOGISTIC_DISTANCE_UTILITY = 0.005
 	AI_LAND_MORALE_MODIFIER_UTILITY = 0.25
+	AI_LAND_MORALE_UTILITY = 0.15
+	AI_LAND_MORALE_ATTRITION_UTILITY = -4.5
+	AI_LAND_MORALE_MOVEMENT_COST_UTILITY = -50
 
 	AI_GOVERNMENT_SIZE_UTILITY = 0.5
 	AI_SATISFACTION_RECOVERY_UTILITY = 5
@@ -1276,7 +1280,7 @@ NAI = {
 	AI_CALL_FOR_PEACE_CHANCE_MULTIPLIER = 0.25
 	AI_CONQUER_TREATY_DESIRE_FROM_WORTH_MULT = 5
 	AI_CONQUER_TREATY_DESIRE_NOT_WARGOAL_MULT = 0.5
-	AI_CHILD_EDUCATION_CHANGE_THRESHOLD = 200
+	AI_CHILD_EDUCATION_CHANGE_THRESHOLD = 5
 	AI_CONQUER_TREATY_DESIRE_WARGOAL_BASE = 2
 	AI_CONQUER_TREATY_DESIRE_SAME_PROVINCE = 3
 	AI_CONQUER_LOCATION_TREATY_BASE_SCORE = 3				# base score for AI to pick locations in war goal
@@ -1598,15 +1602,11 @@ NEstate = {
 	ESTATE_CULTURE_ACCEPTED_SATISFACTION      = -0.05
 	ESTATE_CULTURE_TOLERATED_SATISFACTION     = -0.10
 	ESTATE_CULTURE_DISCRIMINATED_SATISFACTION = -0.20
-	ESTATE_RELIGION_HERETIC_SATISFACTION      = -0.10
-	ESTATE_RELIGION_HEATHEN_SATISFACTION      = -0.20
 	ESTATE_RELIGION_TOLERANCE_SCALE           =  0.02
 
 	ESTATE_CULTURE_ACCEPTED_POWER             = -0.05
 	ESTATE_CULTURE_TOLERATED_POWER            = -0.10
 	ESTATE_CULTURE_DISCRIMINATED_POWER        = -0.20
-	ESTATE_RELIGION_HERETIC_POWER             = -0.10
-	ESTATE_RELIGION_HEATHEN_POWER             = -0.20
 
 	ESTATE_DISCRIMINATED_CULTURE_POWER_ALERT_THRESHOLD = 0.10
 	ESTATE_TOLERATED_CULTURE_POWER_ALERT_THRESHOLD     = 0.20
@@ -1699,8 +1699,8 @@ NMarket = {
 	MIN_PRICE_IMPACT = -0.33
 	MAX_PRICE_IMPACT = 3.0
 
-	DEMAND_ELASTICITY_COEFFICIENT = 0	# demand drops 40% per 100% above default price; replaced per-tier when pop needs tiers (1.5) lands
-	DEMAND_ELASTICITY_FLOOR = 0		# minimum demand as fraction of base, regardless of price
+	DEMAND_ELASTICITY_COEFFICIENT = 0.40	# demand drops 40% per 100% above default price; replaced per-tier when pop needs tiers (1.5) lands
+	DEMAND_ELASTICITY_FLOOR = 0.35			# minimum demand as fraction of base, regardless of price
 	
 	FOOD_CAPACITY_FACTOR = 1.0
 	
@@ -1720,6 +1720,14 @@ NMarket = {
 	MARKET_DOWNSTREAM_FACTOR = 0.5 # downstream is great!
 	MARKET_UPSTREAM_FACTOR = 0.9	#better upstream than not..
 
+	# Withering markets: a market with <= MARKET_WITHERING_LOCATION_THRESHOLD locations that has been
+	# at or below the threshold for MARKET_WITHERING_GRACE_MONTHS months AND is outclassed for at least
+	# MARKET_WITHERING_OUTCLASSED_FRACTION of its locations gets flagged as withering. AI gets a destroy
+	# bias and a player-facing event fires on the on_market_withering_started on_action.
+	MARKET_WITHERING_LOCATION_THRESHOLD = 5
+	MARKET_WITHERING_GRACE_MONTHS = 24
+	MARKET_WITHERING_OUTCLASSED_FRACTION = 0.5
+	
 	# additive
 	MARKET_NO_PORT_EXTRA_DISTANCE = 0.1 # Absolute access penalty for going between land and sea without port
 	MARKET_PORT_EXTRA_DISTANCE = 0.02 # Access penalty for going between land and sea with port, scaled with 1-harbor suitability
@@ -1753,8 +1761,10 @@ NMarket = {
 
 	MARKET_FOOD_STOCKPILE_TRESHOLD_MONTHS = 24.0
 
-	MARKET_MIN_STOCKPILE_TO_ALLOW_EXTRA_TRADE = 0.5
-	MARKET_STOCKPILE_PERCENTAGE_FOR_EXTRA_TRADE = 0.05
+	MARKET_MIN_STOCKPILE_TO_ALLOW_EXTRA_TRADE = 0.5 # At this stockpile percentage, it will start adding supply from stockpile
+	MARKET_STOCKPILE_FULL_EXTRA_TRADE_THRESHOLD = 0.75 # The supply from stockpile increases linearly, maxing out at this value
+	MARKET_STOCKPILE_PERCENTAGE_FOR_EXTRA_TRADE = 0.05 # When supply reaches MARKET_STOCKPILE_FULL_EXTRA_TRADE_THRESHOLD, it will add maximum of this value.
+	STOCKPILE_TRADE_IMPACT_ON_SUPPLY_SCALE = 0 # How much of the stockpile bleed (the extra-trade supply produced when stockpile > MARKET_MIN_STOCKPILE_TO_ALLOW_EXTRA_TRADE) counts toward price-formation supply. 0 = stockpile fill never suppresses price; only feeds trade routing.
 
 	MARKET_WASTED_MANUAL_TRADE_CAPACITY_TRESHOLD = 0.1
 }
@@ -2163,9 +2173,6 @@ NDiplomacy = {
 	TRUST_CHANGE_BREAK_TRUCE_IN_RANGE = -5
 	TRUST_CHANGE_CALL_TO_ARMS_REJECTED = -25
 
-	ECO_GROWTH_TRUST_SIZE_WEIGHT_FLOOR = 0.0   # 0 = pure linear scaling by relative economic size; raise to keep a minimum penalty against small growers
-	ECO_GROWTH_TRUST_OUT_OF_RANGE_FLOOR = 0.25 # Multiplier on the growth penalty when the grower is outside our diplomatic range
-
 	IMMEDIATE_TRUST_FACTOR_FROM_PROFESS_TRUST = 0.5
 	PROFESS_TRUST_COOLDOWN_MONTHS = 24
 	MARITIME_EXIT_WEIGHT = 20
@@ -2180,8 +2187,8 @@ NDiplomacy = {
 	
 	INFILTRATE_ADMINISTRATION_DURATION = 24
 	
-	GREAT_POWER_POINTS_THRESHOLD = 30		# GP points needed to be a Great Power (placeholder, needs calibration)
-	REGIONAL_POWER_POINTS_THRESHOLD = 15	# GP points needed to be a Regional Power (placeholder, needs calibration)
+	GREAT_POWER_POINTS_THRESHOLD = 40		# GP points needed to be a Great Power
+	REGIONAL_POWER_POINTS_THRESHOLD = 20	# GP points needed to be a Regional Power
 	GREAT_POWER_AREA_WEALTH_DIVISOR = 5		# median_tax_base / this = unit for area point scaling (median area = 5 pts)
 	
 	HEGEMONY_LOST_MONTHS = 120
