@@ -65,6 +65,7 @@ location_gate3_allows_city = {
 	OR = {
 		vegetation = grasslands
 		vegetation = farmland
+		vegetation = wetlands
 		AND = {
 			vegetation = woods
 			NOT = { topography = mountains }
