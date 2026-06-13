@@ -1,0 +1,25 @@
+# UGM always-on country modifiers.
+# Blocks in this directory are applied to every country automatically (player,
+# AI, and tags formed or released mid-game), the AI understands them, and
+# tooltips are generated. This is how UGM's core rebalance layer is applied
+# unconditionally rather than through a togglable setting.
+#
+# The values mirror the named static modifiers UGM previously applied:
+#   ugm_disease_dampener, ugm_pop_growth_baseline, ugm_soldier_replenishment,
+#   ugm_culture_capacity, ugm_complacency_relief, ugm_merc_costs_up,
+#   ugm_ai_aggression (the AI-behaviour entries below).
+# The aggression entries are AI-behaviour only and have no effect on a human
+# player, so applying the whole block to all countries keeps player and AI in
+# parity on the rebalance values while only the AI acts on the drive entries.
+
+ugm_rebalance_base = {
+	requires_real = no
+
+	# Mercenary cost layer: hire premium up, upkeep efficiency down.
+	# Re-anchored to the higher vanilla hire base (the patched +33% premium), so the
+	# always-on surcharge is kept gentle and does not double-tax small defenders on top
+	# of the base. The stacked-discount floor caps the abuse case separately.
+	hire_mercenary_premium_cost_modifier = 0.15
+	mercenary_maintenance_efficiency = -0.15
+
+}

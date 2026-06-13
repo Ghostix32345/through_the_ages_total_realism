@@ -1,0 +1,13 @@
+# Mercenary hire-discount overage.
+#
+# How far the net hire-mercenary discount has walked below the floor (-0.45),
+# expressed as a positive number. The monthly pulse passes this as the size of the
+# compensating modifier, which carries a +1.0 value, so the net is lifted back to
+# exactly the floor. Evaluated only after the floor modifier has been removed, so the
+# reading reflects only the underlying discount stack and never the compensation
+# itself. Reads zero or negative for any country already at or above the floor; the
+# pulse only applies it inside the below-floor branch.
+ugm_merc_discount_floor_overage = {
+	value = -0.45
+	subtract = modifier:hire_mercenary_premium_cost_modifier
+}

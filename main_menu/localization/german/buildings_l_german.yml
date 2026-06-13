@@ -1072,6 +1072,9 @@
  #Lucca
  walls_of_lucca: "Mauern von $lucca$"
  walls_of_lucca_desc: "The defense of the people is what matters the most for the watch. It is why these walls exist: to ensure no civilian dies."
+ lucca_silk_production_guild: "Seidenhandwerkszunft von Lucca"
+ lucca_silk_production_guild_desc: "Da man hier die Würmer mit Faserpflanzen füttern kann, um Seide herzustellen, ist es diesem Standort gelungen, eine autonome Produktionsmethode zu etablieren, die nicht von der Seidenstraße abhängig ist." 
+ 
  #Pisa
  porto_pisano: "Porto Pisano"
  porto_pisano_desc: "The great port of [ShowLocationName('pisa')] is the lifeblood of its owner. It is the point where the wealth of distant seas flows back into our coffers, welcoming traders and goods from all ports."

@@ -1,0 +1,19 @@
+# UGM named modifiers for the mercenary cost layer.
+# EU5 surface verified: vanilla static_modifiers country.txt uses
+#   hire_mercenary_premium_cost_modifier, mercenary_maintenance_efficiency.
+# All applied via apply_modifier = all:<key> from game rules (player + AI parity).
+
+# === II. Mercenaries - cost layer (default ON) ===========================
+# Hits both ends of the merc lifecycle: hiring premium and ongoing efficiency.
+# Negative mercenary_maintenance_efficiency means lower efficiency = costlier upkeep.
+# Positive hire_mercenary_premium_cost_modifier means costlier to hire.
+# The default is tuned so a small, wealthy power can no longer keep a standing
+# mercenary host far larger than its own levies: hiring carries a premium and
+# upkeep efficiency is cut, so a large merc army steadily drains the treasury.
+# Re-anchored to the higher vanilla hire base so the surcharge stays gentle.
+# Hardcore pushes both further.
+ugm_merc_costs_up = {
+	game_data = { category = country }
+	hire_mercenary_premium_cost_modifier = 0.15
+	mercenary_maintenance_efficiency = -0.15
+}
