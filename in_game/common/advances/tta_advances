@@ -1,0 +1,8 @@
+REPLACE:napoleonic_warfare = {
+	age = age_6_revolutions
+	icon = expansionism
+	
+	requires = military_tactics_advance_6
+
+	antagonism_received_modifier = -0.1
+}
