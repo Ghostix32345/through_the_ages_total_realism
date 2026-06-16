@@ -6732,7 +6732,7 @@
 # Age 7 - Nationalism
 
  age_format_age_7_nationalism: "Zeitalter des $age_7_nationalism$"
- age_format_age_7_nationalism_desc: "Die Welt hat sich nach den Umwälzungen der vorangegangenen Zeitalter neu geordnet. In diesem Zeitalter des $age_7_nationalism$ erleben wir die Blütezeit von Nationalismus, der die politische Landschaft prägt und die Identität von Nationen stärkt. Es ist eine Zeit des Aufstiegs von Nationalstaaten, der kulturellen Erneuerung und der Suche nach nationaler Einheit inmitten von Herausforderungen und Konflikten."
+ age_7_nationalism_desc: "Die Welt hat sich nach den Umwälzungen der vorangegangenen Zeitalter neu geordnet. In diesem Zeitalter des $age_7_nationalism$ erleben wir die Blütezeit von Nationalismus, der die politische Landschaft prägt und die Identität von Nationen stärkt. Es ist eine Zeit des Aufstiegs von Nationalstaaten, der kulturellen Erneuerung und der Suche nach nationaler Einheit inmitten von Herausforderungen und Konflikten."
  age_7_nationalism: "Nationalismus"
 
  # Institutions Nationalism
@@ -6751,7 +6751,7 @@
  national_consciousness_advance: "Nationale Bewusstsein"
  national_consciousness_advance_desc: "Nach Jahrzehnten von Krieg und Revolution erwacht in unserer Nation ein tiefes Bewusstsein für die Einheit von Volk, Sprache und Schicksal. Die Ideen der Aufklärung haben sich unter gebildeten Schichten ausgebreitet und geben uns ein neues Verständnis von Gemeinschaft und Zusammenhalt. Was früher nur dynastisches Interesse war, wird nun zu einer kraftvollen Kraft, die alle Stände durchzieht."
  
- patriotic_education: "Vaterlandische Erziehung"
+ patriotic_education: "Vaterländische Erziehung"
  patriotic_education_desc: "Mit gezielter Schulbildung und patriotischer Erziehung formen wir eine neue Generation von Bürgern, die ihre Identität mit unserem Staat verknüpfen. Nationale Geschichte, heimische Literatur und Stolz auf gemeinsame Ursprünge werden zur Grundlage der Erziehung. Jedes Kind lernt, sich als Teil eines größeren Ganzen zu begreifen - nicht nur als Untertan, sondern als Mitglied einer nationalen Gemeinschaft."
  
  national_identity_promotion: "Förderung der nationalen Identität"
@@ -6793,7 +6793,7 @@
  standardized_national_currency: "Standardisierte Nationale Währung"
  standardized_national_currency_desc: "Eine einheitliche Währung ersetzt das Chaos verschiedener lokaler Münzen und Maße. Dies vereinfacht nicht nur den Handel, sondern symbolisiert auch die wirtschaftliche Einheit unserer Nation. Der Name unserer Währung, geprägt in der Form unserer Symbole, wird zum greifbaren Zeichen unserer nationalen Souveränität."
  
- national_labor_organization: "Nationale Arbeitsorganisation"
+ national_labor_organization: "Nationale Gewerkschaften"
  national_labor_organization_desc: "Die wachsende Arbeiterklasse organisiert sich auf nationaler Ebene, bildet Verbände und Zünfte. Diese Organisationen regeln Arbeitsbedingungen und Löhne, während sie gleichzeitig nationale Zusammengehörigkeitsgefühle fördern. Der einfache Arbeiter erkennt, dass er nicht allein steht, sondern Teil eines größeren, organisierten Systems ist."
  
  nationalist_monument_construction: "Bau nationaler Denkmäler"
@@ -6814,8 +6814,11 @@
  industrial_expansion_advance: "Industrielle Expansion"
  industrial_expansion_advance_desc: "Die Industrie wird zur treibenden Kraft unserer Wirtschaft. Manufakturen werden zu Fabriken, Handwerk zum Massengewerbe. Überall entstehen Schornsteine, die den Himmel verdunkeln und die Ankunft einer neuen Ära verkünden. Der Wohlstand unserer Nation gründet sich nun nicht mehr auf Landwirtschaft und Handel allein, sondern auf die rohe Produktivkraft der Maschinen."
  
+ industrial_printing: "Industrieller Druck"
+ industrial_printing_desc: "Die Erfindung der Dampfmaschine revolutioniert die Druckindustrie. Zeitungen, Bücher und Zeitschriften werden in Massen produziert, verbreiten Informationen und Ideen schneller als je zuvor. Die Verbreitung von Wissen wird demokratisiert, und die öffentliche Meinung erhält eine neue Stimme. Der Druck wird zum Motor der Aufklärung und des gesellschaftlichen Wandels."
+
  textile_mechanization: "Mechanisierung der Textilproduktion"
- textile_mechanization_desc: "Die Spinnerei und Weberei werden revolutioniert durch mechanische Maschinen. Was einst Hunderte von Handwerkern beschäftigte, erledigen nun einige Maschinen und ihre Bediener. Die Produktion von Stoffen explodiert, Preise fallen, und Textilien - einst Luxus - werden zur alltäglichen Ware. Ganz England, und bald wir, zittern unter dem Dröhnen dieser neuen Macht."
+ textile_mechanization_desc: "Die Spinnerei und Weberei werden revolutioniert durch Maschinen. Was einst Hunderte von Handwerkern beschäftigte, erledigen nun einige Maschinen und ihre Bediener. Die Produktion von Stoffen explodiert, Preise fallen, und Textilien - einst Luxus - werden zur alltäglichen Ware. Ganz England, und bald wir, zittern unter dem Dröhnen dieser neuen Macht."
  
  steam_engine_perfection: "Perfektionierung der Dampfmaschine"
  steam_engine_perfection_desc: "Die Dampfmaschine wird zur Seele der industriellen Revolution. Ingenieure perfektionieren ihre Konstruktion, erhöhen Effizienz und Leistung. Dampf treibt nun nicht nur Pumpen an - er bewegt Maschinen in Fabriken, Lokomotiven auf Schienen, Schiffe über Ozeane. Dieses Ungeheuer von Eisen und Dampf wird zum Symbol unserer Ära."
@@ -6841,9 +6844,15 @@
  factory_labor_organization: "Fabrikarbeiterorganisation"
  factory_labor_organization_desc: "Die Arbeiter in den Fabriken erkennen ihre Kraft durch Organisation. Zünfte bilden sich neu, diesmal nicht als Handwerkverbände, sondern als Interessenvertreter der modernen Arbeiter. Sie verhandeln Löhne und Bedingungen, bestimmen Arbeitsstunden und Sicherheit. Eine neue Form der ständischen Organisation entsteht."
  
- chemical_industry: "Chemieindustrie"
- chemical_industry_desc: "Aus Steinkohle und anderen Rohstoffen lernen wir, neue Stoffe zu schaffen: Farben, Säuren, künstliche Düngemittel. Die Chemie wird zur angewandten Wissenschaft in massivem Maßstab. Chemische Fabriken entstehen neben den Kohleminen und Eisenhütten, ein neuer Zweig des industriellen Baums."
+ biology: "Biologie"
+ biology_desc: "Die Wissenschaft des Lebens wird systematisiert und erweitert. Biologen kartieren die Vielfalt der Flora und Fauna, entdecken neue Arten und verstehen die komplexen Zusammenhänge des Lebens. Medizinische Fortschritte folgen, während wir Krankheiten bekämpfen und die menschliche Gesundheit verbessern."
+
+ microbiology: "Mikrobiologie"
+ microbiology_desc: "Die Entdeckung von Mikroorganismen eröffnet eine neue Welt. Wissenschaftler wie Louis Pasteur die Existenz von Bakterien, Viren und anderen winzigen Lebensformen.
  
+ medical_bacteriology: "Medizinische Bakteriologie"
+ medical_bacteriology_desc: "Die Erkenntnis, dass Bakterien Krankheiten verursachen können wurde von Robert Koch und anderen Pionieren der medizinischen Bakteriologie vorangetrieben. Diese Entdeckung revolutioniert die Medizin, ermöglicht die Entwicklung von Impfstoffen und Antibiotika und verbessert die öffentliche Gesundheit dramatisch."
+
  electrical_power_generation: "Stromerzeugung"
  electrical_power_generation_desc: "Eine neue Form der Energie wird gezähmt: Strom. Generatoren, angetrieben von Dampfmaschinen, erzeugen elektrischen Strom. Noch sind es nur Laboratorien und wenige Fabriken, die diesen wunderlichen Energieträger nutzen, doch seine Potential ist grenzenlos. Die Zukunft wird von Blitzen durchzogen sein."
  
@@ -6874,6 +6883,15 @@
  military_reforms_advance: "Militärreformen"
  military_reforms_advance_desc: "Die Armeen früherer Epochen werden obsolet. Neue Theorien über Krieg, Strategie und Organisation revolutionieren unsere Militärstruktur. Preußische Generalstäbe werden zum Vorbild, französische Revolutionskriege zu Lehrbeispielen. Das Militär wird zur wissenschaftlich geleiteten Institution, nicht mehr zum persönlichen Gefolge eines Fürsten."
  
+ fortified_artillery_positions: "Befestigte Artilleriestellungen"
+ fortified_artillery_positions_desc: "Die Artillerie wird zur dominierenden Waffe auf dem  Schlachtfeld. Um sie zu schützen, errichten wir befestigte Stellungen - Erdwälle, Gräben und Betonbunker. Diese Festungen bieten Schutz vor feindlichem Feuer und ermöglichen es unseren Kanonen, ungestört zu operieren. Die Kriegsführung wird zunehmend von der Kontrolle über diese Artilleriepositionen bestimmt."
+
+ deep_defense_systems: "Tiefenverteidigungssysteme"
+ deep_defense_systems_desc: "Die Verteidigung wird nicht mehr nur an der Frontlinie organisiert, sondern in mehreren Schichten. Gräben, Holzpfähle andere Hindernisse werden strategisch platziert, um den Feind zu verlangsamen und zu zermürben. Diese Tiefenverteidigungssysteme erhöhen die Überlebenschancen unserer Truppen und erschweren feindliche Angriffe erheblich."
+
+ fortress_belt: "Festungsgürtel"
+ fortress_belt_desc: "Um unsere wichtigsten Städte und strategischen Punkte herum errichten wir einen Gürtel von Festungen. Diese starken Bollwerke dienen als Rückzugsorte, Versorgungspunkte und Verteidigungsstellungen. Sie zwingen den Feind, kostbare Zeit und Ressourcen zu investieren, um sie zu überwinden, und bieten unseren Truppen sichere Rückzugsorte im Falle eines feindlichen Durchbruchs." 
+
  rifle_improvement: "Verbesserung der Gewehre"
  rifle_improvement_desc: "Die Zündnadelgewehre und Hinterladergewehre revolutionieren die Infanterie. Schneller zu laden, zuverlässiger und präziser als die alten Vorderlader, diese neuen Waffen geben der Infanterie überlegene Feuerkraft. Ein gut organisiertes Bataillon mit modernen Gewehren kann eine veraltete Kavallerie-Division zerreißen."
  
