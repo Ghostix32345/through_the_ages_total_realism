@@ -387,7 +387,7 @@ general_staff_system = {
 	icon = army_tradition
 	requires = military_reforms_advance
 	
-	army_initiative = 0.5
+	army_initiative = 0.25
 }
 
 steam_powered_logistics = {
@@ -499,8 +499,7 @@ soldier_training_academies = {
 	icon = court_accounting
 	requires = conscription_laws
 	
-	army_maintenance_efficiency
-	discipline = 0.04
+	army_maintenance_efficiency = 0.10
 }
 
 military_industrialization = {
@@ -525,7 +524,7 @@ nationalist_recruitment_drive = {
 	icon = levee_en_masse_advance
 	requires = unified_command_structure
 	
-	global_manpower_modifier = 0.15
+	regiment_reinforcement_speed = 0.10
 }
 
 fortified_artillery_positions = {
