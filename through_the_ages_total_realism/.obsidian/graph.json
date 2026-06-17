@@ -5,18 +5,33 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "Politik",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    }
+  ],
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 0.862328767123288,
+  "lineSizeMultiplier": 2.24315068493151,
+  "collapse-forces": false,
+  "centerStrength": 0.255772994129159,
+  "repelStrength": 0,
   "linkStrength": 1,
-  "linkDistance": 250,
+  "linkDistance": 74,
   "scale": 1.4019828977760966,
   "close": false
 }

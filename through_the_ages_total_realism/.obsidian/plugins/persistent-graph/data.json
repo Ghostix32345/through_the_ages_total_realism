@@ -1,44 +1,54 @@
 {
   "nodePositions": [
     {
-      "id": "Umwelt/Umwelt.md",
-      "x": -24.604516983032227,
-      "y": 84.2016372680664
-    },
-    {
-      "id": "Umwelt/Wetterereignisse.md",
-      "x": -65.55010986328125,
-      "y": -166.18499755859375
-    },
-    {
-      "id": "politik/Gesetze.md",
-      "x": 227.20648193359375,
-      "y": -145.16851806640625
-    },
-    {
-      "id": "politik/Politik.md",
-      "x": 4.386753559112549,
-      "y": -58.43681716918945
-    },
-    {
-      "id": "politik/Reformen.md",
-      "x": 213.0260467529297,
-      "y": 70.39905548095703
-    },
-    {
-      "id": "politik/Stände.md",
-      "x": 67.10668182373047,
-      "y": 187.25991821289062
+      "id": "Situationen/Kolumbianischer Austausch.md",
+      "x": -66.40760040283203,
+      "y": 7.336910724639893
     },
     {
       "id": "Situationen/Situationen.md",
-      "x": -150.04541015625,
-      "y": 106.22062683105469
+      "x": 6.3316779136657715,
+      "y": 102.71148681640625
     },
     {
-      "id": "Situationen/Kolumbianischer Austausch.md",
-      "x": -264.0997314453125,
-      "y": -106.07591247558594
+      "id": "Umwelt/Umwelt.md",
+      "x": -97.47093963623047,
+      "y": -333.68353271484375
+    },
+    {
+      "id": "Umwelt/Wetterereignisse.md",
+      "x": 11.37578010559082,
+      "y": -283.25836181640625
+    },
+    {
+      "id": "politik/Gesetze.md",
+      "x": -86.68111419677734,
+      "y": -214.16372680664062
+    },
+    {
+      "id": "politik/Politik.md",
+      "x": -195.5291748046875,
+      "y": -264.5760803222656
+    },
+    {
+      "id": "politik/Reformen.md",
+      "x": -184.7520751953125,
+      "y": -145.0615692138672
+    },
+    {
+      "id": "politik/Stände.md",
+      "x": -293.6049499511719,
+      "y": -195.50027465820312
+    },
+    {
+      "id": "Militär/Militär.md",
+      "x": -144.95858764648438,
+      "y": 98.07881927490234
+    },
+    {
+      "id": "Militär/Drill.md",
+      "x": -184.2506866455078,
+      "y": -15.254484176635742
     }
   ],
   "pinnedNodes": [],
@@ -49,18 +59,33 @@
     "showAttachments": false,
     "hideUnresolved": false,
     "showOrphans": true,
-    "collapse-color-groups": true,
-    "colorGroups": [],
-    "collapse-display": true,
+    "collapse-color-groups": false,
+    "colorGroups": [
+      {
+        "query": "Politik",
+        "color": {
+          "a": 1,
+          "rgb": 14701138
+        }
+      },
+      {
+        "query": "",
+        "color": {
+          "a": 1,
+          "rgb": 14725458
+        }
+      }
+    ],
+    "collapse-display": false,
     "showArrow": false,
-    "textFadeMultiplier": 0,
-    "nodeSizeMultiplier": 1,
-    "lineSizeMultiplier": 1,
-    "collapse-forces": true,
-    "centerStrength": 0.518713248970312,
-    "repelStrength": 10,
+    "textFadeMultiplier": -1,
+    "nodeSizeMultiplier": 0.862328767123288,
+    "lineSizeMultiplier": 2.24315068493151,
+    "collapse-forces": false,
+    "centerStrength": 0.255772994129159,
+    "repelStrength": 0,
     "linkStrength": 1,
-    "linkDistance": 250,
+    "linkDistance": 74,
     "scale": 1.4019828977760966,
     "close": false
   },

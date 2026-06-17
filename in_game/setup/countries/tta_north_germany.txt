@@ -1,11 +1,30 @@
 ﻿
 REPLACE:BRA = {
 	color = map_BRA
-	color2 = rgb { 123 90 90 }
+
+	unit_color0 = rgb { 0 49 83 }      # Preußischblau (Rock)
+	unit_color1 = rgb { 185 0 0 }      # Rot (Kragen, Aufschläge)
+	unit_color2 = rgb { 201 162 39 }   # Messing/Gold (Knöpfe, Verzierungen)
+
 
 	culture_definition = brandenburgish
 	religion_definition = catholic
 
 	description_category = military
 	difficulty = 5
+}
+
+REPLACE:TEU = {
+	color = map_TEU
+	color2 = rgb { 102 105 104 }
+
+	culture_definition = prussian
+	religion_definition = catholic
+
+	description_category = military
+	difficulty = 3
+	
+	unit_color0 = rgb { 0 49 83 }      # Preußischblau (Rock)
+	unit_color1 = rgb { 185 0 0 }      # Rot (Kragen, Aufschläge)
+	unit_color2 = rgb { 201 162 39 }   # Messing/Gold (Knöpfe, Verzierungen)
 }

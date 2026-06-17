@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bf7c8ede0257c350",
+        "id": "dbe1ee905a7e5d07",
         "type": "tabs",
         "children": [
           {
-            "id": "897b4fd8c21fc79f",
+            "id": "9551f02556355676",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -190,14 +190,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "897b4fd8c21fc79f",
+  "active": "9551f02556355676",
   "lastOpenFiles": [
+    "Umwelt/Umwelt.md",
+    "Militär/Drill.md",
     "Situationen/Kolumbianischer Austausch.md",
+    "Militär/Militär.md",
+    "Militär",
     "Situationen/Situationen.md",
     "Umwelt/Wetterereignisse.md",
     "Situationen",
     "politik/Reformen.md",
-    "Umwelt/Umwelt.md",
     "Umwelt",
     "Handelsänderungen.md",
     "Söldnersystem.md",

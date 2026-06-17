@@ -1,0 +1,34 @@
+﻿#root is country
+#scope:target is the target 
+
+REPLACE:cb_imperialism = {
+	years = 25
+
+	create_visible = {
+		OR = {
+		current_age = age_6_revolutions
+		current_age = age_7_nationalism
+		}
+	}
+
+	create_enabled = {
+		OR = {
+			country_rank = country_rank:rank_kingdom
+			country_rank = country_rank:rank_empire
+		}
+		OR = {
+			current_age = age_6_revolutions
+			current_age = age_7_nationalism
+		}
+		is_subject = no
+	}
+	
+	war_goal_type = take_capital_imperial
+
+	ai_will_do = {
+		add = {
+			desc = "BASE"
+			value = 10
+		}
+	}
+}
