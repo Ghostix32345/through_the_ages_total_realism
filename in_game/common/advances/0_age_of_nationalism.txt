@@ -124,7 +124,9 @@ standardized_national_currency = {
 	age = age_7_nationalism
 	icon = banking_advance
 	requires = national_health_initiatives
-	
+    for = dip
+
+
 	trade_efficiency = medium_trade_efficiency_bonus
 	global_merchant_power = 0.25
 }
@@ -168,9 +170,20 @@ nationalist_diplomacy = {
 	age = age_7_nationalism
 	icon = diplomatic_influence
 	requires = national_railways_communication
-	
+	for = dip
+
 	diplomatic_reputation = diplomatic_reputation_mild_bonus
 }
+
+colonial_empire = {
+	age = age_7_nationalism
+	icon = colonies
+	requires = national_railways_communication
+	for = dip
+
+	num_governor_generals = 2
+}
+
 
 #####################################
 # Industrial Expansion (1815-1900)

@@ -6727,9 +6727,11 @@
  central_bank_advance: "Central Banking"
  central_bank_advance_desc: "With the $banking$ institution firmly established, the state can now charter a permanent $central_bank$ empowered to issue $game_concept_government_bonds$. These bonds allow the crown to raise large sums quickly from private investors, repaying them through steady interest rather than relying on estate lending alone."
 
+#####################################
 #TTA Advances - Age 7 Nationalism (1815-1900)
 
 # Age 7 - Nationalism
+#####################################
 
  age_format_age_7_nationalism: "Zeitalter des $age_7_nationalism$"
  age_7_nationalism_desc: "Die Welt hat sich nach den Umwälzungen der vorangegangenen Zeitalter neu geordnet. In diesem Zeitalter des $age_7_nationalism$ erleben wir die Blütezeit von Nationalismus, der die politische Landschaft prägt und die Identität von Nationen stärkt. Es ist eine Zeit des Aufstiegs von Nationalstaaten, der kulturellen Erneuerung und der Suche nach nationaler Einheit inmitten von Herausforderungen und Konflikten."
@@ -6807,6 +6809,9 @@
  
  nationalist_diplomacy: "Nationalistische Diplomatie"
  nationalist_diplomacy_desc: "Unsere Diplomaten verfechten nun leidenschaftlich die Interessen unserer Nation. Verhandlungen werden zu Gefechten der Nationalwillen, jeder Vertrag zum Ausdruck nationaler Stärke. Diese neue Form der Diplomatie ruht nicht auf abstrakter Logik, sondern auf tiefem Verständnis für die nationale Seele und die unabdingbaren Interessen unseres Volkes."
+
+ colonial_empire: "Kolonialreich"
+ colonial_empire_desc: "Die Welt ist unser Spielfeld, und wir greifen nach den Sternen. Kolonien in Übersee erweitern unseren Einfluss, bringen Reichtum und stärken unsere Position als globale Macht. Diese Expansion ist nicht nur wirtschaftlich, sondern auch kulturell - sie formt unsere nationale Identität und unser Selbstverständnis als führende Nation der Welt."
 
  #####################################
  # Industrial Expansion

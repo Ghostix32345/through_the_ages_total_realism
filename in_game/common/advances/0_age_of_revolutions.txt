@@ -153,8 +153,6 @@ quinine = {
 }
 
 
-
-
 construction_speed_revolutions = {
 	age = age_6_revolutions
 	global_construction_speed = 0.1

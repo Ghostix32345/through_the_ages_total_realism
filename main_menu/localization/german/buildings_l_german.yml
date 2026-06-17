@@ -1088,6 +1088,11 @@
  italian_administration_center_desc: "A seat of Italian administrative tradition that extends the reach of governance over distant territories. Rooted in the civic institutions and legal culture of the Italian city-states, it imposes order and legitimacy on the lands it oversees."
  italian_administration_center_maintenance: "Italian Administration Center Operations"
 
+
+#####################################
+#TTA Buildings 
+#####################################
+
  # Kloster
  monastery_desc: "Dieses Kloster ist ein Zufluchtsort des Glaubens und wirkt als Herzstück der Region, das Ruhe, Ordnung und geistlichen Frieden spendet. Hier formen Mönche das Land mit ihren Händen und Gebeten."
  monastic_wheat_maintenance: "Klösterlicher Weizenanbau"
@@ -1213,3 +1218,8 @@ town_hall_maintenance: "Rathausunterhalt"
 # Sondergebäude Kegler Dynastie
 stephanie_von_kegler_academy: "Stephanie von Kegler Kunstakademie"
 stephanie_von_kegler_academy_desc: "Die $stephanie_von_kegler_academy$ ist eine renommierte Bildungseinrichtung, die nach der berühmten Gelehrten Stephanie von Kegler benannt ist. Sie gehört zu den bedeutendsten Akademien des Landes und bietet eine breite Palette von Studiengängen in den Bereichen Kunst, Kultur und Philosophie an. Die Akademie fördert die intellektuelle Entwicklung und trägt zur kulturellen Blüte der Region bei."
+
+# Generalgouverneur
+governor_general: "Generalgouverneur"
+governor_general_desc: "Der Generalgouverneur ist der höchste Vertreter der Zentralregierung in einer Provinz oder Region. Er ist verantwortlich für die Verwaltung, die Durchsetzung von Gesetzen und die Vertretung der Interessen der Zentralregierung vor Ort. Der Generalgouverneur spielt eine entscheidende Rolle bei der Aufrechterhaltung der Ordnung und der Förderung der Entwicklung in seiner Zuständigkeit."
+
