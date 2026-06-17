@@ -439,7 +439,6 @@ independent_army_corps = {
 	requires = military_drill
 	
 	movement_speed_when_attached_to_another_unit = -0.15
-	combat_speed_modifier = 0.20
 }
 
 cavalry_modernization = {
