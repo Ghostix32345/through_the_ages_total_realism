@@ -1,0 +1,86 @@
+#####################################
+# Diplomatic Reforms (1815-1900)
+#####################################
+
+nationalistic_diplomacy = {
+	age = age_7_nationalism
+	icon = nationalistic_diplomacy
+	requires = national_railways_communication
+	for = dip
+
+	diplomatic_upkeep_efficiency = 0.10
+}
+
+colonial_empire = {
+	age = age_7_nationalism
+	icon = colonial_empire
+	requires = national_railways_communication
+	for = dip
+
+	num_governor_generals = 2
+}
+
+congress_system = {
+    age = age_7_nationalism
+	icon = congress_system
+    for = dip
+	requires = parliamentary_representation
+
+    improve_relation_impact = 0.10
+}
+
+balance_of_power = {
+    age = age_7_nationalism
+	icon = balance_of_power
+    for = dip
+	requires = military_reforms_advance
+
+    antagonism_received_modifier = -0.10
+}
+
+diplomatic_propaganda = {
+    age = age_7_nationalism
+    for = dip
+	icon = diplomatic_propaganda
+	requires = industrial_printing
+
+    diplomatic_reputation = diplomatic_reputation_mild_bonus
+}
+
+telegraph_networks = {
+    age = age_7_nationalism
+    for = dip
+	icon = telegraph_networks
+	requires = electrical_power_generation
+
+    monthly_diplomats = 0.1
+}
+
+international_trade_treaties = {
+    age = age_7_nationalism
+    for = dip
+	icon = international_trade_treaties
+	requires = industrial_goods_export
+
+
+    global_merchant_capacity_modifier = 0.10
+}
+
+standardized_national_currency = {
+	age = age_7_nationalism
+	icon = standardized_national_currency
+	requires = international_trade_treaties
+    for = dip
+
+	trade_efficiency = medium_trade_efficiency_bonus
+	global_merchant_power = 0.15
+}
+
+spheres_of_influence = {
+    age = age_7_nationalism
+    for = dip
+	icon = spheres_of_influence
+	requires = advanced_navigation_charts
+
+    diplomatic_capacity = 1
+}

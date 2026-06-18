@@ -1,3 +1,5 @@
+
+#hub
 ## Gesetze
 → [[Gesetze]]
 
@@ -6,3 +8,4 @@
 
 ## Stände
 → [[Stände]]
+

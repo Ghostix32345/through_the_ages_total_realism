@@ -3,7 +3,7 @@
 #####################################
 national_consciousness_advance = {
 	age = age_7_nationalism
-	icon = cultural_acceptance_advance
+	icon = national_consciousness_advance
 
 	cultural_influence_modifier = 0.1
 	depth = 0
@@ -13,23 +13,23 @@ national_consciousness_advance = {
 
 patriotic_education = {
 	age = age_7_nationalism
-	icon = scholasticism
+	icon = patriotic_education
 	requires = national_consciousness_advance
 	
-	global_max_literacy = 4
-    global_pop_promotion_speed_modifier = 0.15
+	global_max_literacy = 5
+    global_pop_promotion_speed_modifier = 0.10
 }
 
 national_identity_promotion = {
 	age = age_7_nationalism
-	icon = cultural_acceptance_advance
+	icon = national_identity_promotion
 	requires = patriotic_education
 
 }
 
 nationalist_literature = {
 	age = age_7_nationalism
-	icon = renaissance_advance
+	icon = nationalist_literature
 	requires = patriotic_education
 	
 	skill_of_new_artists = 0.15
@@ -39,7 +39,7 @@ nationalist_literature = {
 
 parliamentary_representation = {
 	age = age_7_nationalism
-	icon = rights_of_man
+	icon = parliamentary_representation
 	requires = patriotic_education
 
 	country_cabinet_efficiency = 0.15
@@ -47,7 +47,7 @@ parliamentary_representation = {
 
 national_museums_and_archives = {
 	age = age_7_nationalism
-	icon = enlightenment_advance
+	icon = national_museums_and_archives
 	requires = nationalist_literature
 	
 	unlock_building = national_museum
@@ -55,7 +55,7 @@ national_museums_and_archives = {
 
 national_anthem_laws = {
 	age = age_7_nationalism
-	icon = army_tradition
+	icon = national_anthem_laws
 	requires = national_identity_promotion
 	
 	land_morale = 0.30
@@ -63,7 +63,7 @@ national_anthem_laws = {
 
 citizenship_reforms = {
 	age = age_7_nationalism
-	icon = government_size_revolutions
+	icon = citizenship_reforms
 	requires = parliamentary_representation
 
 	estate_power_from_cabinet = -0.1
@@ -71,7 +71,7 @@ citizenship_reforms = {
 
 ethnic_consciousness_movements = {
 	age = age_7_nationalism
-	icon = cultural_acceptance_advance
+	icon = ethnic_consciousness_movements
 	requires = citizenship_reforms
 	
 	global_separatism = -0.10
@@ -80,7 +80,7 @@ ethnic_consciousness_movements = {
 
 national_health_initiatives = {
 	age = age_7_nationalism
-	icon = medical_school
+	icon = national_health_initiatives
 	requires = press_freedom
 	
 	global_life_expectancy = 5
@@ -89,7 +89,7 @@ national_health_initiatives = {
 
 universal_male_suffrage = {
 	age = age_7_nationalism
-	icon = government_size_revolutions
+	icon = universal_male_suffrage
 	requires = citizenship_reforms
 
 	government_reform_slots = 1
@@ -97,7 +97,7 @@ universal_male_suffrage = {
 
 national_state_bureaucracy = {
 	age = age_7_nationalism
-	icon = government_size_revolutions
+	icon = national_state_bureaucracy
 	requires = parliamentary_representation
 	
 	global_integration_speed_modifier = 0.30
@@ -106,43 +106,31 @@ national_state_bureaucracy = {
 
 romantic_nationalism = {
 	age = age_7_nationalism
-	icon = renaissance_advance
+	icon = romantic_nationalism
 	requires = national_anthem_laws
 
 }
 
 national_railways_communication = {
 	age = age_7_nationalism
-	icon = trade_goods_advance
+	icon = national_railways_communication
 	requires = national_state_bureaucracy
 	
 	diplomatic_range_modifier = 0.25
 	trade_range_modifier = 0.25
 }
 
-standardized_national_currency = {
+political_parties = {
 	age = age_7_nationalism
-	icon = banking_advance
-	requires = national_health_initiatives
-    for = dip
-
-
-	trade_efficiency = medium_trade_efficiency_bonus
-	global_merchant_power = 0.25
-}
-
-national_labor_organization = {
-	age = age_7_nationalism
-	icon = court_accounting
+	icon = political_parties
 	requires = universal_male_suffrage
 	
 	global_pop_promotion_speed_modifier = 0.15
-	production_efficiency = 0.1
 }
 
 nationalist_monument_construction = {
 	age = age_7_nationalism
-	icon = construction_center
+	icon = nationalist_monument_construction
 	requires = romantic_nationalism
 	
 	prestige = 2
@@ -152,7 +140,7 @@ nationalist_monument_construction = {
 
 national_religious_identity = {
 	age = age_7_nationalism
-	icon = enlightenment_advance
+	icon = national_religious_identity
 	requires = national_anthem_laws
 	
 	tolerance_own = 2
@@ -160,28 +148,10 @@ national_religious_identity = {
 
 state_sponsored_art_programs = {
 	age = age_7_nationalism
-	icon = renaissance_advance
+	icon = state_sponsored_art_programs
 	requires = national_museums_and_archives
 	
 	skill_of_new_artists = 0.10
-}
-
-nationalist_diplomacy = {
-	age = age_7_nationalism
-	icon = diplomatic_influence
-	requires = national_railways_communication
-	for = dip
-
-	diplomatic_reputation = diplomatic_reputation_mild_bonus
-}
-
-colonial_empire = {
-	age = age_7_nationalism
-	icon = colonies
-	requires = national_railways_communication
-	for = dip
-
-	num_governor_generals = 2
 }
 
 
@@ -190,7 +160,7 @@ colonial_empire = {
 #####################################
 industrial_expansion_advance = {
 	age = age_7_nationalism
-	icon = industrialization_advance
+	icon = industrial_expansion_advance
 	
 	global_production_efficiency = medium_production_efficiency_bonus
 	depth = 0
@@ -200,7 +170,7 @@ industrial_expansion_advance = {
 
 industrial_printing = {
 	age = age_7_nationalism
-	icon = scholasticism
+	icon = industrial_printing
 	requires = industrial_expansion_advance
 	
 	global_paper_output_modifier = 0.10
@@ -209,7 +179,7 @@ industrial_printing = {
 
 textile_mechanization = {
 	age = age_7_nationalism
-	icon = efficient_mining
+	icon = textile_mechanization
 	requires = industrial_expansion_advance
 	
 	global_cloth_output_modifier = 0.10
@@ -219,7 +189,7 @@ textile_mechanization = {
 
 steam_engine_perfection = {
 	age = age_7_nationalism
-	icon = industrial_forge
+	icon = steam_engine_perfection
 	requires = industrial_expansion_advance
 	
 	global_production_efficiency = small_production_efficiency_bonus
@@ -229,7 +199,7 @@ steam_engine_perfection = {
 
 railroad_construction = {
 	age = age_7_nationalism
-	icon = road_building
+	icon = railroad_construction
 	requires = steam_engine_perfection
 
 	global_construction_speed = 0.2
@@ -238,7 +208,7 @@ railroad_construction = {
 
 mass_production_techniques = {
 	age = age_7_nationalism
-	icon = efficient_mining
+	icon = mass_production_techniques
 	requires = textile_mechanization
 
 	global_production_efficiency = small_production_efficiency_bonus
@@ -246,7 +216,7 @@ mass_production_techniques = {
 
 iron_production_revolution = {
 	age = age_7_nationalism
-	icon = serbian_mining
+	icon = iron_production_revolution
 	requires = steam_engine_perfection
 	
 	global_iron_output_modifier = 0.15
@@ -254,14 +224,14 @@ iron_production_revolution = {
 
 steel_production = {
 	age = age_7_nationalism
-	icon = industrial_forge
+	icon = steel_production
 	requires = steam_engine_perfection
 	global_construction_speed = 0.1
 }
 
 coal_mining_expansion = {
 	age = age_7_nationalism
-	icon = efficient_mining
+	icon = coal_mining_expansion
 	requires = iron_production_revolution
 	
 	global_coal_output_modifier = 0.15
@@ -269,7 +239,7 @@ coal_mining_expansion = {
 
 urban_manufacturing_centers = {
 	age = age_7_nationalism
-	icon = grand_marketplace_advance
+	icon = urban_manufacturing_centers
 	requires = mass_production_techniques
 	
 	non_rural_migration_attraction = 2.0
@@ -279,15 +249,15 @@ urban_manufacturing_centers = {
 
 factory_labor_organization = {
 	age = age_7_nationalism
-	icon = court_accounting
+	icon = factory_labor_organization
 	requires = mass_production_techniques
+
 
 }
 
-
 electrical_power_generation = {
 	age = age_7_nationalism
-	icon = scientific_revolution_advance
+	icon = electrical_power_generation
 	requires = steam_engine_perfection
 
 	unlock_building = electrical_plant
@@ -296,7 +266,7 @@ electrical_power_generation = {
 
 biology = {
 	age = age_7_nationalism
-	icon = scientific_revolution_advance
+	icon = biology
 	requires = electrical_power_generation
 	
 	unlock_building = laboratory
@@ -304,7 +274,7 @@ biology = {
 
 microbiology = {
 	age = age_7_nationalism
-	icon = medical_school
+	icon = microbiology
 	requires = biology
 	
 	global_life_expectancy = 2
@@ -312,7 +282,7 @@ microbiology = {
 
 medical_bacteriology = {
 	age = age_7_nationalism
-	icon = medical_school
+	icon = medical_bacteriology
 	requires = biology
 	
 	global_disease_resistance = 0.05
@@ -320,7 +290,7 @@ medical_bacteriology = {
 
 construction_materials_industry = {
 	age = age_7_nationalism
-	icon = construction_center
+	icon = construction_materials_industry
 	requires = railroad_construction
 	
 	global_masonry_output_modifier = 0.25
@@ -328,7 +298,7 @@ construction_materials_industry = {
 
 mining_engineering = {
 	age = age_7_nationalism
-	icon = efficient_mining
+	icon = mining_engineering
 	requires = coal_mining_expansion
 	
 	global_gems_output_modifier = 0.025
@@ -339,16 +309,16 @@ mining_engineering = {
 
 improved_ship_construction = {
 	age = age_7_nationalism
-	icon = safe_exploration_techniques_advance
+	icon = improved_ship_construction
 	requires = steel_production
 	
 	ship_build_speed = 0.10
-	merchant_maintenance_efficiency = 0.5
+	merchant_maintenance_efficiency = 0.25
 }
 
 agricultural_mechanization = {
 	age = age_7_nationalism
-	icon = expanded_supply_trains
+	icon = agricultural_mechanization
 	requires = railroad_construction
 	
 	global_monthly_food_modifier = 0.15
@@ -357,7 +327,7 @@ agricultural_mechanization = {
 
 water_power_utilization = {
 	age = age_7_nationalism
-	icon = construction_center
+	icon = water_power_utilization
 	requires = urban_manufacturing_centers
 	
 	global_production_efficiency = medium_production_efficiency_bonus
@@ -366,19 +336,18 @@ water_power_utilization = {
 
 industrial_goods_export = {
 	age = age_7_nationalism
-	icon = merchant_power_from_maritime_reformation_advance
+	icon = industrial_goods_export
 	requires = factory_labor_organization
 	
 	global_merchant_power = 0.3
 }
-
 
 #####################################
 # Military Reforms (1815-1900)
 #####################################
 military_reforms_advance = {
 	age = age_7_nationalism
-	icon = military_tactics_advance_6
+	icon = military_reforms_advance
 	
 	military_tactics = 0.25
 	depth = 0
@@ -389,7 +358,7 @@ military_reforms_advance = {
 
 rifle_improvement = {
 	age = age_7_nationalism
-	icon = glorious_arms
+	icon = rifle_improvement
 	requires = military_reforms_advance
 	
 	army_heavy_infantry_power = 0.1
@@ -397,7 +366,7 @@ rifle_improvement = {
 
 general_staff_system = {
 	age = age_7_nationalism
-	icon = army_tradition
+	icon = general_staff_system
 	requires = military_reforms_advance
 	
 	army_initiative = 0.25
@@ -405,7 +374,7 @@ general_staff_system = {
 
 steam_powered_logistics = {
 	age = age_7_nationalism
-	icon = expanded_supply_trains
+	icon = steam_powered_logistics
 	requires = general_staff_system
 	
 	supply_depot_capacity = 750
@@ -414,7 +383,7 @@ steam_powered_logistics = {
 
 breech_loading_artillery = {
 	age = age_7_nationalism
-	icon = artillery_institution_advance
+	icon = breech_loading_artillery
 	requires = rifle_improvement
 	
 	army_artillery_power = 0.25
@@ -422,7 +391,7 @@ breech_loading_artillery = {
 
 military_drill = {
 	age = age_7_nationalism
-	icon = offensive_army
+	icon = military_drill
 	requires = general_staff_system
 	
 	discipline = 0.05
@@ -431,7 +400,7 @@ military_drill = {
 
 conscription_laws = {
 	age = age_7_nationalism
-	icon = levee_en_masse_advance
+	icon = conscription_laws
 	requires = military_drill
 	
 	global_manpower_modifier = 0.35
@@ -439,7 +408,7 @@ conscription_laws = {
 
 railway_deployment = {
 	age = age_7_nationalism
-	icon = expanded_supply_trains
+	icon = railway_deployment
 	requires = steam_powered_logistics
 	
 	army_movement_speed = 0.20
@@ -448,7 +417,7 @@ railway_deployment = {
 
 independent_army_corps = {
 	age = age_7_nationalism
-	icon = army_tradition
+	icon = independent_army_corps
 	requires = military_drill
 	
 	movement_speed_when_attached_to_another_unit = -0.15
@@ -456,7 +425,7 @@ independent_army_corps = {
 
 cavalry_modernization = {
 	age = age_7_nationalism
-	icon = cavalry_tactics
+	icon = cavalry_modernization
 	requires = breech_loading_artillery
 
     army_light_cavalry_power = 0.15
@@ -464,25 +433,24 @@ cavalry_modernization = {
 
 pioneer_troops = {
 	age = age_7_nationalism
-	icon = construction_center
+	icon = pioneer_troops
 	requires = railway_deployment
 	
 	siege_ability = 0.25
 }
 
-
 naval_tactics_modernization = {
 	age = age_7_nationalism
-	icon = rudimentary_coastal_ship_repair
+	icon = naval_tactics_modernization
 	requires = conscription_laws
 	
 	naval_morale = 0.50
 	ship_repair_at_sea = 0.04
 }
 
-ironclad_technology = {
+advanced_navigation_charts = {
 	age = age_7_nationalism
-	icon = safe_exploration_techniques_advance
+	icon = advanced_navigation_charts
 	requires = naval_tactics_modernization
 	
 	naval_range = 600
@@ -490,15 +458,15 @@ ironclad_technology = {
 
 colonial_military_expedition = {
 	age = age_7_nationalism
-	icon = expansionism
-	requires = ironclad_technology
+	icon = colonial_military_expedition
+	requires = advanced_navigation_charts
 	
 	colonial_maintenance_efficiency = 0.10
 }
 
 unified_command_structure = {
 	age = age_7_nationalism
-	icon = army_tradition
+	icon = unified_command_structure
 	requires = independent_army_corps
 	
 	govern_capacity_modifier = 0.25
@@ -508,7 +476,7 @@ unified_command_structure = {
 
 soldier_training_academies = {
 	age = age_7_nationalism
-	icon = court_accounting
+	icon = soldier_training_academies
 	requires = conscription_laws
 	
 	army_maintenance_efficiency = 0.10
@@ -516,7 +484,7 @@ soldier_training_academies = {
 
 military_industrialization = {
 	age = age_7_nationalism
-	icon = industrial_forge
+	icon = military_industrialization
 	requires = breech_loading_artillery
 	
 	global_iron_output_modifier = 0.1
@@ -525,7 +493,7 @@ military_industrialization = {
 
 soldier_welfare = {
 	age = age_7_nationalism
-	icon = medical_school
+	icon = soldier_welfare
 	requires = soldier_training_academies
 	
 	monthly_war_exhaustion = -0.05
@@ -533,7 +501,7 @@ soldier_welfare = {
 
 nationalist_recruitment_drive = {
 	age = age_7_nationalism
-	icon = levee_en_masse_advance
+	icon = nationalist_recruitment_drive
 	requires = unified_command_structure
 	
 	regiment_reinforcement_speed = 0.10
@@ -541,15 +509,15 @@ nationalist_recruitment_drive = {
 
 fortified_artillery_positions = {
 	age = age_7_nationalism
-	icon = defensive_mentality
-	requires = military_reforms_advance
+	icon = fortified_artillery_positions
+	requires = conscription_laws
 	
 	global_garrison_size_modifier = 0.45
 }
 
 deep_defense_systems = {
 	age = age_7_nationalism
-	icon = defensive_mentality
+	icon = deep_defense_systems
 	requires = fortified_artillery_positions
 	
 	global_hostile_attrition = 3
@@ -557,7 +525,7 @@ deep_defense_systems = {
 
 fortress_belt = {
 	age = age_7_nationalism
-	icon = defensive_mentality
+	icon = fortress_belt
 	requires = deep_defense_systems
 	
 	unlock_building = fortress_belt

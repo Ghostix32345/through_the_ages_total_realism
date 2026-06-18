@@ -1,35 +1,35 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": false,
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "Politik",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "",
+      "query": "Hub",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
+    },
+    {
+      "query": "Militär",
+      "color": {
+        "a": 1,
+        "rgb": 13180189
+      }
     }
   ],
   "collapse-display": false,
-  "showArrow": false,
+  "showArrow": true,
   "textFadeMultiplier": -1,
   "nodeSizeMultiplier": 0.862328767123288,
   "lineSizeMultiplier": 2.24315068493151,
   "collapse-forces": false,
-  "centerStrength": 0.255772994129159,
-  "repelStrength": 0,
+  "centerStrength": 0.0553816046966732,
+  "repelStrength": 7.74559686888454,
   "linkStrength": 1,
   "linkDistance": 74,
   "scale": 1.4019828977760966,

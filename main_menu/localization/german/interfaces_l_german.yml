@@ -3170,7 +3170,7 @@
  AGE_ADVANCES: "$OWNED$/$TOTAL$ Fortschritte"
  AGE_ENDED: "Endete am $DATE$"
  AGE_ENDING: "Endet im #W $DATE$#!"
- LAST_AGE_ENDING: "Endet im Dezember 1900"
+ LAST_AGE_ENDING: ""
  AGE_ENDING_TT: "Das [Age.GetNameWithNoTooltip] [GetAgeEndingDate(Age.Self)|l]."
  ADVANCES_SCROLL_LIST_EMPTY: "Keine Fortschritte mit diesen Suchkriterien verfügbar"
  OPEN_TECHNOLOGY_AGE: "Zeitalter im Fortschrittsbaum öffnen"

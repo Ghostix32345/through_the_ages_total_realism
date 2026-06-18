@@ -6750,7 +6750,7 @@
  #####################################
  # National Consciousness
  #####################################
- national_consciousness_advance: "Nationale Bewusstsein"
+ national_consciousness_advance: "Nationales Bewusstsein"
  national_consciousness_advance_desc: "Nach Jahrzehnten von Krieg und Revolution erwacht in unserer Nation ein tiefes Bewusstsein für die Einheit von Volk, Sprache und Schicksal. Die Ideen der Aufklärung haben sich unter gebildeten Schichten ausgebreitet und geben uns ein neues Verständnis von Gemeinschaft und Zusammenhalt. Was früher nur dynastisches Interesse war, wird nun zu einer kraftvollen Kraft, die alle Stände durchzieht."
  
  patriotic_education: "Vaterländische Erziehung"
@@ -6783,7 +6783,7 @@
  universal_male_suffrage: "Allgemeines Männerwahlrecht"
  universal_male_suffrage_desc: "Ein bahnbrechender Schritt: Nicht mehr nur die Wohlhabenden, sondern alle männlichen Bürger erhalten das Recht, an der Wahl ihrer Vertreter teilzunehmen. Dies democratisiert die Macht und gibt Millionen vorher Stimmenlosen eine Stimme in ihrer Regierung. Die politische Partizipation wird zum Geburtsrecht jeden Bürgers."
  
- national_state_bureaucracy: "Nationale Staatsbürokratie"
+ national_state_bureaucracy: "Staatsbürokratie"
  national_state_bureaucracy_desc: "Ein leistungsstarker, zentralisierter Verwaltungsapparat durchdringt nun alle Ebenen des Staates. Professionelle Beamte, standardisierte Verfahren und rationale Organisation ersetzen fragmente Feudalstrukturen. Der Staat kann nun mit beispielloses Effizienz handeln und seine Bürgern mit konsistenten Regeln und Systemen dienen."
  
  romantic_nationalism: "Romantischer Nationalismus"
@@ -6795,8 +6795,8 @@
  standardized_national_currency: "Standardisierte Nationale Währung"
  standardized_national_currency_desc: "Eine einheitliche Währung ersetzt das Chaos verschiedener lokaler Münzen und Maße. Dies vereinfacht nicht nur den Handel, sondern symbolisiert auch die wirtschaftliche Einheit unserer Nation. Der Name unserer Währung, geprägt in der Form unserer Symbole, wird zum greifbaren Zeichen unserer nationalen Souveränität."
  
- national_labor_organization: "Nationale Gewerkschaften"
- national_labor_organization_desc: "Die wachsende Arbeiterklasse organisiert sich auf nationaler Ebene, bildet Verbände und Zünfte. Diese Organisationen regeln Arbeitsbedingungen und Löhne, während sie gleichzeitig nationale Zusammengehörigkeitsgefühle fördern. Der einfache Arbeiter erkennt, dass er nicht allein steht, sondern Teil eines größeren, organisierten Systems ist."
+ political_parties: "Politische Parteien"
+ political_parties_desc: "Die politische Landschaft wird von organisierten Parteien geprägt, die unterschiedliche Ideologien und Interessen vertreten. Diese Parteien bieten den Staatsbürgern klare Wahlmöglichkeiten und fördern den politischen Wettbewerb. Sie tragen zur Entwicklung einer lebendigen Demokratie bei, in der verschiedene Stimmen gehört werden und die Regierung Rechenschaft ablegen muss."
  
  nationalist_monument_construction: "Bau nationaler Denkmäler"
  nationalist_monument_construction_desc: "Überall im Reich entstehen mächtige Denkmäler: Säulen, Statuen und Paläste, die nationale Größe verherrlichen. Diese architektonischen Wunderwerke sind nicht nur Kunstwerke - sie sind materielle Manifestationen nationalen Stolzes, sichtbare Zeichen der Dauerhaftigkeit unseres Staates. Künftige Generationen werden diese Werke anstaunen und sich unserer Größe würdig erweisen."
@@ -6807,8 +6807,8 @@
  state_sponsored_art_programs: "Staatlich geförderte Kunstprogramme"
  state_sponsored_art_programs_desc: "Der Staat wird zum Mäzen der Künste. Durch Stipendien, Aufträge und Preise werden Künstler ermutigt, nationale Themen zu erforschen. Meisterwerke entstehen zu Ruhm unserer Nation - Gemälde, die historische Taten zeigen; Musik, die nationale Gefühle ausdrückt. Kunst wird zum Instrument der Staatsraison und Künstler zu Dienern der Nation."
  
- nationalist_diplomacy: "Nationalistische Diplomatie"
- nationalist_diplomacy_desc: "Unsere Diplomaten verfechten nun leidenschaftlich die Interessen unserer Nation. Verhandlungen werden zu Gefechten der Nationalwillen, jeder Vertrag zum Ausdruck nationaler Stärke. Diese neue Form der Diplomatie ruht nicht auf abstrakter Logik, sondern auf tiefem Verständnis für die nationale Seele und die unabdingbaren Interessen unseres Volkes."
+ nationalistic_diplomacy: "Nationalistische Diplomatie"
+ nationalistic_diplomacy_desc: "Unsere Diplomaten verfechten nun leidenschaftlich die Interessen unserer Nation. Verhandlungen werden zu Gefechten der Nationalwillen, jeder Vertrag zum Ausdruck nationaler Stärke. Diese neue Form der Diplomatie ruht nicht auf abstrakter Logik, sondern auf tiefem Verständnis für die nationale Seele und die unabdingbaren Interessen unseres Volkes."
 
  colonial_empire: "Kolonialreich"
  colonial_empire_desc: "Die Welt ist unser Spielfeld, und wir greifen nach den Sternen. Kolonien in Übersee erweitern unseren Einfluss, bringen Reichtum und stärken unsere Position als globale Macht. Diese Expansion ist nicht nur wirtschaftlich, sondern auch kulturell - sie formt unsere nationale Identität und unser Selbstverständnis als führende Nation der Welt."
@@ -6930,8 +6930,8 @@
  naval_tactics_modernization: "Modernisierung der Seegefechtstaktiken"
  naval_tactics_modernization_desc: "Die alte Taktik der Segelschiffe - Breitseiten und Rammen - wird obsolet. Neue Taktiken für gepanzerte Dampfschiffe entwickeln sich: Langstreckenkanonen, Torpedos, schnelle Manöver. Seegefechte werden zu Artillerieduellen, wo Sicht und Feuerunterstützung alles sind."
  
- ironclad_technology: "Panzerschiff-Technologie"
- ironclad_technology_desc: "Eisenpanzer an Schiffen, getrieben von Dampfmaschinen - eine neue Art von Kriegsschiff entsteht. Die Panzerschiffe sind unverwundbar gegen die Kanonen alter Holzschiffe, können aber ihre immense Feuerkraft auf jede Küste richten. Die Herrschaft über die Meere wird von denjenigen errungen, die über Panzerschiffe verfügen."
+ advanced_navigation_charts: "Erweiterte Seekarten"
+ advanced_navigation_charts_desc: "Die Navigation auf See wird präziser durch verbesserte Karten und Instrumente. Längengradbestimmung wird zuverlässiger, Tiefenkarten werden detaillierter. Diese Fortschritte ermöglichen es unseren Flotten, sicherer und effizienter zu operieren, neue Routen zu erkunden und feindliche Bewegungen besser vorherzusehen."
  
  unified_command_structure: "Einheitliche Kommandostruktur"
  unified_command_structure_desc: "Das Wirrwarr verschiedener taktischer Ebenen wird durch eine einheitliche Kommandostruktur geordnet. Vom Oberkommando bis zur Kompanie - jede Ebene kennt ihre Aufgaben und Befugnisse. Diese Klarheit ermöglicht schnelle Entscheidungen und koordinierte Operationen im großen Maßstab."
@@ -6956,3 +6956,87 @@
  
  soldier_training_academies: "Soldaten-Ausbildungsakademien"
  soldier_training_academies_desc: "Militärakademien entstehen überall im Reich. Zukünftige Offiziere und Unteroffiziere werden nicht mehr durch Erfahrung allein, sondern durch systematisches Studium ausgebildet. Strategie, Taktik, Arithmetik, Geschichte - alles wird unterrichtet. Ein wissenschaftlich ausgebildeter Offizierscorps wird zur neuen Elite der Nation."
+
+ #####################################
+ # Diplomatie Schwerpunkt im Nationalismus
+ #####################################
+
+ nationalistic_diplomacy: "Nationalistische Diplomatie"
+ nationalistic_diplomacy_desc: "Unsere Diplomaten verfechten nun leidenschaftlich die Interessen unserer Nation. Verhandlungen werden zu Gefechten der Nationalwillen, jeder Vertrag zum Ausdruck nationaler Stärke. Diese neue Form der Diplomatie ruht nicht auf abstrakter Logik, sondern auf tiefem Verständnis für die nationale Seele und die unabdingbaren Interessen unseres Volkes." 
+
+ colonial_empire: "Kolonialreich"
+ colonial_empire_desc: "Die Welt ist unser Spielfeld, und wir greifen nach den Sternen. Kolonien in Übersee erweitern unseren Einfluss, bringen Reichtum und stärken unsere Position als globale Macht. Diese Expansion ist nicht nur wirtschaftlich, sondern auch kulturell - sie formt unsere nationale Identität und unser Selbstverständnis als führende Nation der Welt."
+
+ congress_system: "Kongresssystem"
+ congress_system_desc: "Nach den Umwälzungen der Napoleonischen Kriege treffen sich die führenden Nationen regelmäßig auf Kongressen, um die europäische Ordnung zu diskutieren und zu gestalten. Diese diplomatischen Treffen sind geprägt von nationalistischen Interessen, bei denen jede Nation ihre Position stärkt und ihre Einflusssphären sichert. Das Kongresssystem wird zum Schauplatz für Machtspiele und Allianzen, die die politische Landschaft Europas prägen."
+
+ balance_of_power: "Gleichgewicht der Mächte"
+ balance_of_power_desc: "Die Idee des Gleichgewichts der Mächte wird zum zentralen Prinzip der internationalen Beziehungen. Nationen streben danach, ihre Macht zu stärken, um ein Gleichgewicht zu schaffen, das sie vor Übergriffen schützt. Dieses Streben führt zu einem komplexen Netz von Allianzen und Rivalitäten, das die politische Landschaft Europas formt und die Grundlage für zukünftige Konflikte legt."
+
+ diplomatic_propaganda: "Diplomatische Propaganda"
+ diplomatic_propaganda_desc: "Nationen nutzen diplomatische Propaganda, um ihre Interessen zu fördern und die öffentliche Meinung zu beeinflussen. Durch gezielte Informationskampagnen, kulturelle Veranstaltungen und Medienarbeit versuchen sie, ihre Position in der internationalen Gemeinschaft zu stärken und Unterstützung für ihre politischen Ziele zu gewinnen. Diplomatische Propaganda wird zu einem wichtigen Instrument der nationalen Außenpolitik."
+
+ telegraph_networks: "Telegraphnetze"
+ telegraph_networks_desc: "Die Entwicklung von Telegraphennetzen revolutioniert die Kommunikation zwischen Nationen. Diplomaten können nun in Echtzeit Informationen austauschen, Verhandlungen führen und auf internationale Ereignisse reagieren. Diese neue Technologie ermöglicht eine schnellere und effektivere Diplomatie, verändert die Art und Weise, wie Nationen miteinander interagieren, und trägt zur Beschleunigung der politischen Prozesse bei."
+
+ international_trade_treaties: "Internationale Handelsverträge"
+ international_trade_treaties_desc: "Nationen schließen internationale Handelsverträge, um ihre wirtschaftlichen Interessen zu fördern und den Handel zu erleichtern. Diese Verträge regeln Zölle, Handelsrouten und wirtschaftliche Zusammenarbeit, stärken die wirtschaftlichen Beziehungen zwischen den Nationen und tragen zur Schaffung eines globalen Marktes bei. Internationale Handelsverträge werden zu einem wichtigen Bestandteil der nationalen Außenpolitik."
+
+ standardized_national_currency: "Standardisierte Nationalwährung"
+ standardized_national_currency_desc: "Eine einheitliche Währung ersetzt das Chaos verschiedener lokaler Münzen und Maße. Dies vereinfacht nicht nur den Handel, sondern symbolisiert auch die wirtschaftliche Einheit unserer Nation. Der Name unserer Währung, geprägt in der Form unserer Symbole, wird zum greifbaren Zeichen unserer nationalen Souveränität."
+
+ spheres_of_influence: "Einflusszonen"
+ spheres_of_influence_desc: "Nationen definieren und verteidigen ihre Einflusszonen, um ihre Macht und ihren Einfluss in bestimmten Regionen der Welt zu sichern. Diese Zonen werden durch diplomatische Verhandlungen und wirtschaftliche Beziehungen geschützt."
+
+ #####################################
+ # Militär Schwerpunkt im Nationalismus
+ #####################################
+
+ officer_tradition: "Offizierstradition"
+ officer_tradition_desc: "Eine starke Offizierstradition wird aufgebaut, in der militärische Führer als Helden und Vorbilder verehrt werden. Diese Tradition fördert den Stolz und die Loyalität der Soldaten gegenüber ihren Offizieren und stärkt die Disziplin und den Zusammenhalt innerhalb der Armee."
+
+ battlefield_medicine: "Feldmedizin"
+ battlefield_medicine_desc: "Die Entwicklung der Feldmedizin verbessert die Überlebenschancen von verwundeten Soldaten erheblich. Mobile Krankenhäuser, verbesserte medizinische Ausrüstung und spezialisiertes medizinisches Personal ermöglichen es, Verletzungen schneller und effektiver zu behandeln, was die Moral der Truppen stärkt und die Verluste reduziert. Das Rote Kreuz wurde 1863 gegründet, um die medizinische Versorgung auf dem Schlachtfeld zu organisieren und humanitäre Hilfe zu leisten."
+
+ patriotic_service: "Patriotischer Dienst"
+ patriotic_service_desc: "Der Dienst in der Armee wird als höchste Form des patriotischen Engagements angesehen. Soldaten werden ermutigt, ihre Pflicht gegenüber der Nation zu erfüllen und sich für das Wohl des Vaterlandes einzusetzen. Dieser patriotische Dienst stärkt die Bindung zwischen den Soldaten und ihrer Nation und fördert ein starkes Gefühl der nationalen Identität."
+
+ veterans_organizations: "Veteranenorganisationen"
+ veterans_organizations_desc: "Nach dem Dienst in der Armee schließen sich Veteranen in Organisationen zusammen, um ihre Erfahrungen zu teilen, sich gegenseitig zu unterstützen und ihre Beiträge zur Nation zu würdigen. Im Verteidigungsfall können wir auf diese erfahrenen Kämpfer zurückgreifen, die nicht nur über militärisches Wissen verfügen, sondern auch eine tiefe Verbundenheit mit der Nation haben."
+
+ naval_academies: "Marineakademien"
+ naval_academies_desc: "Spezialisierte Marineakademien werden gegründet, um zukünftige Offiziere der Marine auszubilden. Diese Akademien bieten eine umfassende Ausbildung in Navigation, Taktik, Seestrategie und maritimer Technologie, um sicherzustellen, dass unsere Marine über kompetente Führungskräfte verfügt, die in der Lage sind, die Interessen unserer Nation auf See zu verteidigen und zu fördern."
+
+ overseas_supply_network: "Übersee-Versorgungsnetz"
+ overseas_supply_network_desc: "Ein globales Versorgungsnetz wird aufgebaut, um unsere militärischen Operationen in Übersee zu unterstützen. Dieses Netzwerk umfasst Stützpunkte, Lagerhäuser und Transportwege, die es ermöglichen, Truppen, Ausrüstung und Vorräte effizient zu bewegen und zu versorgen, um unsere militärische Präsenz weltweit aufrechtzuerhalten."
+
+ marine_corps: "Marinekorps"
+ marine_corps_desc: "Ein spezialisiertes Marinekorps wird aufgebaut, um maritime Operationen effektiv durchzuführen. Dieses Korps ist in der Lage, sowohl in der Verteidigung als auch in der Offensive auf See zu operieren und trägt zur Sicherung der maritimen Interessen unserer Nation bei."
+
+ convoy_escort_doctrine: "Konvoi-Doktrin"
+ convoy_escort_doctrine_desc: "Eine Doktrin für die Eskorte von Konvois wird entwickelt, um unsere Handelsschiffe und militärischen Transporte vor feindlichen Angriffen zu schützen. Diese Doktrin umfasst Taktiken, Ausrüstung und Strategien, um sicherzustellen, dass unsere Schiffe sicher ihre Ziele erreichen und unsere wirtschaftlichen und militärischen Interessen geschützt werden."
+
+ #####################################
+ # Verwaltung Schwerpunkt im Nationalismus
+ #####################################
+
+ civil_service: "Öffentlicher Dienst"
+ civil_service_desc: "Ein öffentlicher Dienst wird aufgebaut, um die Verwaltung des Staates effizient und effektiv zu gestalten. Beamte werden aufgrund ihrer Fähigkeiten und Qualifikationen ausgewählt und ausgebildet, um sicherzustellen, dass die Regierung in der Lage ist, die Bedürfnisse der Staatsbürger zu erfüllen und die nationale Einheit zu fördern."
+
+ compulsory_schooling: "Schulpflicht"
+ compulsory_schooling_desc: "Die Einführung der Schulpflicht stellt sicher, dass alle Kinder Zugang zu Bildung haben. Dies fördert nicht nur die Alphabetisierung und das Wissen, sondern auch die Verbreitung nationaler Werte und Identität. Schulen werden zu Orten, an denen die nächste Generation in den Idealen der Nation erzogen wird."
+
+ statistical_bureaus: "Statistische Ämter"
+ statistical_bureaus_desc: "Statistische Ämter werden eingerichtet, um Daten über Bevölkerung, Wirtschaft und andere wichtige Aspekte des Landes zu sammeln und zu analysieren. Diese Informationen sind entscheidend für die Planung und Verwaltung des Staates und tragen dazu bei, fundierte Entscheidungen zu treffen, die das Wohl der Nation fördern."
+
+ centralized_taxation: "Zentralisierte Besteuerung"
+ centralized_taxation_desc: "Ein zentralisiertes Steuersystem wird eingeführt, um die Einnahmen des Staates effizient zu sammeln und zu verwalten. Dieses System ermöglicht es der Regierung, Ressourcen für öffentliche Dienstleistungen, Infrastruktur und nationale Verteidigung bereitzustellen, was zur Stärkung der nationalen Einheit und des Wohlstands beiträgt."
+
+ statutory_health_insurance: "Gesetzliche Krankenversicherung"
+ statutory_health_insurance_desc: "Die Einführung einer gesetzlichen Krankenversicherung stellt sicher, dass alle Bürger Zugang zu medizinischer Versorgung haben. Dieses System fördert die öffentliche Gesundheit, reduziert die finanzielle Belastung durch Krankheit und stärkt das soziale Sicherheitsnetz, was wiederum die nationale Einheit und das Wohlbefinden der Bevölkerung fördert."
+
+ national_census: "Volkszählung"
+ national_census_desc: "Eine regelmäßige Volkszählung wird durchgeführt, um genaue Daten über die Bevölkerung zu sammeln. Diese Informationen sind entscheidend für die Planung von Infrastruktur, Bildung, Gesundheitsversorgung und anderen öffentlichen Dienstleistungen, die das Wohl der Nation fördern."
+
+ state_railway_administration: "Staatliche Eisenbahnverwaltung"
+ state_railway_administration_desc: "Die Eisenbahn wird unter staatliche Kontrolle gestellt, um die Effizienz und den Nutzen für die Nation zu maximieren. Eine zentrale Verwaltung sorgt für die Koordination von Bau, Betrieb und Wartung der Eisenbahnlinien, was die wirtschaftliche Entwicklung und Einsatzbereitschaft unserer Truppen fördert."

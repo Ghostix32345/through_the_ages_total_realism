@@ -1,0 +1,73 @@
+#####################################
+# Administrativ Reforms (1815-1900)
+#####################################
+
+civil_service = {
+  age = age_7_nationalism
+	icon = civil_service
+	requires = national_state_bureaucracy
+
+  for = adm
+
+  legislative_efficiency = 0.10
+}
+
+compulsory_schooling = {
+  age = age_7_nationalism
+	icon = compulsory_schooling
+	requires = patriotic_education
+
+  for = adm
+
+  global_max_literacy = 5
+}
+
+statistical_bureaus = {
+  age = age_7_nationalism
+	icon = statistical_bureaus
+	requires = industrial_printing
+
+  for = adm
+
+  country_cabinet_efficiency = 0.10
+}
+
+centralized_taxation = {
+  age = age_7_nationalism
+	icon = centralized_taxation
+	requires = statistical_bureaus
+
+  for = adm
+
+  tax_income_efficiency = small_tax_income_efficiency_bonus
+}
+
+statutory_health_insurance = {
+  age = age_7_nationalism
+	icon = statutory_health_insurance
+	requires = biology
+
+  for = adm
+
+  global_estate_target_satisfaction = 0.025
+}
+
+national_census = {
+  age = age_7_nationalism
+	icon = national_census
+	requires = nationalist_recruitment_drive
+
+  for = adm
+
+  global_monthly_control = 0.001
+}
+
+state_railway_administration = {
+  age = age_7_nationalism
+	icon = state_railway_administration
+	requires = railway_deployment
+
+  for = adm
+
+  global_distance_from_capital_speed_propagation = 0.10
+}

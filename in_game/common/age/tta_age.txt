@@ -367,7 +367,7 @@ age_6_revolutions = {
 }
 
 age_7_nationalism = {
-	year = 1815
+	year = 1837
 	price_stability = 0.02
 	max_price = 5
 	hegemons_allowed = yes
