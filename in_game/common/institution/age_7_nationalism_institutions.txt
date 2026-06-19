@@ -1,8 +1,7 @@
 ﻿military_reforms = {
 	age = age_7_nationalism
 	
-	
-	location = berlin	#fallback for when no valid
+	location = berlin
 	
 	can_spawn = {
 		OR = {
@@ -15,7 +14,7 @@
 			}
 			AND = {
 				has_game_rule = institution_spawn_fixed_historical
-				this = location:´berlin
+				this = location:berlin
 			}
 			AND = {
 				has_game_rule = institution_spawn_plausible
@@ -29,13 +28,11 @@
 				has_building_with_at_least_one_level = university
 				average_location_literacy > 30
 				
-				
 				owner = {
 					societal_value:traditionalist_vs_innovative > 20
 				}
 			}
 		}
-		
 	}
 
 	promote_chance = {
@@ -44,11 +41,15 @@
 		}
 
 		add = {
-			value = owner.total_population
+			value = num_pop_type:burghers
+			multiply = 10
+		}
+		add = {
+			value = num_pop_type:nobles
+			multiply = 10
 		}
 	}
 	
-	#hardcoded spreads for optimisations..
 	spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_late
 	spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_late
 	spread_from_any_import = institution_trade_spread_value_late
@@ -62,7 +63,7 @@
 industrial_expansion = {
 	age = age_7_nationalism 
 	
-	location = manchester	#fallback for when no valid
+	location = manchester
 	
 	can_spawn = {
 		OR = {
@@ -86,7 +87,7 @@ industrial_expansion = {
 					sub_continent = sub_continent:north_africa
 				}
 
-				num_pop_type:laborers > 20
+				num_pop_type:burghers > 20
 				total_building_levels > 120
 				
 				owner = {
@@ -94,7 +95,6 @@ industrial_expansion = {
 				}
 			}
 		}
-
 	}
 	
 	promote_chance = {
@@ -107,7 +107,6 @@ industrial_expansion = {
 		}
 	}
 	
-	#hardcoded spreads for optimisations..
 	spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_late
 	spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_late
 	spread_from_any_import = institution_trade_spread_value_late
@@ -116,12 +115,12 @@ industrial_expansion = {
 	spread_scale_on_control_if_owner_embraced = 2
 	spread_embraced_to_capital = institution_total_embraced_to_capital_late
 	spread_to_market_member = institution_spread_to_market_member_late
-
 }
 
 national_consciousness = {
 	age = age_7_nationalism
-	location = paris	#fallback for when no valid
+	
+	location = paris
 	
 	can_spawn = {
 		OR = {
@@ -147,7 +146,6 @@ national_consciousness = {
 				}
 			}
 		}
-		
 	}
 	
 	promote_chance = {
@@ -155,12 +153,9 @@ national_consciousness = {
 			value = average_location_literacy
 		}
 
-		add = {
-			value = owner.total_population
-		}
+		add = num_pop_type:peasants
 	}
 	
-	#hardcoded spreads for optimisations..
 	spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_late
 	spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_late
 	spread_from_any_import = institution_trade_spread_value_late
@@ -169,16 +164,4 @@ national_consciousness = {
 	spread_scale_on_control_if_owner_embraced = 2
 	spread_embraced_to_capital = institution_total_embraced_to_capital_late
 	spread_to_market_member = institution_spread_to_market_member_late
-
 }
-
-
-
-
-
-
-
-
-
-
-
