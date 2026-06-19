@@ -1,0 +1,32 @@
+brandenburger_tor = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	category = cultural_category
+	employment_size = large_noble_employment
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = large_capital_build_time
+   
+	allow = {
+		current_year >= 1791.1.01
+	}
+	
+	location_potential = {
+		this = location:berlin
+	}
+
+	modifier = {
+		crown_power_from_population = 0.10
+		cultural_tradition = 0.25
+	}
+
+	possible_production_methods = {
+		early_capital_building_maintenance
+	}
+
+	construction_demand = town_building_construction
+}

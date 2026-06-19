@@ -17,7 +17,7 @@ battlefield_medicine = {
   	requires = biology
     for = mil
 
-    land_unit_attrition = -0.025
+    land_unit_attrition = -0.10
 }
 
 patriotic_service = {

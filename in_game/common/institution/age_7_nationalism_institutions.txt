@@ -43,7 +43,9 @@
 			value = average_location_literacy
 		}
 
-		add = num_pop_type:peasants
+		add = {
+			value = owner.total_population
+		}
 	}
 	
 	#hardcoded spreads for optimisations..
@@ -153,7 +155,9 @@ national_consciousness = {
 			value = average_location_literacy
 		}
 
-		add = num_pop_type:laborers
+		add = {
+			value = owner.total_population
+		}
 	}
 	
 	#hardcoded spreads for optimisations..

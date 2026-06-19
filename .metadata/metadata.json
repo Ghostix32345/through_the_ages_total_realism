@@ -1,7 +1,7 @@
 {
 	"name" : "Through The Ages Total Realism",
 	"id" : "through_the_ages_total_realism",
-	"version" : "0.0.1",
+	"version" : "0.1.0",
 	"supported_game_version" : "1.*",
 	"short_description" : "Ein umfassender Overhaul Mod mit neuen Technologien, Events, Einheiten und formbaren Nationen.",
 	"tags" : ["Overhaul"],

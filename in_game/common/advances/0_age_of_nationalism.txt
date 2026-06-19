@@ -16,7 +16,7 @@ patriotic_education = {
 	icon = patriotic_education
 	requires = national_consciousness_advance
 	
-	global_max_literacy = 5
+	research_speed_modifier = 0.05
     global_pop_promotion_speed_modifier = 0.10
 }
 
@@ -35,7 +35,6 @@ nationalist_literature = {
 	skill_of_new_artists = 0.15
 	global_monthly_art_start_chance = 0.05
 }
-
 
 parliamentary_representation = {
 	age = age_7_nationalism
