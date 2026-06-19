@@ -678,7 +678,7 @@ NAI = {
 	AI_PERFORMANCE_TRADE_RANGE_SCALE_CUTOFF = 1.5 # If distance to market is more than country trade range times this we skip it
 
 	AI_PERFORMANCE_PATHFIND_DISTANCE_THRESHOLD = 100 # distance threshold for less accurate pathfind to save performance for ai, smaller threshold saves more performance
-	// Naval threshold higher as it causes ships to incorrectly sail against the wind accross the atlantic otherwise
+	# Naval threshold higher as it causes ships to incorrectly sail against the wind accross the atlantic otherwise
 	AI_NAVAL_PERFORMANCE_PATHFIND_DISTANCE_THRESHOLD = 2500 # same as above but for navies
 	AI_TRANSPORT_STRENGTH_THRESHOLD_PER_DISTANCE = 0.0004 # 2500 distance needs to have a 100% strength transport fleet
 
