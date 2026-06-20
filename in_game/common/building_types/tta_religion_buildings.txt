@@ -202,8 +202,8 @@ small_church = {
 	construction_demand = town_building_construction
 
 	modifier = {
-		local_clergy_max_literacy = 5
+		local_clergy_max_literacy = 10
 		local_unrest = -0.025
-		local_max_control = 0.05
+		local_clergy_pop_growth = 0.25
 	}
 }
