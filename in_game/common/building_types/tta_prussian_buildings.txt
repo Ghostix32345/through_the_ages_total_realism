@@ -14,7 +14,11 @@ brandenburger_tor = {
 	allow = {
 		current_year >= 1791.1.01
 	}
-	
+
+	country_potential = {
+		owns = location:berlin
+	}
+
 	location_potential = {
 		this = location:berlin
 	}
