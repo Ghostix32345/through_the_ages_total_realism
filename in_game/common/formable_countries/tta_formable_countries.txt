@@ -1,13 +1,12 @@
 ﻿GKR_f = {
 	level = 4
-	required_locations_fraction = 1
+	required_locations_fraction = 0.8
 	rule = plausible
 	potential = {
 		culture = { has_culture_group = culture_group:german_group }
 	}
 
 	allow = {
-		current_year >= 1871.1.01
     	OR = {
 			owns = location:berlin
 		}
