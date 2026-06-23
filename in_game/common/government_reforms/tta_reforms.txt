@@ -8,7 +8,7 @@
 	}
 
 	country_modifier = {
-		num_governor_generals = 2
+		num_governor_generals = 4
 		monthly_towards_naval = societal_value_large_monthly_move
 	}
 

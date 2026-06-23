@@ -1,4 +1,5 @@
 ﻿REPLACE:monastery = {
+	audio_tier = 1
 	is_foreign = no
 	max_levels = 1
 	pop_type = clergy
@@ -75,6 +76,7 @@
 }
 
 REPLACE:orthodox_monastery = {
+	audio_tier = 1
 	is_foreign = no
 	max_levels = 1
 	pop_type = clergy
@@ -94,7 +96,7 @@ REPLACE:orthodox_monastery = {
 	price = orthodox_monastery_building
 	
 	country_potential = {
-		religion = religion:orthodox
+		religion ?= religion:orthodox
 	}
 	
 	unique_production_methods = {

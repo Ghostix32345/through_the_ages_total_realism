@@ -2,6 +2,12 @@
 REPLACE:enforce_landfriede = {
 	type = diplomacy
 	category = CATEGORY_HRE_ACTIONS
+
+	# Actor-only gate: per-recipient ai_will_do hard-rejected bankrupt actors with -1000. Short-circuit once.
+	ai_prerequisite = {
+		NOT = { is_during_bankruptcy = yes }
+	}
+
 	potential = {
 		exists = international_organization:hre
 		scope:actor = {
@@ -115,13 +121,6 @@ REPLACE:enforce_landfriede = {
 			subtract = {
 				desc = "IS_AT_WAR"
 				value = 200
-			}
-		}
-		if = {
-			limit = { scope:actor = { is_during_bankruptcy = yes } }
-			subtract = {
-				desc = "IS_BANKRUPT_TOOLTIP"
-				value = 1000
 			}
 		}
 		subtract = {

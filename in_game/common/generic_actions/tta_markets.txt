@@ -13,6 +13,8 @@ REPLACE:destroy_market = {
 
 	automation_tick = never
 	automation_tick_frequency = 12
+	
+	price = price:destroy_market
 
 	#market in scope:target
 	select_trigger = {
