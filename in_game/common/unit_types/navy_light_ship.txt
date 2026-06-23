@@ -1,0 +1,128 @@
+﻿##################################################
+# LIGHT SHIPS
+##################################################
+
+n_barque = {
+	category = navy_light_ship
+	copy_from = n_age_2_renaissance_light_ship
+	age = "age_2_renaissance"
+	upgrades_to = n_caravel
+
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.02
+	}
+}
+
+n_caravel = {
+	category = navy_light_ship
+	copy_from = n_age_3_discovery_light_ship
+	age = "age_3_discovery"
+	upgrades_to = n_war_brig
+
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.02
+	}
+}
+
+# Small patrol and escort vessel.
+# Replaces the old late pre-frigate role.
+n_war_brig = {
+	category = navy_light_ship
+	gfx_tags = { navy_war_brig }
+	use_ship_names = yes
+	buildable = yes
+	maritime_presence = ship_above_medium_maritime
+	movement_speed = 14
+	hull_size = 14
+	cannons = 16
+	crew_size = 0.080
+	blockade_capacity = 1.5
+
+	anti_piracy_warfare = 1.0
+
+	maintenance_demand = light_ship_3_maintenance
+	construction_demand = light_ship_3_construction
+	age = "age_5_absolutism"
+
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.02
+	}
+}
+
+# Colonial escort and independent light warship.
+n_corvette = {
+	category = navy_light_ship
+	gfx_tags = { navy_corvette }
+	use_ship_names = yes
+	buildable = yes
+	maritime_presence = ship_large_maritime
+	movement_speed = 13.5
+	hull_size = 18
+	cannons = 24
+	crew_size = 0.120
+	blockade_capacity = 1.8
+
+	anti_piracy_warfare = 1.2
+
+	maintenance_demand = light_ship_3_maintenance
+	construction_demand = light_ship_3_maintenance
+	age = "age_5_absolutism"
+
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.02
+	}
+}
+
+# Classic fifth-rate frigate.
+n_frigate = {
+	category = navy_light_ship
+	gfx_tags = { navy_frigate }
+	use_ship_names = yes
+	buildable = yes
+	maritime_presence = ship_very_large_maritime
+	movement_speed = 13
+	hull_size = 24
+	cannons = 36
+	crew_size = 0.160
+	blockade_capacity = 2.2
+
+	anti_piracy_warfare = 1.5
+
+	maintenance_demand = light_ship_4_maintenance
+	construction_demand = light_ship_4_maintenance
+	age = "age_5_absolutism"
+
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.02
+	}
+}
+
+# Large fifth-rate / super-frigate, Constitution/Acheron style.
+n_heavy_frigate = {
+	category = navy_light_ship
+	gfx_tags = { heavy_frigate }
+	use_ship_names = yes
+	buildable = yes
+	maritime_presence = ship_giant_maritime
+	movement_speed = 12
+	hull_size = 34
+	cannons = 44
+	crew_size = 0.240
+	blockade_capacity = 2.8
+
+	anti_piracy_warfare = 1.5
+
+	maintenance_demand = light_ship_5_maintenance
+	construction_demand = light_ship_5_maintenance
+	age = "age_6_revolutions"
+
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.02
+	}
+}

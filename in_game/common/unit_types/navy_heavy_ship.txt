@@ -1,0 +1,94 @@
+﻿##################################################
+# Age of Sail Standard Ship Rebalance
+# Focus: 1700-1820
+#
+# Design:
+# - Light ships: Brig -> Corvette -> Frigate -> Heavy Frigate
+# - Heavy ships: Galleon -> Ship of the Line -> Large Ship of the Line -> First Rate
+# - Transport chain can stay vanilla unless separately changed.
+##################################################
+
+##################################################
+# HEAVY SHIPS
+##################################################
+
+n_early_carrack = {
+	category = navy_heavy_ship
+
+	copy_from = n_age_2_renaissance_heavy_ship
+	age = "age_2_renaissance"
+	upgrades_to = n_carrack
+}
+
+n_carrack = {
+	category = navy_heavy_ship
+
+	copy_from = n_age_3_discovery_heavy_ship
+	age = "age_3_discovery"
+	upgrades_to = n_galleon
+}
+
+n_galleon = {
+	category = navy_heavy_ship
+	gfx_tags = { n_galleon }
+	copy_from = n_age_4_reformation_heavy_ship
+	age = "age_4_reformation"
+	upgrades_to = n_ship_of_the_line
+}
+
+# Third Rate / 74-gun ship. The standard line-of-battle warship.
+n_74gun_ship = {
+	category = navy_heavy_ship
+	gfx_tags = { 74gun_ship }
+	use_ship_names = yes
+	buildable = yes
+	maritime_presence = ship_large_maritime
+	movement_speed = 9
+	hull_size = 60
+	cannons = 74
+	crew_size = 0.600
+	blockade_capacity = 1.3
+
+	maintenance_demand = heavy_ship_5_maintenance
+	construction_demand = heavy_ship_5_construction
+	age = "age_5_absolutism"
+
+}
+
+# Second Rate / large line ship.
+n_98gun_ship = {
+	category = navy_heavy_ship
+	gfx_tags = { 98gun_ship }
+	use_ship_names = yes
+	buildable = yes
+	maritime_presence = ship_large_maritime
+	movement_speed = 7.5
+	hull_size = 65
+	cannons = 98
+	crew_size = 0.800
+	blockade_capacity = 1.3
+
+	maintenance_demand = heavy_ship_6_maintenance
+	construction_demand = heavy_ship_6_construction
+	age = "age_6_revolutions"
+
+}
+
+# First Rate / 120gun_ship.
+n_120gun_ship = {
+	category = navy_heavy_ship
+	gfx_tags = { 120gun_ship }
+	use_ship_names = yes
+	buildable = yes
+	maritime_presence = ship_large_maritime
+	movement_speed = 6
+	hull_size = 80
+	cannons = 120
+	crew_size = 1.000
+	blockade_capacity = 1.6
+
+	maintenance_demand = heavy_ship_6_maintenance
+	construction_demand = heavy_ship_6_construction
+	age = "age_6_revolutions"
+
+}
