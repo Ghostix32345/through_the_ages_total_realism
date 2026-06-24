@@ -4,20 +4,28 @@
 n_canoe = {
 	schematic_name = "ship_galley_0_iroquois_canoe_schematic"
 	render_under_water = yes
+
+	size = 1.0
 }
 
 navy_galley = {
 	schematic_name = "ship_galley_01_european_schematic"
 	render_under_water = yes
+
+	size = 2.0
 }
 navy_transport = {
 	schematic_name = "ship_transport_01_european_hulk_schematic"
 	render_under_water = yes
+
+	size = 1.0
 }
 
 mediterranean_galley_tag = {
 	schematic_name = "ship_galley_02_european_mediterranean_galley_schematic"
 	render_under_water = yes
+
+	size = 1.0
 }
 
 ####### RENAISSANCE #######
@@ -25,21 +33,29 @@ mediterranean_galley_tag = {
 navy_heavy_ship = {
 	schematic_name = "ship_heavy_02_european_early_carrack_schematic"
 	render_under_water = yes
+
+	size = 2.0
 }
 
 navy_light_ship = {
 	schematic_name = "ship_light_02_european_barque_schematic"
 	render_under_water = yes
+
+	size = 1.0
 }
 
 age_2_renaissance:navy_galley = {
 	schematic_name = "ship_galley_02_european_mediterranean_galley_schematic"
 	render_under_water = yes
+
+	size = 2.0
 }
 
 age_2_renaissance:navy_transport = {
 	schematic_name = "ship_transport_02_european_cog_schematic"
 	render_under_water = yes
+
+	size = 1.0
 }
 
 ###### DISCOVERY #######
@@ -48,21 +64,29 @@ age_2_renaissance:navy_transport = {
 age_3_discovery:navy_heavy_ship = {
 	schematic_name = "ship_heavy_03_european_carrack_schematic"
 	render_under_water = yes
+
+	size = 2.0
 }
 
 age_3_discovery:navy_light_ship = {
 	schematic_name = "ship_light_03_european_caravel_schematic"
 	render_under_water = yes
+	
+	size = 1.5
 }
 
 age_3_discovery:navy_galley = {
 	schematic_name = "ship_galley_03_european_war_galley_schematic"
 	render_under_water = yes
+	
+	size = 2.0
 }
 
 age_3_discovery:navy_transport = {
 	schematic_name = "ship_transport_03_european_flute_schematic"
 	render_under_water = yes
+
+	size = 1.5
 }
 
 
@@ -71,21 +95,29 @@ age_3_discovery:navy_transport = {
 age_4_reformation:navy_heavy_ship = {
 	schematic_name = "ship_heavy_04_european_galleon_schematic"
 	render_under_water = yes
+
+	size = 2.0
 }
 
 age_4_reformation:navy_light_ship = {
 	schematic_name = "ship_light_04_european_early_frigate_schematic"
 	render_under_water = yes
+
+	size = 1.5
 }
 
 age_4_reformation:navy_galley = {
 	schematic_name = "ship_galley_04_european_galleass_schematic"
 	render_under_water = yes
+
+	size = 2.0
 }
 
 age_4_reformation:navy_transport = {
 	schematic_name = "ship_transport_03_european_flute_schematic"
 	render_under_water = yes
+
+	size = 1.5
 }
 
 
@@ -96,39 +128,55 @@ age_4_reformation:navy_transport = {
 age_5_absolutism:navy_transport = {
 	schematic_name = "ship_transport_05_european_merchantman_schematic"
 	render_under_water = yes
+
+	size = 1.5
 }
 
 age_5_absolutism:navy_war_brig = {
 	schematic_name = "ship_transport_05_european_merchantman_schematic"
 	render_under_water = yes
+
+	size = 1.5
 }
 
 age_5_absolutism:navy_corvette = {
 	schematic_name = "ship_light_05_european_frigate_schematic"
 	render_under_water = yes
+
+	size = 1.5
 }
 
 age_5_absolutism:navy_frigate = {
 	schematic_name = "ship_light_04_european_early_frigate_schematic"
 	render_under_water = yes
+
+	size = 1.5
 }
 
 age_6_revolutions:heavy_frigate = {
 	schematic_name = "ship_light_06_european_heavy_frigate_schematic"
 	render_under_water = yes
+
+	size = 1.5
 }
 
 age_5_absolutism:74gun_ship = {
 	schematic_name = "ship_heavy_05_european_twodecker_schematic"
 	render_under_water = yes
+
+	size = 2.0
 }
 
 age_6_revolutions:98gun_ship = {
 	schematic_name = "ship_heavy_06_european_threedecker_schematic"
 	render_under_water = yes
+
+	size = 2.0
 }
 
 age_6_revolutions:120gun_ship = {
 	schematic_name = "ship_heavy_06_european_threedecker_schematic"
 	render_under_water = yes
+
+	size = 2.0
 }
