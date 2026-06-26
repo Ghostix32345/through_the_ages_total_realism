@@ -1,0 +1,75 @@
+﻿xorme_ai_force_border_claims = {
+    days_between_checks = 200
+    actor_trigger = {
+        is_ai = yes
+        is_independent_or_autonomous_subject = yes
+        is_during_bankruptcy = no
+        OR = {
+            great_power_score > 30
+            is_member_of_international_organization = international_organization:japanese_shogunate
+        }
+    }
+
+    recipient_trigger = {
+        scope:actor = {
+            is_ai = yes
+            wants_casus_belli_with = scope:recipient
+            NOT = { has_casus_belli_on = scope:recipient }
+            NOT = { has_truce_with = scope:recipient }
+            NOT = { is_allied_with = { target = scope:recipient } }
+            can_declare_war_on = scope:recipient
+            is_neighbor_of = scope:recipient
+        }
+        scope:recipient = { is_independent_or_autonomous_subject = yes }
+    }
+
+    recipient_priority = {
+        add = -100
+        if = {
+			limit = {
+				scope:actor = {
+					wants_casus_belli_with = scope:target
+				}
+			}
+			add = 200
+		}
+        if = {
+            limit = {
+                scope:actor = {
+                    relative_strength = {
+                        target = scope:recipient
+                        value > 0.65
+                    }
+                }
+            }
+            add = 50
+        }
+        if = {
+            limit = { 
+                "scope:actor.conquer_desire(scope:recipient)" > 50
+            }
+            add = 10
+        }
+    }
+    pause_trigger = {
+        always = no
+    }
+
+    cancel_trigger = {
+        always = no
+    }
+
+    country_relations = {
+        xorme_ai_force_claims = yes
+    }
+
+    country_interactions = {
+        a0_xorme_ai_force_war = yes
+    }
+
+    spy_network_target = 25
+    max_allowed = 3
+
+    destroy = yes
+    antagonise = yes
+}

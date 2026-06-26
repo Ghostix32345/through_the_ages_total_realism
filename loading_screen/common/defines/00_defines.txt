@@ -631,11 +631,11 @@ NAI = {
 	AI_LONG_TERM_DISCOUNT_FACTOR = 0.9988 # AI long term utility planing, used for evaluating long term modifiers such as estate privileges
 	AI_BUILDING_OPTIMIZATION_TIMEMULTI_THRESHOLD = 250 #time multiplier needed for moving buildings around 
 	AI_DEVELOPMENT_UTILITY = 0.1 # Utility bonus from development as it has so many modifiers that are hard to calculate
-	AI_BUILDING_PROFIT_THRESHOLD = 1.2 # needs to be at least 20% profitable for AI to expand a building that is not producing strategic goods
+	AI_BUILDING_PROFIT_THRESHOLD = 1.10 # needs to be at least 20% profitable for AI to expand a building that is not producing strategic goods
 
 	# These two defines adjust AI desire to maintain a profit margin for their country
-	AI_PROFIT_MARGIN_TARGET = 0.25 # the desired profit margin
-	AI_GOLD_COST_UTIL_FROM_LOW_PROFIT_MARGIN = 3 # how hard the AI tries to maintain that margin
+	AI_PROFIT_MARGIN_TARGET = 0.15 # the desired profit margin
+	AI_GOLD_COST_UTIL_FROM_LOW_PROFIT_MARGIN = 2 # how hard the AI tries to maintain that margin
 
 	AI_EARLY_GAME_MONTHS = 36 # during these first months AI will focus more on building up their initial economy by disabling some other things like unit recruitment
 
@@ -904,7 +904,7 @@ NAI = {
 	INITIATIVE_COMBAT_STRENGTH_FACTOR = 0.025 # -> 10 initiative ~25% better army
 	AI_FLANKING_COMBAT_STRENGTH_FACTOR = 0.3
 
-	BUILDING_THRESHOLD_FACTOR = 1.2 # Increase this to make AI more careful with building buildings. Don't make < 1
+	BUILDING_THRESHOLD_FACTOR = 1.1 # Increase this to make AI more careful with building buildings. Don't make < 1
 	AI_HOSTILE_BORDER_MIN_SUBUNITS = 3				# Minimum subunits in a hostile army near our border before AI raises fort maintenance
 	LOCATION_BORDER_DISTANCE_RELEVANCE_THRESHOLD = 20
 	BASE_FORT_LEVEL_BENEFIT_SCALAR = 0.1
@@ -1212,7 +1212,7 @@ NAI = {
 	AI_MAX_PROVINCES_TO_INTEGRATE_PER_CABINET_MEMBER = 4 #How many provinces will Ai accept over their cabinet size before they start releasing subjects.
 	AI_RELEASE_SUBJECT_AREA_MINIMUM_SIZE = 6 # Minimum owner area size neede for an AI to release that area as a subject
 
-	AI_BUFFER_TAX_BASE_FACTOR = 3 # AI will save their taxbase multiplied by this for buffer for sudden expenses like event options and hiring mercs
+	AI_BUFFER_TAX_BASE_FACTOR = 2 # AI will save their taxbase multiplied by this for buffer for sudden expenses like event options and hiring mercs
 
 	AI_HIGH_OPINION_THRESHOLD = 100	#Makes ai use certain interactions with countries with that opinion, only checks Our opinion of Them
 	AI_LOW_OPINION_THRESHOLD = -100

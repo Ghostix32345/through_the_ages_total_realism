@@ -1,0 +1,156 @@
+﻿xorme_ai_force_claims = { 
+	type = diplomacy
+	relation_type = oneway
+	block_when_at_war = no
+	is_ongoing = yes
+	concept = spy_network
+	progress = { value = 0 }
+	break_on_not_spying = yes
+	dangerous_relation = yes
+
+	relation_type_for_ai = hostile
+
+    category = {
+		offer = CATEGORY_COVERT_ACTIONS
+		cancellation = CATEGORY_COVERT_ACTIONS
+		break = CATEGORY_COVERT_ACTIONS
+		request = CATEGORY_COVERT_ACTIONS
+    }
+
+    request_visible = { always = no }
+    break_visible = { always = no }
+
+	visible = {
+		scope:actor = { is_ai = yes }
+	}
+
+    offer_enabled = {
+        scope:actor = {
+			is_ai = yes
+			NOT = { has_casus_belli_on = scope:recipient }
+			NOT = { has_truce_with = scope:recipient }
+			NOT = { has_positive_opinion = scope:recipient }
+			is_neighbor_of = scope:recipient
+			spy_network = {
+				target = scope:recipient
+				value >= 20
+			}
+			relative_strength = { 
+                target = scope:recipient 
+                value >= 0.6 
+            }
+        }
+		scope:recipient = { is_independent_or_autonomous_subject = yes }
+    }
+
+	offer_effect = {
+		scope:actor = {
+			if = {
+				limit = {
+					can_create_casus_belli_of_type_on = {
+						type = casus_belli:cb_deus_vult
+						target = scope:recipient
+					}
+				}
+				add_casus_belli = {
+					target = scope:recipient
+					type = casus_belli:cb_deus_vult
+				}
+				add_spy_network = {
+					target = scope:recipient
+					value = -20
+				}
+			}
+			else_if = {
+				limit = {
+					can_create_casus_belli_of_type_on = {
+						type = casus_belli:cb_conquer_province
+						target = scope:recipient
+					}
+				}
+				add_casus_belli = {
+					target = scope:recipient
+					type = casus_belli:cb_conquer_province
+				}
+				add_spy_network = {
+					target = scope:recipient
+					value = -20
+				}
+			}
+			else_if = {
+				limit = {
+					can_create_casus_belli_of_type_on = {
+						type = casus_belli:cb_humiliate_rival
+						target = scope:recipient
+					}
+				}
+				add_casus_belli = {
+					type = casus_belli:cb_humiliate_rival
+					target = scope:recipient
+				}
+				add_spy_network = {
+					target = scope:recipient
+					value = -20
+				}
+			}
+			else_if = {
+				limit = {
+					can_create_casus_belli_of_type_on = {
+						type = casus_belli:cb_fabricated_conquer_province
+						target = scope:recipient
+					}
+				}
+				add_casus_belli = {
+					type = casus_belli:cb_fabricated_conquer_province
+					target = scope:recipient
+				}
+				add_spy_network = {
+					target = scope:recipient
+					value = -20
+				}
+			}
+			else_if = {
+				limit = {
+					can_create_casus_belli_of_type_on = {
+						type = casus_belli:cb_heretic
+						target = scope:recipient
+					}
+				}
+				add_casus_belli = {
+					type = casus_belli:cb_heretic
+					target = scope:recipient
+				}
+				add_spy_network = {
+					target = scope:recipient
+					value = -20
+				}
+			}
+			else_if = {
+				limit = {
+					can_create_casus_belli_of_type_on = {
+						type = casus_belli:cb_sengoku
+						target = scope:recipient
+					}
+				}
+				add_casus_belli = {
+					type = casus_belli:cb_sengoku
+					target = scope:recipient
+				}
+				add_spy_network = {
+					target = scope:recipient
+					value = -20
+				}
+			}
+			else = {
+
+			}
+		}
+	}
+
+	wants_to_give_diplo_chance = {
+        base = 1000
+    }
+	wants_to_give = {
+		add = 1000
+	}
+}

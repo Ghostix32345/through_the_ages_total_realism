@@ -1,0 +1,282 @@
+﻿a0_xorme_ai_force_war =  {
+    type = diplomacy
+    category = CATEGORY_HOSTILE_ACTIONS
+    block_when_at_war = no
+    show_in_gui_list = no
+    ai_tick = months
+    ai_tick_frequency = 2
+
+
+    potential = {
+        scope:actor ={
+            is_ai = yes
+        }
+    }
+
+    allow = {
+        scope:actor = {
+            stability >= 10
+            OR = {
+                any_current_war = {
+                    count <= 3 #limit to 3 wars
+                }
+            }
+        }
+        trigger_if = {
+            limit = {
+                scope:actor = {
+                    at_war = no
+                }
+            }
+            scope:actor = {
+                months_since_war >= 8
+            }
+        }
+    }
+
+    select_trigger = {
+        looking_for_a = country
+        target_flag = recipient
+        name = "choose_country"
+        column = {
+            data = name
+        }
+        visible = {
+            scope:actor = {
+                OR = {
+                    has_casus_belli_on = scope:recipient
+                    stability >= 51
+                }
+                can_declare_war_on = scope:recipient
+                NOT = { has_truce_with = scope:recipient }
+                NOT = { is_allied_with = { target = scope:recipient } }
+                NOT = { is_at_war_with = scope:recipient }
+            }
+            scope:recipient = {
+                is_ai = yes
+                NOT = { is_subject_of = scope:actor }
+            }
+        }
+
+        enabled = {
+            scope:actor = {
+                relative_strength = {
+                    target = scope:recipient
+                    value >= 0.61
+                }
+            }
+            scope:recipient = {
+                is_ai = yes
+                is_subject = no
+                OR = {
+                    is_neighbor_of = scope:actor
+                    scope:actor = {
+                        any_subject = {
+                            is_neighbor_of = scope:recipient
+                        }
+                    }
+                }
+                NOT = {
+                    international_organization:hre = {
+                        country_has_special_status = {
+                            type = special_status:free_city
+                            country = prev
+                        }
+                    }
+                }
+                NOT = {
+                    any_great_power = {
+                        giving_scripted_relation = {
+                            type = relation_type:guarantee
+                            target = scope:recipient
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    effect = {
+        scope:actor = {
+            if = {
+                limit = { has_casus_belli_of_type = casus_belli:cb_claim_timurids }
+                declare_war_with_cb = {
+                    target = scope:recipient
+                    type = casus_belli:cb_claim_timurids
+                }
+                add_stability = -2.5
+            }
+            else_if = {
+                limit = { has_casus_belli_of_type = casus_belli:cb_timurs_conquests }
+                declare_war_with_cb = {
+                    target = scope:recipient
+                    type = casus_belli:cb_timurs_conquests
+                }
+                add_stability = -2.5
+            }
+            else_if = {
+                limit = { has_casus_belli_of_type = casus_belli:cb_annex }
+                declare_war_with_cb = {
+                    target = scope:recipient
+                    type = casus_belli:cb_annex
+                }
+                add_stability = -2.5
+            }
+            else_if = {
+                limit = { has_casus_belli_of_type = casus_belli:cb_deus_vult }
+                declare_war_with_cb = {
+                    target = scope:recipient
+                    type = casus_belli:cb_deus_vult
+                }
+                add_stability = -2.5
+            }
+            else_if = {
+                limit = { has_casus_belli_of_type = casus_belli:cb_conquer_province }
+                declare_war_with_cb = {
+                    target = scope:recipient
+                    type = casus_belli:cb_conquer_province
+                }
+                add_stability = -2.5
+            }
+            else_if = {
+                limit = { has_casus_belli_of_type = casus_belli:cb_humiliate_rival }
+                declare_war_with_cb = {
+                    target = scope:recipient
+                    type = casus_belli:cb_humiliate_rival
+                }
+                add_stability = -2.5
+            }
+            else_if = {
+                limit = { has_casus_belli_of_type = casus_belli:cb_parliament_conquer_province }
+                declare_war_with_cb = {
+                    target = scope:recipient
+                    type = casus_belli:cb_parliament_conquer_province
+                }
+                add_stability = -2.5
+            }
+            else_if = {
+                limit = { has_casus_belli_of_type = casus_belli:cb_subjugation }
+                declare_war_with_cb = {
+                    target = scope:recipient
+                    type = casus_belli:cb_subjugation
+                }
+                add_stability = -2.5
+            }
+            else_if = {
+                limit = { has_casus_belli_of_type = casus_belli:cb_heretic }
+                declare_war_with_cb = {
+                    target = scope:recipient
+                    type = casus_belli:cb_heretic
+                }
+                add_stability = -2.5
+            }
+            else_if = {
+                limit = { has_casus_belli_of_type = casus_belli:cb_claim_throne }
+                declare_war_with_cb = {
+                    target = scope:recipient
+                    type = casus_belli:cb_claim_throne
+                }
+                add_stability = -2.5
+            }
+            else = {
+                declare_war = scope:recipient
+                add_stability = -25
+            }
+        }
+    }
+
+    diplo_chance = {
+        base = -20
+        same_culture = 5
+        same_religion = 5
+        recipient_civil_war = 5
+        recipient_is_rival = 5
+        conquer_desire = 10
+        actor_at_war = -10
+        actor_at_peace = 5
+        recipient_at_war = 5
+        low_manpower = -5
+        current_strength = 0.2
+        relative_strength = 30
+        positive_opinion = -0.25
+        negative_opinion = 0.75
+        too_much_antagonism = -1000
+    }
+
+    ai_will_do = {
+        add = 1000
+        add = {
+            desc = "HAS_CASUS_BELLI_ON_RECIPIENT"
+            if = {
+                limit = {
+                    scope:actor = { has_casus_belli_on = scope:recipient }
+                }
+                value = 300
+            }
+        }
+        add = {
+            desc = "HIGH_STABILITY"
+            if = {
+                limit = {
+                    scope:actor = { stability > 20 }
+                }
+                value = 50
+            }
+        }
+        add = {
+            desc = "CURRENT_WARS"
+            if = {
+                limit = {
+                    scope:actor = {
+                        any_current_war = {
+                            count >= 1 #limit to 3 wars
+                        }
+                    }
+                }
+                value = -50
+            }
+        }
+        add = {
+            desc = "CURRENT_WARS2"
+            if = {
+                limit = {
+                    scope:actor = {
+                        any_current_war = {
+                            count >= 2 #limit to 3 wars
+                        }
+                    }
+                }
+                value = -250
+            }
+        }
+        add = {
+            desc = "CURRENT_WARS3"
+            if = {
+                limit = {
+                    scope:actor = {
+                        any_current_war = {
+                            count >= 3 #limit to 3 wars
+                        }
+                    }
+                }
+                value = -250
+            }
+        }
+        add = {
+            desc = "HRE_MEMBERSHIP"
+            if = {
+                limit = {
+                    OR = {
+                        scope:actor = {
+                            is_member_of_international_organization = international_organization:hre
+                        }
+                        scope:recipient = {
+                            is_member_of_international_organization = international_organization:hre
+                        }
+                    }
+                }
+                value = -200
+            }
+        }
+    }
+}

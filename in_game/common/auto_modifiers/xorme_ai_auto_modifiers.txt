@@ -1,0 +1,8 @@
+﻿ai_reserve_up_to_3_spy_networks = {
+	potential_trigger = {
+		is_ai = yes
+		is_independent_or_autonomous_subject = yes
+		num_of_diplomats <= 1
+	}
+	monthly_diplomats = 0.05
+}
