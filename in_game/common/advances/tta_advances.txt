@@ -1,0 +1,23 @@
+REPLACE:power_projection_advance_5 = {
+	age = age_5_absolutism
+	icon = diplomatic_influence
+	requires = the_constitution
+	power_projection = 5
+	num_local_governors = 1
+	num_colonial_governors = 1
+
+	# add extra score because num_local_governors is hard to register in code
+	ai_weight = { add = 200 }
+}
+
+REPLACE:local_governor_advance = {
+	age = age_3_discovery
+	icon = local_nobility
+	
+	num_local_governors = 1
+	num_colonial_governors = 1
+	requires = construction_center_advance
+
+	# add extra score because num_local_governors is hard to register in code
+	ai_weight = { add = 200 }
+}

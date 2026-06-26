@@ -23,3 +23,11 @@ num_governor_generals={
 		category=country
 	}
 }
+
+num_colonial_governors={
+	decimals=0
+	no_difference_sign=yes
+	game_data={
+		category=country
+	}
+}
