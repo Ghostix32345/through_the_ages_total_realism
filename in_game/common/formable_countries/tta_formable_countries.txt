@@ -418,7 +418,7 @@ REPLACE:PRU_f = { #Prussia
 }
 
 #from vanilla eu5
-REPALCE:USA_f = {
+USA_f = {
 	level = 4
 	required_locations_fraction = 0.35
 	rule = historical
@@ -444,11 +444,12 @@ REPALCE:USA_f = {
 		east_coast_region
 	}
 	form_effect = {
+		change_government_type = government_type:republic
 	}
 }
 
 #from vanilla eu5
-REPLACE:CAN_f = {
+CAN_f = {
 	level = 3 #save 4 for Greater Canada?
 	required_locations_fraction = 0.35
 	rule = plausible
@@ -476,7 +477,7 @@ REPLACE:CAN_f = {
 }
 
 #from vanilla eu5
-REPLACE:MEX_f = {
+MEX_f = {
 	level = 3
 	required_locations_fraction = 0.5
 	rule = historical
@@ -502,6 +503,7 @@ REPLACE:MEX_f = {
 	form_effect = {
 	}
 }
+
 
 BRZ_f = {
 	level = 4

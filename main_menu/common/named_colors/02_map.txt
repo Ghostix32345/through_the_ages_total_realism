@@ -4255,4 +4255,3 @@ colors = {
     map_yoroniku = rgb { 120 143 196 }
     map_zabusta = rgb { 120 157 102 }
 }
-
