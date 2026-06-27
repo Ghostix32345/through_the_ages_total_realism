@@ -418,7 +418,7 @@ REPLACE:PRU_f = { #Prussia
 }
 
 #from vanilla eu5
-USA_f = {
+REPLACE:USA_f = {
 	level = 4
 	required_locations_fraction = 0.35
 	rule = historical
@@ -445,6 +445,7 @@ USA_f = {
 	}
 	form_effect = {
 		change_government_type = government_type:republic
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
 	}
 }
 
@@ -503,7 +504,6 @@ MEX_f = {
 	form_effect = {
 	}
 }
-
 
 BRZ_f = {
 	level = 4
