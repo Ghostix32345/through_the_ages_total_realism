@@ -4922,5 +4922,5 @@
 MODIFIER_TYPE_NAME_num_governor_generals: "Anzahl an Kolonialen Generalgouverneuren"
 MODIFIER_TYPE_DESC_num_governor_generals: "Dies legt fest, wie viele Gebäude der Art „[ShowBuildingTypeName('governor_general')]“ ein Land bauen kann."
 
-MODIFIER_TYPE_NAME_num_colonial_governor: "Anzahl an Kolonialgouverneuren"
-MODIFIER_TYPE_DESC_num_colonial_governor: "Dies legt fest, wie viele Gebäude der Art „[ShowBuildingTypeName('colonial_governor')]“ ein Land bauen kann."
+MODIFIER_TYPE_NAME_num_colonial_governors: "Anzahl an Kolonialgouverneuren"
+MODIFIER_TYPE_DESC_num_colonial_governors: "Dies legt fest, wie viele Gebäude der Art „[ShowBuildingTypeName('colonial_governor')]“ ein Land bauen kann."
