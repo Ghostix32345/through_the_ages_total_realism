@@ -6745,6 +6745,9 @@
  unlock_heavy_frigate_advance: "$n_heavy_frigate$"
  unlock_heavy_frigate_advance_desc: "$n_heavy_frigate_desc$"
  
+ unlock_50gun_ship_advance: "$n_50gun_ship$"
+ unlock_50gun_ship_advance_desc: "$n_50gun_ship_desc$"
+
  unlock_74gun_ship_advance: "$n_74gun_ship$"
  unlock_74gun_ship_advance_desc: "$n_74gun_ship_desc$"
  

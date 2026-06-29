@@ -1,0 +1,135 @@
+tta_unique_ships_royal_sovereign.1 = {
+	type = country_event
+
+	title = tta_unique_ships_royal_sovereign.1.title
+	desc = tta_unique_ships_royal_sovereign.1.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ENG
+		from = 1637.10.1
+		to = 9999.1.1
+		monthly_chance = 25
+	}
+
+	trigger = {
+		location:rochester = {
+			owner = root
+			controller = root
+		}
+	}
+	image = "gfx/interface/illustrations/units/navy_heavy_ship_6.dds"
+
+	immediate = {
+		location:rochester = { save_scope_as = target_location }
+	}
+
+	option = {
+		name = tta_unique_ships_royal_sovereign.1.a
+		add_prestige = prestige_mild_bonus
+		scope:target_location = {
+			create_sub_unit = unit_type:n_royal_sovereign
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = tta_unique_ships_royal_sovereign.1.b
+	}
+}
+
+
+tta_unique_ships_victory.1 = {
+	type = country_event
+
+	title = tta_unique_ships_victory.1.title
+	desc = tta_unique_ships_victory.1.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ENG
+		from = 1765.5.7
+		to = 9999.1.1
+		monthly_chance = 25
+	}
+
+	trigger = {
+		location:rochester = {
+			owner = root
+			controller = root
+		}
+	}
+	image = "gfx/interface/illustrations/units/navy_heavy_ship_6.dds"
+
+	immediate = {
+		location:rochester = { save_scope_as = target_location }
+	}
+
+	option = {
+		name = tta_unique_ships_victory.1.a
+		add_prestige = prestige_mild_bonus
+		scope:target_location = {
+			create_sub_unit = unit_type:n_hms_victory
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = tta_unique_ships_victory.1.b
+	}
+}
+
+tta_unique_ships_de_zeven_provincien.1 = {
+	type = country_event
+
+	title = tta_unique_ships_de_zeven_provincien.1.title
+	desc = tta_unique_ships_de_zeven_provincien.1.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		OR = {
+			tag = NED
+			tag = HOL
+		}
+		from = 1665.1.1
+		to = 9999.1.1
+		monthly_chance = 25
+	}
+
+	trigger = {
+		location:rotterdam = {
+			owner = root
+			controller = root
+		}
+	}
+	image = "gfx/interface/illustrations/units/navy_heavy_ship_4.dds"
+
+	immediate = {
+		location:rotterdam = { save_scope_as = target_location }
+	}
+
+	option = {
+		name = tta_unique_ships_de_zeven_provincien.1.a
+		add_prestige = prestige_mild_bonus
+		scope:target_location = {
+			create_sub_unit = unit_type:n_de_zeven_provincien
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = tta_unique_ships_de_zeven_provincien.1.b
+	}
+}

@@ -1,0 +1,493 @@
+﻿##################################################
+# UNIQUE EVENT SHIPS - AGE 4 / LATE 17TH CENTURY
+##################################################
+# Design:
+# - Unique historical event ships around 1660-1690.
+# - Stronger and more valuable than normal galleons.
+# - Not as efficient as later 74-gun / 18th-century line ships.
+# - buildable = no, intended to be spawned once by event.
+#
+# Important:
+# - combat_speed / initiative / frontage are delta values.
+# - Heavy ship baseline assumed:
+#   combat_speed = 0.50
+#   initiative    = 1.00
+#   frontage      = 1.50
+##################################################
+
+# England - Royal Sovereign / former Sovereign of the Seas
+# Prestige first-rate style ship of the late Stuart navy.
+# Powerful and durable, but old-fashioned, expensive and frontage-heavy.
+n_royal_sovereign = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 120gun_ship }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_large_maritime
+	movement_speed = 6.4
+
+	# Target ingame:
+	# combat_speed = 0.42
+	# initiative = 1.15
+	# frontage = 2.10
+	combat_speed = -0.08
+	initiative = 0.15
+	frontage = 0.60
+
+	hull_size = 52
+	cannons = 100
+	crew_size = 0.950
+
+	blockade_capacity = 1.35
+
+	morale_damage_taken = -0.08
+	morale_damage_done = 0.05
+	attrition_loss = -0.03
+
+	maintenance_demand = heavy_ship_5_maintenance
+	construction_demand = heavy_ship_5_construction
+	age = "age_4_reformation"
+}
+
+# France - Soleil Royal
+# Louis XIV's great prestige flagship.
+# Strong morale pressure and high firepower, but less efficient than later French first rates.
+n_soleil_royal = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 120gun_ship }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_large_maritime
+	movement_speed = 6.6
+
+	# Target ingame:
+	# combat_speed = 0.45
+	# initiative = 1.25
+	# frontage = 2.00
+	combat_speed = -0.05
+	initiative = 0.25
+	frontage = 0.50
+
+	hull_size = 54
+	cannons = 104
+	crew_size = 0.980
+
+	blockade_capacity = 1.40
+
+	morale_damage_taken = -0.06
+	morale_damage_done = 0.10
+	attrition_loss = -0.02
+
+	maintenance_demand = heavy_ship_5_maintenance
+	construction_demand = heavy_ship_5_construction
+	age = "age_4_reformation"
+}
+
+# Spain - Nuestra Señora de la Concepción y de las Ánimas
+# Large Spanish three-decker / prestige ship.
+# Durable and imposing, but slower and less efficient than later 74-gun ships.
+n_nuestra_senora_de_la_concepcion = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 98gun_ship }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_large_maritime
+	movement_speed = 6.8
+
+	# Target ingame:
+	# combat_speed = 0.48
+	# initiative = 1.20
+	# frontage = 1.90
+	combat_speed = -0.02
+	initiative = 0.20
+	frontage = 0.40
+
+	hull_size = 50
+	cannons = 90
+	crew_size = 0.850
+
+	blockade_capacity = 1.30
+
+	morale_damage_taken = -0.08
+	morale_damage_done = 0.05
+	attrition_loss = -0.03
+
+	maintenance_demand = heavy_ship_5_maintenance
+	construction_demand = heavy_ship_5_construction
+	age = "age_4_reformation"
+}
+
+# Netherlands - De Zeven Provinciën
+# Flagship of Michiel de Ruyter.
+# Efficient, disciplined and tactically sharp, but not a huge first-rate.
+n_de_zeven_provincien = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 74gun_ship }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_low_large_maritime
+	movement_speed = 7.2
+
+	# Target ingame:
+	# combat_speed = 0.60
+	# initiative = 1.35
+	# frontage = 1.55
+	combat_speed = 0.10
+	initiative = 0.35
+	frontage = 0.05
+
+	hull_size = 45
+	cannons = 80
+	crew_size = 0.700
+
+	blockade_capacity = 1.25
+
+	morale_damage_taken = -0.05
+	morale_damage_done = 0.08
+	attrition_loss = -0.02
+
+	maintenance_demand = heavy_ship_4_maintenance
+	construction_demand = heavy_ship_4_construction
+	age = "age_4_reformation"
+}
+
+# Sweden - Kronan
+# Massive Swedish prestige warship.
+# Enormous broadside and presence, but slow, awkward and very frontage-heavy.
+n_kronan = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 120gun_ship }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_large_maritime
+	movement_speed = 6.2
+
+	# Target ingame:
+	# combat_speed = 0.35
+	# initiative = 1.10
+	# frontage = 2.25
+	combat_speed = -0.15
+	initiative = 0.10
+	frontage = 0.75
+
+	hull_size = 56
+	cannons = 110
+	crew_size = 1.050
+
+	blockade_capacity = 1.45
+
+	morale_damage_taken = -0.06
+	morale_damage_done = 0.06
+	attrition_loss = -0.02
+
+	maintenance_demand = heavy_ship_5_maintenance
+	construction_demand = heavy_ship_5_construction
+	age = "age_4_reformation"
+}
+
+# Portugal - Padre Eterno
+# Great Portuguese ocean-going galleon.
+# Extremely sturdy for long-distance service, but not an efficient battleline ship.
+n_padre_eterno = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { n_galleon }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_above_medium_maritime
+	movement_speed = 6.1
+
+	# Target ingame:
+	# combat_speed = 0.35
+	# initiative = 0.95
+	# frontage = 2.20
+	combat_speed = -0.15
+	initiative = -0.05
+	frontage = 0.70
+
+	hull_size = 52
+	cannons = 80
+	crew_size = 0.850
+
+	blockade_capacity = 1.10
+
+	morale_damage_taken = -0.10
+	morale_damage_done = 0.03
+	attrition_loss = -0.06
+
+	maintenance_demand = heavy_ship_5_maintenance
+	construction_demand = heavy_ship_5_construction
+	age = "age_4_reformation"
+}
+
+
+##################################################
+# UNIQUE EVENT SHIPS - AGE 5 / LATE 18TH CENTURY
+##################################################
+# Important:
+# - buildable = no
+# - intended to be spawned once by historical event
+# - combat_speed / initiative / frontage are delta values
+##################################################
+
+# Britain - HMS Victory
+# Historical 104-gun First Rate.
+# Role: durable command flagship, not the highest firepower.
+n_hms_victory = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 120gun_ship }
+	ship_name = "Victory"
+	buildable = no
+
+	maritime_presence = ship_very_large_maritime
+	movement_speed = 7.0
+
+	# Target ingame:
+	# combat_speed = 0.48
+	# initiative = 1.45
+	# frontage = 1.90
+	combat_speed = -0.02
+	initiative = 0.45
+	frontage = 0.40
+
+	hull_size = 70
+	cannons = 104
+	crew_size = 1.050
+
+	blockade_capacity = 1.65
+
+	morale_damage_taken = -0.14
+	morale_damage_done = 0.08
+
+	maintenance_demand = heavy_ship_6_maintenance
+	construction_demand = heavy_ship_6_construction
+	age = "age_5_absolutism"
+}
+
+# France - L'Orient
+# Historical 118-gun First Rate.
+# Role: powerful French battlefleet flagship with strong morale shock.
+n_l_orient = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 120gun_ship }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_very_large_maritime
+	movement_speed = 7.0
+
+	# Target ingame:
+	# combat_speed = 0.45
+	# initiative = 1.35
+	# frontage = 2.00
+	combat_speed = -0.05
+	initiative = 0.35
+	frontage = 0.50
+
+	hull_size = 68
+	cannons = 118
+	crew_size = 1.050
+
+	blockade_capacity = 1.65
+
+	morale_damage_taken = -0.08
+	morale_damage_done = 0.12
+
+	maintenance_demand = heavy_ship_6_maintenance
+	construction_demand = heavy_ship_6_construction
+	age = "age_6_revolutions"
+}
+
+# Spain - Santísima Trinidad
+# Historical very large First Rate.
+# Role: enormous firepower and presence, but slow and frontage-heavy.
+n_santisima_trinidad = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 120gun_ship }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_giant_maritime
+	movement_speed = 6.4
+
+	# Target ingame:
+	# combat_speed = 0.35
+	# initiative = 1.15
+	# frontage = 2.35
+	combat_speed = -0.15
+	initiative = 0.15
+	frontage = 0.85
+
+	hull_size = 72
+	cannons = 136
+	crew_size = 1.200
+
+	blockade_capacity = 1.80
+
+	morale_damage_taken = -0.10
+	morale_damage_done = 0.06
+
+	maintenance_demand = heavy_ship_6_maintenance
+	construction_demand = heavy_ship_6_construction
+	age = "age_5_absolutism"
+}
+
+# USA - USS Constitution
+# Historical 44-gun heavy frigate.
+# Role: unusually durable elite frigate, strong but not a ship of the line.
+n_uss_constitution = {
+	is_special = yes
+	category = navy_light_ship
+	gfx_tags = { heavy_frigate }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_giant_maritime
+	movement_speed = 12.5
+
+	# Target ingame:
+	# combat_speed = 0.95
+	# initiative = 2.45
+	# frontage = 1.15
+	combat_speed = -1.05
+	initiative = -0.55
+	frontage = 0.15
+
+	hull_size = 40
+	cannons = 44
+	crew_size = 0.260
+
+	blockade_capacity = 3.10
+	anti_piracy_warfare = 1.40
+
+	morale_damage_taken = -0.12
+	morale_damage_done = 0.05
+
+	maintenance_demand = light_ship_6_maintenance
+	construction_demand = light_ship_6_construction
+	age = "age_6_revolutions"
+}
+
+# Portugal - Príncipe Real
+# Historical 90-gun ship of the line.
+# Role: reliable Portuguese prestige ship, between 74 and 98.
+n_principe_real = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 98gun_ship }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_large_maritime
+	movement_speed = 7.6
+
+	# Target ingame:
+	# combat_speed = 0.55
+	# initiative = 1.40
+	# frontage = 1.70
+	combat_speed = 0.05
+	initiative = 0.40
+	frontage = 0.20
+
+	hull_size = 62
+	cannons = 90
+	crew_size = 0.900
+
+	blockade_capacity = 1.50
+
+	morale_damage_taken = -0.10
+	morale_damage_done = 0.06
+
+	maintenance_demand = heavy_ship_6_maintenance
+	construction_demand = heavy_ship_6_construction
+	age = "age_6_revolutions"
+}
+
+# Sweden - Konung Gustaf III
+# Historical 70-gun ship of the line.
+# Role: efficient Baltic flagship, slightly better tactical handling than a normal 74.
+n_konung_gustaf_iii = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 74gun_ship }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_low_large_maritime
+	movement_speed = 8.1
+
+	# Target ingame:
+	# combat_speed = 0.65
+	# initiative = 1.55
+	# frontage = 1.45
+	combat_speed = 0.15
+	initiative = 0.55
+	frontage = -0.05
+
+	hull_size = 54
+	cannons = 70
+	crew_size = 0.700
+
+	blockade_capacity = 1.30
+
+	morale_damage_taken = -0.08
+	morale_damage_done = 0.05
+
+	combat = {
+		inland_sea = 0.05
+		narrows = 0.05
+	}
+
+	maintenance_demand = heavy_ship_5_maintenance
+	construction_demand = heavy_ship_5_construction
+	age = "age_5_absolutism"
+}
+
+# Netherlands - De Ruyter
+# Historical 74-gun ship of the line.
+# Role: efficient Dutch line ship with strong initiative and morale pressure.
+n_de_ruyter = {
+	is_special = yes
+	category = navy_heavy_ship
+	gfx_tags = { 74gun_ship }
+	use_ship_names = no
+	buildable = no
+
+	maritime_presence = ship_low_large_maritime
+	movement_speed = 8.2
+
+	# Target ingame:
+	# combat_speed = 0.65
+	# initiative = 1.60
+	# frontage = 1.45
+	combat_speed = 0.15
+	initiative = 0.60
+	frontage = -0.05
+
+	hull_size = 52
+	cannons = 74
+	crew_size = 0.700
+
+	blockade_capacity = 1.40
+
+	morale_damage_taken = -0.06
+	morale_damage_done = 0.08
+
+	maintenance_demand = heavy_ship_5_maintenance
+	construction_demand = heavy_ship_5_construction
+	age = "age_5_absolutism"
+}

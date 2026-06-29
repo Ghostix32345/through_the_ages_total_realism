@@ -2411,9 +2411,23 @@
  n_frigate_desc: "Die $n_frigate$ ist das klassische Arbeitstier der Meere. Ausgestattet mit 36 Kanonen auf einem einzigen, durchgehenden Deck, vereint sie Schlagkraft mit exzellenter Seetüchtigkeit. Als geborener „Kreuzer“ operiert sie oft monatelang isoliert in Übersee, um Handelskonvois zu jagen oder der Hauptflotte als Auge und Ohr bei der Aufklärung zu dienen."
  n_heavy_frigate: "Schwere Fregatte, 44 Kanonen"
  n_heavy_frigate_desc: "Die $n_heavy_frigate$ wurde gebaut, um die Vorherrschaft auf den Kreuzer-Routen zu erzwingen. Mit 44 schweren Kanonen und einer massiven Bauweise übertrifft sie normale Fregatten an Feuerkraft und Robustheit deutlich, ohne dabei ihre Agilität einzubüßen. Ein Albtraum für kleinere Schiffe und stark genug, um selbst Linienschiffe zu bedrängen. Hier gild der Grundsatz: „Stärker als jedes kleinere Schiff und schneller als jedes größere Schiff“"
+ n_50gun_ship: "Linienschiff, 50 Kanonen"
+ n_50gun_ship_desc: "Das $n_50gun_ship$ ist ein kleines Linienschiff, das an der Grenze zwischen schwerer Fregatte und vollwertigem Schlachtschiff steht. Mit zwei Batteriedecks und rund fünfzig Kanonen ist es stark genug, um kleinere Geschwader zu führen, Konvois zu decken und auf entfernten Stationen als Flaggschiff zu dienen. In der Hauptschlachtlinie kann es einem 74er jedoch nicht lange standhalten."
  n_74gun_ship: "Linienschiff, 74 Kanonen"
  n_74gun_ship_desc: "Das $n_74gun_ship$ bildet das eiserne Rückgrat jeder Schlachtreihe. Als perfekter Kompromiss aus Feuerkraft, Seetüchtigkeit und Baukosten ist dieser Zweidecker der absolute Standardtyp des Linienschiffs. Es ist massiv genug, um im zermürbenden Breitseitenduell der Hauptflotten standzuhalten, und mobil genug für weltweite Einsätze."
  n_98gun_ship: "Linienschiff, 98 Kanonen"
  n_98gun_ship_desc: "Dieses mächtige $n_98gun_ship$ ist ein Linienschiff des zweiten Ranges. Als imposanter Dreidecker überragt es die Standard-Linienschiffe deutlich und bringt eine verheerende Breitseite ins Gefecht. Aufgrund seiner enormen Feuerkraft und der dicken Eichenplanken wird es in großen Seeschlachten dort eingesetzt, wo der Druck des Gegners am größten ist."
  n_120gun_ship: "Linienschiff, 120 Kanonen"
  n_120gun_ship_desc: "Das $n_120gun_ship$ ist eine schwimmende Festung des ersten Ranges und die Krone des Schiffbaus. Dieser gigantische Dreidecker trägt die schwerste Artillerie der Meere und bietet Platz für hunderte Seeleute. Aufgrund seiner enormen Größe und repräsentativen Räumlichkeiten dient ein solches Schiff als Flaggschiff einer Flotte."
+ 
+ n_royal_sovereign: "HMS Royal Sovereign"
+ event_ship_royal_sovereign_short_desc: "Die Royal Sovereign ist ein englisches Prestige-Kriegsschiff des 17. Jahrhunderts. Mächtig, prunkvoll und schwer bewaffnet, verkörpert sie den Übergang von der großen Kriegsgaleone zum Linienschiff und steht für den wachsenden Anspruch Englands auf Seeherrschaft."
+ subunit_nickname_royal_sovereign: "Royal Sovereign"
+ 
+ n_hms_victory: "HMS Victory"
+ n_hms_victory_desc: "Die $n_hms_victory$ ist ein Linienschiff des ersten Ranges, das in der Royal Navy als Flaggschiff diente. Sie ist berühmt für ihre Rolle in der Schlacht von Trafalgar, wo sie unter dem Kommando von Admiral Nelson kämpfte. Als Schiff im aktiven Dienst ist sie das älteste noch existierende Kriegsschiff der Welt und ein Symbol für die maritime Geschichte Großbritanniens."
+ subunit_nickname_victory: "Victory"
+
+ n_de_zeven_provincien: "De Zeven Provinciën"
+ event_ship_de_zeven_provincien_short_desc: "Die De Zeven Provinciën ist das berühmte Flaggschiff Michiel de Ruyters. Sie steht für niederländische Seemannschaft, Disziplin und taktische Stärke — kein überladener Koloss, sondern ein effizientes Linienschiff einer Republik, die ihre Handelswege mit Entschlossenheit verteidigt."
+ subunit_nickname_de_zeven_provincien: "De Zeven Provinciën"

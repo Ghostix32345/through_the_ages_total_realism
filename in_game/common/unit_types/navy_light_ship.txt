@@ -18,7 +18,6 @@ n_caravel = {
 	category = navy_light_ship
 	copy_from = n_age_3_discovery_light_ship
 	age = "age_3_discovery"
-	upgrades_to = n_war_brig
 
 	mercenaries_per_location = {
 		pop_type = burghers
@@ -27,23 +26,30 @@ n_caravel = {
 }
 
 # Small patrol and escort vessel.
-# Replaces the old late pre-frigate role.
+# Cheap, fast and useful for piracy suppression and colonial patrols.
 n_war_brig = {
 	category = navy_light_ship
 	gfx_tags = { navy_war_brig }
 	use_ship_names = yes
 	buildable = yes
-	maritime_presence = ship_above_medium_maritime
-	movement_speed = 14
-	hull_size = 14
-	cannons = 16
-	crew_size = 0.080
-	blockade_capacity = 1.5
 
-	anti_piracy_warfare = 1.0
+	maritime_presence = ship_large_maritime
+	movement_speed = 14.5
+
+	combat_speed = -0.85
+	initiative = -1.00
+	frontage = -0.25
+
+	hull_size = 15
+	cannons = 18
+	crew_size = 0.090
+
+	blockade_capacity = 2.0
+	anti_piracy_warfare = 1.6
 
 	maintenance_demand = light_ship_3_maintenance
 	construction_demand = light_ship_3_construction
+
 	age = "age_5_absolutism"
 
 	mercenaries_per_location = {
@@ -53,22 +59,30 @@ n_war_brig = {
 }
 
 # Colonial escort and independent light warship.
+# Stronger than a brig, but still cheaper and more flexible than a frigate.
 n_corvette = {
 	category = navy_light_ship
 	gfx_tags = { navy_corvette }
 	use_ship_names = yes
 	buildable = yes
-	maritime_presence = ship_large_maritime
-	movement_speed = 13.5
-	hull_size = 18
+
+	maritime_presence = ship_very_large_maritime
+	movement_speed = 13.8
+
+	combat_speed = -0.95
+	initiative = -0.90
+	frontage = -0.10
+
+	hull_size = 19
 	cannons = 24
-	crew_size = 0.120
-	blockade_capacity = 1.8
+	crew_size = 0.125
 
-	anti_piracy_warfare = 1.2
+	blockade_capacity = 2.2
+	anti_piracy_warfare = 1.7
 
-	maintenance_demand = light_ship_3_maintenance
-	construction_demand = light_ship_3_maintenance
+	maintenance_demand = light_ship_4_maintenance
+	construction_demand = light_ship_4_construction
+
 	age = "age_5_absolutism"
 
 	mercenaries_per_location = {
@@ -78,22 +92,30 @@ n_corvette = {
 }
 
 # Classic fifth-rate frigate.
+# Main cruiser for trade warfare, blockade work and independent naval operations.
 n_frigate = {
 	category = navy_light_ship
 	gfx_tags = { navy_frigate }
 	use_ship_names = yes
 	buildable = yes
+
 	maritime_presence = ship_very_large_maritime
 	movement_speed = 13
-	hull_size = 24
-	cannons = 36
-	crew_size = 0.160
-	blockade_capacity = 2.2
 
+	combat_speed = -1.05
+	initiative = -0.75
+	frontage = 0.00
+
+	hull_size = 25
+	cannons = 36
+	crew_size = 0.170
+
+	blockade_capacity = 2.7
 	anti_piracy_warfare = 1.5
 
-	maintenance_demand = light_ship_4_maintenance
-	construction_demand = light_ship_4_maintenance
+	maintenance_demand = light_ship_5_maintenance
+	construction_demand = light_ship_5_construction
+
 	age = "age_5_absolutism"
 
 	mercenaries_per_location = {
@@ -103,22 +125,30 @@ n_frigate = {
 }
 
 # Large fifth-rate / super-frigate, Constitution/Acheron style.
+# Strong in battle, but expensive and less efficient for routine patrol work.
 n_heavy_frigate = {
 	category = navy_light_ship
 	gfx_tags = { heavy_frigate }
 	use_ship_names = yes
 	buildable = yes
+
 	maritime_presence = ship_giant_maritime
-	movement_speed = 12
-	hull_size = 34
+	movement_speed = 12.3
+
+	combat_speed = -1.15
+	initiative = -0.80
+	frontage = 0.15
+
+	hull_size = 32
 	cannons = 44
 	crew_size = 0.240
-	blockade_capacity = 2.8
 
-	anti_piracy_warfare = 1.5
+	blockade_capacity = 3.0
+	anti_piracy_warfare = 1.3
 
-	maintenance_demand = light_ship_5_maintenance
-	construction_demand = light_ship_5_maintenance
+	maintenance_demand = light_ship_6_maintenance
+	construction_demand = light_ship_6_construction
+
 	age = "age_6_revolutions"
 
 	mercenaries_per_location = {

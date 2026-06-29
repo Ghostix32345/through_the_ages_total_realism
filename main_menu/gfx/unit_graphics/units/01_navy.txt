@@ -199,6 +199,13 @@ age_6_revolutions:heavy_frigate = {
 	size = 2.0
 }
 
+age_5_absolutism:50gun_ship = {
+	schematic_name = "ship_heavy_05_european_twodecker_schematic"
+	render_under_water = yes
+
+	size = 2.9
+}
+
 age_5_absolutism:74gun_ship = {
 	schematic_name = "ship_heavy_05_european_twodecker_schematic"
 	render_under_water = yes

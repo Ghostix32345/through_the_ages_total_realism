@@ -344,6 +344,19 @@ unlock_galleon_advance = {
 	}
 }
 
+# 50-gun Ship of the Line
+unlock_50gun_ship_advance = {
+	age = age_5_absolutism
+
+	unlock_unit = n_50gun_ship
+
+	requires = unlock_frigate_advance
+
+	ai_preference_tags = {
+		exploration
+	}
+}
+
 # 74-gun Ship of the Line / Third Rate equivalent.
 unlock_74gun_ship_advance = {
 	age = age_5_absolutism
