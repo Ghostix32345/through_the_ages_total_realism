@@ -1,4 +1,4 @@
-﻿country_name_construction = {
+﻿REPLACE:country_name_construction = {
 	type = country
 
 	text = {
@@ -19,40 +19,6 @@
 		trigger = {
 			tag = GBR
 			coa_def_GBR_uk_trigger = yes
-		}
-	}
-
-	text = {
-		localization_key = country_name_construction_prefix_rank_of_name_but_map_is_just_prefix_rank
-		trigger = {
-			OR = {
-				AND = {
-					tag = USA
-					government_type = government_type:republic
-				}
-				AND = {
-					tag = MAM
-					OR = {
-						country_rank = country_rank:rank_empire
-						country_rank = country_rank:rank_kingdom
-					}
-					religion.group = religion_group:muslim
-				}
-				AND = {
-					tag = DAU
-					OR = {
-						country_rank = country_rank:rank_duchy
-						country_rank = country_rank:rank_county
-					}
-				}
-				AND = {
-					tag = PAL
-					OR = {
-						country_rank = country_rank:rank_duchy
-						country_rank = country_rank:rank_county
-					}
-				}
-			}
 		}
 	}
 
@@ -94,6 +60,39 @@
 				AND = {
 					tag = PAP
 					has_reform = government_reform:papacy_reform
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = country_name_construction_prefix_rank_of_name_but_map_is_just_prefix_rank
+		trigger = {
+			OR = {
+				AND = {
+					tag = USA
+					government_type = government_type:republic
+				}
+				AND = {
+					tag = MAM
+					OR = {
+						country_rank = country_rank:rank_empire
+						country_rank = country_rank:rank_kingdom
+					}
+					religion.group = religion_group:muslim
+				}
+				AND = {
+					tag = DAU
+					OR = {
+						country_rank = country_rank:rank_duchy
+						country_rank = country_rank:rank_county
+					}
+				}
+				AND = {
+					tag = PAL
+					OR = {
+						country_rank = country_rank:rank_duchy
+						country_rank = country_rank:rank_county
+					}
 				}
 			}
 		}
@@ -192,7 +191,6 @@
 
 			country_rank_is_kingdom = yes
 			OR = {
-				tag = GBR
 				tag = ARA
 				tag = CAS
 				tag = POL
