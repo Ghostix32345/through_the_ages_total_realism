@@ -1,3 +1,0 @@
-
-[[Handelsstube]]
-[[Überseehandelsstube]]

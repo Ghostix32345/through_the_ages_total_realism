@@ -1,2 +1,0 @@
-[[Brandenburger Tor]]
-[[Siegessäule]]

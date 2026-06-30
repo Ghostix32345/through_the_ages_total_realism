@@ -36,9 +36,19 @@ NCityAudio = {
 	CONSTRUCTION_AUDIO_MODE = 2					# 0 = only on click, 1 = only on completion, 2 = both
 	CONSTRUCTION_AUDIO_MIN_TIER = 1				# tier values below this are clamped up
 	CONSTRUCTION_AUDIO_MAX_TIER = 6				# tier values above this are clamped down
-	CONSTRUCTION_AUDIO_MAX_CLICK_PLAYS = 10		# hard cap on how many times a single ctrl/shift/mass click plays the construction sound
-	CONSTRUCTION_AUDIO_CLICK_STAGGER_FRAMES = 3	# frames between staggered plays when a click queues multiple constructions (0 = all on the same frame)
 	CONSTRUCTION_DEFAULT_AUDIO_CATEGORY = "generic"		# fallback when a building's category has no audio_category
+}
+
+NAlertAudio = {
+	# Wwise event played when an alert banner of the given priority appears.
+	ALERT_APPEAR_BLUE = "UI_alert_appear_blue"
+	ALERT_APPEAR_GREEN = "UI_alert_appear_green"
+	ALERT_APPEAR_YELLOW = "UI_alert_appear_yellow"
+	ALERT_APPEAR_ORANGE = "UI_alert_appear_orange"
+	ALERT_APPEAR_RED = "UI_alert_appear_red"			# also used for War priority alerts
+	ALERT_APPEAR_BLACK = "UI_alert_appear_black"
+	ALERT_APPEAR_PURPLE = "UI_alert_appear_purple"
+	ALERT_APPEAR_DEFAULT = "UI_alert_appear"			# fallback when an alert has no specific priority
 }
 
 NJominiMap = {
@@ -184,7 +194,10 @@ NCountry = {
 	
 	INSTITUTION_MINIMUM_PERCENT = 0.2
 	
-	INSTITUTION_TRADE_SPREAD_SCALE = 0.0075
+	# Trade-spread of institutions: distance-discounted share of a market's trade with the embraced world
+	INSTITUTION_TRADE_SPREAD_RANGE_HALFCOST = 50	# trade path cost at which a source market's contribution halves
+	INSTITUTION_TRADE_SPREAD_SOFTKNEE = 0.25		# connectedness fraction at which trade spread reaches half of base
+	INSTITUTION_TRADE_MIN_VOLUME = 10				# min total market throughput before trade spread applies
 
 	CABINET_ACTION_SKILL_MODIFIER = 0.005
 	
@@ -412,7 +425,7 @@ NCombat = {
 	
 	MAX_FRONTAGE_OVERSTACKING = 1.25	#25% overstack in flanks.
 	
-	LAND_LEVY_COMBAT_IMPACT = 0.50
+	LAND_LEVY_COMBAT_IMPACT = 0.75
 	
 	INITIATIVE_BASE_CHANCE = 0.1	# base chance each tick
 	INITIATIVE_CHANCE_EACH = 0.02 # Chance to engage per point of initiative
@@ -561,8 +574,9 @@ NAI = {
 	COLONY_NEIGHBORING_CHARTER_UTILITY_BONUS = 5.0 # additive bonus to colonize neighboring charter
 	COLONY_REGION_COMPLETION_UTILITY_BONUS = 5.0 # multiplicative bonus from ratio of locations we own (or vassals) in the region which we colonize
 	COLONY_POP_THRESHOLD = 20
-	COLONY_DISEASE_UTILITY_PENALTY = 2.0 # Utility penalty per diseased location in target province (discourages colonizing disease-endemic regions)
 
+	COLONY_DISEASE_UTILITY_PENALTY = 50.0 # Utility penalty for target province, disabled when above threshold migration (discourages colonizing disease-endemic regions)
+	AI_MIGRATION_THRESHOLD_FOR_DISEASED_LOCATIONS = 0.05 # expected monthly migration required to be able to successfully colonize locations with disease e.g. malaria
 
 	AI_MARKET_LOW_FOOD_THRESHOLD = 0.5 # when market food stockpile reaches this level AI will improve food production if food balance is negative
 	AI_MARKET_CRITICAL_FOOD_THRESHOLD = 0.1 # when market food stockpile reaches this level AI will improve food production even if food balance is positive
@@ -631,11 +645,11 @@ NAI = {
 	AI_LONG_TERM_DISCOUNT_FACTOR = 0.9988 # AI long term utility planing, used for evaluating long term modifiers such as estate privileges
 	AI_BUILDING_OPTIMIZATION_TIMEMULTI_THRESHOLD = 250 #time multiplier needed for moving buildings around 
 	AI_DEVELOPMENT_UTILITY = 0.1 # Utility bonus from development as it has so many modifiers that are hard to calculate
-	AI_BUILDING_PROFIT_THRESHOLD = 1.10 # needs to be at least 20% profitable for AI to expand a building that is not producing strategic goods
+	AI_BUILDING_PROFIT_THRESHOLD = 1.2 # needs to be at least 20% profitable for AI to expand a building that is not producing strategic goods
 
 	# These two defines adjust AI desire to maintain a profit margin for their country
-	AI_PROFIT_MARGIN_TARGET = 0.15 # the desired profit margin
-	AI_GOLD_COST_UTIL_FROM_LOW_PROFIT_MARGIN = 2 # how hard the AI tries to maintain that margin
+	AI_PROFIT_MARGIN_TARGET = 0.25 # the desired profit margin
+	AI_GOLD_COST_UTIL_FROM_LOW_PROFIT_MARGIN = 3 # how hard the AI tries to maintain that margin
 
 	AI_EARLY_GAME_MONTHS = 36 # during these first months AI will focus more on building up their initial economy by disabling some other things like unit recruitment
 
@@ -904,7 +918,7 @@ NAI = {
 	INITIATIVE_COMBAT_STRENGTH_FACTOR = 0.025 # -> 10 initiative ~25% better army
 	AI_FLANKING_COMBAT_STRENGTH_FACTOR = 0.3
 
-	BUILDING_THRESHOLD_FACTOR = 1.1 # Increase this to make AI more careful with building buildings. Don't make < 1
+	BUILDING_THRESHOLD_FACTOR = 1.2 # Increase this to make AI more careful with building buildings. Don't make < 1
 	AI_HOSTILE_BORDER_MIN_SUBUNITS = 3				# Minimum subunits in a hostile army near our border before AI raises fort maintenance
 	LOCATION_BORDER_DISTANCE_RELEVANCE_THRESHOLD = 20
 	BASE_FORT_LEVEL_BENEFIT_SCALAR = 0.1
@@ -1212,7 +1226,7 @@ NAI = {
 	AI_MAX_PROVINCES_TO_INTEGRATE_PER_CABINET_MEMBER = 4 #How many provinces will Ai accept over their cabinet size before they start releasing subjects.
 	AI_RELEASE_SUBJECT_AREA_MINIMUM_SIZE = 6 # Minimum owner area size neede for an AI to release that area as a subject
 
-	AI_BUFFER_TAX_BASE_FACTOR = 2 # AI will save their taxbase multiplied by this for buffer for sudden expenses like event options and hiring mercs
+	AI_BUFFER_TAX_BASE_FACTOR = 3 # AI will save their taxbase multiplied by this for buffer for sudden expenses like event options and hiring mercs
 
 	AI_HIGH_OPINION_THRESHOLD = 100	#Makes ai use certain interactions with countries with that opinion, only checks Our opinion of Them
 	AI_LOW_OPINION_THRESHOLD = -100
@@ -2565,12 +2579,12 @@ NReligion = {
 }
 
 NSpreadable = {
-	ESTIMATED_TRAVELLERS_TO_NEIGHBOURING_LOCATIONS = 0.05
-	ESTIMATED_PEOPLE_PER_UNIT_MERCHANT_CAPACITY = 0.01
-	ESTIMATED_TRAVELLERS_TO_CAPITAL = 0.05
-	ESTIMATED_TRAVELLERS_TO_MARKET_CENTRE = 0.05
-	ESTIMATED_MIXING_WITH_UNITS = 0.05
-	ESTIMATED_MIXING_WITHIN_UNITS = 0.3
+	ESTIMATED_TRAVELLERS_TO_NEIGHBOURING_LOCATIONS = 0.06
+	ESTIMATED_PEOPLE_PER_UNIT_MERCHANT_CAPACITY = 0.012
+	ESTIMATED_TRAVELLERS_TO_CAPITAL = 0.06
+	ESTIMATED_TRAVELLERS_TO_MARKET_CENTRE = 0.06
+	ESTIMATED_MIXING_WITH_UNITS = 0.06
+	ESTIMATED_MIXING_WITHIN_UNITS = 0.35
 }
 
 NDisease = {
