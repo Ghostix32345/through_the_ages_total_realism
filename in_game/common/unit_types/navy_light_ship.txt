@@ -34,7 +34,7 @@ n_war_brig = {
 	buildable = yes
 
 	maritime_presence = ship_large_maritime
-	movement_speed = 14.5
+	movement_speed = 6.6
 
 	combat_speed = -0.85
 	initiative = -1.00
@@ -67,7 +67,7 @@ n_corvette = {
 	buildable = yes
 
 	maritime_presence = ship_very_large_maritime
-	movement_speed = 13.8
+	movement_speed = 6.2
 
 	combat_speed = -0.95
 	initiative = -0.90
@@ -100,7 +100,7 @@ n_frigate = {
 	buildable = yes
 
 	maritime_presence = ship_very_large_maritime
-	movement_speed = 13
+	movement_speed = 6.0
 
 	combat_speed = -1.05
 	initiative = -0.75
@@ -133,7 +133,7 @@ n_heavy_frigate = {
 	buildable = yes
 
 	maritime_presence = ship_giant_maritime
-	movement_speed = 12.3
+	movement_speed = 5.8
 
 	combat_speed = -1.15
 	initiative = -0.80

@@ -26,7 +26,7 @@ n_royal_sovereign = {
 	buildable = no
 
 	maritime_presence = ship_large_maritime
-	movement_speed = 6.4
+	movement_speed = 4.1
 
 	# Target ingame:
 	# combat_speed = 0.42
@@ -62,7 +62,7 @@ n_soleil_royal = {
 	buildable = no
 
 	maritime_presence = ship_large_maritime
-	movement_speed = 6.6
+	movement_speed = 4.2
 
 	# Target ingame:
 	# combat_speed = 0.45
@@ -98,7 +98,7 @@ n_nuestra_senora_de_la_concepcion = {
 	buildable = no
 
 	maritime_presence = ship_large_maritime
-	movement_speed = 6.8
+	movement_speed = 4.3
 
 	# Target ingame:
 	# combat_speed = 0.48
@@ -123,42 +123,6 @@ n_nuestra_senora_de_la_concepcion = {
 	age = "age_4_reformation"
 }
 
-# Netherlands - De Zeven Provinciën
-# Flagship of Michiel de Ruyter.
-# Efficient, disciplined and tactically sharp, but not a huge first-rate.
-n_de_zeven_provincien = {
-	is_special = yes
-	category = navy_heavy_ship
-	gfx_tags = { 74gun_ship }
-	use_ship_names = no
-	buildable = no
-
-	maritime_presence = ship_low_large_maritime
-	movement_speed = 7.2
-
-	# Target ingame:
-	# combat_speed = 0.60
-	# initiative = 1.35
-	# frontage = 1.55
-	combat_speed = 0.10
-	initiative = 0.35
-	frontage = 0.05
-
-	hull_size = 45
-	cannons = 80
-	crew_size = 0.700
-
-	blockade_capacity = 1.25
-
-	morale_damage_taken = -0.05
-	morale_damage_done = 0.08
-	attrition_loss = -0.02
-
-	maintenance_demand = heavy_ship_4_maintenance
-	construction_demand = heavy_ship_4_construction
-	age = "age_4_reformation"
-}
-
 # Sweden - Kronan
 # Massive Swedish prestige warship.
 # Enormous broadside and presence, but slow, awkward and very frontage-heavy.
@@ -170,7 +134,7 @@ n_kronan = {
 	buildable = no
 
 	maritime_presence = ship_large_maritime
-	movement_speed = 6.2
+	movement_speed = 3.9
 
 	# Target ingame:
 	# combat_speed = 0.35
@@ -206,7 +170,7 @@ n_padre_eterno = {
 	buildable = no
 
 	maritime_presence = ship_above_medium_maritime
-	movement_speed = 6.1
+	movement_speed = 3.8
 
 	# Target ingame:
 	# combat_speed = 0.35
@@ -252,7 +216,7 @@ n_hms_victory = {
 	buildable = no
 
 	maritime_presence = ship_very_large_maritime
-	movement_speed = 7.0
+	movement_speed = 4.4
 
 	# Target ingame:
 	# combat_speed = 0.48
@@ -287,7 +251,7 @@ n_l_orient = {
 	buildable = no
 
 	maritime_presence = ship_very_large_maritime
-	movement_speed = 7.0
+	movement_speed = 4.2
 
 	# Target ingame:
 	# combat_speed = 0.45
@@ -322,7 +286,7 @@ n_santisima_trinidad = {
 	buildable = no
 
 	maritime_presence = ship_giant_maritime
-	movement_speed = 6.4
+	movement_speed = 3.8
 
 	# Target ingame:
 	# combat_speed = 0.35
@@ -357,7 +321,7 @@ n_uss_constitution = {
 	buildable = no
 
 	maritime_presence = ship_giant_maritime
-	movement_speed = 12.5
+	movement_speed = 5.9
 
 	# Target ingame:
 	# combat_speed = 0.95
@@ -393,7 +357,7 @@ n_principe_real = {
 	buildable = no
 
 	maritime_presence = ship_large_maritime
-	movement_speed = 7.6
+	movement_speed = 4.6
 
 	# Target ingame:
 	# combat_speed = 0.55
@@ -428,7 +392,7 @@ n_konung_gustaf_iii = {
 	buildable = no
 
 	maritime_presence = ship_low_large_maritime
-	movement_speed = 8.1
+	movement_speed = 5.0
 
 	# Target ingame:
 	# combat_speed = 0.65
@@ -468,7 +432,7 @@ n_de_ruyter = {
 	buildable = no
 
 	maritime_presence = ship_low_large_maritime
-	movement_speed = 8.2
+	movement_speed = 4.9
 
 	# Target ingame:
 	# combat_speed = 0.65

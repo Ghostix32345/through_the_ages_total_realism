@@ -36,7 +36,7 @@ n_50gun_ship = {
 	buildable = yes
 
 	maritime_presence = ship_above_medium_maritime
-	movement_speed = 8.5
+	movement_speed = 5.2
 
 	combat_speed = 0.20
 	initiative = 0.30
@@ -64,7 +64,7 @@ n_74gun_ship = {
 	buildable = yes
 
 	maritime_presence = ship_low_large_maritime
-	movement_speed = 8
+	movement_speed = 4.8
 
 	combat_speed = 0.10
 	initiative = 0.45
@@ -91,7 +91,7 @@ n_98gun_ship = {
 	buildable = yes
 
 	maritime_presence = ship_large_maritime
-	movement_speed = 7.5
+	movement_speed = 4.5
 
 	combat_speed = 0.00
 	initiative = 0.35
@@ -118,7 +118,7 @@ n_120gun_ship = {
 	buildable = yes
 
 	maritime_presence = ship_very_large_maritime
-	movement_speed = 7
+	movement_speed = 4.2
 
 	combat_speed = -0.05
 	initiative = 0.25

@@ -3,17 +3,13 @@
 	use_ship_names = no
 
 	maritime_presence = ship_neglible_maritime
-
-	movement_speed = 4
-
+	movement_speed = 2.8
 	hull_size = 4
 	cannons = 0
 	
 	transport_capacity = 0.25
-	
 	buildable = no
 	levy = yes
-
 	crew_size = 0.010
 
 	age = "age_1_traditions"

@@ -2421,7 +2421,7 @@
  n_120gun_ship_desc: "Das $n_120gun_ship$ ist eine schwimmende Festung des ersten Ranges und die Krone des Schiffbaus. Dieser gigantische Dreidecker trägt die schwerste Artillerie der Meere und bietet Platz für hunderte Seeleute. Aufgrund seiner enormen Größe und repräsentativen Räumlichkeiten dient ein solches Schiff als Flaggschiff einer Flotte."
  
  n_royal_sovereign: "HMS Royal Sovereign"
- event_ship_royal_sovereign_short_desc: "Die Royal Sovereign ist ein englisches Prestige-Kriegsschiff des 17. Jahrhunderts. Mächtig, prunkvoll und schwer bewaffnet, verkörpert sie den Übergang von der großen Kriegsgaleone zum Linienschiff und steht für den wachsenden Anspruch Englands auf Seeherrschaft."
+ n_royal_sovereign_desc: "Die Royal Sovereign ist ein englisches Prestige-Kriegsschiff des 17. Jahrhunderts. Mächtig, prunkvoll und schwer bewaffnet, verkörpert sie den Übergang von der großen Kriegsgaleone zum Linienschiff und steht für den wachsenden Anspruch Englands auf Seeherrschaft."
  subunit_nickname_royal_sovereign: "Royal Sovereign"
  
  n_hms_victory: "HMS Victory"
