@@ -1,0 +1,899 @@
+country_size_impact_tiny_human = {
+	potential_trigger = {
+		is_human = yes
+		country_economical_base <= 750
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 750
+		multiply = -0.006
+		add = 4
+	}
+
+	global_construction_speed = 0.012
+	building_upkeep_costs = -0.006
+
+	country_cabinet_efficiency = 0.014
+	legislative_efficiency = 0.014
+	stability_investment = 0.010
+
+	research_speed_modifier = 0.008
+	diplomatic_reputation = 0.060
+	antagonism_received_modifier = -0.014
+
+	global_manpower_modifier = 0.008
+	regiment_recruit_speed = 0.012
+}
+
+country_size_impact_small_human = {
+	potential_trigger = {
+		is_human = yes
+		country_economical_base > 750
+		country_economical_base <= 1500
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 1500
+		multiply = -0.004
+	}
+
+	global_construction_speed = 0.010
+	building_upkeep_costs = -0.005
+
+	country_cabinet_efficiency = 0.012
+	legislative_efficiency = 0.012
+	stability_investment = 0.008
+
+	research_speed_modifier = 0.006
+	diplomatic_reputation = 0.045
+	antagonism_received_modifier = -0.010
+
+	global_manpower_modifier = 0.006
+	regiment_recruit_speed = 0.010
+}
+
+country_size_impact_great_power_human = {
+	potential_trigger = {
+		is_human = yes
+		country_economical_base > 8000
+		country_economical_base <= 12000
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 8000
+		multiply = 0.0015
+		add = 5
+	}
+
+	global_construction_speed = -0.016
+	building_upkeep_costs = 0.010
+
+	global_build_buildings_efficiency = -0.006
+	global_urban_build_buildings_efficiency = -0.006
+	global_rural_build_buildings_efficiency = -0.006
+	global_mills_build_buildings_efficiency = -0.006
+
+	expand_rgo_farming_cost_modifier = 0.018
+	expand_rgo_forestry_cost_modifier = 0.018
+	expand_rgo_gathering_cost_modifier = 0.018
+	expand_rgo_hunting_cost_modifier = 0.018
+	expand_rgo_mining_cost_modifier = 0.018
+
+	country_cabinet_efficiency = -0.0045
+	legislative_efficiency = -0.0045
+	research_speed_modifier = -0.0035
+
+	diplomatic_reputation = -0.020
+	antagonism_received_modifier = 0.008
+
+	monthly_legitimacy = -0.002
+	diplomatic_spending_cost = 0.007
+	diplomatic_upkeep_modifier = 0.007
+	diplomatic_annexation_cost = 0.007
+
+	set_cabine_action_cost_modifier = 0.010
+	set_cabinet_member_cost_modifier = 0.010
+	replace_cabinet_member_cost_modifier = 0.010
+	set_policy_cost_modifier = 0.010
+	change_policy_cost_modifier = 0.010
+	hire_advisor_cost_modifier = 0.010
+	hire_artist_cost_modifier = 0.010
+	strengthen_ministry_cost_modifier = 0.010
+	reshape_bureaucracy_cost_modifier = 0.010
+
+	stability_decay = 0.000035
+
+	add_accepted_culture_cost_modifier = 0.010
+	remove_accepted_culture_cost_modifier = 0.010
+	add_tolerated_culture_cost_modifier = 0.010
+	remove_tolerated_culture_cost_modifier = 0.010
+	accepted_culture_maintenance_cost_modifier = 0.010
+	tolerated_culture_maintenance_cost_modifier = 0.010
+	change_primary_culture_cost_modifier = 0.010
+
+	regiment_recruit_speed = -0.004
+
+	army_light_infantry_build_cost_modifier = 0.004
+	army_heavy_infantry_build_cost_modifier = 0.004
+	army_light_cavalry_build_cost_modifier = 0.004
+	army_heavy_cavalry_build_cost_modifier = 0.004
+	army_artillery_build_cost_modifier = 0.004
+	army_auxiliary_build_cost_modifier = 0.004
+
+	army_light_infantry_maintenance_cost_modifier = 0.008
+	army_heavy_infantry_maintenance_cost_modifier = 0.008
+	army_light_cavalry_maintenance_cost_modifier = 0.008
+	army_heavy_cavalry_maintenance_cost_modifier = 0.008
+	army_artillery_maintenance_cost_modifier = 0.008
+	army_auxiliary_maintenance_cost_modifier = 0.008
+
+	army_light_infantry_reinforce_cost_modifier = 0.014
+	army_heavy_infantry_reinforce_cost_modifier = 0.014
+	army_light_cavalry_reinforce_cost_modifier = 0.014
+	army_heavy_cavalry_reinforce_cost_modifier = 0.014
+	army_artillery_reinforce_cost_modifier = 0.014
+	army_auxiliary_reinforce_cost_modifier = 0.014
+
+	army_losses_in_war_cost_modifier = 0.008
+
+	train_general_cost_modifier = 0.007
+	create_supply_depot_cost_modifier = 0.007
+
+	navy_heavy_ship_build_cost_modifier = 0.007
+	navy_heavy_ship_maintenance_cost_modifier = 0.007
+	navy_heavy_ship_reinforce_cost_modifier = 0.007
+
+	navy_light_ship_build_cost_modifier = 0.007
+	navy_light_ship_maintenance_cost_modifier = 0.007
+	navy_light_ship_reinforce_cost_modifier = 0.007
+
+	navy_galley_build_cost_modifier = 0.007
+	navy_galley_maintenance_cost_modifier = 0.007
+	navy_galley_reinforce_cost_modifier = 0.007
+
+	navy_transport_build_cost_modifier = 0.007
+	navy_transport_maintenance_cost_modifier = 0.007
+	navy_transport_reinforce_cost_modifier = 0.007
+
+	train_admiral_cost_modifier = 0.007
+
+	hire_mercenary_premium_cost_modifier = 0.025
+	hire_mercenary_leader_cost_modifier = 0.012
+	mercenary_maintenance_efficiency = -0.006
+	global_mercenaries_modifier = -0.007
+	mercenary_range_modifier = -0.006
+}
+
+country_size_impact_hegemon_human = {
+	potential_trigger = {
+		is_human = yes
+		country_economical_base > 12000
+		country_economical_base <= 20000
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 12000
+		multiply = 0.002
+		add = 14
+	}
+
+	global_construction_speed = -0.021
+	building_upkeep_costs = 0.016
+
+	global_build_buildings_efficiency = -0.010
+	global_urban_build_buildings_efficiency = -0.010
+	global_rural_build_buildings_efficiency = -0.010
+	global_mills_build_buildings_efficiency = -0.010
+
+	expand_rgo_farming_cost_modifier = 0.030
+	expand_rgo_forestry_cost_modifier = 0.030
+	expand_rgo_gathering_cost_modifier = 0.030
+	expand_rgo_hunting_cost_modifier = 0.030
+	expand_rgo_mining_cost_modifier = 0.030
+
+	country_cabinet_efficiency = -0.0065
+	legislative_efficiency = -0.0065
+	research_speed_modifier = -0.0045
+
+	diplomatic_reputation = -0.035
+	antagonism_received_modifier = 0.012
+
+	monthly_legitimacy = -0.003
+	diplomatic_spending_cost = 0.010
+	diplomatic_upkeep_modifier = 0.010
+	diplomatic_annexation_cost = 0.010
+
+	set_cabine_action_cost_modifier = 0.014
+	set_cabinet_member_cost_modifier = 0.014
+	replace_cabinet_member_cost_modifier = 0.014
+	set_policy_cost_modifier = 0.014
+	change_policy_cost_modifier = 0.014
+	hire_advisor_cost_modifier = 0.014
+	hire_artist_cost_modifier = 0.014
+	strengthen_ministry_cost_modifier = 0.014
+	reshape_bureaucracy_cost_modifier = 0.014
+
+	stability_decay = 0.00005
+
+	add_accepted_culture_cost_modifier = 0.014
+	remove_accepted_culture_cost_modifier = 0.014
+	add_tolerated_culture_cost_modifier = 0.014
+	remove_tolerated_culture_cost_modifier = 0.014
+	accepted_culture_maintenance_cost_modifier = 0.014
+	tolerated_culture_maintenance_cost_modifier = 0.014
+	change_primary_culture_cost_modifier = 0.014
+
+	regiment_recruit_speed = -0.006
+
+	army_light_infantry_build_cost_modifier = 0.006
+	army_heavy_infantry_build_cost_modifier = 0.006
+	army_light_cavalry_build_cost_modifier = 0.006
+	army_heavy_cavalry_build_cost_modifier = 0.006
+	army_artillery_build_cost_modifier = 0.006
+	army_auxiliary_build_cost_modifier = 0.006
+
+	army_light_infantry_maintenance_cost_modifier = 0.012
+	army_heavy_infantry_maintenance_cost_modifier = 0.012
+	army_light_cavalry_maintenance_cost_modifier = 0.012
+	army_heavy_cavalry_maintenance_cost_modifier = 0.012
+	army_artillery_maintenance_cost_modifier = 0.012
+	army_auxiliary_maintenance_cost_modifier = 0.012
+
+	army_light_infantry_reinforce_cost_modifier = 0.022
+	army_heavy_infantry_reinforce_cost_modifier = 0.022
+	army_light_cavalry_reinforce_cost_modifier = 0.022
+	army_heavy_cavalry_reinforce_cost_modifier = 0.022
+	army_artillery_reinforce_cost_modifier = 0.022
+	army_auxiliary_reinforce_cost_modifier = 0.022
+
+	army_losses_in_war_cost_modifier = 0.014
+
+	train_general_cost_modifier = 0.010
+	create_supply_depot_cost_modifier = 0.010
+
+	navy_heavy_ship_build_cost_modifier = 0.010
+	navy_heavy_ship_maintenance_cost_modifier = 0.010
+	navy_heavy_ship_reinforce_cost_modifier = 0.010
+
+	navy_light_ship_build_cost_modifier = 0.010
+	navy_light_ship_maintenance_cost_modifier = 0.010
+	navy_light_ship_reinforce_cost_modifier = 0.010
+
+	navy_galley_build_cost_modifier = 0.010
+	navy_galley_maintenance_cost_modifier = 0.010
+	navy_galley_reinforce_cost_modifier = 0.010
+
+	navy_transport_build_cost_modifier = 0.010
+	navy_transport_maintenance_cost_modifier = 0.010
+	navy_transport_reinforce_cost_modifier = 0.010
+
+	train_admiral_cost_modifier = 0.010
+
+	hire_mercenary_premium_cost_modifier = 0.040
+	hire_mercenary_leader_cost_modifier = 0.020
+	mercenary_maintenance_efficiency = -0.008
+	global_mercenaries_modifier = -0.010
+	mercenary_range_modifier = -0.008
+}
+
+country_size_impact_colossus_human = {
+	potential_trigger = {
+		is_human = yes
+		country_economical_base > 20000
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 20000
+		multiply = 0.0022
+		add = 32
+	}
+
+	global_construction_speed = -0.021
+	building_upkeep_costs = 0.016
+
+	global_build_buildings_efficiency = -0.010
+	global_urban_build_buildings_efficiency = -0.010
+	global_rural_build_buildings_efficiency = -0.010
+	global_mills_build_buildings_efficiency = -0.010
+
+	expand_rgo_farming_cost_modifier = 0.030
+	expand_rgo_forestry_cost_modifier = 0.030
+	expand_rgo_gathering_cost_modifier = 0.030
+	expand_rgo_hunting_cost_modifier = 0.030
+	expand_rgo_mining_cost_modifier = 0.030
+
+	country_cabinet_efficiency = -0.0065
+	legislative_efficiency = -0.0065
+	research_speed_modifier = -0.0045
+
+	diplomatic_reputation = -0.035
+	antagonism_received_modifier = 0.012
+
+	monthly_legitimacy = -0.003
+	diplomatic_spending_cost = 0.010
+	diplomatic_upkeep_modifier = 0.010
+	diplomatic_annexation_cost = 0.010
+
+	set_cabine_action_cost_modifier = 0.014
+	set_cabinet_member_cost_modifier = 0.014
+	replace_cabinet_member_cost_modifier = 0.014
+	set_policy_cost_modifier = 0.014
+	change_policy_cost_modifier = 0.014
+	hire_advisor_cost_modifier = 0.014
+	hire_artist_cost_modifier = 0.014
+	strengthen_ministry_cost_modifier = 0.014
+	reshape_bureaucracy_cost_modifier = 0.014
+
+	stability_decay = 0.00005
+
+	add_accepted_culture_cost_modifier = 0.014
+	remove_accepted_culture_cost_modifier = 0.014
+	add_tolerated_culture_cost_modifier = 0.014
+	remove_tolerated_culture_cost_modifier = 0.014
+	accepted_culture_maintenance_cost_modifier = 0.014
+	tolerated_culture_maintenance_cost_modifier = 0.014
+	change_primary_culture_cost_modifier = 0.014
+
+	regiment_recruit_speed = -0.006
+
+	army_light_infantry_build_cost_modifier = 0.006
+	army_heavy_infantry_build_cost_modifier = 0.006
+	army_light_cavalry_build_cost_modifier = 0.006
+	army_heavy_cavalry_build_cost_modifier = 0.006
+	army_artillery_build_cost_modifier = 0.006
+	army_auxiliary_build_cost_modifier = 0.006
+
+	army_light_infantry_maintenance_cost_modifier = 0.012
+	army_heavy_infantry_maintenance_cost_modifier = 0.012
+	army_light_cavalry_maintenance_cost_modifier = 0.012
+	army_heavy_cavalry_maintenance_cost_modifier = 0.012
+	army_artillery_maintenance_cost_modifier = 0.012
+	army_auxiliary_maintenance_cost_modifier = 0.012
+
+	army_light_infantry_reinforce_cost_modifier = 0.022
+	army_heavy_infantry_reinforce_cost_modifier = 0.022
+	army_light_cavalry_reinforce_cost_modifier = 0.022
+	army_heavy_cavalry_reinforce_cost_modifier = 0.022
+	army_artillery_reinforce_cost_modifier = 0.022
+	army_auxiliary_reinforce_cost_modifier = 0.022
+
+	army_losses_in_war_cost_modifier = 0.014
+
+	train_general_cost_modifier = 0.010
+	create_supply_depot_cost_modifier = 0.010
+
+	navy_heavy_ship_build_cost_modifier = 0.010
+	navy_heavy_ship_maintenance_cost_modifier = 0.010
+	navy_heavy_ship_reinforce_cost_modifier = 0.010
+
+	navy_light_ship_build_cost_modifier = 0.010
+	navy_light_ship_maintenance_cost_modifier = 0.010
+	navy_light_ship_reinforce_cost_modifier = 0.010
+
+	navy_galley_build_cost_modifier = 0.010
+	navy_galley_maintenance_cost_modifier = 0.010
+	navy_galley_reinforce_cost_modifier = 0.010
+
+	navy_transport_build_cost_modifier = 0.010
+	navy_transport_maintenance_cost_modifier = 0.010
+	navy_transport_reinforce_cost_modifier = 0.010
+
+	train_admiral_cost_modifier = 0.010
+
+	hire_mercenary_premium_cost_modifier = 0.040
+	hire_mercenary_leader_cost_modifier = 0.020
+	mercenary_maintenance_efficiency = -0.008
+	global_mercenaries_modifier = -0.010
+	mercenary_range_modifier = -0.008
+}
+
+country_size_impact_tiny_ai = {
+	potential_trigger = {
+		is_ai = yes
+		country_economical_base <= 750
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 750
+		multiply = -0.006
+		add = 4
+	}
+
+	global_construction_speed = 0.012
+	building_upkeep_costs = -0.006
+
+	country_cabinet_efficiency = 0.014
+	legislative_efficiency = 0.014
+	stability_investment = 0.010
+
+	research_speed_modifier = 0.008
+	diplomatic_reputation = 0.060
+	antagonism_received_modifier = -0.014
+
+	global_manpower_modifier = 0.008
+	regiment_recruit_speed = 0.012
+}
+
+country_size_impact_small_ai = {
+	potential_trigger = {
+		is_ai = yes
+		country_economical_base > 750
+		country_economical_base <= 1500
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 1500
+		multiply = -0.004
+	}
+
+	global_construction_speed = 0.010
+	building_upkeep_costs = -0.005
+
+	country_cabinet_efficiency = 0.012
+	legislative_efficiency = 0.012
+	stability_investment = 0.008
+
+	research_speed_modifier = 0.006
+	diplomatic_reputation = 0.045
+	antagonism_received_modifier = -0.010
+
+	global_manpower_modifier = 0.006
+	regiment_recruit_speed = 0.010
+}
+
+country_size_impact_medium_ai = {
+	potential_trigger = {
+		is_ai = yes
+		country_economical_base > 4000
+		country_economical_base <= 8000
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 4000
+		multiply = 0.002
+	}
+
+	global_construction_speed = -0.016
+	building_upkeep_costs = 0.010
+
+	global_build_buildings_efficiency = -0.006
+	global_urban_build_buildings_efficiency = -0.006
+	global_rural_build_buildings_efficiency = -0.006
+	global_mills_build_buildings_efficiency = -0.006
+
+	expand_rgo_farming_cost_modifier = 0.016
+	expand_rgo_forestry_cost_modifier = 0.016
+	expand_rgo_gathering_cost_modifier = 0.016
+	expand_rgo_hunting_cost_modifier = 0.016
+	expand_rgo_mining_cost_modifier = 0.016
+
+	country_cabinet_efficiency = -0.004
+	legislative_efficiency = -0.004
+	research_speed_modifier = -0.003
+
+	diplomatic_reputation = -0.015
+	antagonism_received_modifier = 0.006
+
+	monthly_legitimacy = -0.002
+	diplomatic_spending_cost = 0.006
+	diplomatic_upkeep_modifier = 0.006
+	diplomatic_annexation_cost = 0.006
+
+	set_cabine_action_cost_modifier = 0.008
+	set_cabinet_member_cost_modifier = 0.008
+	replace_cabinet_member_cost_modifier = 0.008
+	set_policy_cost_modifier = 0.008
+	change_policy_cost_modifier = 0.008
+	hire_advisor_cost_modifier = 0.008
+	hire_artist_cost_modifier = 0.008
+	strengthen_ministry_cost_modifier = 0.008
+	reshape_bureaucracy_cost_modifier = 0.008
+
+	stability_decay = 0.000025
+
+	add_accepted_culture_cost_modifier = 0.008
+	remove_accepted_culture_cost_modifier = 0.008
+	add_tolerated_culture_cost_modifier = 0.008
+	remove_tolerated_culture_cost_modifier = 0.008
+	accepted_culture_maintenance_cost_modifier = 0.008
+	tolerated_culture_maintenance_cost_modifier = 0.008
+	change_primary_culture_cost_modifier = 0.008
+
+	regiment_recruit_speed = -0.003
+
+	army_light_infantry_build_cost_modifier = 0.003
+	army_heavy_infantry_build_cost_modifier = 0.003
+	army_light_cavalry_build_cost_modifier = 0.003
+	army_heavy_cavalry_build_cost_modifier = 0.003
+	army_artillery_build_cost_modifier = 0.003
+	army_auxiliary_build_cost_modifier = 0.003
+
+	army_light_infantry_maintenance_cost_modifier = 0.006
+	army_heavy_infantry_maintenance_cost_modifier = 0.006
+	army_light_cavalry_maintenance_cost_modifier = 0.006
+	army_heavy_cavalry_maintenance_cost_modifier = 0.006
+	army_artillery_maintenance_cost_modifier = 0.006
+	army_auxiliary_maintenance_cost_modifier = 0.006
+
+	army_light_infantry_reinforce_cost_modifier = 0.010
+	army_heavy_infantry_reinforce_cost_modifier = 0.010
+	army_light_cavalry_reinforce_cost_modifier = 0.010
+	army_heavy_cavalry_reinforce_cost_modifier = 0.010
+	army_artillery_reinforce_cost_modifier = 0.010
+	army_auxiliary_reinforce_cost_modifier = 0.010
+
+	army_losses_in_war_cost_modifier = 0.006
+
+	train_general_cost_modifier = 0.006
+	create_supply_depot_cost_modifier = 0.006
+
+	navy_heavy_ship_build_cost_modifier = 0.006
+	navy_heavy_ship_maintenance_cost_modifier = 0.006
+	navy_heavy_ship_reinforce_cost_modifier = 0.006
+
+	navy_light_ship_build_cost_modifier = 0.006
+	navy_light_ship_maintenance_cost_modifier = 0.006
+	navy_light_ship_reinforce_cost_modifier = 0.006
+
+	navy_galley_build_cost_modifier = 0.006
+	navy_galley_maintenance_cost_modifier = 0.006
+	navy_galley_reinforce_cost_modifier = 0.006
+
+	navy_transport_build_cost_modifier = 0.006
+	navy_transport_maintenance_cost_modifier = 0.006
+	navy_transport_reinforce_cost_modifier = 0.006
+
+	train_admiral_cost_modifier = 0.006
+
+	hire_mercenary_premium_cost_modifier = 0.020
+	hire_mercenary_leader_cost_modifier = 0.010
+	mercenary_maintenance_efficiency = -0.006
+	global_mercenaries_modifier = -0.006
+	mercenary_range_modifier = -0.005
+}
+
+country_size_impact_great_power_ai = {
+	potential_trigger = {
+		is_ai = yes
+		country_economical_base > 8000
+		country_economical_base <= 12000
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 8000
+		multiply = 0.0015
+		add = 5
+	}
+
+	global_construction_speed = -0.016
+	building_upkeep_costs = 0.010
+
+	global_build_buildings_efficiency = -0.006
+	global_urban_build_buildings_efficiency = -0.006
+	global_rural_build_buildings_efficiency = -0.006
+	global_mills_build_buildings_efficiency = -0.006
+
+	expand_rgo_farming_cost_modifier = 0.018
+	expand_rgo_forestry_cost_modifier = 0.018
+	expand_rgo_gathering_cost_modifier = 0.018
+	expand_rgo_hunting_cost_modifier = 0.018
+	expand_rgo_mining_cost_modifier = 0.018
+
+	country_cabinet_efficiency = -0.0045
+	legislative_efficiency = -0.0045
+	research_speed_modifier = -0.0035
+
+	diplomatic_reputation = -0.020
+	antagonism_received_modifier = 0.008
+
+	monthly_legitimacy = -0.002
+	diplomatic_spending_cost = 0.007
+	diplomatic_upkeep_modifier = 0.007
+	diplomatic_annexation_cost = 0.007
+
+	set_cabine_action_cost_modifier = 0.010
+	set_cabinet_member_cost_modifier = 0.010
+	replace_cabinet_member_cost_modifier = 0.010
+	set_policy_cost_modifier = 0.010
+	change_policy_cost_modifier = 0.010
+	hire_advisor_cost_modifier = 0.010
+	hire_artist_cost_modifier = 0.010
+	strengthen_ministry_cost_modifier = 0.010
+	reshape_bureaucracy_cost_modifier = 0.010
+
+	stability_decay = 0.000035
+
+	add_accepted_culture_cost_modifier = 0.010
+	remove_accepted_culture_cost_modifier = 0.010
+	add_tolerated_culture_cost_modifier = 0.010
+	remove_tolerated_culture_cost_modifier = 0.010
+	accepted_culture_maintenance_cost_modifier = 0.010
+	tolerated_culture_maintenance_cost_modifier = 0.010
+	change_primary_culture_cost_modifier = 0.010
+
+	regiment_recruit_speed = -0.004
+
+	army_light_infantry_build_cost_modifier = 0.004
+	army_heavy_infantry_build_cost_modifier = 0.004
+	army_light_cavalry_build_cost_modifier = 0.004
+	army_heavy_cavalry_build_cost_modifier = 0.004
+	army_artillery_build_cost_modifier = 0.004
+	army_auxiliary_build_cost_modifier = 0.004
+
+	army_light_infantry_maintenance_cost_modifier = 0.008
+	army_heavy_infantry_maintenance_cost_modifier = 0.008
+	army_light_cavalry_maintenance_cost_modifier = 0.008
+	army_heavy_cavalry_maintenance_cost_modifier = 0.008
+	army_artillery_maintenance_cost_modifier = 0.008
+	army_auxiliary_maintenance_cost_modifier = 0.008
+
+	army_light_infantry_reinforce_cost_modifier = 0.014
+	army_heavy_infantry_reinforce_cost_modifier = 0.014
+	army_light_cavalry_reinforce_cost_modifier = 0.014
+	army_heavy_cavalry_reinforce_cost_modifier = 0.014
+	army_artillery_reinforce_cost_modifier = 0.014
+	army_auxiliary_reinforce_cost_modifier = 0.014
+
+	army_losses_in_war_cost_modifier = 0.008
+
+	train_general_cost_modifier = 0.007
+	create_supply_depot_cost_modifier = 0.007
+
+	navy_heavy_ship_build_cost_modifier = 0.007
+	navy_heavy_ship_maintenance_cost_modifier = 0.007
+	navy_heavy_ship_reinforce_cost_modifier = 0.007
+
+	navy_light_ship_build_cost_modifier = 0.007
+	navy_light_ship_maintenance_cost_modifier = 0.007
+	navy_light_ship_reinforce_cost_modifier = 0.007
+
+	navy_galley_build_cost_modifier = 0.007
+	navy_galley_maintenance_cost_modifier = 0.007
+	navy_galley_reinforce_cost_modifier = 0.007
+
+	navy_transport_build_cost_modifier = 0.007
+	navy_transport_maintenance_cost_modifier = 0.007
+	navy_transport_reinforce_cost_modifier = 0.007
+
+	train_admiral_cost_modifier = 0.007
+
+	hire_mercenary_premium_cost_modifier = 0.025
+	hire_mercenary_leader_cost_modifier = 0.012
+	mercenary_maintenance_efficiency = -0.006
+	global_mercenaries_modifier = -0.007
+	mercenary_range_modifier = -0.006
+}
+
+country_size_impact_hegemon_ai = {
+	potential_trigger = {
+		is_ai = yes
+		country_economical_base > 12000
+		country_economical_base <= 20000
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 12000
+		multiply = 0.002
+		add = 14
+	}
+
+	global_construction_speed = -0.021
+	building_upkeep_costs = 0.016
+
+	global_build_buildings_efficiency = -0.010
+	global_urban_build_buildings_efficiency = -0.010
+	global_rural_build_buildings_efficiency = -0.010
+	global_mills_build_buildings_efficiency = -0.010
+
+	expand_rgo_farming_cost_modifier = 0.030
+	expand_rgo_forestry_cost_modifier = 0.030
+	expand_rgo_gathering_cost_modifier = 0.030
+	expand_rgo_hunting_cost_modifier = 0.030
+	expand_rgo_mining_cost_modifier = 0.030
+
+	country_cabinet_efficiency = -0.0065
+	legislative_efficiency = -0.0065
+	research_speed_modifier = -0.0045
+
+	diplomatic_reputation = -0.035
+	antagonism_received_modifier = 0.012
+
+	monthly_legitimacy = -0.003
+	diplomatic_spending_cost = 0.010
+	diplomatic_upkeep_modifier = 0.010
+	diplomatic_annexation_cost = 0.010
+
+	set_cabine_action_cost_modifier = 0.014
+	set_cabinet_member_cost_modifier = 0.014
+	replace_cabinet_member_cost_modifier = 0.014
+	set_policy_cost_modifier = 0.014
+	change_policy_cost_modifier = 0.014
+	hire_advisor_cost_modifier = 0.014
+	hire_artist_cost_modifier = 0.014
+	strengthen_ministry_cost_modifier = 0.014
+	reshape_bureaucracy_cost_modifier = 0.014
+
+	stability_decay = 0.00005
+
+	add_accepted_culture_cost_modifier = 0.014
+	remove_accepted_culture_cost_modifier = 0.014
+	add_tolerated_culture_cost_modifier = 0.014
+	remove_tolerated_culture_cost_modifier = 0.014
+	accepted_culture_maintenance_cost_modifier = 0.014
+	tolerated_culture_maintenance_cost_modifier = 0.014
+	change_primary_culture_cost_modifier = 0.014
+
+	regiment_recruit_speed = -0.006
+
+	army_light_infantry_build_cost_modifier = 0.006
+	army_heavy_infantry_build_cost_modifier = 0.006
+	army_light_cavalry_build_cost_modifier = 0.006
+	army_heavy_cavalry_build_cost_modifier = 0.006
+	army_artillery_build_cost_modifier = 0.006
+	army_auxiliary_build_cost_modifier = 0.006
+
+	army_light_infantry_maintenance_cost_modifier = 0.012
+	army_heavy_infantry_maintenance_cost_modifier = 0.012
+	army_light_cavalry_maintenance_cost_modifier = 0.012
+	army_heavy_cavalry_maintenance_cost_modifier = 0.012
+	army_artillery_maintenance_cost_modifier = 0.012
+	army_auxiliary_maintenance_cost_modifier = 0.012
+
+	army_light_infantry_reinforce_cost_modifier = 0.022
+	army_heavy_infantry_reinforce_cost_modifier = 0.022
+	army_light_cavalry_reinforce_cost_modifier = 0.022
+	army_heavy_cavalry_reinforce_cost_modifier = 0.022
+	army_artillery_reinforce_cost_modifier = 0.022
+	army_auxiliary_reinforce_cost_modifier = 0.022
+
+	army_losses_in_war_cost_modifier = 0.014
+
+	train_general_cost_modifier = 0.010
+	create_supply_depot_cost_modifier = 0.010
+
+	navy_heavy_ship_build_cost_modifier = 0.010
+	navy_heavy_ship_maintenance_cost_modifier = 0.010
+	navy_heavy_ship_reinforce_cost_modifier = 0.010
+
+	navy_light_ship_build_cost_modifier = 0.010
+	navy_light_ship_maintenance_cost_modifier = 0.010
+	navy_light_ship_reinforce_cost_modifier = 0.010
+
+	navy_galley_build_cost_modifier = 0.010
+	navy_galley_maintenance_cost_modifier = 0.010
+	navy_galley_reinforce_cost_modifier = 0.010
+
+	navy_transport_build_cost_modifier = 0.010
+	navy_transport_maintenance_cost_modifier = 0.010
+	navy_transport_reinforce_cost_modifier = 0.010
+
+	train_admiral_cost_modifier = 0.010
+
+	hire_mercenary_premium_cost_modifier = 0.040
+	hire_mercenary_leader_cost_modifier = 0.020
+	mercenary_maintenance_efficiency = -0.008
+	global_mercenaries_modifier = -0.010
+	mercenary_range_modifier = -0.008
+}
+
+country_size_impact_colossus_ai = {
+	potential_trigger = {
+		is_ai = yes
+		country_economical_base > 20000
+	}
+
+	scales_with = {
+		value = country_economical_base
+		subtract = 20000
+		multiply = 0.0022
+		add = 32
+	}
+
+	global_construction_speed = -0.021
+	building_upkeep_costs = 0.016
+
+	global_build_buildings_efficiency = -0.010
+	global_urban_build_buildings_efficiency = -0.010
+	global_rural_build_buildings_efficiency = -0.010
+	global_mills_build_buildings_efficiency = -0.010
+
+	expand_rgo_farming_cost_modifier = 0.030
+	expand_rgo_forestry_cost_modifier = 0.030
+	expand_rgo_gathering_cost_modifier = 0.030
+	expand_rgo_hunting_cost_modifier = 0.030
+	expand_rgo_mining_cost_modifier = 0.030
+
+	country_cabinet_efficiency = -0.0065
+	legislative_efficiency = -0.0065
+	research_speed_modifier = -0.0045
+
+	diplomatic_reputation = -0.035
+	antagonism_received_modifier = 0.012
+
+	monthly_legitimacy = -0.003
+	diplomatic_spending_cost = 0.010
+	diplomatic_upkeep_modifier = 0.010
+	diplomatic_annexation_cost = 0.010
+
+	set_cabine_action_cost_modifier = 0.014
+	set_cabinet_member_cost_modifier = 0.014
+	replace_cabinet_member_cost_modifier = 0.014
+	set_policy_cost_modifier = 0.014
+	change_policy_cost_modifier = 0.014
+	hire_advisor_cost_modifier = 0.014
+	hire_artist_cost_modifier = 0.014
+	strengthen_ministry_cost_modifier = 0.014
+	reshape_bureaucracy_cost_modifier = 0.014
+
+	stability_decay = 0.00005
+
+	add_accepted_culture_cost_modifier = 0.014
+	remove_accepted_culture_cost_modifier = 0.014
+	add_tolerated_culture_cost_modifier = 0.014
+	remove_tolerated_culture_cost_modifier = 0.014
+	accepted_culture_maintenance_cost_modifier = 0.014
+	tolerated_culture_maintenance_cost_modifier = 0.014
+	change_primary_culture_cost_modifier = 0.014
+
+	regiment_recruit_speed = -0.006
+
+	army_light_infantry_build_cost_modifier = 0.006
+	army_heavy_infantry_build_cost_modifier = 0.006
+	army_light_cavalry_build_cost_modifier = 0.006
+	army_heavy_cavalry_build_cost_modifier = 0.006
+	army_artillery_build_cost_modifier = 0.006
+	army_auxiliary_build_cost_modifier = 0.006
+
+	army_light_infantry_maintenance_cost_modifier = 0.012
+	army_heavy_infantry_maintenance_cost_modifier = 0.012
+	army_light_cavalry_maintenance_cost_modifier = 0.012
+	army_heavy_cavalry_maintenance_cost_modifier = 0.012
+	army_artillery_maintenance_cost_modifier = 0.012
+	army_auxiliary_maintenance_cost_modifier = 0.012
+
+	army_light_infantry_reinforce_cost_modifier = 0.022
+	army_heavy_infantry_reinforce_cost_modifier = 0.022
+	army_light_cavalry_reinforce_cost_modifier = 0.022
+	army_heavy_cavalry_reinforce_cost_modifier = 0.022
+	army_artillery_reinforce_cost_modifier = 0.022
+	army_auxiliary_reinforce_cost_modifier = 0.022
+
+	army_losses_in_war_cost_modifier = 0.014
+
+	train_general_cost_modifier = 0.010
+	create_supply_depot_cost_modifier = 0.010
+
+	navy_heavy_ship_build_cost_modifier = 0.010
+	navy_heavy_ship_maintenance_cost_modifier = 0.010
+	navy_heavy_ship_reinforce_cost_modifier = 0.010
+
+	navy_light_ship_build_cost_modifier = 0.010
+	navy_light_ship_maintenance_cost_modifier = 0.010
+	navy_light_ship_reinforce_cost_modifier = 0.010
+
+	navy_galley_build_cost_modifier = 0.010
+	navy_galley_maintenance_cost_modifier = 0.010
+	navy_galley_reinforce_cost_modifier = 0.010
+
+	navy_transport_build_cost_modifier = 0.010
+	navy_transport_maintenance_cost_modifier = 0.010
+	navy_transport_reinforce_cost_modifier = 0.010
+
+	train_admiral_cost_modifier = 0.010
+
+	hire_mercenary_premium_cost_modifier = 0.040
+	hire_mercenary_leader_cost_modifier = 0.020
+	mercenary_maintenance_efficiency = -0.008
+	global_mercenaries_modifier = -0.010
+	mercenary_range_modifier = -0.008
+}
