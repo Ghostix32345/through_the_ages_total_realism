@@ -1,5 +1,16 @@
 country_size_impact_tiny_human = {
 	potential_trigger = {
+		NOT = { 
+			OR = {
+				tag = FRA
+				tag = NED
+				tag = BOH
+				tag = SPA
+				tag = POL
+				tag = PLC
+				tag = HUN
+			}
+		}
 		is_human = yes
 		country_economical_base <= 750
 	}
@@ -28,6 +39,17 @@ country_size_impact_tiny_human = {
 
 country_size_impact_small_human = {
 	potential_trigger = {
+		NOT = { 
+			OR = {
+				tag = FRA
+				tag = NED
+				tag = BOH
+				tag = SPA
+				tag = POL
+				tag = PLC
+				tag = HUN
+			}
+		}
 		is_human = yes
 		country_economical_base > 750
 		country_economical_base <= 1500
@@ -394,6 +416,17 @@ country_size_impact_colossus_human = {
 
 country_size_impact_tiny_ai = {
 	potential_trigger = {
+		NOT = { 
+			OR = {
+				tag = FRA
+				tag = NED
+				tag = BOH
+				tag = SPA
+				tag = POL
+				tag = PLC
+				tag = HUN
+			}
+		}
 		is_ai = yes
 		country_economical_base <= 750
 	}
@@ -422,6 +455,17 @@ country_size_impact_tiny_ai = {
 
 country_size_impact_small_ai = {
 	potential_trigger = {
+		NOT = { 
+			OR = {
+				tag = FRA
+				tag = NED
+				tag = BOH
+				tag = SPA
+				tag = POL
+				tag = PLC
+				tag = HUN
+			}
+		}
 		is_ai = yes
 		country_economical_base > 750
 		country_economical_base <= 1500
