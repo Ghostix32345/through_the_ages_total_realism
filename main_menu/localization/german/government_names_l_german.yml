@@ -1095,3 +1095,9 @@
 
  country_name_construction_prefix_rank_name: "$PREFIX$ $RANK$ $NAME$"
  country_name_construction_prefix_rank_name_map: "$PREFIX$ $RANK$"
+
+ country_name_construction_prefix_rank_name_united_kingdom_british: "$PREFIX$ $RANK$ $NAME$"
+ country_name_construction_prefix_rank_name_map_united_kingdom_british: "$PREFIX$ $RANK$"
+
+# Vereinigtes Schlesig-Holtstein
+ united_schleswig_holstein_prefix: "Vereinigtes"

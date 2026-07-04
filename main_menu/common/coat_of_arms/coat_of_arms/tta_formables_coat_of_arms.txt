@@ -141,4 +141,13 @@ te_wpl = {
 	}	
 }
 
+te_ush = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_ush.dds"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
 

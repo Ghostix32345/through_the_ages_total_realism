@@ -4,23 +4,33 @@
   GKR: "Deutsches Kaiserreich"
   GKR_map: "Deutsches Kaiserreich"
   GKR_ADJ: "Deutsch"
+ 
   GSF_f: "Süddeutscher Bund"
   GSF_f_desc: "Im Herzen Europas hat sich ein Bund geformt, der seine Stärke aus Vielfalt schöpft.\n\nBayern, Württemberg, Baden und die Staaten Frankens und Schwabens haben ihre Unterschiede bewahrt – und dennoch erkannt, dass gemeinsame Sicherheit und Wohlstand untrennbar miteinander verbunden sind.\n\nGetragen von katholischer Gelehrsamkeit, kunstvoller Hofkultur und florierenden Handelswegen entlang des Rheins und der Donau wächst der Süddeutsche Bund zu einer Macht heran, die den politischen Gleichklang der Region wahrt. Trotz innerer Rivalitäten führt der Wille zu Stabilität und Einigkeit die südlichen Länder in eine Zukunft, in der Tradition und Fortschritt ein neues Gleichgewicht finden."
   GSF: "Süddeutscher Bund"
   GSF_ADJ: "Deutsch"
   GSF_map: "Süddeutscher Bund"
+ 
   GNF_f: "Norddeutscher Bund"
   GNF_f_desc: "Aus den früher zersplitterten Fürstentümern Norddeutschlands erhebt sich ein neuer Verbund, gegründet auf gemeinsamer Sprache, Handel und einer wachsenden Sehnsucht nach Ordnung.\n\nUnter der Führung Preußens hat der Bund eine klare Richtung eingeschlagen: Effizienz, Modernisierung und der Ausbau militärischer Stärke sollen die Grundlage für eine sichere und geeinte Zukunft bilden.\n\nDie Häfen der Ost- und Nordsee verbinden den Bund mit der Welt, während reformfreudige Verwaltungen und technische Neuerungen das Land in eine Ära des Fortschritts führen. So entsteht im Norden eine politische Kraft, die Anspruch erhebt, Deutschland in eine neue Zeit zu geleiten."
   GNF: "Norddeutscher Bund"
   GNF_ADJ: "Deutsch"
   GNF_map: "Norddeutscher Bund"
+  
   RHI_f: "Rheinland"
   RHI_f_desc: "Das Rheinland vereint seit Jahrhunderten die fruchtbaren Rheintäler, florierenden Handelsstädte und reichen Kulturlandschaften des westlichen Heiligen Römischen Reiches. Von Köln bis Mainz haben sich Kaufmannsgilden, kirchliche Machtzentren und lokale Fürstentümer zu einem dynamischen Netz aus Handel, Kultur und Politik entwickelt. Geprägt von einer starken regionalen Identität und der strategischen Lage am Rhein, strebt das Rheinland danach, die zersplitterten Territorien zu vereinen und als unabhängige Nation im Herzen Europas eine bedeutende Rolle zu spielen."
   RHI: "Rheinland"
   RHI_map: "Rheinland"
   RHI_ADJ: "Rheinländisch"
+ 
   WPL_f: "Westphalen"
   WPL_f_desc: "Das Königreich Westphalen, entstanden aus den historischen Gebieten Westfalens und angrenzender Regionen, vereint eine vielfältige Bevölkerung mit einer reichen kulturellen Tradition. Geprägt von landwirtschaftlicher Produktivität, florierendem Handel und einer starken Handwerkskunst, strebt Westphalen danach, seine politische Unabhängigkeit zu festigen und als stabiler Staat inmitten der europäischen Mächte zu bestehen. Unter der Führung einer konstitutionellen Monarchie fördert das Königreich soziale Reformen, wirtschaftlichen Fortschritt und die Bewahrung seiner einzigartigen regionalen Identität."
   WPL: "Westphalen"
   WPL_map: "Westphalen"
   WPL_ADJ: "Westphälisch"
+ 
+  USH_f: "Schleswig-Holstein"
+  USH_f_desc: "Die Gebiete von Schleswig-Holstein, geprägt von einer reichen Geschichte und kulturellen Vielfalt, haben sich zu einem eigenständigen politischen Gebilde entwickelt. Zwischen den Einflüssen Dänemarks und Deutschlands gelegen, strebt Schleswig-Holstein danach, seine Identität zu bewahren und gleichzeitig als Brücke zwischen den Nationen zu fungieren. Mit einer starken maritimen Tradition, florierendem Handel und einer engagierten Bevölkerung setzt das Land auf wirtschaftliche Entwicklung, soziale Stabilität und die Förderung von Bildung und Kultur, um eine nachhaltige Zukunft zu sichern."
+  USH: "Schleswig-Holstein"
+  USH_map: "Schleswig-Holstein"
+  USH_ADJ: "Schleswig-Holsteins"

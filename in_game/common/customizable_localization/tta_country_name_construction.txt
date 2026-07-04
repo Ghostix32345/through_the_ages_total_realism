@@ -2,6 +2,13 @@
 	type = country
 
 	text = {
+		localization_key = country_name_construction_präfix_rank_name
+		trigger = {
+			tag = USH
+		}
+	}
+
+	text = {
 		localization_key = country_name_construction_rank_name
 		trigger = {
 			OR = {
