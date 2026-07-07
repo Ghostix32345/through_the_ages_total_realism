@@ -8,7 +8,7 @@
  balance_formation_button_name: "Einheit ausgleichen"
  balance_formation_button_action: "Formation anwenden: [Unit.GetUnitFormationPreference.GetName]"
  formation_template_button_action: "Ausgleichsvorlage wechseln"
- # Regiment
+ #Regiment
  subunit_structure_army_roman: "$TYPE$ $ROMAN$"
  subunit_structure_army_roman_nickname: "$TYPE$ $ROMAN$ $NICKNAME$"
  subunit_structure_army_roman_levy: "$TYPE$"
@@ -45,7 +45,7 @@
  subunit_structure_army_nickname: "$ORDINAL$ „$NICKNAME$“ $TYPE$"
  subunit_structure_army_levy: "$TYPE$"
  subunit_structure_army_levy_nickname: "$TYPE$ „$NICKNAME$“"
- # Ship
+ #Ship
  subunit_structure_navy: "#italic $NICKNAME$#!"
  subunit_structure_navy_prefix: "$PREFIX$ #italic $NICKNAME$#!"
  subunit_nickname_english_royal_north_british: "Royal North British"
@@ -67,8 +67,8 @@
  subunit_type_army_infantry_mamluks_arabic: "Mamālīk"
  subunit_type_army_infantry_mamluks_turkish: "Memâlik"
  subunit_type_army_infantry_mamluks: "Mamelucken"
- subunit_type_army_infantry_varangians_greek: "Bárangoi Phýlakes"
- subunit_type_army_infantry_varangians: "Warägergarde"
+ subunit_type_army_infantry_varangians_greek: "Várangoi"
+ subunit_type_army_infantry_varangians: "Waräger"
  subunit_type_army_infantry_varangians_2_greek: "Apokatestīménoi Bárangoi"
  subunit_type_army_infantry_varangians_2: "Wiederhergestellte Waräger"
  subunit_type_army_infantry_varangians_3_greek: "Pelekyphóroi Bárangoi"
@@ -300,7 +300,7 @@
  subunit_type_army_auxiliary_middle_german: "Hilfftropen"
  subunit_type_army_auxiliary_high_german: "Hilfstruppen"
  subunit_type_army_auxiliary_occitan: "Auxiliari"
- subunit_type_army_auxiliary_spanish: "Auxiliar" # and portuguese
+ subunit_type_army_auxiliary_spanish: "Auxiliar" #and portuguese
  subunit_type_army_auxiliary_french: "Auxiliaire"
  subunit_type_army_auxiliary_north_italian: "Ausiliaria"
  subunit_type_army_auxiliary_south_italian: "Ausiliari"
@@ -451,7 +451,7 @@
  RANDOM_NAVAL_MERCENARY_NAME3: "$LOCATION_NAME$-Bukanier"
  SUB_UNIT_IMPRISONED: "In Gefangenschaft – gehört „[COUNTRY.GetName|U]“"
  SUB_UNIT_IMPRISONED_TITLE: "Eingesperrte Einheit"
- # Unit Categories
+ #Unit Categories
  army_light_infantry: "Leichte Infanterie"
  army_light_cavalry: "Leichte Kavallerie"
  army_heavy_infantry: "Schwere Infanterie"
@@ -472,7 +472,7 @@
  navy_heavy_ship_desc: "Großschiffe gehören zu den Riesen des Meeres mit mehreren Masten und Decks. Mit ihnen führt man Krieg und projiziert Macht in der ganzen Welt."
  navy_light_ship_desc: "Leichtschiffe sind kleine und verhältnismäßig günstige Schiffe mit flachem Kiel, deren Schwerpunkt auf Geschwindigkeit, Beweglichkeit und erleichterter Navigation liegt."
  navy_transport_desc: "Frachtschiffe sind eine Mischung aus Passagier- und Handelsschiff, mit denen man Truppen über das Meer befördert."
- # Naval Units
+ #Naval Units
  n_age_1_traditions_galley: "Galeere (Zeitalter der Traditionen)"
  n_age_1_traditions_light_ship: "Leichtschiff (Zeitalter der Traditionen)"
  n_age_1_traditions_transport: "Frachter (Zeitalter der Traditionen)"
@@ -743,14 +743,14 @@
  a_fusiliers_desc: "$a_fusiliers$ sind das Rückgrat unserer Armee: Sie sind mit modernen Gewehren für den Fernkampf, aber auch mit aufsetzbaren Bajonetten ausgerüstet, sodass sie auch in Massen Sturmangriffe durchführen können."
  a_light_dragoons: "Leichte Dragoner"
  a_light_dragoons_desc: "$a_light_dragoons$ sind eine leichte Kavallerie, die die Stellung verlegen, absitzen und dann mit Gewehren auf den Feind schießen kann. Sie tragen allerdings auch Kavalleriesäbel, mit denen sie zur richtigen Gelegenheit einen Sturmangriff auf den Gegner ausführen können."
- a_crusader_knights: "Kreuzritter-Sergeanten"
- a_crusader_knights_desc: "Die $a_crusader_knights$ – Kriegermönche, die der Ausbreitung des Christentums dienen – bilden die Elite-Vorhut der religiösen Kriegerorden, die an der Seite der $a_order_knights$ unberitten kämpfen."
+ a_crusader_knights: "Kreuzritter"
+ a_crusader_knights_desc: "Die $a_crusader_knights$ – Kriegermönche, die der Ausbreitung des Christentums dienen – bilden die Elite-Vorhut der religiösen Kriegerorden."
  a_crusader_knights_base: "$a_crusader_knights$"
  a_crusader_knights_base_desc: "$a_crusader_knights_desc$"
  a_crusader_knights_levy: "$a_crusader_knights$"
  a_crusader_knights_levy_desc: "$a_crusader_knights_desc$"
- a_late_crusader_knights: "Ordens-Sergeanten"
- a_late_crusader_knights_desc: "Die $a_crusader_knights$ passten sich mit neuen Taktiken und verbesserten Waffen an die sich verändernde Kriegsführung an. Durch diese Anpassung wahren sie ihren Status als Elite-Fußvolk der Kriegerorden, die Seite an Seite mit den $a_order_knights_2$n stehen."
+ a_late_crusader_knights: "Verbesserte Kreuzritter"
+ a_late_crusader_knights_desc: "Die $a_crusader_knights$ passten sich mit neuen Taktiken und verbesserten Waffen an die sich verändernde Kriegsführung an. So bleiben sie weiter die Elitetruppen der religiösen Kriegerorden."
  a_late_crusader_knights_base: "$a_late_crusader_knights$"
  a_late_crusader_knights_base_desc: "$a_late_crusader_knights_desc$"
  a_late_crusader_knights_levy: "$a_late_crusader_knights$"
@@ -827,10 +827,10 @@
  a_infantry_column_desc: "Durch die höhere Feuerkraft von Linieninfanterie-Einheiten wurde eine neue Art von Infanterietaktik entwickelt, die auf der Ausbildung in einem schnellen Formationswechsel von Linie auf Reihe beruhte, um eingesetzte feindliche Infanterie entschlossen mit einem Bayonettansturm attackieren zu können."
  a_cuirassiers_desc: "Als Antwort auf die Veränderungen im Kriegswesen wurden $a_cuirassiers$ als schwere Kavallerie entwickelt, die auf Lanzen zugunsten von Pistolen und Säbeln als Hauptbewaffnung verzichten."
  a_flying_battery_desc: "Artillerie ist verheerend auf dem Schlachtfeld, aber vollkommen nutzlos, wenn der Feind sich nicht innerhalb der Kampfreichweite befindet. Eine $a_flying_battery$ kann selbständig an jenen Ort verlegen, wo sie am meisten gebraucht wird, und dann rasch neu verlegen, ehe der Feind reagieren kann."
- a_order_knights: "Kreuzritter"
- a_order_knights_desc: "In einem Ritterorden müssen die Mitglieder kämpfen und den Interessen des Ordens im Gefecht dienen können. Daher sind die $a_order_knights$ die besten berittenen Soldaten, die ein Orden zu bieten hat."
- a_order_knights_2: "Ordensritter"
- a_order_knights_2_desc: "Die $a_order_knights_2$ setzen sich aus den erfahrensten und fähigsten berittenen Rittern des Ordens zusammen. Oftmals führen sie verhältnismäßig kleine, aber erfahrene schwer bewaffnete Reitern unter dem Banner ihres Kriegerordens in die Schlacht."
+ a_order_knights: "Ordensritter"
+ a_order_knights_desc: "In einem Ritterorden müssen die Mitglieder kämpfen und den Interessen des Ordens im Gefecht dienen können. Daher sind die $a_order_knights$ die besten Soldaten, die ein Orden zu bieten hat."
+ a_order_knights_2: "Bannerherren des Ordens"
+ a_order_knights_2_desc: "Die $a_order_knights_2$ setzen sich aus den erfahrensten und fähigsten Ordensrittern zusammen. Oftmals führen sie kleinere Truppeneinheiten unter ihrem eigenen Banner in die Schlacht."
  a_conscripts: "Einberufene"
  a_conscripts_desc: "Als zwangsverpflichtete Soldaten, die nur widerwillig kämpfen, können Massen von Einberufenen eine ausgebildete Armee doch durch ihre schiere Zahl überwältigen."
  a_logistics_corps: "Logistikkorps"
@@ -961,7 +961,7 @@
  a_clan_retainers_desc: "Das wesentliche Element der Armee eines Clans sind dessen treuen Gefolgsleute: Krieger, die durch Loyalität und Freundschaft aneinander gebunden sind."
  a_clan_retainer_cavalry: "Clan-Gefolgsleute-Kavallerie"
  a_clan_retainer_cavalry_desc: "$a_clan_retainers_desc$"
- # Recruitment Methods
+ #Recruitment Methods
  normal_training: "Normal"
  elite_training: "Zusätzlich"
  rushed_training: "Beschleunigt"
@@ -976,7 +976,7 @@
  RECRUITMENT_METHOD_TIME_0: "Rekrutierungszeit: #V Normal#!"
  RECRUITMENT_METHOD_EXPERIENCE: "Anfangserfahrung: $VAL|2G/$"
  RECRUITMENT_METHOD_EXPERIENCE_0: "Anfangserfahrung: #V Normal#!"
- # Unit Stats
+ #Unit Stats
  SUBUNIT_STAT_NEG_PERC: "$VAL|-%2$"
  SUBUNIT_STAT_NEG_PERC_DIFF: "$VAL|-=%2$"
  SUBUNIT_STAT_POS_PERC: "$VAL|+%2$"
@@ -1077,7 +1077,7 @@
  TOTAL_ARTILLERY_BONUS: "Diese Einheit hat [SingleUnitWindow.GetSelectedUnit.GetArtilleryBonus|V2] [artillery_barrage|e]. Dies beruht auf:"
  REINFORCE_UI_TITLE: "#T Verstärkungsrate#!"
  ARMY_HAS_MAX_SIZE: "Wenn diese Armee vollständig verstärkt ist, hat sie $VAL|V$@army_strength!."
- # Unit/Subunit Info
+ #Unit/Subunit Info
  UNIT_TYPE_NAME: "#T $NAME$#!"
  SUBUNIT_AVAILABILITY_AS_MERC: "#T Bis zu $NUM$ [SUBUNITDEFINITION.GetNameWithNoTooltip]#!\nArt: [SUBUNITDEFINITION.GetName]\nKategorie: [SUBUNITCATEGORY.GetName]"
  TOTAL_SUBUNIT_AVAILABILITY_AS_MERC: "#T Bis zu $NUM|0$ Untereinheiten#!\n[CHARACTER.GetName|U] kann bis zu $NUM|0$ Untereinheiten erhalten"
@@ -1203,7 +1203,7 @@
  S_EXPERIENCE_CHANGE: "Die Erfahrung ändert sich monatlich um $CHANGE|+=/%$ aufgrund von:\n$WHY$"
  EXP_FROM_OBJ: "$NAME$: $VAL|+=2/%$"
  EXPERIENCE_TOOLTIP_STACK: "#T Erfahrung#!\nDie durchschnittliche [experience|e] beträgt $VALUE|V/%$, was den im Kampf [Concept('damage_taken', 'erlittenen Schaden')|e] um #G -$FACTOR|2%$verringert#!"
- XP_DECAY_HEAD: "#T Erfahrungsverfall#!\nDer Verfall von $PERC|-=2%$ der derzeitigen [experience|e] von $CURR|V2$ aufgrund von"
+ XP_DECAY_HEAD: "#T Erfahrungsverfall#!\nDer Verfall von $PERC|-=2%$ der derzeitigen [experience|e] von $CURR|Y%V2$ aufgrund von"
  XP_DECAY_NUM: "Erfahrungsverfall: #TOOLTIP:$BREAKDOWN_TAG$ $CHANGE|L/%+=$#!"
  XP_DECAY_GOODS_ACCESS: "Warenzugang: $NUM|Y2%$"
  UNIT_NAME: "#T $NAME$#!"
@@ -1223,13 +1223,15 @@
  IRO_SHIP: "Diese [navy|e] besteht aus nur #Y einem#! [ship|e]"
  ARMY_DETAILS_PER_CATEGORY: "$BULLET_WITH_TAB$$COUNT|Y$ @$ICON_KEY$!$NAME$ [regiments|e] mit $MEN|Y$@army_strength!\n [manpower_i]"
  NAVY_DETAILS_PER_CATEGORY: "$BULLET_WITH_TAB$$COUNT|Y$ @$ICON_KEY$!$NAME$\n"
+ MERCENARY_DETAILS_PER_SUBUNIT_ARMY: "$BULLET_WITH_TAB$$COUNT|Y$ [SUBUNITDEFINITION.GetCategory.GetIcon][SUBUNITDEFINITION.GetName] mit $MEN|Y$ @army_strength!\n"
+ MERCENARY_DETAILS_PER_SUBUNIT_NAVY: "$BULLET_WITH_TAB$$COUNT|Y$ [SUBUNITDEFINITION.GetCategory.GetIcon][SUBUNITDEFINITION.GetName]\n"
  ESTIMATE_ARIVAL: "Kommt am $DATE|Y$ in „$PROV|Y$“ an"
  DEFINITE_ESTIMATE_ARIVAL: "Kommt in „[TARGET_LOCATION.GetNameWithNoTooltip|U]“ an am $DATE|Y$"
  POSSIBLE_ESTIMATE_ARIVAL: "Käme in „[TARGET_LOCATION.GetNameWithNoTooltip|U]“ am $DATE|Y$"
  RAISE_LEVY_TYPE: "\"[SUBUNITDEFINITION.GetCategory.GetIcon] [SUBUNITDEFINITION.GetName]\";\"\";\"\";\"\"#M"
  POSSIBLE_ESTIMATE_ARIVAL_LOCKED: "Bewegung gesperrt; würde daher nach Ankunft in „[LOCATION.GetName]“ dann in „[TARGET_LOCATION.GetName|U]“ ankommen am $DATE|Y$"
- NAVY_HIDDEN_SIMPLE_TOOLTIP: "#T Verborgene Marineflotte#!\n [UnitMarkerItem.GetHiddenTooltip]"
- ARMY_HIDDEN_SIMPLE_TOOLTIP: "#T Verborgene Armee#!\n [UnitMarkerItem.GetHiddenTooltip]"
+ NAVY_HIDDEN_SIMPLE_TOOLTIP: "#T Verborgene Marineflotte#! [UnitMarkerItem.GetHiddenTooltip]"
+ ARMY_HIDDEN_SIMPLE_TOOLTIP: "#T Verborgene Armee#! [UnitMarkerItem.GetHiddenTooltip]"
  ARMY_HIDDEN_CONCEPT: "[army|e]"
  NAVY_HIDDEN_CONCEPT: "[navy|e]"
  ADJ_WASTELAND_NAME: "einer namenlosen Ödnis"
@@ -1267,7 +1269,7 @@
  UNIT_OWNER_TT: "Diese Einheit gehört [Unit.GetCountry.GetName]"
  ARMY_OWNER_TT: "Diese Armee gehört [Unit.GetCountry.GetName]"
  NAVY_OWNER_TT: "Diese Marineflotte gehört [Unit.GetCountry.GetName]"
- # Combat Imminent
+ #Combat Imminent
  COMBAT_BIG_BONUS: "@arrow_bonus_tier_3!"
  COMBAT_MEDIUM_BONUS: "@arrow_bonus_tier_2!"
  COMBAT_SMALL_BONUS: "@arrow_bonus_tier_1!"
@@ -1299,8 +1301,8 @@
  COMBAT_IMMINENT_BETTER_COMMANDER_THEY_NO_COMMANDER: "$SCALE$Wir haben keinen Befehlshaber, während der gegnerische [TARGET_CHARACTER.GetTotalAbility|Y] hat"
  COMBAT_IMMINENT_STRONGER_ARMY_WE: "$SCALE$ Wir haben eine stärkere [army|e]"
  COMBAT_IMMINENT_STRONGER_NAVY_WE: "$SCALE$ Wir haben eine stärkere [navy|e]"
- COMBAT_IMMINENT_STRONGER_ARMY_THEY: "$SCALE$ Der Gegner hat eine stärkere [army|e]"
- COMBAT_IMMINENT_STRONGER_NAVY_THEY: "$SCALE$ Der Gegner hat eine stärkere [navy|e]"
+ COMBAT_IMMINENT_STRONGER_ARMY_THEY: "$SCALE$ Der Gegner hat eine größere [army|e]"
+ COMBAT_IMMINENT_STRONGER_NAVY_THEY: "$SCALE$ Der Gegner hat eine größere [navy|e]"
  COMBAT_IMMINENT_HIGHER_MORALE_WE: "$SCALE$ Unsere [army|e] hat eine höhere Moral als der Gegner"
  COMBAT_IMMINENT_HIGHER_MORALE_WE_NAVY: "$SCALE$ Unsere [navy|e] hat eine höhere Moral als der Gegner"
  COMBAT_IMMINENT_HIGHER_MORALE_THEY: "$SCALE$ Die gegnerische [army|e] hat eine höhere Moral als die unsere"
@@ -1315,7 +1317,7 @@
  COMBAT_IMMINENT_STACKWIPE_THEY_NAVY: "@arrow_malus_tier_3! Die gegnerische [navy|e] ist so groß, dass sie unsere [navy|e] auf der Stelle auslöschen würde"
  COMBAT_IMMINENT_STACKWIPE_WE: "@arrow_bonus_tier_3! Unsere [army|e] ist groß genug, um die gegnerische [army|e] auf der Stelle auszulöschen."
  COMBAT_IMMINENT_STACKWIPE_WE_NAVY: "@arrow_bonus_tier_3! Unsere [navy|e] ist groß genug, um die gegnerische [navy|e] auf der Stelle auszulöschen."
- # Combat
+ #Combat
  RETREAT_BLOCK_TT: "#T Rückzug untersagt#!\nWir können uns erst aus der Schlacht zurückziehen, wenn $NEED|Y$ Stunden vergangen sind, und diese Schlacht tobt erst seit $HOURS|Y$ Stunden"
  FIGHTING_REGIMENTS: "$NUM|G$ kämpfende [regiments|e]: $MEN|G$\n"
  RESERVE_REGIMENTS: "$NUM|Y$ [regiments|e] in Reserve: $MEN|Y$\n"
@@ -1413,7 +1415,7 @@
  CT_MORALE_DAMAGE: "$IMPACT|+=2$[morale_icon]"
  CT_IMPACT_ON_DISCIPLINE: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=%$ [discipline|e]#!: $DAMAGE$"
  UNIT_BREAKDOWN_DISCIPLINE: "Regimentsdisziplin\n[discipline|e] von $VAL|+=%$ aufgrund von:"
- UNIT_BREAKDOWN_LEADER_MODIFIER: "$MODIFIER$ ([CHARACTER.GetName|U], $ABILITY|0V$@mil!): $VAL|+=2%$"
+ UNIT_BREAKDOWN_LEADER_MODIFIER: "$MODIFIER$ ([CHARACTER.GetName|U], $ABILITY|0V$$ICON$): $VAL|+=2%$"
  CT_IMPACT_ON_TARGET_DISCIPLINE: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=%$ [discipline|e] des Ziels#!: $DAMAGE$"
  UNIT_BREAKDOWN_TARGET_DISCIPLINE: "Regimentsdisziplin\n[discipline|e] von $VAL|+=%$ aufgrund von:"
  CT_IMPACT_ON_VS_RELIGION: "#TOOLTIP:$BREAKDOWN_TAG$ $VAL|+=%$ gegenüber [TARGET_SUBUNIT.GetController.GetReligion]#!: $DAMAGE$"
@@ -1507,7 +1509,7 @@
  HOURLY_MORALE_HIT: "Alle Einheiten im Gefecht verlieren stündlich zusätzlich $VAL|R2$ Moral."
  NO_COMMANDER: "Kein Befehlshaber"
  NO_ADMIRAL: "Kein Admiral"
- # Garrison
+ #Garrison
  GARRISON_FORT: "Derzeitige Garnison: $CURR|Y$\nDas Maximum der [garrison|e] sind $MAX$ auf den Befestigungen. Es gibt $FORT|Y$ Stufen Befestigung."
  NO_TYPES_OF_FORTS_HERE: "@trigger_no! Es gibt keine [fortifications|e] in [Location.GetName]."
  GARRISON_TT: "#T [garrison|e]#!\n$WHY$"
@@ -1519,7 +1521,7 @@
  FORT_LEVEL_VAL: "#e Festungsstufe#W : [LocationView.GetLocation.GetFortLevel]"
  GARRISON_FLAVOR: "Alle aktiven Festungen benötigen eine stehende Truppe, die die Mauern bemannt und Streifen betreibt. So viele Soldaten sind derzeit in der Garnison der Festung anwesend."
  CURRENT_FORT: "Derzeitige Stufe der [fortification|e].\nKlicken, um die Produktionsansicht anzuzeigen."
- # Sieges
+ #Sieges
  SIEGE_FALL_CHANCE_TXT: "Die $game_concept_siege$ hat eine Wahrscheinlichkeit hat eine Erfolgschance von [Siege.GetFallChance|2%] für die nächste Phase."
  SIEGE_FALL_CHANCE_TT: "Fallwahrscheinlichkeit: [Siege.GetFallChance|2%]\nNächste Phase: [Siege.GetOccupationDaysLeft]"
  SIEGE_TOO_FEW_MEN_TXT: "#R Keine#!"
@@ -1558,7 +1560,7 @@
  OFFENSIVE_IMPACT_OF: "Offensivauswirkungen von „[COUNTRY.GetLongName|U]“"
  OCCUPATION_DAYS_LEFT: "[Siege.GetOccupationDaysLeft], bis dieser [location|e] besetzt ist."
  TOO_FEW_MEN_INFO: "@warning_icon! Es werden mindestens [Siege.GetLocation.GetMenNeededForSiege|V]@army_strength! benötigt, um [Siege.GetLocation.GetName] [occupy|el] zu können."
- # SIEGE_IN_X_DAYS: "#T Siege Phase Timer#!\nThe next siege phase is in $VAL|Y$ day(s).\nThe length of a siege phase of $SIZE|Y$ is due to:\n$WHY$"
+ #SIEGE_IN_X_DAYS: "#T Siege Phase Timer#!\nThe next siege phase is in $VAL|Y$ day(s).\nThe length of a siege phase of $SIZE|Y$ is due to:\n$WHY$"
  SIEGE_CURRENT_TIME: "Derzeitige Zeit"
  LOCAL_DEFENSIVENESS: "$VAL|%1$"
  NO_PRIOR_DICEROLL: "Keine"
@@ -1603,7 +1605,7 @@
  DAMAGED_SUBUNIT_A_ENTRY: "[SUBUNIT.GetDefinition.GetCategory.GetIcon] [SUBUNIT.GetTypeIcon] [SUBUNIT.GetName|U]: [SUBUNIT.GetStrength|V] von [SUBUNIT.GetMaxStrength|V]@army_strength!"
  DAMAGED_SUBUNITS_HEADER_NAVY: "Die folgenden [ships|e] sind beschädigt:"
  DAMAGED_SUBUNIT_N_ENTRY: "[SUBUNIT.GetDefinition.GetCategory.GetIcon] [SUBUNIT.GetTypeIcon] [SUBUNIT.GetName|U]: [SUBUNIT.GetStrength|V]"
- # Food
+ #Food
  SUPPLY_LIMIT_IMPACT: "Versorgungsschwelle für „[Unit.GetNameWithNoTooltip]“ in [Unit.GetLocation.GetNameWithNoTooltip]"
  UNIT_FOOD_CONSUMPTION_ENTRY: "$COUNT$ [SUBUNITDEFINITION.GetName|U]: $VAL|+=2$"
  FOODCONSUMPTION_FROM_UNITS: "Grundwert durch [regiments|e]: $VAL|Y$"
@@ -1652,7 +1654,6 @@
  SUPPLY_DEPOT_ALREADY: "@trigger_no! Es gibt bereits ein [supply_depot|e] in „[LOCATION.GetName]“"
  SUPPLY_DEPOT_CANT: "@trigger_no! Uns fehlt der nötige Fortschritt für die Einrichtung eines [Concept('supply_depot', 'Vorratslagers')|e]"
  SUPPLY_DEPOT_NOT_CONTROLLED: "@trigger_no! Wir kontrollieren „[LOCATION.GetName]“ nicht"
- SUPPLY_DEPOT_IS_OWNED: "@trigger_no! Wir können [supply_depots|e] nicht an [Concept('locations', 'Orten')|e] einrichten, die wir besitzen, und „[LOCATION.GetName]“ ist Teil unseres [Concept('country', 'Landes')|e]."
  DEPOSIT_FOOD: "Proviant im Vorratslager einlagern"
  DEPOSIT_FOOD_INFO: "Hierdurch wird [food|e] im [supply_depot|e] am [location|e] der Einheit eingelagert, damit [armies|e] in der Nähe ihn nutzen können."
  DEPOSIT_FOOD_CTA: "Lagert $FOOD|2Y$ im [supply_depot|e] in „[SUPPLY_DEPOT.GetName|U]“ ein."
@@ -1663,13 +1664,13 @@
  LOSING_FOOD_TT: "Diese [unit|e] verliert [food|e], weil sie keinen vom [location|e] erhält und ihr Proviantzugang niedriger ist als ihr [food_consumption|e]"
  REGAINING_FOOD_TT: "Diese [unit|e] erhält [food|e] dazu, da ihr Proviantzugang höher ist als ihr [food_consumption|e]"
  SUPPLY_WEIGHT: "[unit_weight|e]: $VALUE|2V$ ($TOTAL|2V$ im Territorium)"
- # Attrition
+ #Attrition
  BASE_ATTRITION: "[attrition|e] vor Modifikatoren: $VALUE|Y$ "
  ATTRITION_MAX: "Maximal [LOCATION.GetModifierValue('max_attrition')] #R %#! in [LOCATION.GetName|U]."
  MULTIPLICATIVE_ATTRITION: "Die folgenden Modifikatoren werden multiplikativ angewandt:\n"
  ATTRITION_HISTORY: "#T Zermürbungsverlauf#!\nIm Lauf der letzten Monate haben die [sub_units|e] dieser [unit|e] die folgende [attrition|e] erlitten:"
  ATTRITION_HISTORY_ENTRY: "$MONTH|Y$ $YEAR|Y$: $ATTRITION|R$"
- # Become Mercenary
+ #Become Mercenary
  MERC_UNIT_NAVY_BASED: "@trigger_no! Wir sind „[COUNTRY.GetCountryTypeName]“, weswegen wir unsere [navies|e] nicht als [mercenaries|e] vermieten können."
  MERC_UNIT_ARMY_BASED: "@trigger_no! Wir sind ein Land der Art „[COUNTRY.GetCountryTypeName]“, weswegen wir unsere [armies|e] nicht als [mercenaries|e] vermieten können."
  MERC_UNIT_HAS_MERCENARIES: "@trigger_no! „[UNIT.GetName|U]“ kann nicht als Söldner angeboten werden, da die Einheit bereits Söldner aus einer anderen Quelle enthält."
@@ -1677,6 +1678,7 @@
  MERC_UNIT_HAS_NAVY_LEVY: "@trigger_no! „[UNIT.GetName|U]“ enthält [navy_levies|e] und kann daher keine Söldnereinheit werden."
  MERC_UNIT_LOADED_ON_FLEET: "@trigger_no![UNIT.GetName] ist auf einer [Concept('navy', 'Flotte')|e] eingeschifft und muss in einem [port|e] [disembark|el], bevor sie ein Söldner werden kann."
  MERC_UNIT_HAS_ARMIES_ON_BOARD: "@trigger_no![UNIT.GetName] befördert [armies|e], die in einem [port|e] [disembark|el], bevor diese [Concept('navy', 'Flotte')|e] ein Söldner werden kann."
+ MERC_UNIT_LED_BY_RULER: "@trigger_no!Die [unit|e] „[UNIT.GetName]“ wird von unserem [ruler|e] angeführt, und diesem ist es nicht erlaubt, eine fremde [Concept('mercenary', 'Söldnerkompanie')|e] anzuführen. Wir müssen erst einen anderen [general|e] zuweisen."
  BECOME_MERCENARY: "Zum Anheuern verfügbar machen"
  BECOME_ARMY_MERCENARY: "Armee als Söldner anbieten"
  BECOME_NAVY_MERCENARY: "Marine als Söldner anbieten"
@@ -1684,29 +1686,36 @@
  BECOME_MERCENARY_INFO: "Hierdurch kann die [Select_CString(UNIT.IsArmy, 'Armee', 'Flotte')] als [mercenaries|e] an ein anderes [country|e] vermietet werden. Wir erhalten durch diese Transaktion Einnahmen."
  BECOME_MERCENARY_HEADER: "Anzahl der [armies|e], die derzeit als [mercenaries|e] an ein anderes [country|e] vermietet werden."
  BECOME_MERCENARY_CTA: "Klicken, um [armies|e] als Söldner zu vermieten."
- # Lend Unit to Ally
+ DELIST_MERCENARIES: "Söldner auslisten"
+ DELIST_MERCENARIES_INFO: "Wir ziehen das Anheuerungsangebot für unsere [mercenaries|e] in dieser [unit|e] zurück, die noch darauf warten, angeheuert zu werden."
+ DELIST_MERCENARIES_CTA: "Klicken, um all unsere noch nicht angeheuerten [mercenaries|e] in dieser [unit|e] von der Liste zu streichen."
+ #Lend Unit to Ally
  LEND_UNIT_TO_ALLY: "Armee an Kriegsanführer verleihen"
- LEND_UNIT_TO_ALLY_INFO: "Stellt diese [army|e] zeitweise unter den Befehl eines [Concept('war', 'Kriegsaführers')|e] auf derselben Seite. Die [army|e] wird zurückkehren, wenn der gemeinsame [war|e] endet."
- LEND_UNIT_TO_ALLY_CTA: "Diese [army|e] einem [Concept('war', 'Kriegsanführer')|e] leihen."
+ LEND_UNIT_TO_ALLY_INFO: "Stellt diese [army|e] zeitweise unter den Befehl eines [Concept('war_leader', 'Kriegsanführers')|e] auf derselben Seite. Die [army|e] wird zurückkehren, sobald der gemeinsame [war|e] endet."
+ LEND_UNIT_TO_ALLY_CTA: "Diese [army|e] einem [war_leader|e] leihen."
  LEND_UNIT_TO_ALLY_SELECT_TARGET: "Kriegsanführer auswählen"
  LEND_UNIT_ARMY_ONLY: "@trigger_no! Nur [armies|e] können einem Verbündeten geliehen werden."
  LEND_UNIT_NOT_AT_WAR: "@trigger_no! Muss im [war|e] sein, um eine Einheit zu leihen."
- LEND_UNIT_IS_WAR_LEADER: "@trigger_no! Wir können keine Einheit verleihen, wenn wir der [Concept('war', 'Kriegsanführer')|e] in allen derzeitigen [Concept('wars', 'Kriegen')|e] sind."
+ LEND_UNIT_IS_WAR_LEADER: "@trigger_no! Wir können keine Einheit verleihen, solange wir der [war_leader|e] in allen derzeitigen [Concept('wars', 'Kriegen')|e] sind."
+ LEND_UNIT_IS_MERCENARY: "@trigger_no! Die [unit|e] „[UNIT.GetName]“ ist eine [Concept('mercenary', 'Söldnerkompanie')|e] und kann deshalb nicht an Verbündete verliehen werden."
+ LEND_UNIT_IS_ARMY_LEVY: "@trigger_no! Die [unit|e] „[UNIT.GetName]“ enthält [army_levies|E] und kann deshalb nicht an Verbündete verliehen werden."
+ LEND_UNIT_IS_NAVY_LEVY: "@trigger_no! Die [unit|e] „[UNIT.GetName]“ enthält [navy_levies|E] und kann deshalb nicht an Verbündete verliehen werden."
+ LEND_UNIT_ARMY_BASED: "@trigger_no! Wir als [COUNTRY.GetCountryTypeName] können keine [armies|e] an Verbündete verleihen."
  CONTAINS_MERCENARIES: "#T Söldner anwesend#!\nDiese [unit|e] enthält [mercenaries|e]."
  OFFERED_MERCENARIES: "#T Einheit zum Anheuern angeboten#!\nDiese [unit|e] kann von anderen als [mercenaries|e] angeheuert werden."
- # Balance Army
+ #Balance Army
  BALANCE_ARMY_IN_COMBAT: "@trigger_no! Wir können keine Einheit ausgleichen, die sich im Kampf befindet."
  BALANCE_ARMY: "Einheit ausgleichen"
  BALANCE_ARMY_INFO: "Dies verteilt die [regiments|e] innerhalb der Einheit neu, sodass alle vier Positionen (Zentrum, Links, Rechts und Reserven) gleichmäßig aufgefüllt sind."
  BALANCE_ARMY_CTA: "Gleicht die Einheit aus."
- # Fortify Flank
+ #Fortify Flank
  FORTIFY_LEFT_FLANK: "Linke Flanke befestigen"
  FORTIFY_CENTER_FLANK: "Zentrum befestigen"
  FORTIFY_RIGHT_FLANK: "Rechte Flanke befestigen"
  FORTIFY_LEFT_RIGHT_FLANK: "Linke und rechte Flanke befestigen"
  AUTO_BALANCE_FLANKS: "Flankenausgleich automatisieren"
  DEACTIVATE_AUTO_BALANCE_FLANKS: "Flankenausgleich entautomatisieren"
- # Disband
+ #Disband
  DISBAND_ARMY_CONFIRM_TITLE: "Auflösen bestätigen"
  DISBAND_ARMY_LEVIES_CONFIRM_TITLE: "Auflösen von Aufgeboten bestätigen"
  DISBAND_ARMY_CONFIRM: "@warning_icon! Wenn wir die Einheit „[UNIT.GetName|Y]“ auflösen, verlieren wir $STRENGTH|Y$ Mannen aus $NUM|Y$ [regulars_with_icon|e].\n\n"
@@ -1731,7 +1740,7 @@
  DISBAND_NOT_IN_COMBAT: "@trigger_no! Einheiten im Kampf können nicht aufgelöst werden."
  DISBAND_NOT_ARMY_BASED: "@trigger_no! Horden können nicht aufgelöst werden!"
  DISBAND_NOT_NAVY_BASED: "@trigger_no! Piraten können nicht aufgelöst werden!"
- # Shatter
+ #Shatter
  SHATTER_ACTION: "Vollständigen Rückzug befehlen"
  SHATTER_ACTION_INFO_ARMY: "Dies gibt unserer Einheit den Befehl, einen verteilten Rückzug in Sicherheit anzutreten, der unterwegs nicht unterbrochen werden kann. Ein vollständiger Rückzug verringert die [manpower_i] dieser [army|e] um $STRENGTH_LOSS|R$, da bei einem vollständigen Rückzug $PERCENTAGE_LOSS|R%$ der derzeitigen Stärke der [army|e] verloren gehen."
  SHATTER_ACTION_INFO_NAVY: "Dies gibt unserer Einheit den Befehl, einen verteilten Rückzug in Sicherheit anzutreten, der unterwegs nicht unterbrochen werden kann. Ein vollständiger Rückzug verringert die [manpower_i] dieser [navy|e] um $PERCENTAGE_LOSS|R%$ ihrer derzeitigen Stärke."
@@ -1741,15 +1750,15 @@
  SHRET_NO_VALID_RETREAT_TARGET: "@trigger_no! Es ist kein befreundetes Gebiet in der Nähe, in das ein Rückzug möglich wäre."
  SHRET_ALREADY_RETREATING: "@trigger_no! Die Einheit zieht sich bereits zurück."
  SHATTER_ACTION_FROM_UI: "#T Vollständigen Rückzug befehlen#!\nDen Befehl geben, einen verteilten Rückzug nach „$WHERE|Y$“ anzutreten."
- # Split in Half
+ #Split in Half
  SPLIT_HALF: "Halbieren"
  SPLIT_HALF_INFO: "Hierdurch wird diese Einheit in zwei möglichst gleich große Hälften geteilt."
  SPLIT_HALF_CTA: "Die Einheit in zwei Hälften teilen."
  CANT_SPLIT_HALF: "@trigger_no! Es sind mindestens zwei Untereinheiten erforderlich, damit ein Halbieren möglich ist"
- # Save as Template
+ #Save as Template
  SAVE_ARMY_AS_TEMPLATE_INFO: "Dies speichert die derzeitige Zusammenstellung dieser [army|e] als neue [unit_template|e]."
  SAVE_ARMY_AS_TEMPLATE_CTA: "Die derzeitige Zusammenstellung als Vorlage speichern."
- # Assault
+ #Assault
  ASSAULT_ALREADY: "@trigger_no! Es läuft bereits eine Erstürmung."
  ASSAULT_NOT_MERCES: "@trigger_no! Sofern es keine Bresche gibt, weigern [mercenaries|e] sich, an einer Erstürmung teilzunehmen."
  ASSAULT_TOO_WEAK: "@trigger_no! In dieser Belagerung gibt es nicht genug [ShowUnitCategoryName('army_infantry')] für eine Erstürmung."
@@ -1762,21 +1771,21 @@
  SIEGE_ODDS_WEAK: "@warning_icon! Eine Erstürmung würde wahrscheinlich scheitern."
  SIEGE_ODDS_RISKY: "$BULLET$ Diese Erstürmung ist riskant!"
  SIEGE_ODDS_POSSIBLE: "@trigger_yes! Es besteht eine Chance, dass wir die Erstürmung gewinnen!"
- # Return home at war
+ #Return home at war
  TOGGLE_RETURN_HOME_AT_WAR_ON: "Im Krieg nicht in Hafen zurückkehren"
  TOGGLE_RETURN_HOME_AT_WAR_OFF: "Im Krieg in Hafen zurückkehren"
  TOGGLE_RETURN_HOME_AT_WAR_ON_INFO: "Diese [Concept('navy', 'Flotte')|e] wird im [war|e] KEINEN befreundeten Hafen aufsuchen."
  TOGGLE_RETURN_HOME_AT_WAR_OFF_INFO: "Diese [Concept('navy', 'Flotte')|e] wird im [war|e] einen befreundeten Hafen aufsuchen."
  TOGGLE_RETURN_HOME_AT_WAR_ON_CTA: "Einstellen, dass die [Concept('navy', 'Flotte')|e] im Kriegsfall in den Hafen zurückkehrt"
  TOGGLE_RETURN_HOME_AT_WAR_OFF_CTA: "Die [Concept('navy', 'Flotte')|e] im Kriegsfall nicht mehr in den Hafen zurückkehren lassen"
- # Return home at war
+ #Return home at war
  TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_ON: "Einschiffen von befreundeten Einheiten NICHT erlaubt"
  TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_OFF: "Einschiffen von befreundeten Einheiten erlaubt"
  TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_ON_INFO: "Diese [Concept('navy', 'Flotte')|e] erlaubt das Einschiffen von befreundeten Einheiten NICHT"
  TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_OFF_INFO: "Diese [Concept('navy', 'Flotte')|e] erlaubt das Einschiffen von befreundeten Einheiten"
  TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_ON_CTA: "Dieser [Concept('navy', 'Flotte')|e] das Einschiffen von befreundeten Einheiten erlauben"
  TOGGLE_ALLOW_FRIENDLY_UNITS_TO_BOARD_OFF_CTA: "[Concept('navy', 'Flotte')|e] daran hindern, befreundete Einheiten einzuschiffen"
- # Attach to Units
+ #Attach to Units
  TOGGLE_ATTACH_OFF: "Zuweisen erlaubt"
  TOGGLE_ATTACH_OFF_INFO: "Die Einheit erlaubt es anderen Einheiten, ihr zugewiesen zu werden."
  TOGGLE_ATTACH_OFF_INFO_FALSE: "Die Einheit erlaubt es KEINER anderen Einheit, ihr zugewiesen zu werden."
@@ -1805,12 +1814,10 @@
  UW_NOT_POSSIBLE_TO_ATTACH: "@trigger_no! Hier sind keine befreundeten Einheiten, die eine Zuweisung erlauben."
  UW_NOT_POSSIBLE_TO_ATTACH_MOVED_TOO_FAR: "@trigger_no! Hier sind keine befreundeten Einheiten, die eine Zuweisung erlauben und sich maximal $PERCENTAGE$ % auf ihre nächste Provinz zubewegt haben."
  CANNOT_TOGGLE_ATTACH_FOCUS_SIEGE: "@trigger_no! Zuweisung kann nicht gewechsel werden, solange die Einheit „$OBJECTIVE$“ zugewiesen ist."
- # Merge Units
- MERGE_TO_STRONGEST: "Mit stärkster Einheit zusammenlegen"
- MERGE_TO_STRONGEST_INFO: "Alle Einheiten bewegen sich, um sich der stärksten ausgewählten Einheit anzuschließen („[UNIT.GetName]“ in „[UNIT.GetLocation.GetName|U]“)"
- MERGE_TO_STRONGEST_CTA: "Einheiten zusammenlegen."
+ #Merge Units
  MERGE_UNIT: "Einheiten zusammenlegen"
  MERGE_UNITS: "Die ausgewählten Einheiten zusammenlegen"
+ MERGE_UNITS_INFO: "Alle Einheiten bewegen sich, um sich der [unit|e] „[UNIT.GetName]“ in [UNIT.GetLocation.GetName] anzuschließen."
  CANNOT_MERGE_UNITS: "Die ausgewählten Einheiten können nicht zusammengelegt werden:\n$WHY$"
  NO_MERGE_DIFFERENT_LOCATION: "„$FROM|Y$“ und „$TO|Y$“ befinden sich an unterschiedlichen [Concept('locations', 'Orten')|e]"
  NO_MERGE_IN_COMBAT: "„$NAME|Y$“ befindet sich derzeit im Kampf"
@@ -1822,7 +1829,7 @@
  NO_MERGE_UNIT_TYPE: "[navies|e] und [armies|e] können nicht zusammengelegt werden („$FROM|Y$“ und „$TO|Y$“)"
  MERGE_UNITS_DRO: "Durch das Zusammenlegen werden die derzeit ausgewählten Einheiten zu einer Einheit zusammengefasst."
  MERGE_UNIT_CTA: "Einheiten zusammenlegen."
- # Transfer Unit
+ #Transfer Unit
  TRANSFER_SUBUNIT_TT: "Übertragen"
  TRANSFER_SUBUNIT_TYPE_TT: "Überträgt alle Einheiten der Art „[SubUnit.GetDefinition.GetName]“"
  TRANSFER_SUBUNIT_CATEGORY_TT: "Überträgt alle Einheiten der Kategorie „[SubUnit.GetDefinition.GetName]“"
@@ -1844,19 +1851,19 @@
  CLICK_TO_GET_TRANSFERED_HALF_LEVIES: "Die Hälfte der [levies|e] von der anderen ausgewählten Einheit übertragen"
  CLICK_TO_GET_TRANSFERED_HALF_MERCENARIES: "Die Hälfte der [mercenaries|e] von der anderen ausgewählten Einheit übertragen"
  CLICK_TO_GET_TRANSFERED_HALF: "Die Hälfte von „$NAME$“ von der anderen ausgewählten Einheit übertragen"
- # Detach Damaged Ships
+ #Detach Damaged Ships
  DETACH_DAMAGED_SHIPS: "Beschädigte Schiffe ausgliedern"
  DETACH_DAMAGED_SHIPS_INFO: "Gliedert alle beschädigten [ships|e] aus dieser Einheit aus."
  DETACH_DAMAGED_SHIPS_CTA: "$NUM$ beschädigte [ships|e] aus dieser [navy|e] ausgliedern."
  DETACH_DAMAGED_SHIPS_ALL: "@trigger_no! Alle [ships|e] in dieser [navy|e] sind bereits beschädigt."
  DETACH_DAMAGED_SHIPS_NONE: "@trigger_no! In dieser [navy|e] gibt es keine beschädigten [ships|e]."
- # Detach Support
+ #Detach Support
  DETACH_SUPPORT_ALL: "In dieser [army|e] gibt es nur Unterstützungs-[regiments|e]"
  DETACH_SUPPORT_NONE: "@trigger_no! In dieser [army|e] gibt es keine Unterstützungs-[regiments|e]!"
  DETACH_SUPPORT: "Unterstützung ausgliedern"
  DETACH_SUPPORT_INFO: "#F Unterstützungseinheiten nehmen nur einen kleinen Teil der Proviantvorräte mit, wenn sie ausgegliedert werden.#!"
  DETACH_SUPPORT_CTA: "Die $NUM$ Unterstützungs-[regiments|e] ausgliedern, die diese [army|e] hat."
- # Detach Levies
+ #Detach Levies
  DETACH_ARMY_LEVY_ALL: "In dieser Einheit gibt es nur [army_levies|e]"
  DETACH_NAVY_LEVY_ALL: "In dieser Einheit gibt es nur [navy_levies|e]"
  DETACH_ARMY_LEVY_NONE: "@trigger_no! In dieser Einheit gibt es keine [army_levies|e]!"
@@ -1866,25 +1873,25 @@
  DETACH_NAVY_LEVY_INFO: "Gliedert alle [navy_levies|e] aus dieser Einheit aus."
  DETACH_ARMY_LEVY_CTA: "Die $NUM$ [army_levies|e] dieser Einheit ausgliedern."
  DETACH_NAVY_LEVY_CTA: "Die $NUM$ [navy_levies|e] dieser Einheit ausgliedern."
- # Detach Regulars
+ #Detach Regulars
  DETACH_REGULAR_ALL: "In dieser Einheit gibt es nur reguläre Truppen"
  DETACH_REGULAR_NONE: "@trigger_no! In dieser Einheit gibt es keine regulären Truppen!"
  DETACH_REGULAR: "Reguläre Truppen ausgliedern"
  DETACH_REGULAR_INFO: "Gliedert alle reguläre Truppen aus dieser Einheit aus."
  DETACH_REGULAR_CTA: "Die $NUM$ regulären Truppen dieser Einheit ausgliedern."
- # Detach Mercenary
+ #Detach Mercenary
  DETACH_MERC: "Söldner ausgliedern"
  DETACH_MERC_INFO: "Gliedert alle [mercenaries|e] aus dieser Einheit aus."
  DETACH_MERC_CTA: "Die $NUM$ [mercenaries|e] dieser Einheit ausgliedern."
  DETACH_MERC_ALL: "In dieser Einheit gibt es nur [mercenaries|e]"
  DETACH_MERC_NONE: "@trigger_no! In dieser Einheit gibt es keine [mercenaries|e]!"
- # Detach Category
+ #Detach Category
  DETACH_CATEGORY: "Alle „[SUBUNITCATEGORY.GetUITooltip]“ ausgliedern"
  DETACH_CATEGORY_INFO: "Hierdurch werden alle „[SUBUNITCATEGORY.GetName]“ aus der [Concept('unit', 'Einheit')|e] ausgegliedert und bilden dann eine neue Einheit."
  DETACH_CATEGORY_CTA: "Alle „[SUBUNITCATEGORY.GetUITooltip]“ ausgliedern"
  DETACH_CATEGORY_NONE_FOUND: "Diese [unit|e] enthält keine „[SUBUNITCATEGORY.GetName]“."
  DETACH_CATEGORY_ALL_FOUND: "Die gesamte [unit|e] ist „[SUBUNITCATEGORY.GetName]“."
- # Detach Siege
+ #Detach Siege
  DETACH_SIEGE: "Belagerung ausgliedern"
  DETACH_SIEGE_INFO: "Hierdurch werden genug [regiments|e] ausgegliedert, um dieses Gebiet zu belagern oder zu besetzen. Der Rest kann anderen Aufgaben nachgehen."
  DETACH_SIEGE_CTA: "Eine Belagerungsstreitkraft ausgliedern."
@@ -1892,13 +1899,13 @@
  DETACH_SIEGE_NO_RETR: "@trigger_no! Wir können keine Belagerungsstreitkraft ausgliedern, während wir uns zurückziehen."
  DETACH_SIEGE_NO_SIEGE: "@trigger_no! Hier findet keine Belagerung statt!"
  DETACH_SIEGE_NO_COMBAT: "@trigger_no! Beendet zuerst die Schlacht und versucht es dann erneut."
- # Detach Blockade
+ #Detach Blockade
  DETACH_BLOCKADE: "Blockade ausgliedern"
  DETACH_BLOCKADE_INFO: "Hierdurch werden genug [units|e] ausgegliedert, um alle Häfen dieser [seazone|e] zu blockieren. Der Rest kann anderen Aufgaben nachgehen."
  DETACH_BLOCKADE_CTA: "Eine Blockadeflotte ausgliedern."
  DETACH_BLOCKADE_NO_PORTS: "@trigger_no! Diese [seazone|e] hat keine zu blockierenden Häfen."
  DETACH_BLOCKADE_NO_SHIPS: "@trigger_no! Diese [Concept('navy', 'Flotte')|e] hat nicht genug [units|e] zum Ausgliedern."
- # Reorganize/CreateNewUnit
+ #Reorganize/CreateNewUnit
  NEW_UNIT: "Neue Einheit erstellen"
  NEW_UNIT_INFO: "Beim Erstellen einer neuen Einheit wird eine leere Einheit erstellt, der wir [regiments|e] der derzeitigen Einheit zuweisen können."
  NEW_UNIT_CTA: "Mit dem Neuzuweisen von Einheiten in eine neue Einheit beginnen."
@@ -1920,12 +1927,12 @@
  REORGANIZE_UNITS_DRO: "Wenn wir diese beiden Einheiten umorganisieren, können wir [regiments|e] zwischen den beiden [armies|e] verschieben."
  UNIT_ABILITY_BLOCKS_REORG: "@trigger_no! Dies ist nicht möglich. „$NAME$“ ist beschäftigt mit: $WHICH|Y$."
  REORGANIZE_UNITS_CTA: "Einheiten umorganisieren."
- # Unit boxing
+ #Unit boxing
  MOVE_BOX_CANT_COMBAT: "@trigger_no! Dies ist nicht möglich, solange „[UNIT.GetName]“ sich im Kampf befindet."
  MOVE_BOX_CANT_PRISONER: "@trigger_no! [prisoners|e] bleiben, wo sie sind."
  MOVE_BOX_CANT_BECOME_PRISONER: "@trigger_no! Wir können „[SUBUNIT.GetName|U]“ nicht zu den [Concept('prisoner', 'Gefangenen')|e] verlegen."
  MOVE_BOX_MOVE: "„[SUBUNIT.GetName]“ verschieben von „[$FROM$|e]“ zu „[$TO$|e]“"
- # Moving
+ #Moving
  TARGET_PROVINCE_IS_IMPASSABLE: "@trigger_no! Dorthin ist keine Bewegung möglich, da das Gelände unpassierbar ist."
  UNIT_CAN_ONLY_DISEMBARK_ADJACENT: "@trigger_no! Dorthin ist keine Bewegung möglich, da nur in angrenzende Orten ausgeschifft werden kann."
  UNIT_CANNOT_RETREAT_INTO_OWN_LOCATION: "@trigger_no! Kein Rückzug möglich an den [location|e], an dem wir kämpfen."
@@ -1935,17 +1942,17 @@
  NAVY_RETURN_HOME_AT_WAR_BLOCKS_MOVE: "@trigger_no! Kann diese Flotte nicht auf See verlegen, solange „Im Krieg in Heimathafen zurückkehren“ aktiv ist."
  SLOW_SPEED_T: "Einheit ist sperrig"
  SLOW_SPEED: "Diese Einheit bewegt sich langsamer, weil sie so groß ist."
- # Select objective
+ #Select objective
  SELECT_OBJECTIVE_UNIT: "Ziel auswählen"
  SELECT_OBJECTIVE_UNIT_INFO: "Ein Ziel auswählen, auf das die Einheit hinarbeiten wird."
  SELECT_OBJECTIVE_UNIT_CTA: "Ziel auswählen."
  CANCEL_ALL_OBJECTIVES: "Alle Militärziele löschen"
- # Select transport
+ #Select transport
  SELECT_TRANSPORT_UNIT: "Frachter auswählen"
  SELECT_TRANSPORT_UNIT_CANNOT: "@trigger_no! Ihr könnt keinen Frachter auswählen, wenn die Einheit in keinen Frachter verladen ist."
  SELECT_TRANSPORT_UNIT_INFO: "Den Frachter auswählen, auf den die derzeitige Einheit verladen ist."
  SELECT_TRANSPORT_UNIT_CTA: "Frachter auswählen."
- # Embark/Disembark
+ #Embark/Disembark
  EMBARK_ACTION: "Armee einschiffen"
  EMBARK_ACTION_INFO: "Hiermit kann eine [army|e] auf einer [Concept('navy', 'Flotte')|e] platziert werden, während die [Concept('navy', 'Flotte')|e] in einem befreundeten [port|e] anliegt."
  EMBARK_ACTION_CTA: "Den Befehl geben, auf „$NAME|Y$“ einzuschiffen."
@@ -1954,6 +1961,7 @@
  EMBARK_NOT_COMBAT: "@trigger_no! Es ist nicht möglich, [armies|e] einzuschiffen, die sich gerade im Kampf befinden."
  EMBARK_NOT_ALREADY_LOADED: "@trigger_no! Es ist nicht möglich, [armies|e] einzuschiffen, die bereits auf Schiffen verladen sind."
  EMBARK_NO_POSSIBLE_FLEET: "@trigger_no! „$NAME$“ hat keine [navy|e], auf die eingeschifft werden könnte."
+ EMBARK_NO_UNITS: "@trigger_no! $NAME$ hat keine Mannen, die eingeschifft werden können."
  DISEMBARK_ACTION: "Armee ausschiffen"
  DISEMBARK_ACTION_INFO: "Ein geordnetes Ausschiffen ist nur möglich, wenn die tragende [navy|e] in einem befreundeten [port|e] liegt."
  DISEMBARK_ACTION_CTA: "Den Befehl geben, in „$NAME|Y$“ auszuschiffen."
@@ -2004,27 +2012,27 @@
  MODIFIER_FOR_UA_HAS: "Bei dieser Einheit ist „$NAME|Y$“ aktiv; sie erhält „$EFFECT$“ bis $WHEN|Y$"
  ABILITY_HISTORY: "#F $DESC$#!"
  CONFIRM_UNIT_ABILITY: "Soll „$UNIT|Y$“ wirklich die Fähigkeit „$ABILITY|Y$“ einsetzen in „$LOCATION|Y$“?"
- # Unit Name
+ #Unit Name
  SINGLE_UNIT_COUNTRY: "#T [Country.GetName|U]#!\nDiese Einheit gehört: [Country.GetName|U]."
  UNIT_NAME_TT: "Dies ist der Name dieser Einheit, den andere Schnittstellen bei der Darstellung dieser Einheit verwenden."
  UNIT_NAME_NON_EDIT_TT: "#T Einheitenname#!\nDies ist der Name dieser Einheit, den andere Oberflächen verwenden, wenn es um diese Einheit geht.\n\n#F Die Namen von [mercenary|e]-[armies|e] oder Clan-Aufgeboten können nicht bearbeitet werden"
  UNIT_CUSTOM_NAME_OK_TT: "Der Einheitenname wurde angepasst"
  UNIT_CUSTOM_NAME_INVALID_TT: "Wir haben bereits eine Einheit dieses Namens. Bitte wählt einen anderen"
- # Exile Status
+ #Exile Status
  UNIT_NOT_EXILE_TT: "#T Nicht versprengt#!"
  UNIT_EXILE_TT: "#T Versprengt#!"
  UNIT_EXILE_EXTRA: "Ist eine Einheit [exiled|El], hat dies die folgenden Effekte:\n$EFFECT$"
  IS_EXILED_TT: "#T Einheit ist versprengt#!\nDiese Einheit ist [exiled|E] und bewegt sich auf sicheren Boden zu. Solange sie versprengt ist, kann die Einheit nicht an Kämpfen oder Belagerungen teilnehmen, unabhängig davon, auf wessen Gebiet sie sich befindet"
  UNIT_RETREAT_TT: "#T Rückzug#!\nDiese Einheit ist derzeit [Concept('retreating', 'auf dem Rückzug')|e] nach „$NAME$“"
  UNIT_NOT_RETREAT_TT: "#T Kein Rückzug#!\nDiese Einheit führt derzeit keinen [retreat|e] durch"
- # Recruit To
+ #Recruit To
  RECRUIT_TO_ARMY: "In Armee rekrutieren"
  RECRUIT_TO_ARMY_INFO: "Hiermit können neue [regiments|e] direkt in diese ausgewählte [army|e] rekrutiert werden."
  RECRUIT_TO_ARMY_CTA: "Auswählen, welche [regiments|e] rekrutiert werden sollen."
  RECRUIT_TO_NAVY: "In Marine bauen"
  RECRUIT_TO_NAVY_INFO: "Hiermit können [ships|e] direkt für diese ausgewählte [navy|e] gebaut werden."
  RECRUIT_TO_NAVY_CTA: "Auswählen, welche [ships|e] gebaut werden sollen."
- # Consolidate
+ #Consolidate
  CONSOLIDATE_BUTTON: "Regimenter konsolidieren"
  CONSOLIDATE_SHIFT: "Regimenter konsolidieren und leere [regulars|e] behalten"
  CONSOLIDATE_BUTTON_INFO: "Dies legt [regiments|e] wann immer möglich zusammen, damit diese [army|e] so viele volle [regiments|e] wie möglich hat."
@@ -2035,7 +2043,7 @@
  CONSOLIDATE_NONE_AROUND: "@trigger_no! In dieser [army|e] gibt es keine [regiments|e], die mit einem anderen [regiment|e] zusammengelegt werden könnten."
  CONSOLIDATE_REGULARS_CONFIRM_TITLE: "Regimenter konsolidieren"
  CONSOLIDATE_REGULARS_CONFIRM_DESC: "Diese Armee beinhaltet [regulars|e]. Sie zu konsolidieren, könnte einige von ihnen verbrauchen oder vernichten. Wollen wir sicher fortfahren?"
- # Leaders
+ #Leaders
  LACK_OF_LEADER_TT: "#T Kein Befehlshaber#!\nDerzeit ist kein [character|e] zugewiesen, der diese Einheit anführt. Dies hat die folgenden Effekte:\n$EFFECT$"
  CHANGE_LEADER_TT: "#T Anführer ändern#!\n"
  ASSIGN_LEADER_TT: "#T Anführer zuweisen#!\n"
@@ -2066,17 +2074,17 @@
  CHARJOB_UNIT_MODIFIER_BLOCKED: "@trigger_no![CHARACTER.GetName|U] ist aus folgendem Grund derzeit nicht in der Lage, eine Einheit anzuführen: $WHY$"
  U_L_ARMY: "[army|e]"
  U_L_NAVY: "[navy|e]"
- CHARJOB_ALREADY_ASSIGNED_LEADER_A: "@warning_icon![CHARACTER.GetName|U] führt bereits eine [army|e] und wird diesen Befehl aufgeben, um diese „$NAME$“ zu führen."
- CHARJOB_ALREADY_ASSIGNED_LEADER_N: "@warning_icon![CHARACTER.GetName] führt bereits eine [Concept('navy', 'Flotte')|e] und wird diesen Befehl aufgeben, um diese „$NAME$“ zu führen."
+ CHARJOB_ALREADY_ASSIGNED_LEADER_A: "@trigger_no![CHARACTER.GetName] führt bereits eine [army|e] und kann „$NAME$“ nicht befehligen."
+ CHARJOB_ALREADY_ASSIGNED_LEADER_N: "@trigger_no![CHARACTER.GetName] führt bereits eine [navy|e] und kann „$NAME$“ nicht befehligen."
  CANNOT_ASSIGN_LEADER_UNIT_LOCKED: "@trigger_no! Wir können keinen Anführer zuweisen, da die Einheit in der Bewegung gesperrt ist"
  CANNOT_ASSIGN_LEADER_UNIT_IN_COMBAT: "@trigger_no! Wir können im Kampf keinen Anführer zuweisen"
  CANNOT_SHOW_LEADER: "Einen Anführer zuweisen, um den Charakter anzeigen zu können"
  NO_COMMANDER_TO_REMOVE: "Diese [army|e] hat keinen General, der entfernt werden könnte"
  NO_ALMIRANT_TO_REMOVE: "Diese [navy|e] hat keinen Admiral, der entfernt werden könnte"
- # Blockade
+ #Blockade
  BLOCKADE_CAPACITY_FROM_SHIPS: "Von Schiffen: $VAL|2+=$"
  UNIT_BLOCKADE_TOOLTIP: "Diese Einheit trägt insgesamt $PERCENT|0Y%$ zur [blockade|e] bei, verteilt auf $CITIES|Y$ Gebiete."
- # Mothball
+ #Mothball
  MOTHBALL_IS_ON_TT: "[navy|e] ist stillgelegt"
  MOTHBALL_IS_ON_TT_INFO: "Wird „[UNIT.GetName]“ aus dem Status „[mothballed|E]“ zurückgeholt, erhält die Einheit langsam wieder [Concept('repair', 'Reparaturen')|e] und sie benötigt den vollen Unterhalt"
  MOTHBALL_IS_ON_TT_CTA: "„$NAMES$“ aus dem Status „[mothballed|E]“ entfernen"
@@ -2085,7 +2093,7 @@
  MOTHBALL_IS_OFF_TT_CTA: "„$NAMES$“ in den Status „[mothballed|E]“ versetzen"
  MOTHBALL_NOT_MOVING: "@trigger_no! Wir können keine [navy|e] in den Status „[mothballed|E]“ versetzen, die sich bewegt."
  MOTHBALL_NOT_IN_PORT: "@trigger_no! Wir können nur [navy|e] in den Status „[mothballed|E]“ versetzen, die im Hafen liegt."
- # Bribe Mercs
+ #Bribe Mercs
  BRIBE_MERCENARIES: "Söldner bestechen"
  BRIBE_MERCENARIES_INFO: "Die Söldner in dieser Einheit bestechen, zu uns überzulaufen, selbstredend gegen eine enorm erhöhte Gebühr. Die folgenden [mercenary|e]-Einheiten werden sich uns anschließen:"
  BRIBE_MERCENARIES_CTA: "Die $NUM|Y$ [mercenaries|e] in dieser Einheit bestechen, zu unserem [country|e] überzulaufen. Der Preis beträgt $COST$."
@@ -2098,7 +2106,7 @@
  BRIBE_MERCENARIES_UNIT_LOCKED: "@trigger_no!„[UNIT.GetName|U]“ ist in der Bewegung gesperrt."
  BRIBE_MERCENARIES_NOT_NEARBY: "@trigger_no!Diese Söldnereinheit grenzt an keine [locations|e] unter unserer Kontrolle an."
  BRIBE_MERCENARIES_NOT_LENT_UNIT: "@trigger_no! Diese Einheit ist verliehen und kann nicht bestochen werden."
- # Upgrade Fleet
+ #Upgrade Fleet
  UPGRADE_FLEET: "Marine aufwerten"
  UPGRADE_FLEET_INFO_YES: "Unsere [navy|e] auf die neueste Technologie aufwerten zum Preis von $COST$. Dies senkt ihre derzeitige [morale|e] auf 0.\n"
  UPGRADE_FLEET_INFO_NO: "Unsere [navy|e] auf die neueste Technologie aufwerten. Dies senkt ihre derzeitige [morale|e] auf 0.\n"
@@ -2112,21 +2120,22 @@
  UPGRADE_FLEET_CANNOT_UPGRADE_SUMMARY: "\n#TOOLTIP:$BREAKDOWN_TAG$ $NUM|L$#! [ships|e] können nicht aufgewertet werden."
  UPGRADE_FLEET_UNIT_TYPE_LIMIT_REACHED: "@trigger_fail! Wir haben unsere Schwelle für „[SUBUNIT.GetTypeName]“ erreicht."
  UPGRADE_FLEET_LEVIES_ARE_RUBBISH: "@trigger_no! Wir können [levies|e] nicht aufwerten."
- # Upgrade Army
+ #Upgrade Army
  UPGRADE_ARMY: "Armee aufwerten"
  UPGRADE_ARMY_INFO_YES: "Unsere [army|e] auf die neueste Technologie aufwerten zum Preis von $COST$. Dies senkt ihre derzeitige [morale|e] auf 0.\n"
  UPGRADE_ARMY_INFO_NO: "Unsere [army|e] auf die neueste Technologie aufwerten. Dies senkt ihre derzeitige [morale|e] auf 0.\n"
  UPGRADE_ARMY_CTA: "Unsere [army|e] aufwerten."
  UPGRADE_ARMY_NO_UNITS: "@trigger_no! In dieser [army|e] gibt es keine [regiments|e], die aufgewertet werden können."
+ UPGRADE_ARMY_CANNOT_UPGRADE_SUMMARY: "$NUM$ [regiments|e] können nicht aufgewertet werden."
  UPGRADE_ARMY_NOT_IN_FRIENDLY_LOCATION: "@trigger_no!„[UNIT.GetName|U]“ befindet sich an keinem befreundeten Ort."
  UPGRADE_ARMY_NO_BETTER_REGIMENT_TYPE: "@trigger_no! Es gibt keine bessere [Concept('regiment', 'Regiments')|e]-Art für eine Aufwertung."
  UPGRADE_ARMY_UNIT_TYPE_LIMIT_REACHED: "@trigger_fail! Wir haben unsere Schwelle dieser [Concept('regiment', 'Regiments')|e]-Art erreicht."
  UPGRADE_ARMY_LEVIES_ARE_RUBBISH: "@trigger_no! Wir können [levies|e] nicht aufwerten."
  UPGRADE_ARMY_MERCS_ARENT_YOURS: "@trigger_no! Wir können [mercenaries|e] nicht aufwerten."
  UPGRADE_ARMY_PRISONERS_CAN_ROT: "@trigger_no! „[SUBUNIT.GetName|U]“ ist [Concept('prisoner', 'gefangen')|e]."
- # Upgrade SubUnit
+ #Upgrade SubUnit
  UPGRADE_SUBUNIT: "[SubUnit.GetName] für [GetUpgradeSubUnitCostValue(SubUnit.Self)]@gold! aufwerten"
- # Refill Garrison
+ #Refill Garrison
  REFILL_GARRISON: "Garnison auffüllen"
  REFILL_GARRISON_INFO: "Unsere [army|e] nutzen, um die [garrison|e] der [fort|e] aufzufüllen."
  REFILL_GARRISON_CTA: "Unsere [garrison|e] auffüllen."
@@ -2141,7 +2150,7 @@
  REFILL_GARRISON_FORT_MAX_ZERO: "@trigger_no! Die [fort|e] an diesem [location|e] hat eine maximale [garrison|e] von 0."
  REFILL_GARRISON_FORT_NOT_YOURS: "@trigger_no! Wir sind nicht der Besitzer oder verwandt mit dem Besitzer der [fort|e] an diesem [location|e]."
  REFILL_GARRISON_FORT_NOT_CONTROLLED: "@trigger_no! Wir sind nicht der Halter oder verwandt mit dem Halter der [fort|e] an diesem [location|e]."
- # Unsorted
+ #Unsorted
  CHARACTER_NO_BONUS_UNTIL: "@trigger_no!Übernimmt gerade das Kommando über „[Character.GetUnitPointer.GetName|U]“, und zwar ab von [Character.GetWhenGivingUnitBonus|T]."
  UNIT_BALANCE_TT_TEXT: "Gleicht die [regiments|e] für diese Einheit aus, bis sich in jeder [section|e] dieselbe Menge oder zumindest annähernd dieselbe befindet."
  CANNOT_PERFORM_ACTION_NOT_YOURS: "Dies ist nicht unsere Einheit."
@@ -2222,11 +2231,11 @@
  UNIT_CATEGORY_NONE_N: "Keine „[SUBUNITCATEGORY.GetName]“ in dieser [navy|e]."
  UNIT_CATEGORY_NONE_A: "Keine „[SUBUNITCATEGORY.GetName]“ in dieser [army|e]."
  UNIT_CATEGORY_LEVY_NAVY_ENTRY: "„$COUNT|V$@naval_levy!“; „[SUBUNITDEFINITION.GetName|U]“"
- UNIT_CATEGORY_LEVY_ARMY_ENTRY: "#col $COUNT|V$@levy!#! #col [SUBUNITDEFINITION.GetName]#! #col $MEN|V$@army_strength! ($PCT$)#!"
+ UNIT_CATEGORY_LEVY_ARMY_ENTRY: "„$COUNT|V$@levy!“; „[SUBUNITDEFINITION.GetName|U]“; „$MEN|V$ @army_strength!“"
  UNIT_CATEGORY_MERCS_NAVY_ENTRY: "„$COUNT|V$@naval_mercenary!“; „[SUBUNITDEFINITION.GetName|U]“"
- UNIT_CATEGORY_MERCS_ARMY_ENTRY: "#col $COUNT|V$@mercenary!#! #col [SUBUNITDEFINITION.GetName]#! #col $MEN|V$@army_strength! ($PCT$)#!"
+ UNIT_CATEGORY_MERCS_ARMY_ENTRY: "„$COUNT|V$@mercenary!“; „[SUBUNITDEFINITION.GetName|U]“; „$MEN|V$ @army_strength!“"
  UNIT_CATEGORY_NAVY_ENTRY: "„$COUNT|V$@naval_regular!“; „[SUBUNITDEFINITION.GetName|U]“"
- UNIT_CATEGORY_ARMY_ENTRY: "#col $COUNT|V$@regular!#! #col [SUBUNITDEFINITION.GetName]#! #col $MEN|V$@army_strength! ($PCT$)#!"
+ UNIT_CATEGORY_ARMY_ENTRY: "„$COUNT|V$@regular!“; „[SUBUNITDEFINITION.GetName|U]“; „$MEN|V$ @army_strength!“"
  LOSSES_FRIENDLY: "Derzeitige Verluste"
  UNIT_CATEGORY_TYPE: "Art"
  WAR_LOSSES_HEADER_DET: "\"Art\"#T#M;\"Schlacht\";\"Zermürbung\";\"Gefangen\";\"Gesamt\""
@@ -2326,8 +2335,8 @@
  a_byz_helepolis_cannon_unit_desc: "Die Helepolis hat schon in der Vergangenheit vielen byzantinischen Kaisern gedient. Angesichts der Einführung von Schießpulver und der Konkurrenz neuer Belagerungsmaschinen hat diese Eroberungsartillerie nun eine tödliche neue Gestalt."
  a_akritai: "Akriten"
  a_akritai_desc: "Die Akriten erlangten Berühmtheit als Verteidiger von [ShowRegionName('anatolia_region')] gegen die Gefahren aus dem Osten, die das Großreich bedrohten. Das [ShowGovernmentReformName('theme_system')] sorgte dafür, dass diese Soldaten Ländereien erhielten, die sie zu bestellen und zu verteidigen hatten – dies diente einerseits als Belohnung, andererseits auch als Antrieb, unsere Heimat zu beschützen."
- a_varangians: "Warägergarde"
- a_varangians_desc: "Als mächtige Krieger, die ursprünglich aus dem wikingischen Norden kamen, bilden diese Auserwählten den Kern der Königsgarde. Sie sind bewaffnet mit Äxten und Schilden und werden oft als #italic pelekyphóroi bárbaroi#! bezeichnet: axtschwingende Barbaren."
+ a_varangians: "Waräger"
+ a_varangians_desc: "Als mächtige Krieger, die ursprünglich aus dem wikingischen Norden kamen, bilden diese Auserwählten den Kern der Königsgarde. Sie sind bewaffnet mit Äxten und Schilden und werden oft als #italic pelekyphoroi barbaroi#! bezeichnet: axtschwingende Barbaren."
  a_varangians_2: "Wiederhergestellte Waräger"
  a_varangians_2_desc: "$a_varangians_desc$"
  a_varangians_3: "Pelekyphóroi-Waräger"
@@ -2351,13 +2360,13 @@
  a_akinji_desc: "Eine leichte Kavallerieeinheit, die auf mobile Kriegsführung aus der Distanz spezialisiert ist. Diese Plünderer geben eine hervorragende Armee ab und ergänzen unsere Reihen ganz vortrefflich."
  a_mamluk_unit_traditions: "Frühe $mamluks$"
  a_mamluk_unit_traditions_desc: "Diese gut ausgebildeten Elitetruppen stellen das Beste dar, das unser Volk zu bieten hat. Sie werden als Sklaven erzogen, die man bei fremdländischen Herren gekauft hat. Sie sind äußerst diszipliniert und wurden in unseren religiösen und militärischen Doktrinen unterwiesen, denn sie sollen den Kern unserer Armee bilden. Oft werden sie mit schweren Rüstungen und stabilen Speeren ausgerüstet. Ihr einzigartigen Helme und ihre Präsenz auf dem Schlachtfeld sind ein furchterregender Anblick für unsere Feinde."
- a_mamluk_horsemen_traditions: "$mamluk$-Reiter"
+ a_mamluk_horsemen_traditions: "$mamluks$-Reiter"
  a_mamluk_horsemen_traditions_desc: "Als berittener Teil des $mamluk$-Militärs bilden diese Elite-Sklavensoldaten die legendäre Kavallerie-Stoßtruppe unserer Armeen. Von Jugend an in Reitkunst, Bogenschießen und dem Kampf mit der Lanze ausgebildet, ergänzen sie die Infanterieregimenter und tragen die Macht des Sultanats über das gesamte Schlachtfeld."
  a_halqah_unit: "Ḥalqah"
  a_halqah_unit_desc: "Hilfstruppen, die häufig $mamluks$ begleiten. Diese leichten und schnellen Truppen bieten den Einheiten, denen sie unterstellt sind, hervorragende Unterstützung auf dem Schlachtfeld."
  a_mamluk_unit_renaissance: "Verbesserte $mamluks$"
  a_mamluk_unit_renaissance_desc: "Die späteren $mamluk$-Truppen zeichnen sich durch einen neuen Schwerpunkt auf Details und Disziplin aus. Eine Reihe von Militärreformen sorgt dafür, dass die alten Standards wiederhergestellt und unsere stehenden Armeen neu ausgebildet werden."
- a_mamluk_horsemen_renaissance: "Reformierte $mamluk$-Reiter"
+ a_mamluk_horsemen_renaissance: "Reformierte $mamluks$-Reiter"
  a_mamluk_horsemen_renaissance_desc: "Wie ihre Kameraden zu Fuß durchlaufen auch die berittenen $mamluks$ eine neuerliche Ausbildung sowie Disziplinreformen. Der berittene Kern unseres stehenden Heers bleibt die Elite-Schockkavallerie des Sultanats."
  a_muslim_riders_vijay: "Muslimische Reiter"
  a_muslim_riders_vijay_desc: "Im Gegensatz zu den auf Infanterie beruhenden Armeen von Südindien erlauben $a_muslim_riders_vijay$ wesentlich mehr Flexibilität in Schlachten."

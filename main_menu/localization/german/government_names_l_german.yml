@@ -24,7 +24,7 @@
  country_name_construction_ROM_republic_map: "$ROM_republic_long$"
  country_name_construction_BYZ_greek: "$BYZ_greek_long$"
  country_name_construction_BYZ_greek_map: "$BYZ_greek_long$"
- # Do not remove any construction as they might be used in different languages
+ #Do not remove any construction as they might be used in different languages
  COUNTRY_NAME_ABBREVIATION: "$NAME$."
  revolutionary_prefix: "Revolutionär-"
  revolutionary_ADJ: "Revolutionär"

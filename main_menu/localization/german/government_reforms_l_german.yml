@@ -1,5 +1,5 @@
 ﻿l_german:
- # Monarchies
+ #Monarchies
  autocracy: "Autokratie"
  autocracy_desc: "Bei autokratischen Monarchien liegt die Macht in den Händen des Herrschers. Der Staat wird oft als persönliches Eigentum betrachtet. Es ist nicht ungewöhnlich, dass der Herrscher Minister und Mitarbeiter hat, die jedoch als Mitglieder des königlichen Haushalts bezeichnet werden."
  feudal_nobility: "Feudaladel"
@@ -25,6 +25,7 @@
  national_assemblies_desc: "Eine Versammlung, die sich aus Vertretern des gesamten Volkes zusammensetzt. Je nach Art der Regierung kann sie über alle Regierungsbefugnisse oder lediglich über gesetzgeberische verfügen."
  prussian_monarchy: "[GetCountry('PRU').GetAdjectiveWithNoTooltip|U]e Monarchie"
  prussian_monarchy_desc: "Eine Regierungsform unter einem Monarchen, die großen Wert auf die Verwaltungseffizienz legt – insbesondere bei militärischen Angelegenheiten, wenn es die Lage erfordert."
+ unlock_militarize_country_cabinet_action_tt: "Gewährt Zugriff auf die [cabinet_action|e]: [ShowCabinetActionName('militarize_country')]"
  the_court_of_wards_and_liveries: "The Court of Wards and Liveries"
  the_court_of_wards_and_liveries_desc: "Mit einem Gericht der Mündel und Lehensnehmer (#italic Court of Wards and Liveries#!) wird die Verwaltung der Steuern und Lehnsabgaben durch die Bündelung des Fachwissens unter den Eintreibern und ein systematisiertes Einnahmensystem wesentlich effektiver. Der Adel neigt jedoch dazu, solche Gerichte als zutiefst ausbeuterisch für sein eigenes Vermögen anzusehen."
  royal_decree: "Königliches Dekret"
@@ -38,10 +39,10 @@
  mlo_council_of_justice_desc: "Ursprünglich ein Instrument zur Beilegung örtlicher Streitigkeiten zwischen Bauern hat sich der Justizrat zum wichtigsten Gericht des Landes entwickelt, das Fälle verhandelt und als Schutzschild für unser Volk fungiert."
  mlo_secret_council: "Geheimrat"
  mlo_secret_council_desc: "Der Geheimrat ist ein Gremium von Menschen adliger Abstammung. Sein Zuständigkeitsbereich erstreckt sich auf unsere ganze Domäne und kollidiert oft mit der Agenda des Herrschers. Die meisten kritischen Entscheidungen im Namen des Herrschers sind oft Gegenstand einer Überprüfung durch den Geheimrat."
- # Scotland
+ #Scotland
  scottish_shires_reform: "Shires von $SCO$"
  scottish_shires_reform_desc: "Das System der Shires, eingeführt von [GetCharacter('sco_malcolm_iii').GetName], unterteilt $SCO$ in administrative „Countys“, und jedes Shire hat eine eigene Struktur."
- # Republics
+ #Republics
  merchant_republic: "Handelsrepublik"
  merchant_republic_desc: "Eine Republik, die auf den Prinzipien des Handels beruht. Der fließende Handel ist das Wichtigste für die Familien, die diese Republiken regieren."
  noble_elite: "Adlige Elite"
@@ -66,10 +67,10 @@
  diplomatic_traditions_desc: "Seit Menschengedenken zieht unser Volk das Wort dem Schwert vor, was es uns erlaubt, dauerhafte Beziehungen zu Verbündeten und Freunden aufzubauen sowie als ehrlich und treu zu gelten."
  colonial_subject: "Klientelkolonie"
  colonial_subject_desc: "Wir stehen an vorderster Front der Zivilisation, und dies hat unseren mutigsten und unerschrockensten Bürgern die Möglichkeit eröffnet, die Welt zu bereisen und sich hier niederzulassen, um sich ein neues und erfolgreiches Leben aufzubauen."
- # Steppe Horde
+ #Steppe Horde
  legacy_of_genghis: "Das Vermächtnis von $genghis_khan_name_no_tooltip$"
  legacy_of_genghis_desc: "Wir sind die Nachfahren von $genghis_khan_name_no_tooltip$, dem größten Eroberer der Welt. Sein Blut, das durch unsere Adern strömt, macht uns zu einem stolzen und mächtigen Volk. Es verheißt uns, dass wir alles erobern können, wohin uns unsere Pferde tragen."
- # Theocracies
+ #Theocracies
  military_order_reform: "Kriegerorden"
  military_order_reform_desc: "Kriegerorden wurden im Mittelalter als kämpferische Institutionen der #L [ShowReligionAdjective('catholic')|l]en#! Kirche gegründet. Ihre Mitglieder sind sowohl Krieger (#italic miles#!) als auch Mönche (#italic fratres#!), die ein Ordensgelübde ablegen, um den #L [ShowReligionGroupAdjective('christian')|l]en#! Glauben zu verteidigen und zu verbreiten."
  abbey_reform: "Abtei"
@@ -81,7 +82,7 @@
  primas_germaniae: "Primas Germaniae"
  primas_germaniae_plural: "Primas Germaniae"
  primas_germaniae_desc: "Wir tragen den prestigeträchtigen Titel #italic Primas Germaniae#!, der Titel als einer der wichtigsten katholischen Erzbischöfe im HRR ([GetUniqueInternationalOrganization('hre').GetName])."
- # Common
+ #Common
  town_specialization: "Maßgeschneiderte $game_concept_town_rights$"
  town_specialization_desc: "Stadtsiedlungen sind die Muskeln unseres Landes. Sie ziehen den Großteil unserer Bevölkerung an, und ihre pulsierende Wirtschaft bietet allen, die dort leben, Chancen und Vorteile. Wenn wir ihnen angemessene Gesetze, Vorschriften und Privilegien gewähren, stellen wir sicher, dass sie uns den größtmöglichen Nutzen bringen."
  capitalistic_cities: "Wirtschaftswachstum befeuern"
@@ -257,7 +258,7 @@
  leader_of_nations_reform_event_effect_unlock_tt: "Wenn wir eines unserer Klientelländer annektieren, erhalten wir nicht länger einen Meinungsmalus bei unseren anderen Klientelländern"
  new_elite_reform: "Modernisierte Stadtrechte"
  new_elite_reform_desc: "Viele unserer Städte und Gemeinden klammern sich an die Rechte, die man ihnen vor Jahrhunderten gewährte. Damit diese städtischen Gebiete wettbewerbsfähig bleiben, müssen wir sicherstellen, dass ihre Privilegien ihrem derzeitigen Status innerhalb unseres Landes angemessen sind."
- # Specific ones
+ #Specific ones
  alsno_stadga: "Alsnö Stadga"
  alsno_stadga_desc: "Diese Regeln wurden 1280 von [GetCharacter('swe_magnus_ladulas').GetName] im Alsnö Hus aufgestellt, um die Vorteile des #L [ShowEstateTypeName('nobles_estate')]s#! zu regeln und zu formulieren, zugleich aber auch die [ShowPopTypeName('peasants')] vor dessen Übergriffen zu schützen. So bekam Magnus seinen Spitznamen ‚Ladulås‘ oder ‚Scheunenschloss‘ von den Gemeinen."
  papacy_reform: "Heiliger Stuhl"
@@ -479,7 +480,7 @@
  legacy_of_kublai_khan: "Erbe von [GetCharacter('kublai_khan').GetNameWithNoTooltip]"
  legacy_of_kublai_khan_desc: "[GetCharacter('kublai_khan').GetName|U] war es, der unsere Herrschaft über $china$ erstmals festigte. Er übernahm die #L [ShowCultureGroupName('chinese_group')|l]e#! Lebensart und rief sich selbst zum $EMPEROR_CHINA_MALE$ aus, der über das [GetUniqueInternationalOrganization('middle_kingdom').GetName] gebot. Solange wir in seinen Fußstapfen wandeln, wird man unsere Autorität über den Drachenthron anerkennen."
  three_departments_system: "Drei Abteilungen"
- three_departments_system_desc: "Die aus dem alten chinesischen Kaiserreich stammenden „$three_departments_system$“ sowie das „System der sechs Ministerien“ sind die wichtigste Verwaltungsstruktur des Staates. Jede Abteilung befasst sich mit verschiedenen Aspekten des Entwurfs, der Einrichtung und der Überprüfung staatlicher Politlinien. Die [ShowBureaucracyTypeName('six_boards_bureaucracy')] sind sechs Hauptkörperschaften der Legislative, die nach ihren Aufgaben in Staatsdingen unterteilt sind: Beschäftigung, Besteuerung, Riten, militärische Angelegenheiten, Gesetzesdurchsetzung und öffentlicher Bau."
+ three_departments_system_desc: "Die aus dem alten chinesischen Kaiserreich stammenden „$three_departments_system$“ sowie das „System der sechs Ministerien“ sind die wichtigste Verwaltungsstruktur des Staates. Jede Abteilung befasst sich mit verschiedenen Aspekten des Entwurfs, der Einrichtung und der Überprüfung staatlicher Politlinien. Die Sechs Ministerien sind sechs Hauptkörperschaften der Legislative, die nach ihren Aufgaben in Staatsdingen unterteilt sind: Beschäftigung, Besteuerung, Riten, militärische Angelegenheiten, Gesetzesdurchsetzung und öffentlicher Bau."
  improves_six_boards_bureaucracy_tt: "Verbessert die positiven Auswirkungen der [bureaucracy|e] „[ShowBureaucracyTypeName('six_boards_bureaucracy')]“ um #G 50 %#!"
  unlocked_mandarin_language_reforms_tt: "Wurde durch ein [event|e] freigeschaltet"
  empower_the_eunuchs: "Ermächtigung der Eunuchen"
@@ -498,12 +499,12 @@
  kor_sadae_reform_desc: "Die $kor_sadae_reform$ beschreibt eine enge Beziehung zwischen [ShowRegionName('korea_region')] und $china$, wobei Ersteres als Juniorpartner des Letzteren gilt. So bleiben wir für das [GetInternationalOrganization('middle_kingdom').GetName] Untergebene und müssen nach guten Beziehungen mit den #L [ShowCultureGroupName('chinese_group')|l]en#! Mächten streben."
  holy_imperial_monarchy_reform: "Heilige Kaisermonarchie"
  holy_imperial_monarchy_reform_desc: "Das Reich hat seine größte Pracht erreicht. Als einziger legitimer Nachfolger des Römischen Reichs kann niemand bestreiten, dass wir einen von Gott gegebenen Anspruch auf die Herrschaft haben!"
- # Prussian
+ #Prussian
  pru_unified_legal_system: "Einheitliches Rechtssystem"
  pru_unified_legal_system_desc: "Wir unternahmen große Anstrengungen, um unsere inneren Rechtssysteme zu vereinheitlichen, Missbrauch und Fehlverhalten zu beseitigen und eine professionelle Justiz zu schaffen."
  peuplierung_system: "Peuplierung-System"
  peuplierung_system_desc: "Das $peuplierung_system$ ist eine Initiative, die Einwanderer anziehen soll, um die spärlich bevölkerten Regionen der Nation zu besiedeln."
- # Livonian
+ #Livonian
  livonian_confederation: "Livländische Konföderation"
  livonian_confederation_desc: "Die Lande des #L [ShowAreaName('baltic_area')]s#! sind seit Langem zersplittert und in zahlreiche verschiedene Bistümer und Vasallen unterteilt. Anstatt zu versuchen, #italic Terra Mariana #!in einem zentralisierten Staat zu vereinen, sollten wir diese Dezentralisierung unterstützen."
  #Jurchen

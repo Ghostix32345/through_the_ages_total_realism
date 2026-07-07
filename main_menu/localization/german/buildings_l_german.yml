@@ -1,9 +1,11 @@
 ﻿l_german:
  local_governor_tt: "Wenn es weniger als [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] [ShowBuildingTypeName('local_governor')] in „[SCOPE.sCountry('actor').GetNameWithNoTooltip|U]“ gibt (derzeit [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V])."
  lieutenancy_tt: "Wenn die Gesamtsumme aus [ShowBuildingTypeName('local_governor')] und [ShowBuildingTypeName('lieutenancy')] in „[SCOPE.sCountry('actor').GetNameWithNoTooltip]“ weniger als [SCOPE.sCountry('actor').GetModifierValue('num_local_governors')] beträgt (Statthalter: [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('local_governor')|V], Lieutenancys: [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('lieutenancy')|V])."
+ no_naval_governor_tt: "Kann mindestens einen [ShowBuildingTypeName('naval_governor')] bauen"
  naval_governor_tt: "Wenn es weniger als [SCOPE.sCountry('actor').GetModifierValue('num_naval_governors')] [ShowBuildingTypeName('naval_governor')] in „[SCOPE.sCountry('actor').GetNameWithNoTooltip]“ gibt (derzeit [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('naval_governor')|V])."
+ no_local_bailiff_tt: "Kann mindestens einen [ShowBuildingTypeName('bailiff')] bauen"
  local_bailiff_tt: "Wenn es weniger als [SCOPE.sCountry('actor').GetModifierValue('num_bailiffs')] [ShowBuildingTypeName('bailiff')] in „[SCOPE.sCountry('actor').GetNameWithNoTooltip|U]“ gibt (derzeit [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('bailiff')|V])."
- italian_administration_center_tt: "Wir können ein [ShowBuildingTypeName('italian_administration_center')|l] errichten (derzeit [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('italian_administration_center')|V])."
+ italian_administration_center_tt: "Wir können ein [ShowBuildingTypeName('italian_administration_center')|l] errichten (derzeit [SCOPE.sCountry('actor').GetTotalBuildingLevelsIncudingUnderConstruction('italian_administration_center')|V])"
  colonial_category: "Kolonialgebäude"
  colonial_category_desc: "Diese Gebäude werden in unbesetzten fremdländischen Orten gebaut und helfen dabei, unseren Einfluss dorthin zu erweitern."
  cultural_category: "Kulturgebäude"
@@ -47,13 +49,13 @@
  trade_category_desc: "Diese Gebäude verbessern unseren nationalen Handel, was unseren Kaufleuten hilft, effizienter zu sein oder neue Märkte zu erreichen."
  village_category: "Dörfer"
  village_category_desc: "Dies sind die Dörfer, die wir auf dem Land bauen können."
- # Common Buildings
+ #Common Buildings
  irrigation_systems: "Bewässerung"
  bridge_infrastructure: "Brücke"
  mason: "Maurer"
  construction_center: "Bauzentrum"
  construction_center_desc: "Dieses Gebäude ermöglicht es, zeitgleich mehr Bauten an einem [Concept('town_or_city', 'städtischen Ort')|e] zu errichten."
- # Foreign Buildings
+ #Foreign Buildings
  trade_office: "Handelsstube"
  embassy: "Botschaft"
  black_market: "Schwarzmarkt"
@@ -65,6 +67,8 @@
  pirate_tavern: "Hafentaverne"
  pirate_tavern_desc: "Lebhafte und berüchtigte Treffpunkte, an denen Abenteurer, Seeleute und dubiose Händler zusammenkommen. Diese Tavernen befinden sich oft in wichtigen Piratenhäfen und verschiedenen Küstenstädten und dienen Piraten als Ort der Entspannung, wo sie ihre Beute für Alkohol, Mahlzeiten und Unterhaltung ausgeben und neue Besatzungsmitglieder anwerben können."
  building_trade_hq_only_one: "Kann immer nur ein $trade_company_headquarters$ zur Zeit bauen."
+ trade_company_home_region_tt: "Ist [ShowSubjectTypeName('trade_company')]"
+ trade_company_regions_tt: "Hat eine Präsenz in dieser Region"
  trade_company_headquarters: "Handelshaus-Hauptquartier"
  trade_company_headquarters_desc: "Jedes zukünftige [ShowSubjectTypeName('trade_company')] lässt sich im $trade_company_headquarters$ nieder. Es dient als Ausgangspunkt für sämtliche Handelsgeschäfte mit anderen Ländern und Übersee im Namen des Mutterlands."
  trade_company_garrison: "Handelshaus-Garnison"
@@ -77,7 +81,7 @@
  trade_company_foreign_influence_desc: "Ein Kolonialgebäude, in dem ein [ShowSubjectTypeName('trade_company')] fremdländischen Pops Möglichkeiten anbieten kann."
  trade_company_governance: "Handelshaus-Verwaltung"
  trade_company_governance_desc: "Die Militärgebäude, in denen ein [ShowSubjectTypeName('trade_company')] Truppen rekrutiert und ausbildet, die die Interessen des Unternehmens durchsetzen sollen."
- # Rural Buildings
+ #Rural Buildings
  settlement_building: "Siedlung"
  bailiff: "Büttel"
  training_fields: "Ausbildungsplatz"
@@ -104,7 +108,7 @@
  bog_iron_smelter_desc: "Eisen ist die Grundlage jedweder Metallurgie. Gute und ordentliche Erzvorkommen hat man zwar am liebsten, doch kann man es auch an Orten in Wassernähe gewinnen, wo es sich ansammelt."
  protected_harbor: "Geschützter Hafen"
  protected_harbor_desc: "Manche Orte eignen sich von Natur aus besser als Hafen als andere, doch mit der richtigen Infrastruktur lassen sich diese Bedingungen sogar noch weiter verbessern."
- # City Buildings
+ #City Buildings
  temple: "Tempel"
  cathedral: "Kathedrale"
  counting_house: "Zählhaus"
@@ -148,7 +152,7 @@
  hippodrome_desc: "Das Hippodrom ist das pulsierende Herz von [ShowLocationName('constantinople')]. Hier kommen donnernde Rennen, das kaiserliche Zeremoniell und der Wille des Volkes unter den wachsamen Augen des Herrschers zusammen. Anhänger und Teilnehmer kämpfen hier nicht nur um Ruhm auf der Rennbahn, sondern auch um Einfluss im Reich selbst. Denkmäler, die von den Mittelmeerküsten stammen, schmücken die Fassade und künden von einer Vorherrschaft ebenso wie von einem großen Vermächtnis. Doch diese grandiose Arena bietet mehr als nur ein Spektakel: Sie ist ein Schmelztiegel der öffentlichen Meinung, in dem der Beifall ein Oberhaupt des Reichs für Generationen verherrlichen kann."
  gymnasium_building: "Gymnasium"
  gymnasium_building_desc: "$study_of_the_classics_desc$"
- # Cultural Buildings
+ #Cultural Buildings
  university: "Universität"
  library: "Bücherei"
  opera_house: "Opernhaus"
@@ -231,7 +235,7 @@
  cannon_maker: "Kanonenmacher"
  distillers_guild: "Brennerzunft"
  dyes_guild: "Farbenmacher"
- # workshops
+ #workshops
  pottery_workshop: "Töpferwerkstatt"
  pottery_workshop_desc: "Keramik braucht die ganze Bevölkerung – angefangen bei einfachen Lagergefässen bis hin zu Ziergegenständen. Wenn wir ihre Herstellung in spezialisierten Werkstätten optimieren, hilft dies bei der Deckung des Bedarfs an Keramik in der Bevölkerung."
  tools_workshop: "Schlosserei"
@@ -334,16 +338,16 @@
  mercury_patio_desc: "Quecksilberhütten sind eine Ansammlung von Gebäuden, in denen Silber und Gold aus Erz von minderer Qualität herausgelöst werden, um es hochwertiger zu machen."
  firearms_factory: "Feuerwaffenfabrik"
  cannons_factory: "Kanonenfabrik"
- # Shipyard
+ #Shipyard
  dock: "Dock"
  dry_dock: "Trockendock"
  shipyard: "Schiffswerft"
  grand_shipyard: "Großschiffswerft"
  naval_base: "Marinestützpunkt"
- # Coastal Forts
+ #Coastal Forts
  coastal_fort: "Küstenfestung"
  naval_battery: "Marinebatterie"
- # Forts
+ #Forts
  castle: "Burg"
  bastion: "Bastion"
  star_fort: "Sternfestung"
@@ -351,20 +355,20 @@
  stockade: "Einpfählung"
  city_walls: "Stadtmauern"
  city_walls_desc: "$city_walls$ sind mächtige Befestigungsanlagen, die eine ganze Stadt umgeben und sie vor Eindringlingen schützen. Sie vermitteln den Einwohnern überdies ein Gefühl der Sicherheit."
- # Manpower Buildings
+ #Manpower Buildings
  armory: "Waffenkammer"
  barracks: "Kaserne"
  regimental_camp: "Regimentslager"
  conscription_center: "Einberufungsstelle"
- # Colonial Buildings
+ #Colonial Buildings
  missionary_building: "Mission"
  slave_center: "Sklavenstelle"
  overseas_trading_post: "Überseehandelsposten"
- # Plantations
+ #Plantations
  sugar_plantation: "Zuckerplantage"
  cotton_plantation: "Baumwollplantage"
  tobacco_plantation: "Tabakplantage"
- # Capital Buildings
+ #Capital Buildings
  royal_court: "Königshof"
  admiralty: "Admiralität"
  war_college: "Kriegskolleg"
@@ -383,20 +387,20 @@
  royal_garden_desc: "Der weitläufige königliche Garten ist ein Paradies auf Erden. Er ist ein Ort, an dem sich der Adel entspannt und seinen gehobenen Freizeitbeschäftigungen nachgeht, während er die kultivierte Natur des Gartens genießt."
  pirate_stronghold: "Piratenfestung"
  pirate_stronghold_desc: "Dieses Gebäude ist das Herzstück einer jeden Piratenrepublik, an dem sich die verwegensten und berüchtigtsten Freibeuter tummeln."
- # HRE Buildings
+ #HRE Buildings
  hre_imperial_armory: "Reichswaffenkammer"
  hre_imperial_armory_foreign: "$hre_imperial_armory$ (Ausland)"
  hre_imperial_armory_foreign_desc: "Eine $hre_imperial_armory$ versorgt den Kaiser mit Mannstärke für seine Armeen.\n\n#Y Wird zu [ShowBuildingTypeName('hre_imperial_armory_own')], wenn der [location|e] in [ShowSpecialStatusName('emperor')]-Besitz gelangt.#!"
  hre_imperial_armory_own: "$hre_imperial_armory$ (Inland)"
  hre_imperial_armory_own_desc: "Eine $hre_imperial_armory$ versorgt den Kaiser mit Mannstärke für seine Armeen.\n\n#Y Wird zu [ShowBuildingTypeName('hre_imperial_armory_foreign')], wenn der [location|e] nicht länger [ShowSpecialStatusName('emperor')]-Besitz ist.#!"
- # Market Center
+ #Market Center
  entrepot: "Entrepot"
  trading_hub: "Handelsknoten"
  customs_house: "Zollhaus"
  stock_exchange: "Börse"
  clearing_house: "Aufrechnungshaus"
  market_warehouse: "Marktlagerhaus"
- # Event Buildings
+ #Event Buildings
  cantonments: "Kantonnement"
  grand_palace: "Großpalast"
  great_madrasa: "Groß-Madrasa"
@@ -433,7 +437,7 @@
  archive_of_the_indies_desc: "Dieses Archiv wurde in Auftrag gegeben, um sämtliche Dokumente bezüglich unserer Betätigungen in Übersee zu beherbergen."
  archive_of_the_indies_why: "Das $archive_of_the_indies$ kann nur durch ein Ereignis gebaut werden."
  hsa_burgtor: "Burgtor"
- hsa_burgtor_desc: "Das $hsa_burgtor$ ist Teil des Haupttors der Siedlung und ein wunderschöner Beleg für unser Geschick in Verteidigungsfragen sowie eine erstaunliche Zurschaustellung gotischer Architektur und militärischen Könnens."
+ hsa_burgtor_desc: "Das $hsa_burgtor$ ist Teil des Haupttors unseres Hauptsitzes und ein wunderschöner Beleg für unser defensives Können sowie eine erstaunliche Zurschaustellung gotischer Architektur."
  location_owner_same_culture_group_as_us_tt: "Dieser [location|e] hat einen [owner|e], dessen [culture|e] eine gemeinsame [culture_group|e] mit unserer Kultur hat"
  bodrum_castle: "Petronium"
  bodrum_castle_desc: "Das Kastell des Heiligen Peter – auch $bodrum_castle$ genannt – ist die wichtigste #L [GetCountry('KNI').GetAdjective|l]e#! Festung auf dem Festland von [ShowRegionName('anatolia_region')]. Die Festung umfasst vier Türme, die von vier verschiedenen Nationen gebaut wurden: den Engländern, Franzosen, Italienern und Deutschen. Die Festung ist ein Zufluchtsort für alle in der Region lebenden Christen."
@@ -495,7 +499,7 @@
  sco_palace_of_holyroodhouse_desc: "Der $sco_palace_of_holyroodhouse$ steht symbolisch für eine der vielen Architekturen der #L [ShowCultureName('scottish')|l]en#! Renaissance. Als gotischer Großpalast ist Holyroodhouse eine der geschätztesten Residenzen der #L [GetCountry('SCO').GetGovernment.GetAdjective|l]en#! Familie."
  fra_louvre_museum: "Louvre-Museum"
  fra_louvre_museum_desc: "Als ehemaliges Symbol des französischen Adels wurde der Louvre-Palast in ein öffentliches Museum umgewidmet, wo man die besten Werke [GetCountry('FRA').GetNameWithNoTooltip]s ausstellt."
- # Unique Buildings
+ #Unique Buildings
  ablaq_palace: "Ablaq-Palast"
  ablaq_palace_desc: "Als illustres Domizil der ägyptischen Herrscher wurde dieses Gebäude im Stil der wunderschönen Ablaq-Architektur geschmückt. In der Heiligkeit seiner Hallen stellt man einen Seidenbezug namens Kiswa her, mit dem man die Kaaba bedeckt."
  mamluk_barracks: "$mamluk$-Kaserne"
@@ -960,7 +964,7 @@
  wat_chaiwatthanaram_temple_building_desc: "Als persönliche Geschenk unseres Herrschers dient dieser Ort als Schauplatz für religiöse Zeremonien und die Begräbnisriten unserer Oberhäupter und deren Familien."
  khmer_baray: "Baray"
  khmer_baray_desc: "Dieses Gebäude dient als großes Wasserreservoir, das uns größere Investitionen in die Landwirtschaft ermöglicht und es uns erlaubt, die Bevölkerung verlässlicher zu ernähren. Nach dem Bau eines Baray muss man selbiges streng überwachen und ständig warten, damit es nicht verfällt."
- # Bavaria
+ #Bavaria
  herrenchiemsee_abbey_potential: "Das Kloster Herrenchiemsee kann nur auf der Insel Herrenchiemsee gebaut werden, wenn $BAV$ sie kontrolliert."
  herrenchiemsee_abbey: "Kloster Herrenchiemsee"
  herrenchiemsee_abbey_desc: "Dieses prächtige Barockkloster liegt auf der Insel Herrenchiemsee. Es dient als Leuchtfeuer der Religion und der Kultur, was die Alphabetisierung steigert und bayerische Traditionen fördert."
@@ -1072,12 +1076,14 @@
  #Lucca
  walls_of_lucca: "Mauern von $lucca$"
  walls_of_lucca_desc: "Die Verteidigung des Volks müssen wir am stärksten im Auge behalten. Deshalb gibt es diese Mauern: damit kein Zivilist sterben muss."
- lucca_silk_production_guild: "Seidenhandwerkszunft von Lucca"
- lucca_silk_production_guild_desc: "Da man hier die Würmer mit Faserpflanzen füttern kann, um Seide herzustellen, ist es diesem Standort gelungen, eine autonome Produktionsmethode zu etablieren, die nicht von der Seidenstraße abhängig ist." 
- 
+ lucca_silk_production_guild: "Seidenherstellungszunft (Lucca)"
+ lucca_silk_production_guild_desc: "Durch das Füttern der Raupen mit Faserpflanzen kann dieser Ort Seide autark gewinnen, ohne von der Seidenstraße abhängig zu sein."
+ fiber_crops_silk_guild_maintenance: "$lucca_silk_production_guild$"
  #Pisa
  porto_pisano: "Porto Pisano"
  porto_pisano_desc: "Der große Hafen von [ShowLocationName('pisa')] ist das Lebenselixir seiner Besitzer. An diesem Ort fließt der Reichtum ferner Meere in unsere Staatskasse, und sowohl Händler als auch Waren aus allen Häfen der Welt sind willkommen."
+ RECLAIMED_SARDINIAN_OUTPOSTS: "[ShowAreaName('sardinia_area')] zurückerlangt!"
+ ECLIPSED_GENOA: "Zu mächtig für [ShowLocationName('genoa')]"
  central_bank: "Zentralbank"
  central_bank_desc: "$central_bank_advance_desc$"
  central_bank_tt: "Muss in unserem [capital|e] gebaut werden und kann nicht gleichzeitig mit der [ShowBuildingTypeName('wisselbank')] oder [ShowBuildingTypeName('riksbank')] bestehen"
