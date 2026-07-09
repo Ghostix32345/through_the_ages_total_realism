@@ -15,40 +15,41 @@ governor_general = {
 	megalopolis = no
 
 	allow = {
-		trigger_if = {
-			limit = {
-				scope:actor = {
-					modifier:num_governor_generals <= 0
+		custom_tooltip = {
+			text = "Wir können in dieser Region keinen weiteren Generalgouverneur ernennen."
+			scope:actor = {
+				NOT = {
+					any_owned_location = {
+						filter = {
+							region = root.region
+						}
+
+						NOT = { this = root }
+
+						OR = {
+							has_building = building_type:governor_general
+							has_building_with_at_least_one_level = building_type:governor_general
+						}
+					}
 				}
 			}
-			custom_tooltip = {
-				text = "Wir können noch keinen Generalgouverneur ernennen."
-				always = no
-			}
 		}
-		trigger_else = {
-			custom_tooltip = {
-				text = "Wir können keinen weiteren Generalgouverneur ernennen."
-				scope:actor = {
-					total_building_levels_including_construction:governor_general < modifier:num_governor_generals
-				}
-			}
-		}
+
 		owner = scope:actor #not in subjects
 	}
 
 	location_potential = {
-		NOT = { is_connected_to_through_realm = owner.capital }
+		NOT = { is_connected_to_through_realm = scope:actor.capital }
 		is_overseas_for_owner = yes
 		is_port = yes
+
+		NOT = { has_building = building_type:colonial_governor }
+		NOT = { has_building_with_at_least_one_level = building_type:colonial_governor }
 	}
 
 	remove_if = {
 		OR = {
 			location = { is_connected_to_through_realm = owner.capital }
-			scope:actor = {
-				total_building_levels_including_construction:governor_general > modifier:num_governor_generals
-			}
 			location = { is_overseas_for_owner = no }
 		}
 	}
@@ -103,42 +104,45 @@ colonial_governor = {
 	megalopolis = no
 
 	allow = {
-		trigger_if = {
-			limit = {
-				scope:actor = {
-					modifier:num_governor_generals <= 0
+		custom_tooltip = {
+			text = "Wir können in diesem Gebiet keinen weiteren Gouverneur ernennen."
+			scope:actor = {
+				NOT = {
+					any_owned_location = {
+						filter = {
+							area = root.area
+						}
+						OR = {
+							has_building = building_type:local_governor
+							has_building = building_type:naval_governor
+							has_building = building_type:colonial_governor
+							has_building = building_type:governor_general
+
+							has_building_with_at_least_one_level = building_type:local_governor
+							has_building_with_at_least_one_level = building_type:naval_governor
+							has_building_with_at_least_one_level = building_type:colonial_governor
+							has_building_with_at_least_one_level = building_type:governor_general
+						}
+					}
 				}
 			}
-			custom_tooltip = {
-				text = "Wir können noch keinen Gouverneure ernennen."
-				always = no
-			}
 		}
-		trigger_else = {
-			custom_tooltip = {
-				text = "Wir können keinen weiteren Gouverneure ernennen."
-				scope:actor = {
-					total_building_levels_including_construction:colonial_governor < modifier:num_colonial_governors
-				}
-			}
-		}
+
 		owner = scope:actor #not in subjects
 	}
 
 	location_potential = {
-		NOT = { is_connected_to_through_realm = owner.capital }
-		NOT = { has_building_with_at_least_one_level = governor_general }
+		NOT = { is_connected_to_through_realm = scope:actor.capital }
+		NOT = { has_building = building_type:governor_general }
+		NOT = { has_building_with_at_least_one_level = building_type:governor_general }
+
 		is_overseas_for_owner = yes
 	}
 
 	remove_if = {
 		OR = {
 			location = { is_connected_to_through_realm = owner.capital }
-			scope:actor = {
-				total_building_levels_including_construction:colonial_governor > modifier:num_colonial_governors
-			}
 			location = { is_overseas_for_owner = no }
-			location = { has_road_to_capital = yes }
 		}
 	}
 
@@ -162,6 +166,183 @@ colonial_governor = {
 			goods_gold = 1
 			furniture = 2
 			fine_cloth = 1
+
+			category = building_maintenance
+		}
+	}
+
+	construction_demand = local_governor_construction
+
+	modifier = {
+		local_proximity_source = 80
+	}
+}
+
+REPLACE:local_governor = {
+	audio_tier = 2
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	important_for_UI = yes
+	
+	employment_size = large_noble_employment
+	
+	category = government_category
+	
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+
+	allow = {
+		custom_tooltip = {
+			text = "Wir können in diesem Gebiet keinen weiteren Statthalter ernennen."
+			scope:actor = {
+				NOT = {
+					any_owned_location = {
+						filter = {
+							area = root.area
+						}
+						OR = {
+							has_building = building_type:local_governor
+							has_building = building_type:naval_governor
+							has_building = building_type:colonial_governor
+
+							has_building_with_at_least_one_level = building_type:local_governor
+							has_building_with_at_least_one_level = building_type:naval_governor
+							has_building_with_at_least_one_level = building_type:colonial_governor
+						}
+					}
+				}
+			}
+		}
+
+		owner = scope:actor #not in subjects
+
+		trigger_if = { 
+			limit = { has_building = building_type:seljuk_mint }
+			NOT = { has_building = building_type:seljuk_mint }
+		}
+	}
+
+	location_potential = {
+		has_road_to_capital = yes
+		NOT = { is_capital = yes }
+	}
+
+	remove_if = {
+		location = { has_road_to_capital = no }
+		NOT = { owner = { at_war = yes } }
+		NOT = { owner = { in_civil_war = yes } }
+	}
+
+	expensive = yes
+	
+	automation_build_allowed = no
+	ai_forbid_shutdown = yes
+	forbidden_for_estates = yes
+	important_for_AI = yes
+	ai_ignore_maintenance = yes
+
+	build_time = government_build_time
+
+	unique_production_methods = {
+		local_governor_maintenance = {
+			tools = 1
+			masonry = 1
+			weaponry = 0.5
+			paper = 3
+			books = 1
+			goods_gold = 1
+			furniture = 2
+			fine_cloth = 1
+
+			category = building_maintenance
+		}
+	}
+
+	construction_demand = local_governor_construction
+
+	modifier = {
+		local_proximity_source = 80
+	}
+}
+
+REPLACE:naval_governor = {
+	audio_tier = 2
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	important_for_UI = yes
+
+	employment_size = large_noble_employment
+
+	category = government_category
+
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+
+	allow = {
+		custom_tooltip = {
+			text = "Wir können in dieser Area keinen weiteren Marinestatthalter ernennen."
+			scope:actor = {
+				NOT = {
+					any_owned_location = {
+						filter = {
+							area = root.area
+						}
+
+						NOT = { this = root }
+
+						OR = {
+							has_building = building_type:local_governor
+							has_building = building_type:naval_governor
+							has_building = building_type:colonial_governor
+
+							has_building_with_at_least_one_level = building_type:local_governor
+							has_building_with_at_least_one_level = building_type:naval_governor
+							has_building_with_at_least_one_level = building_type:colonial_governor
+						}
+					}
+				}
+			}
+		}
+
+		owner = scope:actor #not in subjects
+	}
+
+	location_potential = {
+		NOT = { is_connected_to_through_realm = owner.capital }
+		is_overseas_for_owner = no
+		is_port = yes
+	}
+
+	remove_if = {
+		location = { is_connected_to_through_realm = owner.capital }
+	}
+
+	expensive = yes
+
+	automation_build_allowed = no
+	ai_forbid_shutdown = yes
+	forbidden_for_estates = yes
+	important_for_AI = yes
+
+	build_time = government_build_time
+
+	unique_production_methods = {
+		naval_governor_maintenance = {
+			tools = 1
+			masonry = 1
+			weaponry = 0.5
+			paper = 3
+			books = 1
+			goods_gold = 1
+			furniture = 2
+			naval_supplies = 0.5
+			fine_cloth = 0.5
 
 			category = building_maintenance
 		}
