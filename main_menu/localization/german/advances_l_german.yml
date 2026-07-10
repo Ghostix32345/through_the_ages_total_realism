@@ -116,18 +116,18 @@
  adm_AGE: "Verwaltungsfähigkeiten"
  dip_AGE: "Diplomatiefähigkeiten"
  mil_AGE: "Militärfähigkeiten"
- # spawn event for ages
+ #spawn event for ages
  ages_of_eu.1.title: "Das [GetCurrentAge.GetNameWithNoTooltip]"
  ages_of_eu.1.desc: "Es bricht das [GetCurrentAge.GetName] an!\n\n[GetCurrentAge.GetDesc]"
  ages_of_eu.adm: "Verwaltungsschwerpunkt"
  ages_of_eu.dip: "Diplomatieschwerpunkt"
  ages_of_eu.mil: "Militärschwerpunkt"
- # spawn event for omens selection
+ #spawn event for omens selection
  hellenism_religion.31.title: "Ein neues Omen für unser Land"
  hellenism_religion.31.desc: "Mit der Führung der Götter können wir ein neues Omen anrufen, um uns auf unserer Reise zu helfen."
  invoke_omen_with_god: "Omen von [Player.GetGodInvokingOmen.GetName] anrufen"
  invoke_omen_with_god_desc: "Durch die Führung von [Player.GetGodInvokingOmen.GetName] können wir ein neues Omen anrufen, um uns auf unserer Reise zu helfen.\nWelches der möglichen Omen wird [Player.GetGodInvokingOmen.GetNameWithNoTooltip] als das Wahre erwählen? Wählt mit Bedacht."
- # Institutions
+ #Institutions
  feudalism: "Feudalismus"
  feudalism_desc: "Im Lauf der Zeit entwickeln die meisten Gesellschaften ein Bedürfnis für stärkere und dauerhaftere Regierungseinrichtungen. Nach dem Fall des Römischen Reichs erfüllten eine Reihe von Institutionen und Bräuchen, die zusammen genommen oft als Teil des europäischen Feudalsystems betrachtet werden, dieses wichtige Bedürfnis.\n\nAus ähnlichen Gründen haben sich in der ganzen Welt dauerhafte Regierungen und Gesellschaftssysteme entwickelt, die allerdings teilweise viel ältere Wurzeln als der Feudalismus selbst haben."
  legalism: "Legalismus"
