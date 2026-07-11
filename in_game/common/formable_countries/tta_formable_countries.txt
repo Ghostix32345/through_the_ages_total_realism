@@ -390,6 +390,10 @@ REPLACE:PRU_f = { #Prussia
 	tag = PRU
 	color = map_PRU
 	
+	unit_color0 = rgb { 0 49 83 }      # Preußischblau (Rock)
+	unit_color1 = rgb { 185 0 0 }      # Rot (Kragen, Aufschläge)
+	unit_color2 = rgb { 201 162 39 }   # Messing/Gold (Knöpfe, Verzierungen)
+
 	
 	areas = {
 		prussia_area

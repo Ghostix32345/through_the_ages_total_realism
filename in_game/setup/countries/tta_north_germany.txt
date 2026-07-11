@@ -28,3 +28,18 @@ REPLACE:TEU = {
 	unit_color1 = rgb { 185 0 0 }      # Rot (Kragen, Aufschläge)
 	unit_color2 = rgb { 201 162 39 }   # Messing/Gold (Knöpfe, Verzierungen)
 }
+
+REPLACE:PRU = {
+	color = map_PRU
+	color2 = rgb { 102 105 104 }
+
+	culture_definition = prussian
+	religion_definition = catholic
+
+	description_category = military
+	difficulty = 3
+	
+	unit_color0 = rgb { 0 49 83 }      # Preußischblau (Rock)
+	unit_color1 = rgb { 185 0 0 }      # Rot (Kragen, Aufschläge)
+	unit_color2 = rgb { 201 162 39 }   # Messing/Gold (Knöpfe, Verzierungen)
+}
