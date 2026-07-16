@@ -52,6 +52,19 @@ NMercenary = {
 	MERCENARY_GATHERING_TIME_BASE = 30            # vanilla 14    - a hired company takes longer to gather, so mercenaries are a deliberate mid-war reinforcement rather than an instant counter-stack
 	MERCENARY_LEADER_ABILITY_WEIGHT = 67          # vanilla 50    - raises the price curve for the highest-ability captains, which is exponential in ability so only elite captains cost meaningfully more while modest ones stay affordable
 	MERCENARY_LEADER_BASE_PRICE = 70              # vanilla 50    - raises the base price of hiring a captain so fielding a swarm of captains to dodge the stack-size cap costs more, while a single modest captain stays accessible
+	MERCENARY_MOBILIZATION_TIME_BASE = 2
+	MERCENARY_MAX_DURATION_IN_MONTHS = 120
+	MERCENARY_DEFAULT_DURATION_IN_MONTHS = 24
+	MERCENARY_CONTRACT_ALERT_MONTHS = 3
+	MERCENARY_POOL_AVAILABILITY_SCALE_ARMY = 0.1 # multiplier on how much of a location's population can become recruitable land mercenaries; lower means fewer available
+	MERCENARY_POOL_AVAILABILITY_SCALE_NAVY = 0.5 # same, for naval mercenaries; kept separate because a ship is not a 1000-man regiment, so the land cut would over-shrink the (already small) naval burgher draw
+	MERCENARY_PRISONER_MONTHLY_MAINTENANCE_MULTIPLIER = 0.25
+	MERCENARY_PRISONER_MAX_MORALE = 0.6
+	LENT_UNIT_VIRTUAL_CONTRACT_MONTHS = 9999 # large enough that IsContractExpired() never fires; war-gated recall handles expiry
+	MERCENARY_LEADER_CULTURE_OPINION_MULTIPLIER = -0.07 #same or friendly culture leaders will work for less for you
+	MERCENARY_LEADER_RELIGION_OPINION_MULTIPLIER = -0.07 #same or friendly religion leaders will work for less for you
+	MERCENARY_ATTRITION_LEVEL_TO_THINK_ABOUT_ABANDONING_CONTRACT = 3
+	MERCENARY_DAYS_THAT_EMERGENCY_RATIONS_LAST = 365
 }
 
 NWar = {
