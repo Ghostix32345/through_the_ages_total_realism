@@ -42,31 +42,6 @@ NAI = {
 	USE_MERCENARIES_IN_WAR_WEIGHT_MULT = 0.65 # vanilla 1 - AI treats mercenaries as a supplement rather than a first reach, sitting beside the regulars and levies war-use weights, so a gold-rich AI fields regulars instead of an oversized merc host
 }
 
-NMercenary = {
-	MERCENARY_ARMY_UNIT_MAX_SIZE = 80             # vanilla 150  - max merc stack matches a real army corps
-	MERCENARY_MANPOWER_REPLENISH_TIME_DAYS = 12600 # vanilla 7200 - merc pools refill far slower, so a region drained by a major mercenary war stays tapped for years and a wiped host cannot simply be re-bought
-	MERCENARY_SUBUNITS_AVAILABLE_PER_ADM_POINT = 0.10 # vanilla 0.25 - one-province minors can't field huge merc hosts
-	MERCENARY_RECRUITMENT_DISTANCE_FACTOR = 0.04   # vanilla 0.025 - regional merc pool / distance cost
-	MERCENARY_LEADER_DISTANCE_MULTIPLIER = 0.0008  # vanilla 0.0005 - leader mileage cost over distance
-	MERCENARY_NAVY_UNIT_MAX_SIZE = 18              # vanilla 25    - smaller naval merc stacks
-	MERCENARY_GATHERING_TIME_BASE = 30            # vanilla 14    - a hired company takes longer to gather, so mercenaries are a deliberate mid-war reinforcement rather than an instant counter-stack
-	MERCENARY_LEADER_ABILITY_WEIGHT = 67          # vanilla 50    - raises the price curve for the highest-ability captains, which is exponential in ability so only elite captains cost meaningfully more while modest ones stay affordable
-	MERCENARY_LEADER_BASE_PRICE = 70              # vanilla 50    - raises the base price of hiring a captain so fielding a swarm of captains to dodge the stack-size cap costs more, while a single modest captain stays accessible
-	MERCENARY_MOBILIZATION_TIME_BASE = 2
-	MERCENARY_MAX_DURATION_IN_MONTHS = 120
-	MERCENARY_DEFAULT_DURATION_IN_MONTHS = 24
-	MERCENARY_CONTRACT_ALERT_MONTHS = 3
-	MERCENARY_POOL_AVAILABILITY_SCALE_ARMY = 0.1 # multiplier on how much of a location's population can become recruitable land mercenaries; lower means fewer available
-	MERCENARY_POOL_AVAILABILITY_SCALE_NAVY = 0.5 # same, for naval mercenaries; kept separate because a ship is not a 1000-man regiment, so the land cut would over-shrink the (already small) naval burgher draw
-	MERCENARY_PRISONER_MONTHLY_MAINTENANCE_MULTIPLIER = 0.25
-	MERCENARY_PRISONER_MAX_MORALE = 0.6
-	LENT_UNIT_VIRTUAL_CONTRACT_MONTHS = 9999 # large enough that IsContractExpired() never fires; war-gated recall handles expiry
-	MERCENARY_LEADER_CULTURE_OPINION_MULTIPLIER = -0.07 #same or friendly culture leaders will work for less for you
-	MERCENARY_LEADER_RELIGION_OPINION_MULTIPLIER = -0.07 #same or friendly religion leaders will work for less for you
-	MERCENARY_ATTRITION_LEVEL_TO_THINK_ABOUT_ABANDONING_CONTRACT = 3
-	MERCENARY_DAYS_THAT_EMERGENCY_RATIONS_LAST = 365
-}
-
 NWar = {
 	PARTICIPATION_SCORE_MERC_MULT = 0.35 # vanilla 0.5 - mercenaries earn less war participation, so an all-mercenary army wins the war but forgoes a share of the spoils, restoring a real cost to leaning on hired companies
 }

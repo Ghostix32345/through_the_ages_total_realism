@@ -21,3 +21,12 @@ REPLACE:local_governor_advance = {
 	# add extra score because num_local_governors is hard to register in code
 	ai_weight = { add = 200 }
 }
+
+REPLACE:napoleonic_warfare = {
+	age = age_6_revolutions
+	icon = expansionism
+	
+	requires = military_tactics_advance_6
+
+	combat_speed_modifier = 0.05
+}
