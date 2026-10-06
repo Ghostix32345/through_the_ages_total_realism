@@ -218,72 +218,72 @@
  ship_name_warrior: "Warrior"
  ship_name_warspite: "Warspite"
  ship_name_zealous: "Zealous"
- ship_name_anfarwol: "Anfarwol" # Immortal
- ship_name_ardderchog: "Ardderchog" # Excellent
- ship_name_brwd: "Brwd" # Fierce
- ship_name_brwdfrydig: "Brwdfrydig" # Enthusiastic
- ship_name_cadarn: "Cadarn" # Strong
- ship_name_cain: "Cain" # Fair
- ship_name_cawr: "Cawr" # Giant
- ship_name_cerddgar: "Cerddgar" # Melodious
- ship_name_clyd: "Clyd" # Cozy
- ship_name_cyfareddol: "Cyfareddol" # Exhilarating
- ship_name_cymreig: "Cymreig" # Welsh
- ship_name_cywir: "Cywir" # Correct
- ship_name_cywirdeb: "Cywirdeb" # Integrity
- ship_name_dewr: "Dewr" # Brave
- ship_name_direidus: "Direidus" # Agile
- ship_name_dirgel: "Dirgel" # Mysterious
- ship_name_dirgelwch: "Dirgelwch" # Mystery
- ship_name_eglurhaol: "Eglurhaol" # Transparent
- ship_name_eithriadol: "Eithriadol" # Exceptional
- ship_name_euraid: "Euraid" # Golden
- ship_name_fflamgoch: "Fflamgoch" # Red flame
- ship_name_galwadwy: "Galwadwy" # Reliable
- ship_name_garw: "Garw" # Rough
- ship_name_gloyw: "Gloyw" # Bright
- ship_name_gorfoledd: "Gorfoledd" # Joyful
- ship_name_gorlif: "Gorlif" # Majestic
- ship_name_gwawr: "Gwawr" # Dawn
- ship_name_gwyntog: "Gwyntog" # Windy
- ship_name_haerllug: "Haerllug" # Majestic
- ship_name_heddwen: "Heddwen" # White peace
- ship_name_heddychlon: "Heddychlon" # Peaceful
- ship_name_helyg: "Helyg" # Willow
- ship_name_hirfelyn: "Hirfelyn" # Long fang
- ship_name_hirionedd: "Hirionedd" # Truth
- ship_name_hudolus: "Hudolus" # Enchanting
- ship_name_hynod: "Hynod" # Extraordinary
- ship_name_iaithlawn: "Iaithlawn" # Linguistic
- ship_name_iraidd: "Iraidd" # Furious
- ship_name_jawdropping: "Syfrdanol" # Jaw-dropping
- ship_name_lleddf: "Lleddf" # Smooth
- ship_name_llongyfarch: "Llongyfarch" # Congratulations
- ship_name_lluddias: "Lluddias" # Stealthy
- ship_name_llwyd: "Llwyd" # Grey
- ship_name_llyfn: "Llyfn" # Smooth
- ship_name_llygadwyllt: "Llygadwyllt" # Wild-eyed
- ship_name_llygaid-wen: "Llygaid-wen" # White-eyed
- ship_name_lysieuol: "Lysieuol" # Herbaceous
- ship_name_mawreddog: "Mawreddog" # Majestic
- ship_name_medrus: "Medrus" # Skilled
- ship_name_melyngoch: "Melyngoch" # Yellow-red
- ship_name_mewnfwyafn: "Mewnfwyafn" # Deepest
- ship_name_morol: "Morol" # Ocean
- ship_name_nawddgar: "Nawddgar" # Protective
- ship_name_noddfa: "Noddfa" # Sanctuary
- ship_name_oerfel: "Oerfel" # Frosty
- ship_name_olau: "Olau" # Light
- ship_name_parhadol: "Parhadol" # Enduring
- ship_name_poblogaidd: "Poblogaidd" # Popular
- ship_name_rhamantus: "Rhamantus" # Romantic
- ship_name_sefyllfa: "Sefyllfa" # Position
- ship_name_seren: "Seren" # Star
- ship_name_talgarth: "Talgarth" # High-fortress
- ship_name_taranau: "Taranau" # Thunderous
- ship_name_tosturiol: "Tosturiol" # Disruptive
- ship_name_uchelgeisiol: "Uchelgeisiol" # Ambitious
- ship_name_unben: "Unben" # Leader
- ship_name_wawddeg: "Wawddeg" # Boisterous
- ship_name_ymylchgrawn: "Ymylchgrawn" # Periphery
- ship_name_ynfydgar: "Ynfydgar" # Magnificent
+ ship_name_anfarwol: "Anfarwol" #Immortal
+ ship_name_ardderchog: "Ardderchog" #Excellent
+ ship_name_brwd: "Brwd" #Fierce
+ ship_name_brwdfrydig: "Brwdfrydig" #Enthusiastic
+ ship_name_cadarn: "Cadarn" #Strong
+ ship_name_cain: "Cain" #Fair
+ ship_name_cawr: "Cawr" #Giant
+ ship_name_cerddgar: "Cerddgar" #Melodious
+ ship_name_clyd: "Clyd" #Cozy
+ ship_name_cyfareddol: "Cyfareddol" #Exhilarating
+ ship_name_cymreig: "Cymreig" #Welsh
+ ship_name_cywir: "Cywir" #Correct
+ ship_name_cywirdeb: "Cywirdeb" #Integrity
+ ship_name_dewr: "Dewr" #Brave
+ ship_name_direidus: "Direidus" #Agile
+ ship_name_dirgel: "Dirgel" #Mysterious
+ ship_name_dirgelwch: "Dirgelwch" #Mystery
+ ship_name_eglurhaol: "Eglurhaol" #Transparent
+ ship_name_eithriadol: "Eithriadol" #Exceptional
+ ship_name_euraid: "Euraid" #Golden
+ ship_name_fflamgoch: "Fflamgoch" #Red flame
+ ship_name_galwadwy: "Galwadwy" #Reliable
+ ship_name_garw: "Garw" #Rough
+ ship_name_gloyw: "Gloyw" #Bright
+ ship_name_gorfoledd: "Gorfoledd" #Joyful
+ ship_name_gorlif: "Gorlif" #Majestic
+ ship_name_gwawr: "Gwawr" #Dawn
+ ship_name_gwyntog: "Gwyntog" #Windy
+ ship_name_haerllug: "Haerllug" #Majestic
+ ship_name_heddwen: "Heddwen" #White peace
+ ship_name_heddychlon: "Heddychlon" #Peaceful
+ ship_name_helyg: "Helyg" #Willow
+ ship_name_hirfelyn: "Hirfelyn" #Long fang
+ ship_name_hirionedd: "Hirionedd" #Truth
+ ship_name_hudolus: "Hudolus" #Enchanting
+ ship_name_hynod: "Hynod" #Extraordinary
+ ship_name_iaithlawn: "Iaithlawn" #Linguistic
+ ship_name_iraidd: "Iraidd" #Furious
+ ship_name_jawdropping: "Syfrdanol" #Jaw-dropping
+ ship_name_lleddf: "Lleddf" #Smooth
+ ship_name_llongyfarch: "Llongyfarch" #Congratulations
+ ship_name_lluddias: "Lluddias" #Stealthy
+ ship_name_llwyd: "Llwyd" #Grey
+ ship_name_llyfn: "Llyfn" #Smooth
+ ship_name_llygadwyllt: "Llygadwyllt" #Wild-eyed
+ ship_name_llygaid-wen: "Llygaid-wen" #White-eyed
+ ship_name_lysieuol: "Lysieuol" #Herbaceous
+ ship_name_mawreddog: "Mawreddog" #Majestic
+ ship_name_medrus: "Medrus" #Skilled
+ ship_name_melyngoch: "Melyngoch" #Yellow-red
+ ship_name_mewnfwyafn: "Mewnfwyafn" #Deepest
+ ship_name_morol: "Morol" #Ocean
+ ship_name_nawddgar: "Nawddgar" #Protective
+ ship_name_noddfa: "Noddfa" #Sanctuary
+ ship_name_oerfel: "Oerfel" #Frosty
+ ship_name_olau: "Olau" #Light
+ ship_name_parhadol: "Parhadol" #Enduring
+ ship_name_poblogaidd: "Poblogaidd" #Popular
+ ship_name_rhamantus: "Rhamantus" #Romantic
+ ship_name_sefyllfa: "Sefyllfa" #Position
+ ship_name_seren: "Seren" #Star
+ ship_name_talgarth: "Talgarth" #High-fortress
+ ship_name_taranau: "Taranau" #Thunderous
+ ship_name_tosturiol: "Tosturiol" #Disruptive
+ ship_name_uchelgeisiol: "Uchelgeisiol" #Ambitious
+ ship_name_unben: "Unben" #Leader
+ ship_name_wawddeg: "Wawddeg" #Boisterous
+ ship_name_ymylchgrawn: "Ymylchgrawn" #Periphery
+ ship_name_ynfydgar: "Ynfydgar" #Magnificent
