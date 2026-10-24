@@ -1,0 +1,302 @@
+﻿REPLACE:GER_f = {
+
+	level = 4
+	required_locations_fraction = 0.6
+	rule = plausible
+	potential = {
+		culture = { has_culture_group = culture_group:german_group }
+	}
+	
+	name = GER
+	flag = GER
+	adjective = GER_ADJ
+	tag = GER
+	color = map_GER
+	
+	areas = { 
+		holstein_area             
+		rhineland_area        
+		hesse_area            
+		westphalia_area       
+		lower_saxony_area      
+		mecklenburg_area           
+		upper_rhine_area      
+		swabia_area           
+		franconia_area        
+		bavaria_area        
+	}
+
+	provinces = {
+		slesvig_province
+		altmark_province
+		prignitz_province
+		flaming_province
+		mittelmark_province
+		niederlausitz_province
+		elbtal_province
+		erzgebirge_province
+		leipziger_bucht_province
+		vogtland_province
+		thuringer_becken_province
+		saale_province
+		thuringer_wald_province
+		vorpommern_province
+		uckermark_province
+	}
+
+	locations = {
+		stettin
+		ueckermunde
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+		change_government_type = government_type:republic
+	}
+}
+
+GKR_f = {
+
+	level = 4
+	required_locations_fraction = 0.6
+	rule = plausible
+	potential = {
+		culture = { has_culture_group = culture_group:german_group }
+	}
+
+	allow = {
+    	OR = {
+			owns = location:berlin
+		}
+	}	
+	
+	name = GKR
+	flag = GKR
+	adjective = GKR_ADJ
+	tag = GKR
+	color = map_TEU
+	
+	areas = {
+		holstein_area
+		brandenburg_area
+		rhineland_area
+		hesse_area
+		westphalia_area
+		lower_saxony_area
+		upper_saxony_area
+		mecklenburg_area
+		pomerania_area
+		alsace_area
+		prussia_area
+		upper_rhine_area
+		swabia_area
+		franconia_area
+		bavaria_area
+		silesia_area
+	}
+
+	provinces = {
+		mittelmark_province
+		slesvig_province
+	}
+
+	locations = {
+		poznan
+		buk
+		czarnkow
+		miedzyrzecz
+		oborniki
+		skwierzyna
+		szamotuly
+		wielen
+		gniezno
+		mogilno
+		trzemeszno
+		kalisz
+		ostrow_wielkopolski
+		pleszew
+		konin
+		kolo
+		lad_konin
+		koscian
+		babimost
+		grodzisk_wielkopolski
+		rawicz
+		srem
+		wschowa
+		pyzdry
+		kozmin
+		sroda_wielkopolska
+		naklo
+		wyrzysk
+		zlotow
+		znin
+		chodziez
+		szubin
+		inowroclaw 
+		walcz 
+		czaplinek 
+		czlopa
+		bydgoszcz
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+		every_country = {
+			trigger_event_silently = {
+				id = ger_formable.102
+			}
+		}
+		change_government_type = government_type:monarchy
+	}
+}
+
+REPLACE:PRU_f = { #Prussia
+	content_priority = 800
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	capital_required = no
+
+	potential = {
+		culture = { has_culture_group = culture_group:german_group }
+	}
+	allow = {
+		NOT = {
+			has_reform = government_reform:military_order_reform 
+			has_estate_privilege = estate_privilege:clergy_powerful_dioceses
+		}
+		has_estate_privilege = estate_privilege:nobles_land_rights
+
+		"estate_power(estate_type:clergy_estate)" < 0.20
+		"estate_power(estate_type:nobles_estate)" > 0.20
+		at_war = no
+	}
+	name = PRU
+	flag = PRU
+	adjective = PRU_ADJ
+	tag = PRU
+	color = map_PRU
+
+	unit_color0 = rgb { 0 49 83 }      # Preußischblau (Rock)
+	unit_color1 = rgb { 185 0 0 }      # Rot (Kragen, Aufschläge)
+	unit_color2 = rgb { 201 162 39 }   # Messing/Gold (Knöpfe, Verzierungen)
+	
+	areas = {
+		prussia_area
+	}
+
+	locations = {
+		berlin
+	}
+
+	form_effect = {
+		if = {
+			limit = {
+				government_type != government_type:republic
+				government_type != government_type:monarchy
+			}
+			change_government_type = government_type:monarchy
+			add_legitimacy = legitimacy_radical_bonus
+		}
+		if = {
+			limit = {
+				NOT = { is_member_of_international_organization = international_organization:hre }
+			}
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+
+WPL_f = {
+
+	level = 2
+	required_locations_fraction = 0.6
+	rule = plausible
+	potential = {
+		OR = {
+			culture = culture:westphalian	
+			culture = culture:rhine_franconian
+		}
+	}
+
+	allow = {
+		OR = {
+			owns = location:kassel
+		}
+	}	
+
+	name = WPL
+	flag = WPL	
+	adjective = WPL_ADJ
+	tag = WPL
+	color = map_WPL
+
+	areas = {
+		rhineland_area
+	}
+	form_effect = {
+		change_government_type = government_type:monarchy
+	}
+}
+
+RHI_f = {
+
+	level = 2
+	required_locations_fraction = 0.6
+	rule = plausible
+	potential = {
+		OR = {
+			culture = culture:ripuarian_franconian
+			culture = culture:moselle_franconian
+			culture = culture:rhine_franconian
+			culture = culture:rhine_alemannic		
+		}
+	}
+
+	name = RHI
+	flag = RHI	
+	adjective = RHI_ADJ
+	tag = RHI
+	color = map_RHI
+	
+	allow = {
+		OR = {
+			owns = location:kassel
+		}
+	}	
+
+	areas = {
+		hesse_area
+	}
+
+	provinces = {
+		altmark_province
+		magdeburger_borde_province
+		harz_province
+		saale_province
+		thuringer_becken_province
+		brunswick_province
+		leine_province
+		ostwestphalia_province
+		lippe_province 
+	}
+
+	form_effect = {
+		if = {
+			limit = {
+				government_type != government_type:republic
+				government_type != government_type:monarchy
+			}
+			change_government_type = government_type:monarchy
+			add_legitimacy = legitimacy_radical_bonus
+		}
+	}
+}
